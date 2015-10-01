@@ -10,12 +10,13 @@
 	<meta name="description" content="Global Hunger Index 2015">
     
     <link rel="stylesheet" href="lib/styles/leaflet.css">
+    
+    <link rel="stylesheet" href="styles/foundation.css" />
 
    	<!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     
-    <link rel="stylesheet" href="styles/app.css" />
     <link rel="stylesheet" href="fonts/foundation-icons/foundation-icons.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     
@@ -26,7 +27,12 @@
 
     <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
-            <li class="name"> <h1><a href="#">Global Hunger Index 2015</a></h1></li>
+            <li class="name">
+                <h1><a href="#">
+                    <img src="images/ghi.svg" onerror="this.src='images/ghi.png'" alt="Global Hunger Index 2015">
+                    <span>Global Hunger Index 2015</span>
+                </a></h1>
+             </li>
             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
@@ -49,9 +55,13 @@
             </ul>
         </section>
     </nav>
-	
-	<div class="map-application">
-		<div id="map" class="map"></div>
+	<div id="main-map" class="row">
+    	<div id="map-application" class="large-8 columns">
+	        <div id="map" class="map"></div>
+	    </div>
+        <div class="large-4 columns">
+            <h1>Tably</h1>
+        </div>
 	</div>
 	
 	<section id="home-blocks">
