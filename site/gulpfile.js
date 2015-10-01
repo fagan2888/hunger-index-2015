@@ -4,6 +4,7 @@
 var gulp = require('gulp');
 var open = require('open');
 var wiredep = require('wiredep').stream;
+var gutil = require('gulp-load-utils')(['log']);
 
 // Load plugins
 var $ = require('gulp-load-plugins')();
@@ -30,6 +31,7 @@ gulp.task('html', ['styles', 'scripts'], function () {
     var cssFilter = $.filter('**/*.css');
 
     return gulp.src('app/*.html')
+        .pipe($.useref.assets().on('error', gutil.log))
         .pipe($.useref.assets())
         .pipe(jsFilter)
         .pipe($.uglify())

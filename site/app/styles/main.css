@@ -34,18 +34,16 @@
 /* Map
 */
 #main-map {
-	height: 100%;	
-	padding-top: 50px;
+	height: 500px;
     display: block;
 }
 
-.row #map-application {
-	height: 100%;	
-	padding-top: 50px;
+#main-map #map-application {
+	height: 100%;
     display: block;
 }
 
-.map {
+#main-map .map {
 	width: 100%;
 	height: 100%;
 }

@@ -15,7 +15,8 @@
     "gulp-useref": "^0.4.3",
     "gulp-util": "^2.2.14",
     "open": "0.0.5",
-    "wiredep": "^1.4.4"
+    "wiredep": "^1.4.4",
+    "gulp-load-utils": "^0.0.4"
   },
   "dependencies": {
   	"leaflet": "~0.7.2"
