@@ -36,6 +36,8 @@ function getSeverity(d) {
 	/* create leaflet map */
 	var map = L.map('map', {
 		center: [52.5377, 13.3958],
+                scrollWheelZoom: false,
+                boxZoom: false,
 		zoom: 4
 	});
 
