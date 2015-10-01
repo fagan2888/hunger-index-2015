@@ -4,7 +4,8 @@
   "dependencies": {
   	
     "foundation": "~5.5.2",
-  	"jquery": "~2.1.0"	
+  	"jquery": "~2.1.0",
+    "datatables": "~1.10.9"
   }
 }
 

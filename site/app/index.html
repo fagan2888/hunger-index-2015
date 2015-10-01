@@ -61,6 +61,23 @@
 	    </div>
         <div class="large-4 columns">
             <h1>Tably</h1>
+            <div id="table-container">
+               <table id="country-table" class="display" width="100%" cellspacing="0">
+                  <thead>
+                      <tr>
+                          <th>Country</th>
+                          <th>Score</th>
+                      </tr>
+                  </thead>
+           
+                  <tfoot>
+                      <tr>
+                          <th>Country</th>
+                          <th>Score</th>
+                      </tr>
+                  </tfoot>
+              </table> 
+            </div>
         </div>
 	</div>
 	
@@ -122,6 +139,7 @@
 	<script src="lib/scripts/leaflet.ajax.min.js"></script>
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/datatables/media/js/jquery.dataTables.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
