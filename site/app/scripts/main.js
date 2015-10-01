@@ -2,15 +2,25 @@
 /*global L */
 
 function getColor(d) {
-    if (d === '-') { return '#222'; }
-    if (d === '<5') { return '#FD8D3C'; }
-    return d > 30 ? '#800026' :
-           d > 20  ? '#BD0026' :
-           d > 10  ? '#E31A1C' :
-           d > 5  ? '#FC4E2A' :
-           d > 20   ? '#FEB24C' :
-           d > 10   ? '#FED976' :
-          '#ccc';
+    if (d === '-') { return '#808080'; }
+    if (d === '<5') { return '#4caf45'; }
+    return d >= 50 ? '#ab0635' :
+           d >= 35  ? '#e9841d' :
+           d >= 20  ? '#fbe0c7' :
+           d >= 10  ? '#bedcb3' :
+           d >= 0   ? '#4caf45' :
+          '#eaeaea';
+}
+
+function getSeverity(d) {
+    if (d === '-') { return 'No data'; }
+    if (d === '<5') { return 'Low'; }
+    return d >= 50 ? 'Extremely alarming' :
+           d >= 35  ? 'Alarming' :
+           d >= 20  ? 'Serious' :
+           d >= 10  ? 'Moderate' :
+           d >= 0   ? 'Low' :
+          'Not calculated';
 }
 
 
@@ -85,7 +95,7 @@ function getColor(d) {
         }
 
         function onEachFeature(feature, layer) {
-            var popupContent = '<h3>' + feature.properties.name + '</h3> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p><a href="/countries/' + feature.id + '">Come visit!</p>';
+            var popupContent = '<h3>' + feature.properties.name + '</h3> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a href="/countries/' + feature.id + '">Come visit!</p>';
             layer.bindPopup(popupContent, {autopan: true});
 
             layer.on({

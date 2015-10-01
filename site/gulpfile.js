@@ -103,21 +103,16 @@ gulp.task('watch', ['connect', 'serve'], function () {
         'app/*.html',
         'app/styles/**/*.css',
         'app/scripts/**/*.js',
-        'app/images/**/*'
+        'app/images/**/*',
+        'app/data/**/*'
     ], function (event) {
         return gulp.src(event.path)
             .pipe($.connect.reload());
     });
 
-    // Watch .css files
     gulp.watch('app/styles/**/*.css', ['styles']);
-
-    // Watch .js files
     gulp.watch('app/scripts/**/*.js', ['scripts']);
-
-    // Watch image files
     gulp.watch('app/images/**/*', ['images']);
-
-    // Watch bower files
+    gulp.watch('app/data/**/*', ['data']);
     gulp.watch('bower.json', ['wiredep']);
 });
