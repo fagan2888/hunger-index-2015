@@ -100,7 +100,7 @@ function getSeverity(d) {
         }
 
         function onEachFeature(feature, layer) {
-            var popupContent = '<h3>' + feature.properties.name + '</h3> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a href="/countries/' + feature.id + '">Come visit!</p>';
+            var popupContent = '<h4>' + feature.properties.name + '</h4> <dl><dt>Score:</dt> <dd>' + feature.properties.score + '</dd> <dt>Level:</dt> <dd>' + getSeverity(feature.properties.score) + '</dd></dl> <p><a class="button small radius" href="/countries/' + feature.id + '">Come visit!</p>';
             layer.bindPopup(popupContent, {autopan: true});
 
             layer.on({
