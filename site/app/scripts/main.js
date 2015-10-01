@@ -116,7 +116,14 @@ function getSeverity(d) {
         });       
         geojsonLayer.addTo(map);
 
-
-
-
 }(window, document, L));
+
+$(document).ready(function() {
+    $('#country-table').DataTable( {
+        "ajax": "data/table_data.json",
+        "columns": [
+            { "data": "name" },
+            { "data": "score" }
+        ]
+    } );
+} );

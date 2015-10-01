@@ -1,0 +1,516 @@
+{
+  "data": [
+    {
+      "score": "35.4", 
+      "name": "Afghanistan"
+    }, 
+    {
+      "score": "32.6", 
+      "name": "Angola"
+    }, 
+    {
+      "score": "13.2", 
+      "name": "Albania"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Argentina"
+    }, 
+    {
+      "score": "11.2", 
+      "name": "Armenia"
+    }, 
+    {
+      "score": "10", 
+      "name": "Azerbaijan"
+    }, 
+    {
+      "score": "-", 
+      "name": "Burundi"
+    }, 
+    {
+      "score": "21.8", 
+      "name": "Benin"
+    }, 
+    {
+      "score": "31.8", 
+      "name": "Burkina Faso"
+    }, 
+    {
+      "score": "27.3", 
+      "name": "Bangladesh"
+    }, 
+    {
+      "score": "8.5", 
+      "name": "Bulgaria"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Bosnia & Herzegovina"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Belarus"
+    }, 
+    {
+      "score": "16.9", 
+      "name": "Bolivia"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Brazil"
+    }, 
+    {
+      "score": "-", 
+      "name": "Bhutan"
+    }, 
+    {
+      "score": "23.1", 
+      "name": "Botswana"
+    }, 
+    {
+      "score": "46.9", 
+      "name": "Central African Republic"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Chile"
+    }, 
+    {
+      "score": "8.6", 
+      "name": "China"
+    }, 
+    {
+      "score": "26.3", 
+      "name": "C\u00f4te d'Ivoire"
+    }, 
+    {
+      "score": "24.2", 
+      "name": "Cameroon"
+    }, 
+    {
+      "score": "-", 
+      "name": "Congo, Dem. Rep."
+    }, 
+    {
+      "score": "26.6", 
+      "name": "Congo, Rep."
+    }, 
+    {
+      "score": "8.8", 
+      "name": "Colombia"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Costa Rica"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Cuba"
+    }, 
+    {
+      "score": "33.2", 
+      "name": "Djibouti"
+    }, 
+    {
+      "score": "10.8", 
+      "name": "Dominican Republic"
+    }, 
+    {
+      "score": "8.7", 
+      "name": "Algeria"
+    }, 
+    {
+      "score": "14", 
+      "name": "Ecuador"
+    }, 
+    {
+      "score": "13.5", 
+      "name": "Egypt, Arab Rep."
+    }, 
+    {
+      "score": "-", 
+      "name": "Eritrea"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Estonia"
+    }, 
+    {
+      "score": "33.9", 
+      "name": "Ethiopia"
+    }, 
+    {
+      "score": "8.7", 
+      "name": "Fiji"
+    }, 
+    {
+      "score": "12.5", 
+      "name": "Gabon"
+    }, 
+    {
+      "score": "8.5", 
+      "name": "Georgia"
+    }, 
+    {
+      "score": "15.5", 
+      "name": "Ghana"
+    }, 
+    {
+      "score": "28.8", 
+      "name": "Guinea"
+    }, 
+    {
+      "score": "21.5", 
+      "name": "Gambia, The"
+    }, 
+    {
+      "score": "30.3", 
+      "name": "Guinea-Bissau"
+    }, 
+    {
+      "score": "21.1", 
+      "name": "Guatemala"
+    }, 
+    {
+      "score": "14.4", 
+      "name": "Guyana"
+    }, 
+    {
+      "score": "13.4", 
+      "name": "Honduras"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Croatia"
+    }, 
+    {
+      "score": "37.3", 
+      "name": "Haiti"
+    }, 
+    {
+      "score": "22.1", 
+      "name": "Indonesia"
+    }, 
+    {
+      "score": "29", 
+      "name": "India"
+    }, 
+    {
+      "score": "6.8", 
+      "name": "Iran, Islamic Rep."
+    }, 
+    {
+      "score": "22.2", 
+      "name": "Iraq"
+    }, 
+    {
+      "score": "8.1", 
+      "name": "Jamaica"
+    }, 
+    {
+      "score": "5.8", 
+      "name": "Jordan"
+    }, 
+    {
+      "score": "8", 
+      "name": "Kazakhstan"
+    }, 
+    {
+      "score": "24", 
+      "name": "Kenya"
+    }, 
+    {
+      "score": "9.4", 
+      "name": "Kyrgyz Republic"
+    }, 
+    {
+      "score": "22.6", 
+      "name": "Cambodia"
+    }, 
+    {
+      "score": "5", 
+      "name": "Kuwait"
+    }, 
+    {
+      "score": "28.5", 
+      "name": "Lao PDR"
+    }, 
+    {
+      "score": "6.4", 
+      "name": "Lebanon"
+    }, 
+    {
+      "score": "30.8", 
+      "name": "Liberia"
+    }, 
+    {
+      "score": "-", 
+      "name": "Libya"
+    }, 
+    {
+      "score": "25.5", 
+      "name": "Sri Lanka"
+    }, 
+    {
+      "score": "23.5", 
+      "name": "Lesotho"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Lithuania"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Latvia"
+    }, 
+    {
+      "score": "9.5", 
+      "name": "Morocco"
+    }, 
+    {
+      "score": "9.1", 
+      "name": "Moldova"
+    }, 
+    {
+      "score": "36.3", 
+      "name": "Madagascar"
+    }, 
+    {
+      "score": "7.3", 
+      "name": "Mexico"
+    }, 
+    {
+      "score": "5.9", 
+      "name": "Macedonia, FYR"
+    }, 
+    {
+      "score": "29.6", 
+      "name": "Mali"
+    }, 
+    {
+      "score": "23.5", 
+      "name": "Myanmar"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Montenegro"
+    }, 
+    {
+      "score": "14.7", 
+      "name": "Mongolia"
+    }, 
+    {
+      "score": "32.5", 
+      "name": "Mozambique"
+    }, 
+    {
+      "score": "22.6", 
+      "name": "Mauritania"
+    }, 
+    {
+      "score": "27.3", 
+      "name": "Malawi"
+    }, 
+    {
+      "score": "10.3", 
+      "name": "Malaysia"
+    }, 
+    {
+      "score": "31.8", 
+      "name": "Namibia"
+    }, 
+    {
+      "score": "34.5", 
+      "name": "Niger"
+    }, 
+    {
+      "score": "32.8", 
+      "name": "Nigeria"
+    }, 
+    {
+      "score": "13.6", 
+      "name": "Nicaragua"
+    }, 
+    {
+      "score": "22.2", 
+      "name": "Nepal"
+    }, 
+    {
+      "score": "-", 
+      "name": "Oman"
+    }, 
+    {
+      "score": "33.9", 
+      "name": "Pakistan"
+    }, 
+    {
+      "score": "9.6", 
+      "name": "Panama"
+    }, 
+    {
+      "score": "9.1", 
+      "name": "Peru"
+    }, 
+    {
+      "score": "20.1", 
+      "name": "Philippines"
+    }, 
+    {
+      "score": "-", 
+      "name": "Papua New Guinea"
+    }, 
+    {
+      "score": "28.8", 
+      "name": "North Korea"
+    }, 
+    {
+      "score": "10.5", 
+      "name": "Paraguay"
+    }, 
+    {
+      "score": "-", 
+      "name": "Qatar"
+    }, 
+    {
+      "score": "5.3", 
+      "name": "Romania"
+    }, 
+    {
+      "score": "6.6", 
+      "name": "Russian Federation"
+    }, 
+    {
+      "score": "30.3", 
+      "name": "Rwanda"
+    }, 
+    {
+      "score": "5.1", 
+      "name": "Saudi Arabia"
+    }, 
+    {
+      "score": "-", 
+      "name": "Sudan"
+    }, 
+    {
+      "score": "-", 
+      "name": "South Sudan"
+    }, 
+    {
+      "score": "23.2", 
+      "name": "Senegal"
+    }, 
+    {
+      "score": "38.9", 
+      "name": "Sierra Leone"
+    }, 
+    {
+      "score": "11.1", 
+      "name": "El Salvador"
+    }, 
+    {
+      "score": "-", 
+      "name": "Somalia"
+    }, 
+    {
+      "score": "7.1", 
+      "name": "Serbia"
+    }, 
+    {
+      "score": "10.4", 
+      "name": "Suriname"
+    }, 
+    {
+      "score": "5.2", 
+      "name": "Slovak Republic"
+    }, 
+    {
+      "score": "26", 
+      "name": "Swaziland"
+    }, 
+    {
+      "score": "-", 
+      "name": "Syrian Arab Republic"
+    }, 
+    {
+      "score": "46.4", 
+      "name": "Chad"
+    }, 
+    {
+      "score": "23", 
+      "name": "Togo"
+    }, 
+    {
+      "score": "11.9", 
+      "name": "Thailand"
+    }, 
+    {
+      "score": "30.3", 
+      "name": "Tajikistan"
+    }, 
+    {
+      "score": "12.9", 
+      "name": "Turkmenistan"
+    }, 
+    {
+      "score": "40.7", 
+      "name": "Timor-Leste"
+    }, 
+    {
+      "score": "8.3", 
+      "name": "Trinidad & Tobago"
+    }, 
+    {
+      "score": "5.6", 
+      "name": "Tunisia"
+    }, 
+    {
+      "score": "5.1", 
+      "name": "Turkey"
+    }, 
+    {
+      "score": "28.7", 
+      "name": "Tanzania"
+    }, 
+    {
+      "score": "27.6", 
+      "name": "Uganda"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Ukraine"
+    }, 
+    {
+      "score": "5.7", 
+      "name": "Uruguay"
+    }, 
+    {
+      "score": "13.3", 
+      "name": "Uzbekistan"
+    }, 
+    {
+      "score": "7", 
+      "name": "Venezuela, RB"
+    }, 
+    {
+      "score": "14.7", 
+      "name": "Vietnam"
+    }, 
+    {
+      "score": "34.2", 
+      "name": "Yemen, Rep."
+    }, 
+    {
+      "score": "12.4", 
+      "name": "South Africa"
+    }, 
+    {
+      "score": "41.1", 
+      "name": "Zambia"
+    }, 
+    {
+      "score": "30.8", 
+      "name": "Zimbabwe"
+    }
+  ]
+}

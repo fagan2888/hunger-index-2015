@@ -21,3 +21,19 @@ for s in scores:
 f = open("../site/app/data/mockdata.geo.json", 'w')
 f.write(json.dumps(geodata, indent=2))
 f.close()
+
+# table data
+table_entries = []
+for entry in geodata['features']:
+    if not entry['properties'].get('score'):
+        continue
+
+    d = {'name': entry['properties']['name'],
+         'score': entry['properties']['score']
+         }
+    table_entries.append(d)
+table_data = {'data': table_entries}
+
+f = open("../site/app/data/table_data.json", 'w')
+f.write(json.dumps(table_data, indent=2))
+f.close()
