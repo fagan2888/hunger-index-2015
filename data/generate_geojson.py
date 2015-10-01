@@ -29,7 +29,8 @@ for entry in geodata['features']:
         continue
 
     d = {'name': entry['properties']['name'],
-         'score': entry['properties']['score']
+         'score': entry['properties']['score'],
+         'DT_RowId': entry['id']
          }
     table_entries.append(d)
 table_data = {'data': table_entries}

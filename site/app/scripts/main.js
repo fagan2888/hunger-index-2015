@@ -120,10 +120,32 @@ function getSeverity(d) {
 
 $(document).ready(function() {
     $('#country-table').DataTable( {
+        "scrollY": "500px",
+        "scrollCollapse": true,
+        "paging": false,
+        "ordering": false,
+        "info": false,
+        "filter": false,
         "ajax": "data/table_data.json",
         "columns": [
             { "data": "name" },
             { "data": "score" }
         ]
     } );
+} );
+
+$(document).ready(function() {
+    var table = $('#example').DataTable();
+ 
+    $('#country-table tbody').on( 'click', 'tr', function (ev) {
+        console.log(this.id);
+        if ( $(this).hasClass('selected') ) {
+            $(this).removeClass('selected');
+        }
+        else {
+            table.$('tr.selected').removeClass('selected');
+            $(this).addClass('selected');
+        }
+    } );
+
 } );
