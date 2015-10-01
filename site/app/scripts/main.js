@@ -1,3 +1,6 @@
+// Foundation JavaScript
+$(document).foundation();
+
 /*jslint browser: true*/
 /*global L */
 
