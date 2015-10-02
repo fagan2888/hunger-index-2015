@@ -1,7 +1,10 @@
 'use strict';
+// Global Hunger Index 2015: Gulp file
 // Generated on 2015-09-29 using generator-leaflet 0.0.17
 
 var gulp = require('gulp');
+var sass = require('gulp-sass');
+var concat = require('gulp-concat');
 var open = require('open');
 var wiredep = require('wiredep').stream;
 var gutil = require('gulp-load-utils')(['log']);
@@ -10,11 +13,26 @@ var gutil = require('gulp-load-utils')(['log']);
 var $ = require('gulp-load-plugins')();
 
 // Styles
+/*
 gulp.task('styles', function () {
     return gulp.src(['app/styles/main.css'])
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('app/styles'))
         .pipe($.size());
+});
+*/
+gulp.task('styles',function(){
+  return gulp.src([
+      'app/styles/app.scss'
+    ])
+    .pipe(sass({
+        includePaths: [ 'app/bower_components/foundation/scss' ]
+      }
+    ))
+    .pipe(concat("app.css"))
+    .pipe(gulp.dest('dist/styles'))
+    .pipe($.size());
+    // .pipe(browserSync.stream());
 });
 
 // Scripts
@@ -29,6 +47,14 @@ gulp.task('scripts', function () {
 gulp.task('html', ['styles', 'scripts'], function () {
     var jsFilter = $.filter('**/*.js');
     var cssFilter = $.filter('**/*.css');
+
+    gulp.src([ 'app/styles/app.scss' ])
+    .pipe(sass({
+        includePaths: [ 'app/bower_components/foundation/scss' ]
+      }
+    ))
+    .pipe(concat("app.css"))
+    .pipe(gulp.dest('dist/styles'));
 
     return gulp.src('app/*.html')
         .pipe($.useref.assets().on('error', gutil.log))
@@ -78,7 +104,7 @@ gulp.task('default', ['clean'], function () {
 // Connect
 gulp.task('connect', function(){
     $.connect.server({
-        root: 'app',
+        root: 'dist',
         port: 9000,
         livereload: true
     });
@@ -86,7 +112,6 @@ gulp.task('connect', function(){
 
 // Open
 gulp.task('serve', ['connect'], function() {
-  open("http://localhost:9000");
 });
 
 // Inject Bower components
@@ -125,6 +150,5 @@ gulp.task('watch', ['connect', 'serve'], function () {
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/images/**/*', ['images']);
     gulp.watch('app/fonts/**/*', ['fonts']);
-    gulp.watch('app/data/**/*', ['data']);
     gulp.watch('bower.json', ['wiredep']);
 });
