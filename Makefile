@@ -8,7 +8,6 @@
 install:
 	virtualenv .env --no-site-packages --distribute --prompt=\(ghi\)
 	. `pwd`/.env/bin/activate; pip install -r requirements.txt
-	cp settings.conf.sample settings.conf
 
 build:
 	cd tools; python generate_geojson.py && python render_templates.py
