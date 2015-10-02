@@ -100,13 +100,17 @@ function getSeverity(d) {
         }
 
         function onEachFeature(feature, layer) {
-            var popupContent = '<h4>' + feature.properties.name + '</h4> <dl><dt>Score:</dt> <dd>' + feature.properties.score + '</dd> <dt>Level:</dt> <dd>' + getSeverity(feature.properties.score) + '</dd></dl> <p><a class="button small radius" href="/countries/' + feature.id + '">Come visit!</p>';
+            // set up popups
+            var popupContent = '<h4>' + feature.properties.name + '</h4> <dl><dt>Score:</dt> <dd>' + feature.properties.score + '</dd> <dt>Level:</dt> <dd>' + getSeverity(feature.properties.score) + '</dd></dl> <p><a class="button small radius" href="/countries/' + feature.id + '">See country data</p>';
             layer.bindPopup(popupContent, {autopan: true});
-
+            // set up mouseover highlights
             layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
             });
+            // make features accessible by id
+            // https://stackoverflow.com/a/28618177
+            layer._leaflet_id = feature.id;
         }
 
         // https://gis.stackexchange.com/a/102125
@@ -116,8 +120,21 @@ function getSeverity(d) {
         });       
         geojsonLayer.addTo(map);
 
+        $(document).ready(function() {
+            $('#country-table tbody').on( 'click', 'tr', function (ev) {
+                console.log(this.id);
+                // reference: https://github.com/jplusplus/rsf-index-2015/blob/master/src/app/map/map.controller.coffee
+                console.log(geojsonLayer.getLayer(this.id));
+            } );
+
+        } );
+
+
+
+
 }(window, document, L));
 
+/*
 $(document).ready(function() {
     $('#country-table').DataTable( {
         "scrollY": "500px",
@@ -133,19 +150,5 @@ $(document).ready(function() {
         ]
     } );
 } );
+*/
 
-$(document).ready(function() {
-    var table = $('#example').DataTable();
- 
-    $('#country-table tbody').on( 'click', 'tr', function (ev) {
-        console.log(this.id);
-        if ( $(this).hasClass('selected') ) {
-            $(this).removeClass('selected');
-        }
-        else {
-            table.$('tr.selected').removeClass('selected');
-            $(this).addClass('selected');
-        }
-    } );
-
-} );
