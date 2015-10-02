@@ -1,0 +1,644 @@
+{
+  "data": [
+    {
+      "score": "35.4", 
+      "name": "Afghanistan", 
+      "id": "AFG"
+    }, 
+    {
+      "score": "32.6", 
+      "name": "Angola", 
+      "id": "AGO"
+    }, 
+    {
+      "score": "13.2", 
+      "name": "Albania", 
+      "id": "ALB"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Argentina", 
+      "id": "ARG"
+    }, 
+    {
+      "score": "11.2", 
+      "name": "Armenia", 
+      "id": "ARM"
+    }, 
+    {
+      "score": "10", 
+      "name": "Azerbaijan", 
+      "id": "AZE"
+    }, 
+    {
+      "score": "-", 
+      "name": "Burundi", 
+      "id": "BDI"
+    }, 
+    {
+      "score": "21.8", 
+      "name": "Benin", 
+      "id": "BEN"
+    }, 
+    {
+      "score": "31.8", 
+      "name": "Burkina Faso", 
+      "id": "BFA"
+    }, 
+    {
+      "score": "27.3", 
+      "name": "Bangladesh", 
+      "id": "BGD"
+    }, 
+    {
+      "score": "8.5", 
+      "name": "Bulgaria", 
+      "id": "BGR"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Bosnia & Herzegovina", 
+      "id": "BIH"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Belarus", 
+      "id": "BLR"
+    }, 
+    {
+      "score": "16.9", 
+      "name": "Bolivia", 
+      "id": "BOL"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Brazil", 
+      "id": "BRA"
+    }, 
+    {
+      "score": "-", 
+      "name": "Bhutan", 
+      "id": "BTN"
+    }, 
+    {
+      "score": "23.1", 
+      "name": "Botswana", 
+      "id": "BWA"
+    }, 
+    {
+      "score": "46.9", 
+      "name": "Central African Republic", 
+      "id": "CAF"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Chile", 
+      "id": "CHL"
+    }, 
+    {
+      "score": "8.6", 
+      "name": "China", 
+      "id": "CHN"
+    }, 
+    {
+      "score": "26.3", 
+      "name": "C\u00f4te d'Ivoire", 
+      "id": "CIV"
+    }, 
+    {
+      "score": "24.2", 
+      "name": "Cameroon", 
+      "id": "CMR"
+    }, 
+    {
+      "score": "-", 
+      "name": "Congo, Dem. Rep.", 
+      "id": "COD"
+    }, 
+    {
+      "score": "26.6", 
+      "name": "Congo, Rep.", 
+      "id": "COG"
+    }, 
+    {
+      "score": "8.8", 
+      "name": "Colombia", 
+      "id": "COL"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Costa Rica", 
+      "id": "CRI"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Cuba", 
+      "id": "CUB"
+    }, 
+    {
+      "score": "33.2", 
+      "name": "Djibouti", 
+      "id": "DJI"
+    }, 
+    {
+      "score": "10.8", 
+      "name": "Dominican Republic", 
+      "id": "DOM"
+    }, 
+    {
+      "score": "8.7", 
+      "name": "Algeria", 
+      "id": "DZA"
+    }, 
+    {
+      "score": "14", 
+      "name": "Ecuador", 
+      "id": "ECU"
+    }, 
+    {
+      "score": "13.5", 
+      "name": "Egypt, Arab Rep.", 
+      "id": "EGY"
+    }, 
+    {
+      "score": "-", 
+      "name": "Eritrea", 
+      "id": "ERI"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Estonia", 
+      "id": "EST"
+    }, 
+    {
+      "score": "33.9", 
+      "name": "Ethiopia", 
+      "id": "ETH"
+    }, 
+    {
+      "score": "8.7", 
+      "name": "Fiji", 
+      "id": "FJI"
+    }, 
+    {
+      "score": "12.5", 
+      "name": "Gabon", 
+      "id": "GAB"
+    }, 
+    {
+      "score": "8.5", 
+      "name": "Georgia", 
+      "id": "GEO"
+    }, 
+    {
+      "score": "15.5", 
+      "name": "Ghana", 
+      "id": "GHA"
+    }, 
+    {
+      "score": "28.8", 
+      "name": "Guinea", 
+      "id": "GIN"
+    }, 
+    {
+      "score": "21.5", 
+      "name": "Gambia, The", 
+      "id": "GMB"
+    }, 
+    {
+      "score": "30.3", 
+      "name": "Guinea-Bissau", 
+      "id": "GNB"
+    }, 
+    {
+      "score": "21.1", 
+      "name": "Guatemala", 
+      "id": "GTM"
+    }, 
+    {
+      "score": "14.4", 
+      "name": "Guyana", 
+      "id": "GUY"
+    }, 
+    {
+      "score": "13.4", 
+      "name": "Honduras", 
+      "id": "HND"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Croatia", 
+      "id": "HRV"
+    }, 
+    {
+      "score": "37.3", 
+      "name": "Haiti", 
+      "id": "HTI"
+    }, 
+    {
+      "score": "22.1", 
+      "name": "Indonesia", 
+      "id": "IDN"
+    }, 
+    {
+      "score": "29", 
+      "name": "India", 
+      "id": "IND"
+    }, 
+    {
+      "score": "6.8", 
+      "name": "Iran, Islamic Rep.", 
+      "id": "IRN"
+    }, 
+    {
+      "score": "22.2", 
+      "name": "Iraq", 
+      "id": "IRQ"
+    }, 
+    {
+      "score": "8.1", 
+      "name": "Jamaica", 
+      "id": "JAM"
+    }, 
+    {
+      "score": "5.8", 
+      "name": "Jordan", 
+      "id": "JOR"
+    }, 
+    {
+      "score": "8", 
+      "name": "Kazakhstan", 
+      "id": "KAZ"
+    }, 
+    {
+      "score": "24", 
+      "name": "Kenya", 
+      "id": "KEN"
+    }, 
+    {
+      "score": "9.4", 
+      "name": "Kyrgyz Republic", 
+      "id": "KGZ"
+    }, 
+    {
+      "score": "22.6", 
+      "name": "Cambodia", 
+      "id": "KHM"
+    }, 
+    {
+      "score": "5", 
+      "name": "Kuwait", 
+      "id": "KWT"
+    }, 
+    {
+      "score": "28.5", 
+      "name": "Lao PDR", 
+      "id": "LAO"
+    }, 
+    {
+      "score": "6.4", 
+      "name": "Lebanon", 
+      "id": "LBN"
+    }, 
+    {
+      "score": "30.8", 
+      "name": "Liberia", 
+      "id": "LBR"
+    }, 
+    {
+      "score": "-", 
+      "name": "Libya", 
+      "id": "LBY"
+    }, 
+    {
+      "score": "25.5", 
+      "name": "Sri Lanka", 
+      "id": "LKA"
+    }, 
+    {
+      "score": "23.5", 
+      "name": "Lesotho", 
+      "id": "LSO"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Lithuania", 
+      "id": "LTU"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Latvia", 
+      "id": "LVA"
+    }, 
+    {
+      "score": "9.5", 
+      "name": "Morocco", 
+      "id": "MAR"
+    }, 
+    {
+      "score": "9.1", 
+      "name": "Moldova", 
+      "id": "MDA"
+    }, 
+    {
+      "score": "36.3", 
+      "name": "Madagascar", 
+      "id": "MDG"
+    }, 
+    {
+      "score": "7.3", 
+      "name": "Mexico", 
+      "id": "MEX"
+    }, 
+    {
+      "score": "5.9", 
+      "name": "Macedonia, FYR", 
+      "id": "MKD"
+    }, 
+    {
+      "score": "29.6", 
+      "name": "Mali", 
+      "id": "MLI"
+    }, 
+    {
+      "score": "23.5", 
+      "name": "Myanmar", 
+      "id": "MMR"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Montenegro", 
+      "id": "MNE"
+    }, 
+    {
+      "score": "14.7", 
+      "name": "Mongolia", 
+      "id": "MNG"
+    }, 
+    {
+      "score": "32.5", 
+      "name": "Mozambique", 
+      "id": "MOZ"
+    }, 
+    {
+      "score": "22.6", 
+      "name": "Mauritania", 
+      "id": "MRT"
+    }, 
+    {
+      "score": "27.3", 
+      "name": "Malawi", 
+      "id": "MWI"
+    }, 
+    {
+      "score": "10.3", 
+      "name": "Malaysia", 
+      "id": "MYS"
+    }, 
+    {
+      "score": "31.8", 
+      "name": "Namibia", 
+      "id": "NAM"
+    }, 
+    {
+      "score": "34.5", 
+      "name": "Niger", 
+      "id": "NER"
+    }, 
+    {
+      "score": "32.8", 
+      "name": "Nigeria", 
+      "id": "NGA"
+    }, 
+    {
+      "score": "13.6", 
+      "name": "Nicaragua", 
+      "id": "NIC"
+    }, 
+    {
+      "score": "22.2", 
+      "name": "Nepal", 
+      "id": "NPL"
+    }, 
+    {
+      "score": "-", 
+      "name": "Oman", 
+      "id": "OMN"
+    }, 
+    {
+      "score": "33.9", 
+      "name": "Pakistan", 
+      "id": "PAK"
+    }, 
+    {
+      "score": "9.6", 
+      "name": "Panama", 
+      "id": "PAN"
+    }, 
+    {
+      "score": "9.1", 
+      "name": "Peru", 
+      "id": "PER"
+    }, 
+    {
+      "score": "20.1", 
+      "name": "Philippines", 
+      "id": "PHL"
+    }, 
+    {
+      "score": "-", 
+      "name": "Papua New Guinea", 
+      "id": "PNG"
+    }, 
+    {
+      "score": "28.8", 
+      "name": "North Korea", 
+      "id": "PRK"
+    }, 
+    {
+      "score": "10.5", 
+      "name": "Paraguay", 
+      "id": "PRY"
+    }, 
+    {
+      "score": "-", 
+      "name": "Qatar", 
+      "id": "QAT"
+    }, 
+    {
+      "score": "5.3", 
+      "name": "Romania", 
+      "id": "ROU"
+    }, 
+    {
+      "score": "6.6", 
+      "name": "Russian Federation", 
+      "id": "RUS"
+    }, 
+    {
+      "score": "30.3", 
+      "name": "Rwanda", 
+      "id": "RWA"
+    }, 
+    {
+      "score": "5.1", 
+      "name": "Saudi Arabia", 
+      "id": "SAU"
+    }, 
+    {
+      "score": "-", 
+      "name": "Sudan", 
+      "id": "SDN"
+    }, 
+    {
+      "score": "-", 
+      "name": "South Sudan", 
+      "id": "SSD"
+    }, 
+    {
+      "score": "23.2", 
+      "name": "Senegal", 
+      "id": "SEN"
+    }, 
+    {
+      "score": "38.9", 
+      "name": "Sierra Leone", 
+      "id": "SLE"
+    }, 
+    {
+      "score": "11.1", 
+      "name": "El Salvador", 
+      "id": "SLV"
+    }, 
+    {
+      "score": "-", 
+      "name": "Somalia", 
+      "id": "SOM"
+    }, 
+    {
+      "score": "7.1", 
+      "name": "Serbia", 
+      "id": "SRB"
+    }, 
+    {
+      "score": "10.4", 
+      "name": "Suriname", 
+      "id": "SUR"
+    }, 
+    {
+      "score": "5.2", 
+      "name": "Slovak Republic", 
+      "id": "SVK"
+    }, 
+    {
+      "score": "26", 
+      "name": "Swaziland", 
+      "id": "SWZ"
+    }, 
+    {
+      "score": "-", 
+      "name": "Syrian Arab Republic", 
+      "id": "SYR"
+    }, 
+    {
+      "score": "46.4", 
+      "name": "Chad", 
+      "id": "TCD"
+    }, 
+    {
+      "score": "23", 
+      "name": "Togo", 
+      "id": "TGO"
+    }, 
+    {
+      "score": "11.9", 
+      "name": "Thailand", 
+      "id": "THA"
+    }, 
+    {
+      "score": "30.3", 
+      "name": "Tajikistan", 
+      "id": "TJK"
+    }, 
+    {
+      "score": "12.9", 
+      "name": "Turkmenistan", 
+      "id": "TKM"
+    }, 
+    {
+      "score": "40.7", 
+      "name": "Timor-Leste", 
+      "id": "TLS"
+    }, 
+    {
+      "score": "8.3", 
+      "name": "Trinidad & Tobago", 
+      "id": "TTO"
+    }, 
+    {
+      "score": "5.6", 
+      "name": "Tunisia", 
+      "id": "TUN"
+    }, 
+    {
+      "score": "5.1", 
+      "name": "Turkey", 
+      "id": "TUR"
+    }, 
+    {
+      "score": "28.7", 
+      "name": "Tanzania", 
+      "id": "TZA"
+    }, 
+    {
+      "score": "27.6", 
+      "name": "Uganda", 
+      "id": "UGA"
+    }, 
+    {
+      "score": "<5", 
+      "name": "Ukraine", 
+      "id": "UKR"
+    }, 
+    {
+      "score": "5.7", 
+      "name": "Uruguay", 
+      "id": "URY"
+    }, 
+    {
+      "score": "13.3", 
+      "name": "Uzbekistan", 
+      "id": "UZB"
+    }, 
+    {
+      "score": "7", 
+      "name": "Venezuela, RB", 
+      "id": "VEN"
+    }, 
+    {
+      "score": "14.7", 
+      "name": "Vietnam", 
+      "id": "VNM"
+    }, 
+    {
+      "score": "34.2", 
+      "name": "Yemen, Rep.", 
+      "id": "YEM"
+    }, 
+    {
+      "score": "12.4", 
+      "name": "South Africa", 
+      "id": "ZAF"
+    }, 
+    {
+      "score": "41.1", 
+      "name": "Zambia", 
+      "id": "ZMB"
+    }, 
+    {
+      "score": "30.8", 
+      "name": "Zimbabwe", 
+      "id": "ZWE"
+    }
+  ]
+}

@@ -3,8 +3,8 @@
 import json
 import csv
 
-geodata = json.loads(open("ghi-countries.geo.json", "r").read())
-scores = csv.DictReader(open("ghi-scores.csv", "r"))
+geodata = json.loads(open("../data/ghi-countries.geo.json", "r").read())
+scores = csv.DictReader(open("../data/ghi-scores.csv", "r"))
 
 country_codes = [entry['id'] for entry in geodata['features']]
 
@@ -30,11 +30,11 @@ for entry in geodata['features']:
 
     d = {'name': entry['properties']['name'],
          'score': entry['properties']['score'],
-         'DT_RowId': entry['id']
+         'id': entry['id']
          }
     table_entries.append(d)
 table_data = {'data': table_entries}
 
-f = open("../site/app/data/table_data.json", 'w')
+f = open("../data/table_data.json", 'w')
 f.write(json.dumps(table_data, indent=2))
 f.close()
