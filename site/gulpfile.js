@@ -59,6 +59,9 @@ gulp.task('html', ['styles', 'scripts'], function () {
     gulp.src([ 'app/lib/scripts/*.js' ])
     .pipe(gulp.dest('dist/scripts'));
 
+    gulp.src([ 'app/lib/scripts/*.js' ])
+    .pipe(gulp.dest('dist/scripts'));
+
     gulp.src(['app/lib/styles/leaflet.css'])
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('dist/styles'))
