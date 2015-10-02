@@ -1,0 +1,60 @@
+@import "settings";
+@import "foundation";
+
+/* Colours
+*/
+
+$alarming-red: #AB0635;
+$alarming-orange: #e984d1;
+$serious-light-orange: #fbe0c7;
+$moderate-light-green: #bedcb3;
+$low-green: #4caf45;
+$nodata-grey: #808080;
+$notcalculated-grey: #eaeaea;
+
+/* Type
+*/
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PT_Sans/PT_Sans-Web-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('../fonts/PT_Sans/PT_Sans-Web-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('../fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow Bold';
+    src: url('../fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Bold.ttf') format('truetype');
+}
+
+/* Layout
+*/
+
+#footer {
+    background-color: $jet;
+    padding: 1rem;
+    ul li {
+        display: inline-block;
+        list-style-type:none;
+    }
+    ul.orgs li {
+        margin-right: 10px;
+        a {
+            display: inline-block;
+            height: 60px;
+            width: auto;
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+       }
+    }
+}
