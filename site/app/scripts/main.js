@@ -124,7 +124,9 @@ function getSeverity(d) {
             $('#country-table tbody').on( 'click', 'tr', function (ev) {
                 console.log(this.id);
                 // reference: https://github.com/jplusplus/rsf-index-2015/blob/master/src/app/map/map.controller.coffee
-                console.log(geojsonLayer.getLayer(this.id));
+                var f = geojsonLayer.getLayer(this.id);
+                map.setView(f.getBounds().getCenter());
+                f.openPopup();
             } );
 
         } );
