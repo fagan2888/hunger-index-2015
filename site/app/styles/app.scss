@@ -89,12 +89,19 @@ $notcalculated-grey: #eaeaea;
         height: 100%;
         }
     .large-4 {
-        height: 500px;
+        height: 100%;
         overflow-y: scroll;
     }
     .column-container {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
+        .row {
+            padding: 0.75rem 0;
+            p {
+                margin-bottom: 0;
+                padding-right: 0;
+                }
+            }
         }
 }
 

@@ -55,15 +55,25 @@
 	    </div>
         <div class="large-4 columns">
             <div class="column-container">
-                <div id="table-container">
-                   <table id="country-table" class="display" width="100%" cellspacing="0">
-                     {% for entry in table_entries %}
-                     <tr id="{{ entry.id }}" role="row">
-                       <td>{{ entry.name }}</td>
-                       <td>{{ entry.score }}</td>
-                     </tr>
-                     {% endfor %}
-                  </table>
+                <div class="row collapse">
+                    <h3 class="large-6 columns">Ranking <span class="year">2015</span></h3>
+                    <p class="large-6 columns"><a class="button tiny secondary radius" href="#">Share/Embed</a></p>
+                </div>
+                <div class="row collapse">
+                    <p class="large-12 columns">Ranking of every country in <span class="year">2015</span> according to the IFPRI index.</p>
+                </div>
+                
+                <div class="row">
+                    <div id="table-container">
+                       <table id="country-table" class="display" width="100%" cellspacing="0">
+                         {% for entry in table_entries %}
+                         <tr id="{{ entry.id }}" role="row">
+                           <td>{{ entry.name }}</td>
+                           <td>{{ entry.score }}</td>
+                         </tr>
+                         {% endfor %}
+                      </table>
+                    </div>
                 </div>
             </div><!-- /column-container -->
 	    </div>
