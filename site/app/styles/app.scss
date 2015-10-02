@@ -1,3 +1,31 @@
+/* Type
+*/
+
+@font-face {
+    font-family: 'PT Sans Regular';
+	src: local('PT Sans Regular'), url('../fonts/PTS55F_W.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Sans Bold';
+	font-style: normal;
+	font-weight: bold; 
+	src: local('PT Sans Bold'), url('../fonts/PTS75F_W.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+	src: local('PT Sans Narrow Regular'), url('../fonts/PTN57F_W.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow Bold';
+	font-weight: bold; 
+	src: local('PT Sans Narrow Bold'), url('../fonts/PTN77F_W.ttf') format('truetype');
+}
+
+
 @import "foundation/settings";
 @import "foundation";
 
@@ -11,29 +39,6 @@ $moderate-light-green: #bedcb3;
 $low-green: #4caf45;
 $nodata-grey: #808080;
 $notcalculated-grey: #eaeaea;
-
-/* Type
-*/
-
-@font-face {
-    font-family: "PT Sans";
-    src: local("PT Sans"), url("../fonts/PT_Sans/PT_Sans-Web-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "PT Sans Bold";
-    src: local("PT Sans Bold"), url("../fonts/PT_Sans/PT_Sans-Web-Bold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "PT Sans Narrow";
-    src: local("PT Sans Narrow"), url("../fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "PT Sans Narrow Bold";
-    src: local("PT Sans Narrow Bold"), url("../fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Bold.ttf") format("truetype");
-}
 
 /* Layout
 */
@@ -83,15 +88,19 @@ $notcalculated-grey: #eaeaea;
         width: 100%;
         height: 100%;
         }
+    .large-4 {
+        height: 500px;
+        overflow-y: scroll;
+    }
     .column-container {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
         }
 }
 
-
 .leaflet-container {
-    font-family: "PT Sans Bold", "DejaVu Sans", Arial, sans-serif;
+    font-family: "PT Sans", "DejaVu Sans", Arial, sans-serif;
+    font-weight: bold;
 }
 
 .leaflet-popup-content-wrapper {

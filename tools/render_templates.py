@@ -19,7 +19,6 @@ import shutil
 import markdown
 import json
 import codecs
-from zenlog import log
 
 config_file = "settings.conf"
 output_dir = "_output"
@@ -44,7 +43,6 @@ def create_index_page():
     f = codecs.open("../site/app/index.html", 'w', 'utf-8')
     f.write(contents)
     f.close()
-    log.info("Created index.html.")
 
 if __name__ == "__main__":
     create_index_page()
