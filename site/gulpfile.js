@@ -23,7 +23,7 @@ gulp.task('styles', function () {
 */
 gulp.task('styles',function(){
   return gulp.src([
-      'app/styles/app.scss'
+      'app/styles/app.scss', 'app/lib/**/*.css'
     ])
     .pipe(sass({
         includePaths: [ 'app/bower_components/foundation/scss' ]
@@ -56,6 +56,14 @@ gulp.task('html', ['styles', 'scripts'], function () {
     .pipe(concat("app.css"))
     .pipe(gulp.dest('dist/styles'));
 
+    gulp.src([ 'app/lib/scripts/*.js' ])
+    .pipe(gulp.dest('dist/scripts'));
+
+    gulp.src(['app/lib/styles/leaflet.css'])
+        .pipe($.autoprefixer('last 1 version'))
+        .pipe(gulp.dest('dist/styles'))
+        .pipe($.size());   
+
     return gulp.src('app/*.html')
         .pipe($.useref.assets().on('error', gutil.log))
         .pipe($.useref.assets())
@@ -80,6 +88,13 @@ gulp.task('images', function () {
         .pipe($.size());
 });
 
+// Data
+gulp.task('data', function () {
+    return gulp.src(['app/data/*'])
+        .pipe(gulp.dest('dist/data'))
+        .pipe($.size());
+});
+
 // Fonts
 gulp.task('fonts', function () {
     return gulp.src([
@@ -94,7 +109,7 @@ gulp.task('clean', function () {
 });
 
 // Build
-gulp.task('build', ['html', 'images', 'fonts']);
+gulp.task('build', ['html', 'images', 'data', 'fonts']);
 
 // Default task
 gulp.task('default', ['clean'], function () {
