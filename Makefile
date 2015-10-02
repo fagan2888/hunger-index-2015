@@ -10,7 +10,7 @@ install:
 	. `pwd`/.env/bin/activate; pip install -r requirements.txt
 
 build:
-	cd tools; python generate_geojson.py && python render_templates.py
+	. `pwd`/.env/bin/activate; cd tools; python generate_geojson.py && python render_templates.py
 	cd site; gulp
 
 serve:
