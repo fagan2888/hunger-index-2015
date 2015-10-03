@@ -6,6 +6,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var open = require('open');
+var browserSync = require('browser-sync').create();
 var wiredep = require('wiredep').stream;
 var gutil = require('gulp-load-utils')(['log']);
 
@@ -31,8 +32,8 @@ gulp.task('styles',function(){
     ))
     .pipe(concat("app.css"))
     .pipe(gulp.dest('dist/styles'))
-    .pipe($.size());
-    // .pipe(browserSync.stream());
+    .pipe($.size())
+    .pipe(browserSync.stream());
 });
 
 // Scripts
@@ -79,7 +80,8 @@ gulp.task('html', ['styles', 'scripts'], function () {
         .pipe($.useref.restore())
         .pipe($.useref())
         .pipe(gulp.dest('dist'))
-        .pipe($.size());
+        .pipe($.size())
+        .pipe(browserSync.stream());
 });
 
 // Images
@@ -151,22 +153,13 @@ gulp.task('wiredep', function () {
 
 // Watch
 gulp.task('watch', ['connect', 'serve'], function () {
-    // Watch for changes in `app` folder
-    gulp.watch([
-        'app/*.html',
-        'app/styles/**/*.css',
-        'app/scripts/**/*.js',
-        'app/images/**/*',
-        'app/fonts/**/*',
-        'app/data/**/*'
-    ], function (event) {
-        return gulp.src(event.path)
-            .pipe($.connect.reload());
-    });
+    browserSync.init({
+          server: "dist/"
+      });
+    gulp.watch('app/**/*.html',['html']);
+    gulp.watch('app/styles/**/*.scss',['styles']);
+    gulp.watch('app/scripts/**/*.js',['scripts']);
+    gulp.watch('app/fonts/**/*.*',['fonts']);
+    gulp.watch('app/images/**/*.*',['images']);
 
-    gulp.watch('app/styles/**/*.css', ['styles']);
-    gulp.watch('app/scripts/**/*.js', ['scripts']);
-    gulp.watch('app/images/**/*', ['images']);
-    gulp.watch('app/fonts/**/*', ['fonts']);
-    gulp.watch('bower.json', ['wiredep']);
 });
