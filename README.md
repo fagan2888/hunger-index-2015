@@ -26,14 +26,3 @@ Run a development server:
 
     make serve
 
-To run:
-
-    cd site/
-    npm install gulp
-    bower install
-    
-    // for the dependencies
-    npm install
-    
-    // generate static in the dist folder
-    gulp
