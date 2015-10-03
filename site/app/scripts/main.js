@@ -101,7 +101,7 @@ function getSeverity(d) {
 
         function onEachFeature(feature, layer) {
             // set up popups
-            var popupContent = '<h4>' + feature.properties.name + '</h4> <dl><dt>Score:</dt> <dd>' + feature.properties.score + '</dd> <dt>Level:</dt> <dd>' + getSeverity(feature.properties.score) + '</dd></dl> <p><a class="button small radius" href="/countries/' + feature.id + '">See country data</p>';
+            var popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="/countries/' + feature.id + '">See country data</p>';
             layer.bindPopup(popupContent, {autopan: true});
             // set up mouseover highlights
             layer.on({
