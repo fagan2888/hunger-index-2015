@@ -62,6 +62,7 @@ gulp.task('html', ['styles', 'scripts'], function () {
                'app/bower_components/datatables/media/js/jquery.dataTables.js',
                'app/bower_components/foundation/js/foundation.min.js',
                'app/bower_components/jquery/dist/jquery.js',
+               'app/bower_components/foundation/js/vendor/modernizr.js',
                ])
         .pipe(jsFilter)
         .pipe($.uglify())
