@@ -68,7 +68,7 @@ gulp.task('html', ['styles', 'scripts'], function () {
         .pipe(gulp.dest('dist/styles'))
         .pipe($.size());   
 
-    return gulp.src('app/*.html')
+    return gulp.src('app/**/*.html')
         .pipe($.useref.assets().on('error', gutil.log))
         .pipe($.useref.assets())
         .pipe(jsFilter)
@@ -143,7 +143,7 @@ gulp.task('wiredep', function () {
         }))
         .pipe(gulp.dest('app/styles'));
 
-    gulp.src('app/*.html')
+    gulp.src('app/html/**/*.html')
         .pipe(wiredep({
             directory: 'app/bower_components',
             ignorePath: 'app/'
@@ -156,7 +156,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
     browserSync.init({
           server: "dist/"
       });
-    gulp.watch('app/**/*.html',['html']);
+    gulp.watch('app/html/**/*.html',['html']);
     gulp.watch('app/styles/**/*.scss',['styles']);
     gulp.watch('app/scripts/**/*.js',['scripts']);
     gulp.watch('app/fonts/**/*.*',['fonts']);

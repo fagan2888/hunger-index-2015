@@ -40,7 +40,7 @@ def create_index_page():
     context = {"table_entries": json.loads(open("../data/table_data.json", "r").read())["data"]
                }
     contents = template.render(**context)
-    f = codecs.open("../site/app/index.html", 'w', 'utf-8')
+    f = codecs.open("../site/app/html/index.html", 'w', 'utf-8')
     f.write(contents)
     f.close()
 
