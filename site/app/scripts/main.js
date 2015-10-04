@@ -113,11 +113,10 @@ function getSeverity(d) {
   }
 
   // https://gis.stackexchange.com/a/102125
-  geojsonLayer = new L.GeoJSON.AJAX('data/mockdata.geo.json', {
+  geojsonLayer = new L.GeoJSON.AJAX('data/countrydata.geo.json', {
     style: style,
     onEachFeature: onEachFeature
   });       
-  console.log(geojsonLayer);
   geojsonLayer.addTo(map);
 
   $(document).ready(function() {

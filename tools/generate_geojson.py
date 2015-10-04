@@ -41,19 +41,17 @@ for s in scores:
 for entry in geodata['features']:
     if not entry['properties'].get('score'):
         entry['properties']['score'] = {
-                    'year2015': 'nc',
-                    'year2005': 'nc',
-                    'year2000': 'nc',
-                    'year1995': 'nc',
-                    'year1990': 'nc',
-                }
+            'year2015': 'nc',
+            'year2005': 'nc',
+            'year2000': 'nc',
+            'year1995': 'nc',
+            'year1990': 'nc',
+        }
 
 
-f = open("../site/app/data/mockdata.geo.json", 'w')
+f = open("../site/app/data/countrydata.geo.json", 'w')
 f.write(json.dumps(geodata, indent=2))
 f.close()
-
-
 
 # table data
 table_entries = []
@@ -111,6 +109,10 @@ for entry in geodata['features']:
                  2013: {'score': indicators[country_name]['mortality-2013']},
              }}}
     table_entries.append(d)
+
+# https://stackoverflow.com/a/73044
+# table_entries.sort(lambda x, y: cmp(x['score']['year2015'], y['score']['year2015']))
+
 table_data = {'data': table_entries}
 
 f = open("../data/table_data.json", 'w')
