@@ -13,11 +13,8 @@ TODO:
 '''
 
 import jinja2
-import sys
-import os
-import shutil
-import markdown
 import json
+import csv
 import codecs
 
 config_file = "settings.conf"
@@ -37,7 +34,12 @@ def create_index_page():
     Accepts a list of pkg_info dicts, which are generated with the
     process_datapackage function.'''
     template = env.get_template("index.html")
-    context = {"table_entries": json.loads(open("../data/table_data.json", "r").read())["data"]
+
+    csvdata = csv.reader(open("../data/messages.csv", 'r'))
+    messages = {label: text for label, text, text_de in csvdata}
+
+    context = {"table_entries": json.loads(open("../data/table_data.json", "r").read())["data"],
+               "m": messages,
                }
     contents = template.render(**context)
     f = codecs.open("../site/app/html/index.html", 'w', 'utf-8')
