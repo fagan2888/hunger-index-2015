@@ -12,15 +12,11 @@ install:
 
 build:
 	. `pwd`/.env/bin/activate; cd tools; python generate_geojson.py && python render_templates.py
-	cd site; gulp
+	cd site; gulp build
 
 serve:
 	cd site; gulp watch
 
 clean:
-	rm -fr repos _output
-
-clean-html:
-	rm -fr _output
-
+	rm -fr site/dist
 

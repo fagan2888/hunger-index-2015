@@ -57,18 +57,25 @@ gulp.task('html', ['styles', 'scripts'], function () {
     .pipe(concat("app.css"))
     .pipe(gulp.dest('dist/styles'));
 
-    gulp.src([ 'app/lib/scripts/*.js' ])
-    .pipe(gulp.dest('dist/scripts'));
-
-    gulp.src([ 'app/lib/scripts/*.js' ])
-    .pipe(gulp.dest('dist/scripts'));
+    // This is *AWFUL*, but I am in a hurry
+    gulp.src([ 'app/lib/scripts/*.js', 'app/scripts/*.js', 
+               'app/bower_components/datatables/media/js/jquery.dataTables.js',
+               'app/bower_components/foundation/js/foundation.min.js',
+               'app/bower_components/jquery/dist/jquery.js',
+               ])
+        .pipe(jsFilter)
+        .pipe($.uglify())
+        .pipe(jsFilter.restore())
+        .pipe(gulp.dest('dist/scripts'));
 
     gulp.src(['app/lib/styles/leaflet.css'])
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('dist/styles'))
         .pipe($.size());   
 
-    return gulp.src('app/**/*.html')
+    
+    // return gulp.src('app/**/*.html')
+    /*
         .pipe($.useref.assets().on('error', gutil.log))
         .pipe($.useref.assets())
         .pipe(jsFilter)
@@ -79,6 +86,11 @@ gulp.task('html', ['styles', 'scripts'], function () {
         .pipe(cssFilter.restore())
         .pipe($.useref.restore())
         .pipe($.useref())
+        .pipe(gulp.dest('dist'))
+        .pipe($.size())
+        .pipe(browserSync.stream());
+    */
+    return gulp.src('app/html/*.html')
         .pipe(gulp.dest('dist'))
         .pipe($.size())
         .pipe(browserSync.stream());
@@ -142,7 +154,12 @@ gulp.task('wiredep', function () {
             ignorePath: 'app/bower_components/'
         }))
         .pipe(gulp.dest('app/styles'));
-
+    gulp.src('app/scripts/*.js')
+        .pipe(wiredep({
+            directory: 'app/bower_components',
+            ignorePath: 'app/bower_components/'
+        }))
+        .pipe(gulp.dest('app/scripts'));
     gulp.src('app/html/**/*.html')
         .pipe(wiredep({
             directory: 'app/bower_components',
