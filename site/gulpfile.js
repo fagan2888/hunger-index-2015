@@ -90,7 +90,7 @@ gulp.task('html', ['styles', 'scripts'], function () {
         .pipe($.size())
         .pipe(browserSync.stream());
     */
-    return gulp.src('app/html/*.html')
+    return gulp.src('app/html/**/*.html')
         .pipe(gulp.dest('dist'))
         .pipe($.size())
         .pipe(browserSync.stream());

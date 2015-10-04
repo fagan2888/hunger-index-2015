@@ -1,0 +1,87 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Hunger Index</title>
+  <meta name="description" content="Global Hunger Index 2015">
+
+  <link rel="stylesheet" href="/styles/leaflet.css">    
+  <link rel="stylesheet" href="/fonts/foundation-icons/foundation-icons.css" />    
+  <link rel="stylesheet" href="/styles/app.css">
+
+
+  <script src="/scripts/modernizr.js"></script>
+
+  <link rel="shortcut icon" href="/images/favicon.ico">
+</head>
+<body>
+
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">
+            <img src="/images/ghi.svg" onerror="this.src='/images/ghi.png'" alt="Global Hunger Index 2015">
+            <span>Global Hunger Index 2015</span>
+          </a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-dropdown"> <a href="#">Language</a>
+          <ul class="dropdown">
+            <li class="active"><a href="#">English</a></li>
+            <li><a href="#">German</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li><a href="/trends/">Trends of Hunger</a></li>
+        <li><a href="/methodology/">{{ m.block_methodology_title }}</a></li>
+        <li><a href="/about/">{{ m.block_about_title }}</a></li>
+        <li><a href="/contact/">{{ m.block_contact_title }}</a></li>
+      </ul>
+    </section>
+  </nav>
+
+  {% block content %}{% endblock %}
+
+  <div id="footer">
+    <div class="row">
+      <div class="medium-4 medium-4 push-8 columns">
+        <ul class="credits">
+          <li><i class="fi-eye small"></i> <a target="_blank" href="">Source code</a></li>
+          <li><i class="fi-heart small"></i> Made by <a target="_blank" href="http://jplusplus.org">Journalism++</a></li>
+        </ul>
+      </div>
+      <div class="medium-8 medium-8 pull-4 columns">
+        <ul class="orgs">
+          <li><a target="_blank" href="http://www.welthungerhilfe.de/en/home-en.html"><img src="/images/ifpri_white.png"></a></li>
+          <li><a target="_blank" href="https://www.concern.net"><img src="/images/concern-worldwide_white.png"></a></li>
+          <li><a target="_blank" href="http://www.welthungerhilfe.de/en/home-en.html"><img src="/images/welthungerhilfe_white.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /#Footer -->  
+
+  <script src="/scripts/leaflet.js"></script>
+  <script src="/scripts/leaflet.ajax.min.js"></script>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/scripts/jquery.js"></script>
+  <script src="/scripts/jquery.dataTables.js"></script>
+  <script src="/scripts/foundation.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  {% block scripts %}{% endblock %}
+  <!-- endbuild -->
+</body>
+</html>

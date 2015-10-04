@@ -1,178 +1,101 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global Hunger Index</title>
-  	<meta name="description" content="Global Hunger Index 2015">
-    
-    <link rel="stylesheet" href="styles/leaflet.css">    
-    <link rel="stylesheet" href="fonts/foundation-icons/foundation-icons.css" />    
-    <link rel="stylesheet" href="styles/app.css">
-    
-    
-    <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
+{% extends "base.html" %}
 
-    <link rel="shortcut icon" href="images/favicon.ico">
-</head>
-<body>
+{% block scripts %}
+<script src="/scripts/main.js"></script>
+{% endblock %}
 
-    <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="#">
-              <img src="images/ghi.svg" onerror="this.src='images/ghi.png'" alt="Global Hunger Index 2015">
-              <span>Global Hunger Index 2015</span>
-            </a></h1>
-           </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+{% block content %}
+
+<div id="main-map" class="row collapse full-width">
+  <div id="map-application" class="large-8 columns">
+    <div id="map" class="map"></div>
+    </div>
+  <div class="large-4 columns">
+    <div class="column-container">
+      <h3 class="row">
+        <span>Ranking</span>
+        <button href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown">2015</button><br>
+        <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
+          <li><a href="#">2015</a></li>
+          <li><a href="#">2014</a></li>
+          <li><a href="#">2013</a></li>
         </ul>
-        <section class="top-bar-section">
-            <!-- Right Nav Section -->
-            <ul class="right">
-                <li class="has-dropdown"> <a href="#">Language</a>
-                    <ul class="dropdown">
-                        <li class="active"><a href="#">English</a></li>
-                        <li><a href="#">German</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- Left Nav Section -->
-            <ul class="left">
-                <li><a href="#">Trends of Hunger</a></li>
-                <li><a href="#">{{ m.block_methodology_title }}</a></li>
-                <li><a href="#">{{ m.block_about_title }}</a></li>
-                <li><a href="#">{{ m.block_contact_title }}</a></li>
-            </ul>
-        </section>
-    </nav>
-	<div id="main-map" class="row collapse full-width">
-    	<div id="map-application" class="large-8 columns">
-        <div id="map" class="map"></div>
-	    </div>
-      <div class="large-4 columns">
-        <div class="column-container">
-          <h3 class="row">
-            <span>Ranking</span>
-            <button href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown year-button">2015</button>
-            <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
-              <li><a href="#">2015</a></li>
-              <li><a href="#">2014</a></li>
-              <li><a href="#">2013</a></li>
-            </ul>
-            <a class="button right small secondary radius" href="#">Share/Embed</a>
-          </h3>
-          <div class="row collapse">
-            <p class="large-12 columns">Ranking of every country in <span class="year">2015</span> according to the IFPRI index.</p>
-          </div>          
-          <div class="row">
-            <div id="table-container">
-              <table id="country-table" class="display" width="100%" cellspacing="0">
-                {% for entry in table_entries %}
-                  <tr id="{{ entry.id }}" role="row">
-                    <td>{{ entry.name }}</td>
-                    <td>{{ entry.score }}</td>
-                  </tr>
-                {% endfor %}
-              </table>
-            </div>
-          </div>
-        </div><!-- /column-container -->
-	    </div>
-	</div>
-  <div class="row">
-    <ul class="ghi-levels">
-      <li class="extra-alarming">Extremely alarming >= 50</li>
-      <li class="alarming">Alarming 35.0-49.9</li>
-      <li class="serious">Serious 20.0-34.9</li>
-      <li class="moderate">Moderate 10.0-19.9</li>
-      <li class="low">Low <= 9.9</li>
-      <li class="no-data">No data</li>
-      <li class="indust-country">Industrialized country</li>
-      
-      
-    </ul>
-  </div>
-	<section id="home-blocks">
+        <a class="button tiny secondary radius" href="#">Share/Embed</a>
+      </h3>
+      <div class="row collapse">
+        <p class="large-12 columns">Ranking of every country in <span class="year">2015</span> according to the IFPRI index.</p>
+      </div>          
       <div class="row">
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-              <h3>Presentation</h3>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-          </a>
-        </div><!-- /Block -->
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-              <h3>Methodology</h3>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-          </a>
-        </div><!-- /Block -->
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-          <h3>Testimonials</h3>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-          </a>
-        </div><!-- /Block -->
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-              <h3>Press Contacts</h3>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-          </a>
-        </div><!-- /Block -->
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-              <h3>Help Us</h3>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-          </a>
-        </div><!-- /Block -->
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-              <h3>Other</h3>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jâ­cama salsify.</p>
-          </a>
-        </div><!-- /Block -->
-      </div>
-    </section><!-- /#Home Blocks -->
-    
-    <div id="footer">
-      <div class="row">
-        <div class="medium-4 medium-4 push-8 columns">
-          <ul class="credits">
-              <li><i class="fi-eye small"></i> <a target="_blank" href="#">Source code</a></li>
-              <li><i class="fi-heart small"></i> Made by <a target="_blank" href="http://jplusplus.org">Journalism++</a></li>
-            </ul>
-         </div>
-         <div class="medium-8 medium-8 pull-4 columns">
-            <ul class="orgs">
-              <li><a target="_blank" href="http://www.welthungerhilfe.de/en/home-en.html"><img src="images/ifpri_white.png"></a></li>
-              <li><a target="_blank" href="https://www.concern.net"><img src="images/concern-worldwide_white.png"></a></li>
-              <li><a target="_blank" href="http://www.welthungerhilfe.de/en/home-en.html"><img src="images/welthungerhilfe_white.png"></a></li>
-           </ul>
+        <div id="table-container">
+          <table id="country-table" class="display" width="100%" cellspacing="0">
+            {% for entry in table_entries %}
+            <tr id="{{ entry.id }}" class="{{ entry.level }}" role="row">
+              <td>{{ entry.name }}</td>
+              <td>{{ entry.score }}</td>
+            </tr>
+            {% endfor %}
+          </table>
         </div>
       </div>
-    </div><!-- /#Footer -->  
-	
-	<script src="scripts/leaflet.js"></script>
-	<script src="scripts/leaflet.ajax.min.js"></script>
-	<!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/jquery.dataTables.js"></script>
-    <script src="scripts/foundation.min.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-	
-	<!-- build:js scripts/main.js -->
-	<script src="scripts/main.js"></script>
-	<!-- endbuild -->
-</body>
-</html>
+    </div><!-- /column-container -->
+  </div>
+</div>
+<div class="row">
+  <ul class="ghi-levels">
+    <li class="extra-alarming">Extremely alarming >= 30</li>
+    <li class="alarming">Alarming 20-29.9</li>
+    <li class="serious">Serious 10-19.9</li>
+    <li class="moderation">Moderation 5-9.9</li>
+    <li class="low">Low <= 4.9</li>
+    <li class="no-data">No data</li>
+    <li class="indust-country">Industrialized country</li>
+  </ul>
+</div>
+<section id="home-blocks">
+  <div class="row">
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Presentation</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+      </a>
+    </div><!-- /Block -->
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Methodology</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+      </a>
+    </div><!-- /Block -->
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Testimonials</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+      </a>
+    </div><!-- /Block -->
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Press Contacts</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+      </a>
+    </div><!-- /Block -->
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Help Us</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+      </a>
+    </div><!-- /Block -->
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Other</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jâ­cama salsify.</p>
+      </a>
+    </div><!-- /Block -->
+  </div>
+</section><!-- /#Home Blocks -->
+
+{% endblock content %}
