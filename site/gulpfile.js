@@ -41,7 +41,9 @@ gulp.task('scripts', function () {
     return gulp.src(['app/scripts/**/*.js'])
         .pipe($.jshint('.jshintrc'))
         .pipe($.jshint.reporter('default'))
-        .pipe($.size());
+        .pipe(gulp.dest('dist/scripts'))
+        .pipe($.size())
+        .pipe(browserSync.stream());
 });
 
 // HTML
