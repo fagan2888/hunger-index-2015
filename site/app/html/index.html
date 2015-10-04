@@ -31,22 +31,22 @@
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
         <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="has-dropdown"> <a href="#">Language</a>
-              <ul class="dropdown">
-                <li class="active"><a href="#">English</a></li>
-                <li><a href="#">German</a></li>
-              </ul>
-            </li>
-          </ul>
-          <!-- Left Nav Section -->
-          <ul class="left">
-            <li><a href="#">Trends of Hunger</a></li>
-            <li><a href="#">Methodology</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Press</a></li>
-          </ul>
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="has-dropdown"> <a href="#">Language</a>
+                    <ul class="dropdown">
+                        <li class="active"><a href="#">English</a></li>
+                        <li><a href="#">German</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li><a href="#">Trends of Hunger</a></li>
+                <li><a href="#">Methodology</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </section>
     </nav>
 	<div id="main-map" class="row collapse full-width">
@@ -55,10 +55,16 @@
 	    </div>
       <div class="large-4 columns">
         <div class="column-container">
-          <div class="row collapse">
-            <h3 class="large-6 columns">Ranking <span class="year">2015</span></h3>
-            <p class="large-6 columns"><a class="button tiny secondary radius" href="#">Share/Embed</a></p>
-          </div>
+          <h3 class="row">
+            <span>Ranking</span>
+            <button href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown year-button">2015</button>
+            <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
+              <li><a href="#">2015</a></li>
+              <li><a href="#">2014</a></li>
+              <li><a href="#">2013</a></li>
+            </ul>
+            <a class="button right small secondary radius" href="#">Share/Embed</a>
+          </h3>
           <div class="row collapse">
             <p class="large-12 columns">Ranking of every country in <span class="year">2015</span> according to the IFPRI index.</p>
           </div>          
@@ -714,55 +720,57 @@
 	</div>
   <div class="row">
     <ul class="ghi-levels">
-      <li class="extra-alarming">Extremely alarming >= 30</li>
-      <li class="alarming">Alarming 20-29.9</li>
-      <li class="serious">Serious 10-19.9</li>
-      <li class="moderation">Moderation 5-9.9</li>
-      <li class="low">Low <= 4.9</li>
+      <li class="extra-alarming">Extremely alarming >= 50</li>
+      <li class="alarming">Alarming 35.0-49.9</li>
+      <li class="serious">Serious 20.0-34.9</li>
+      <li class="moderate">Moderate 10.0-19.9</li>
+      <li class="low">Low <= 9.9</li>
       <li class="no-data">No data</li>
       <li class="indust-country">Industrialized country</li>
+      
+      
     </ul>
   </div>
 	<section id="home-blocks">
       <div class="row">
         <div class="large-4 medium-6 small-12 columns">
           <a href="#">
-              <h2>Presentation</h2>
+              <h3>Presentation</h3>
               <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
+              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
           </a>
         </div><!-- /Block -->
         <div class="large-4 medium-6 small-12 columns">
           <a href="#">
-              <h2>Methodology</h2>
+              <h3>Methodology</h3>
               <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
+              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
           </a>
         </div><!-- /Block -->
         <div class="large-4 medium-6 small-12 columns">
           <a href="#">
-          <h2>Testimonials</h2>
+          <h3>Testimonials</h3>
               <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
+              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
           </a>
         </div><!-- /Block -->
         <div class="large-4 medium-6 small-12 columns">
           <a href="#">
-              <h2>Press Contacts</h2>
+              <h3>Press Contacts</h3>
               <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
+              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
           </a>
         </div><!-- /Block -->
         <div class="large-4 medium-6 small-12 columns">
           <a href="#">
-              <h2>Help Us</h2>
+              <h3>Help Us</h3>
               <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
+              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
           </a>
         </div><!-- /Block -->
         <div class="large-4 medium-6 small-12 columns">
           <a href="#">
-              <h2>Other</h2>
+              <h3>Other</h3>
               <p><img src="http://placehold.it/300x200"></p>
               <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jâ­cama salsify.</p>
           </a>
@@ -792,9 +800,9 @@
 	<script src="scripts/leaflet.ajax.min.js"></script>
 	<!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/datatables/media/js/jquery.dataTables.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery.dataTables.js"></script>
+    <script src="scripts/foundation.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 	

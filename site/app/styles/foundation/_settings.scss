@@ -115,6 +115,7 @@ $font-family-sans-serif-narrow: 'PT Sans Narrow Bold', Times;
 // $oil         : #333333;
    $jet         : #54544b;
 // $black       : #000000;
+    $transparent: transparent;
 
 // We use these as default colors throughout
 $primary-color: #89a527;
@@ -441,7 +442,7 @@ $header-font-family: $title-font-family;
 
 // We use these to build padding for buttons.
 // $button-tny: rem-calc(10);
-// $button-sml: rem-calc(14);
+$button-sml: rem-calc(12);
 // $button-med: rem-calc(16);
 // $button-lrg: rem-calc(18);
 
@@ -454,7 +455,7 @@ $header-font-family: $title-font-family;
 // $button-font-color: $white;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
-// $button-font-sml: rem-calc(13);
+$button-font-sml: rem-calc(12);
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
 // $button-font-weight: $font-weight-normal;
@@ -466,7 +467,7 @@ $header-font-family: $title-font-family;
 // We use these to control button border styles.
 // $button-border-width: 0;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
+$button-bg-color: $primary-color;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
