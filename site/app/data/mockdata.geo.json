@@ -288,7 +288,13 @@
       "type": "Feature", 
       "id": "AFG", 
       "properties": {
-        "score": "35.4", 
+        "score": {
+          "year2000": "52.5", 
+          "year2015": "35.4", 
+          "year2005": "44.9", 
+          "year1990": "47.4", 
+          "year1995": "55.9"
+        }, 
         "name": "Afghanistan"
       }
     }, 
@@ -609,7 +615,13 @@
       "type": "Feature", 
       "id": "AGO", 
       "properties": {
-        "score": "32.6", 
+        "score": {
+          "year2000": "58.3", 
+          "year2015": "32.6", 
+          "year2005": "45.3", 
+          "year1990": "67.3", 
+          "year1995": "66.8"
+        }, 
         "name": "Angola"
       }
     }, 
@@ -712,7 +724,13 @@
       "type": "Feature", 
       "id": "ALB", 
       "properties": {
-        "score": "13.2", 
+        "score": {
+          "year2000": "21.1", 
+          "year2015": "13.2", 
+          "year2005": "17.1", 
+          "year1990": "21.4", 
+          "year1995": "19.1"
+        }, 
         "name": "Albania"
       }
     }, 
@@ -815,6 +833,13 @@
       "type": "Feature", 
       "id": "ARE", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "United Arab Emirates"
       }
     }, 
@@ -1319,7 +1344,13 @@
       "type": "Feature", 
       "id": "ARG", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "5.3", 
+          "year2015": "<5", 
+          "year2005": "5", 
+          "year1990": "7.7", 
+          "year1995": "7.2"
+        }, 
         "name": "Argentina"
       }
     }, 
@@ -1414,7 +1445,13 @@
       "type": "Feature", 
       "id": "ARM", 
       "properties": {
-        "score": "11.2", 
+        "score": {
+          "year2000": "17.4", 
+          "year2015": "11.2", 
+          "year2005": "14.1", 
+          "year1990": "-", 
+          "year1995": "21.8"
+        }, 
         "name": "Armenia"
       }
     }, 
@@ -4091,6 +4128,13 @@
       "type": "Feature", 
       "id": "ATA", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Antarctica"
       }
     }, 
@@ -4141,6 +4185,13 @@
       "type": "Feature", 
       "id": "ATF", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "French Southern and Antarctic Lands"
       }
     }, 
@@ -5125,6 +5176,13 @@
       "type": "Feature", 
       "id": "AUS", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Australia"
       }
     }, 
@@ -5287,6 +5345,13 @@
       "type": "Feature", 
       "id": "AUT", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Austria"
       }
     }, 
@@ -5483,7 +5548,13 @@
       "type": "Feature", 
       "id": "AZE", 
       "properties": {
-        "score": "10", 
+        "score": {
+          "year2000": "27.2", 
+          "year2015": "10", 
+          "year2005": "16.7", 
+          "year1990": "-", 
+          "year1995": "28.3"
+        }, 
         "name": "Azerbaijan"
       }
     }, 
@@ -5550,7 +5621,13 @@
       "type": "Feature", 
       "id": "BDI", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Burundi"
       }
     }, 
@@ -5625,6 +5702,13 @@
       "type": "Feature", 
       "id": "BEL", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Belgium"
       }
     }, 
@@ -5739,7 +5823,13 @@
       "type": "Feature", 
       "id": "BEN", 
       "properties": {
-        "score": "21.8", 
+        "score": {
+          "year2000": "38.2", 
+          "year2015": "21.8", 
+          "year2005": "33.3", 
+          "year1990": "46.1", 
+          "year1995": "42.6"
+        }, 
         "name": "Benin"
       }
     }, 
@@ -5910,7 +6000,13 @@
       "type": "Feature", 
       "id": "BFA", 
       "properties": {
-        "score": "31.8", 
+        "score": {
+          "year2000": "48.4", 
+          "year2015": "31.8", 
+          "year2005": "49.6", 
+          "year1990": "53", 
+          "year1995": "46.1"
+        }, 
         "name": "Burkina Faso"
       }
     }, 
@@ -6069,7 +6165,13 @@
       "type": "Feature", 
       "id": "BGD", 
       "properties": {
-        "score": "27.3", 
+        "score": {
+          "year2000": "38.5", 
+          "year2015": "27.3", 
+          "year2005": "31", 
+          "year1990": "52.2", 
+          "year1995": "50.3"
+        }, 
         "name": "Bangladesh"
       }
     }, 
@@ -6196,7 +6298,13 @@
       "type": "Feature", 
       "id": "BGR", 
       "properties": {
-        "score": "8.5", 
+        "score": {
+          "year2000": "9.4", 
+          "year2015": "8.5", 
+          "year2005": "9.2", 
+          "year1990": "8.1", 
+          "year1995": "10.2"
+        }, 
         "name": "Bulgaria"
       }
     }, 
@@ -6305,6 +6413,13 @@
       "type": "Feature", 
       "id": "BHS", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "The Bahamas"
       }
     }, 
@@ -6407,7 +6522,13 @@
       "type": "Feature", 
       "id": "BIH", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "9.6", 
+          "year2015": "<5", 
+          "year2005": "6.8", 
+          "year1990": "-", 
+          "year1995": "10.8"
+        }, 
         "name": "Bosnia & Herzegovina"
       }
     }, 
@@ -6598,7 +6719,13 @@
       "type": "Feature", 
       "id": "BLR", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "<5", 
+          "year2015": "<5", 
+          "year2005": "<5", 
+          "year1990": "-", 
+          "year1995": "<5"
+        }, 
         "name": "Belarus"
       }
     }, 
@@ -6693,6 +6820,13 @@
       "type": "Feature", 
       "id": "BLZ", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Belize"
       }
     }, 
@@ -7051,6 +7185,13 @@
       "type": "Feature", 
       "id": "BMU", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Bermuda"
       }
     }, 
@@ -7305,7 +7446,13 @@
       "type": "Feature", 
       "id": "BOL", 
       "properties": {
-        "score": "16.9", 
+        "score": {
+          "year2000": "30.5", 
+          "year2015": "16.9", 
+          "year2005": "27.2", 
+          "year1990": "38.9", 
+          "year1995": "35.1"
+        }, 
         "name": "Bolivia"
       }
     }, 
@@ -8132,7 +8279,13 @@
       "type": "Feature", 
       "id": "BRA", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "12", 
+          "year2015": "<5", 
+          "year2005": "6.7", 
+          "year1990": "18.2", 
+          "year1995": "15"
+        }, 
         "name": "Brazil"
       }
     }, 
@@ -8179,6 +8332,13 @@
       "type": "Feature", 
       "id": "BRN", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Brunei"
       }
     }, 
@@ -8245,7 +8405,13 @@
       "type": "Feature", 
       "id": "BTN", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Bhutan"
       }
     }, 
@@ -8420,7 +8586,13 @@
       "type": "Feature", 
       "id": "BWA", 
       "properties": {
-        "score": "23.1", 
+        "score": {
+          "year2000": "33.2", 
+          "year2015": "23.1", 
+          "year2005": "31.2", 
+          "year1990": "31.3", 
+          "year1995": "34.3"
+        }, 
         "name": "Botswana"
       }
     }, 
@@ -8683,7 +8855,13 @@
       "type": "Feature", 
       "id": "CAF", 
       "properties": {
-        "score": "46.9", 
+        "score": {
+          "year2000": "51.4", 
+          "year2015": "46.9", 
+          "year2005": "51", 
+          "year1990": "51.9", 
+          "year1995": "51"
+        }, 
         "name": "Central African Republic"
       }
     }, 
@@ -11996,6 +12174,13 @@
       "type": "Feature", 
       "id": "CAN", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Canada"
       }
     }, 
@@ -12106,6 +12291,13 @@
       "type": "Feature", 
       "id": "CHE", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Switzerland"
       }
     }, 
@@ -12582,7 +12774,13 @@
       "type": "Feature", 
       "id": "CHL", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "<5", 
+          "year2015": "<5", 
+          "year2005": "<5", 
+          "year1990": "6.8", 
+          "year1995": "<5"
+        }, 
         "name": "Chile"
       }
     }, 
@@ -13563,7 +13761,13 @@
       "type": "Feature", 
       "id": "CHN", 
       "properties": {
-        "score": "8.6", 
+        "score": {
+          "year2000": "15.9", 
+          "year2015": "8.6", 
+          "year2005": "13.2", 
+          "year1990": "25.1", 
+          "year1995": "23.2"
+        }, 
         "name": "China"
       }
     }, 
@@ -13762,7 +13966,13 @@
       "type": "Feature", 
       "id": "CIV", 
       "properties": {
-        "score": "26.3", 
+        "score": {
+          "year2000": "31.4", 
+          "year2015": "26.3", 
+          "year2005": "32.7", 
+          "year1990": "33.8", 
+          "year1995": "32.1"
+        }, 
         "name": "C\u00f4te d'Ivoire"
       }
     }, 
@@ -14021,7 +14231,13 @@
       "type": "Feature", 
       "id": "CMR", 
       "properties": {
-        "score": "24.2", 
+        "score": {
+          "year2000": "40.4", 
+          "year2015": "24.2", 
+          "year2005": "34", 
+          "year1990": "39.8", 
+          "year1995": "43.7"
+        }, 
         "name": "Cameroon"
       }
     }, 
@@ -14524,7 +14740,13 @@
       "type": "Feature", 
       "id": "COD", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Congo, Dem. Rep."
       }
     }, 
@@ -14735,7 +14957,13 @@
       "type": "Feature", 
       "id": "COG", 
       "properties": {
-        "score": "26.6", 
+        "score": {
+          "year2000": "38.1", 
+          "year2015": "26.6", 
+          "year2005": "33.5", 
+          "year1990": "38.9", 
+          "year1995": "41.1"
+        }, 
         "name": "Congo, Rep."
       }
     }, 
@@ -15150,7 +15378,13 @@
       "type": "Feature", 
       "id": "COL", 
       "properties": {
-        "score": "8.8", 
+        "score": {
+          "year2000": "11.4", 
+          "year2015": "8.8", 
+          "year2005": "10.7", 
+          "year1990": "16.7", 
+          "year1995": "13"
+        }, 
         "name": "Colombia"
       }
     }, 
@@ -15309,7 +15543,13 @@
       "type": "Feature", 
       "id": "CRI", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "6.1", 
+          "year2015": "<5", 
+          "year2005": "5.7", 
+          "year1990": "7.5", 
+          "year1995": "7"
+        }, 
         "name": "Costa Rica"
       }
     }, 
@@ -15492,7 +15732,13 @@
       "type": "Feature", 
       "id": "CUB", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "6.1", 
+          "year2015": "<5", 
+          "year2005": "<5", 
+          "year1990": "8", 
+          "year1995": "13.5"
+        }, 
         "name": "Cuba"
       }
     }, 
@@ -15571,6 +15817,13 @@
       "type": "Feature", 
       "id": "-99", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Northern Cyprus"
       }
     }, 
@@ -15645,6 +15898,13 @@
       "type": "Feature", 
       "id": "CYP", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Cyprus"
       }
     }, 
@@ -15799,6 +16059,13 @@
       "type": "Feature", 
       "id": "CZE", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Czech Republic"
       }
     }, 
@@ -16045,6 +16312,13 @@
       "type": "Feature", 
       "id": "DEU", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Germany"
       }
     }, 
@@ -16119,7 +16393,13 @@
       "type": "Feature", 
       "id": "DJI", 
       "properties": {
-        "score": "33.2", 
+        "score": {
+          "year2000": "48.5", 
+          "year2015": "33.2", 
+          "year2005": "46.1", 
+          "year1990": "56.1", 
+          "year1995": "56.1"
+        }, 
         "name": "Djibouti"
       }
     }, 
@@ -16236,6 +16516,13 @@
       "type": "Feature", 
       "id": "DNK", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Denmark"
       }
     }, 
@@ -16354,7 +16641,13 @@
       "type": "Feature", 
       "id": "DOM", 
       "properties": {
-        "score": "10.8", 
+        "score": {
+          "year2000": "19.4", 
+          "year2015": "10.8", 
+          "year2005": "18.1", 
+          "year1990": "26.3", 
+          "year1995": "20.3"
+        }, 
         "name": "Dominican Republic"
       }
     }, 
@@ -16617,7 +16910,13 @@
       "type": "Feature", 
       "id": "DZA", 
       "properties": {
-        "score": "8.7", 
+        "score": {
+          "year2000": "14.8", 
+          "year2015": "8.7", 
+          "year2005": "12.2", 
+          "year1990": "17.1", 
+          "year1995": "18"
+        }, 
         "name": "Algeria"
       }
     }, 
@@ -16764,7 +17063,13 @@
       "type": "Feature", 
       "id": "ECU", 
       "properties": {
-        "score": "14", 
+        "score": {
+          "year2000": "20.2", 
+          "year2015": "14", 
+          "year2005": "19", 
+          "year1990": "23.8", 
+          "year1995": "19.7"
+        }, 
         "name": "Ecuador"
       }
     }, 
@@ -16947,7 +17252,13 @@
       "type": "Feature", 
       "id": "EGY", 
       "properties": {
-        "score": "13.5", 
+        "score": {
+          "year2000": "15.1", 
+          "year2015": "13.5", 
+          "year2005": "13.1", 
+          "year1990": "20.5", 
+          "year1995": "18.9"
+        }, 
         "name": "Egypt, Arab Rep."
       }
     }, 
@@ -17074,7 +17385,13 @@
       "type": "Feature", 
       "id": "ERI", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Eritrea"
       }
     }, 
@@ -17293,6 +17610,13 @@
       "type": "Feature", 
       "id": "ESP", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Spain"
       }
     }, 
@@ -17375,7 +17699,13 @@
       "type": "Feature", 
       "id": "EST", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "6.8", 
+          "year2015": "<5", 
+          "year2005": "5.6", 
+          "year1990": "-", 
+          "year1995": "10"
+        }, 
         "name": "Estonia"
       }
     }, 
@@ -17626,7 +17956,13 @@
       "type": "Feature", 
       "id": "ETH", 
       "properties": {
-        "score": "33.9", 
+        "score": {
+          "year2000": "58.6", 
+          "year2015": "33.9", 
+          "year2005": "48.5", 
+          "year1990": "71.7", 
+          "year1995": "67.3"
+        }, 
         "name": "Ethiopia"
       }
     }, 
@@ -17793,6 +18129,13 @@
       "type": "Feature", 
       "id": "FIN", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Finland"
       }
     }, 
@@ -17905,7 +18248,13 @@
       "type": "Feature", 
       "id": "FJI", 
       "properties": {
-        "score": "8.7", 
+        "score": {
+          "year2000": "10.1", 
+          "year2015": "8.7", 
+          "year2005": "9.3", 
+          "year1990": "12.5", 
+          "year1995": "11.2"
+        }, 
         "name": "Fiji"
       }
     }, 
@@ -17960,6 +18309,13 @@
       "type": "Feature", 
       "id": "FLK", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Falkland Islands"
       }
     }, 
@@ -18200,6 +18556,13 @@
       "type": "Feature", 
       "id": "FRA", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "France"
       }
     }, 
@@ -18338,7 +18701,13 @@
       "type": "Feature", 
       "id": "GAB", 
       "properties": {
-        "score": "12.5", 
+        "score": {
+          "year2000": "18.5", 
+          "year2015": "12.5", 
+          "year2005": "16.2", 
+          "year1990": "23.2", 
+          "year1995": "20.8"
+        }, 
         "name": "Gabon"
       }
     }, 
@@ -18583,6 +18952,13 @@
       "type": "Feature", 
       "id": "GBR", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "United Kingdom"
       }
     }, 
@@ -18693,7 +19069,13 @@
       "type": "Feature", 
       "id": "GEO", 
       "properties": {
-        "score": "8.5", 
+        "score": {
+          "year2000": "15.2", 
+          "year2015": "8.5", 
+          "year2005": "10.2", 
+          "year1990": "-", 
+          "year1995": "31.8"
+        }, 
         "name": "Georgia"
       }
     }, 
@@ -18808,7 +19190,13 @@
       "type": "Feature", 
       "id": "GHA", 
       "properties": {
-        "score": "15.5", 
+        "score": {
+          "year2000": "29.9", 
+          "year2015": "15.5", 
+          "year2005": "23.3", 
+          "year1990": "45.7", 
+          "year1995": "36.8"
+        }, 
         "name": "Ghana"
       }
     }, 
@@ -19103,7 +19491,13 @@
       "type": "Feature", 
       "id": "GIN", 
       "properties": {
-        "score": "28.8", 
+        "score": {
+          "year2000": "44.4", 
+          "year2015": "28.8", 
+          "year2005": "38", 
+          "year1990": "47.8", 
+          "year1995": "45.8"
+        }, 
         "name": "Guinea"
       }
     }, 
@@ -19182,7 +19576,13 @@
       "type": "Feature", 
       "id": "GMB", 
       "properties": {
-        "score": "21.5", 
+        "score": {
+          "year2000": "27.9", 
+          "year2015": "21.5", 
+          "year2005": "26.3", 
+          "year1990": "36.4", 
+          "year1995": "35.4"
+        }, 
         "name": "Gambia, The"
       }
     }, 
@@ -19273,7 +19673,13 @@
       "type": "Feature", 
       "id": "GNB", 
       "properties": {
-        "score": "30.3", 
+        "score": {
+          "year2000": "44.2", 
+          "year2015": "30.3", 
+          "year2005": "41.8", 
+          "year1990": "46.1", 
+          "year1995": "42.1"
+        }, 
         "name": "Guinea-Bissau"
       }
     }, 
@@ -19316,6 +19722,13 @@
       "type": "Feature", 
       "id": "GNQ", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Equatorial Guinea"
       }
     }, 
@@ -19552,6 +19965,13 @@
       "type": "Feature", 
       "id": "GRC", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Greece"
       }
     }, 
@@ -20094,6 +20514,13 @@
       "type": "Feature", 
       "id": "GRL", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Greenland"
       }
     }, 
@@ -20248,7 +20675,13 @@
       "type": "Feature", 
       "id": "GTM", 
       "properties": {
-        "score": "21.1", 
+        "score": {
+          "year2000": "28", 
+          "year2015": "21.1", 
+          "year2005": "23.9", 
+          "year1990": "28.8", 
+          "year1995": "27.8"
+        }, 
         "name": "Guatemala"
       }
     }, 
@@ -20339,6 +20772,13 @@
       "type": "Feature", 
       "id": "GUF", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "French Guiana"
       }
     }, 
@@ -20513,7 +20953,13 @@
       "type": "Feature", 
       "id": "GUY", 
       "properties": {
-        "score": "14.4", 
+        "score": {
+          "year2000": "19", 
+          "year2015": "14.4", 
+          "year2005": "17.3", 
+          "year1990": "25.4", 
+          "year1995": "22.7"
+        }, 
         "name": "Guyana"
       }
     }, 
@@ -20756,7 +21202,13 @@
       "type": "Feature", 
       "id": "HND", 
       "properties": {
-        "score": "13.4", 
+        "score": {
+          "year2000": "20.4", 
+          "year2015": "13.4", 
+          "year2005": "17.8", 
+          "year1990": "26.5", 
+          "year1995": "24.7"
+        }, 
         "name": "Honduras"
       }
     }, 
@@ -20939,7 +21391,13 @@
       "type": "Feature", 
       "id": "HRV", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "6.1", 
+          "year2015": "<5", 
+          "year2005": "<5", 
+          "year1990": "-", 
+          "year1995": "8.6"
+        }, 
         "name": "Croatia"
       }
     }, 
@@ -21038,7 +21496,13 @@
       "type": "Feature", 
       "id": "HTI", 
       "properties": {
-        "score": "37.3", 
+        "score": {
+          "year2000": "42.8", 
+          "year2015": "37.3", 
+          "year2005": "45.4", 
+          "year1990": "52.1", 
+          "year1995": "52.1"
+        }, 
         "name": "Haiti"
       }
     }, 
@@ -21177,6 +21641,13 @@
       "type": "Feature", 
       "id": "HUN", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Hungary"
       }
     }, 
@@ -22241,7 +22712,13 @@
       "type": "Feature", 
       "id": "IDN", 
       "properties": {
-        "score": "22.1", 
+        "score": {
+          "year2000": "25.3", 
+          "year2015": "22.1", 
+          "year2005": "26.5", 
+          "year1990": "34.8", 
+          "year1995": "32.5"
+        }, 
         "name": "Indonesia"
       }
     }, 
@@ -22800,7 +23277,13 @@
       "type": "Feature", 
       "id": "IND", 
       "properties": {
-        "score": "29", 
+        "score": {
+          "year2000": "38.2", 
+          "year2015": "29", 
+          "year2005": "38.5", 
+          "year1990": "48.1", 
+          "year1995": "42.3"
+        }, 
         "name": "India"
       }
     }, 
@@ -22867,6 +23350,13 @@
       "type": "Feature", 
       "id": "IRL", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Ireland"
       }
     }, 
@@ -23181,7 +23671,13 @@
       "type": "Feature", 
       "id": "IRN", 
       "properties": {
-        "score": "6.8", 
+        "score": {
+          "year2000": "13.7", 
+          "year2015": "6.8", 
+          "year2005": "9.5", 
+          "year1990": "18.5", 
+          "year1995": "16.5"
+        }, 
         "name": "Iran, Islamic Rep."
       }
     }, 
@@ -23316,7 +23812,13 @@
       "type": "Feature", 
       "id": "IRQ", 
       "properties": {
-        "score": "22.2", 
+        "score": {
+          "year2000": "24.9", 
+          "year2015": "22.2", 
+          "year2005": "23.6", 
+          "year1990": "17.4", 
+          "year1995": "24.3"
+        }, 
         "name": "Iraq"
       }
     }, 
@@ -23411,6 +23913,13 @@
       "type": "Feature", 
       "id": "ISL", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Iceland"
       }
     }, 
@@ -23517,6 +24026,13 @@
       "type": "Feature", 
       "id": "ISR", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Israel"
       }
     }, 
@@ -23889,6 +24405,13 @@
       "type": "Feature", 
       "id": "ITA", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Italy"
       }
     }, 
@@ -23947,7 +24470,13 @@
       "type": "Feature", 
       "id": "JAM", 
       "properties": {
-        "score": "8.1", 
+        "score": {
+          "year2000": "8.8", 
+          "year2015": "8.1", 
+          "year2005": "8.2", 
+          "year1990": "12.5", 
+          "year1995": "10.7"
+        }, 
         "name": "Jamaica"
       }
     }, 
@@ -24038,7 +24567,13 @@
       "type": "Feature", 
       "id": "JOR", 
       "properties": {
-        "score": "5.8", 
+        "score": {
+          "year2000": "9.8", 
+          "year2015": "5.8", 
+          "year2005": "6.5", 
+          "year1990": "12.8", 
+          "year1995": "10.5"
+        }, 
         "name": "Jordan"
       }
     }, 
@@ -24323,6 +24858,13 @@
       "type": "Feature", 
       "id": "JPN", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Japan"
       }
     }, 
@@ -24785,7 +25327,13 @@
       "type": "Feature", 
       "id": "KAZ", 
       "properties": {
-        "score": "8", 
+        "score": {
+          "year2000": "10.7", 
+          "year2015": "8", 
+          "year2005": "12.3", 
+          "year1990": "-", 
+          "year1995": "15.4"
+        }, 
         "name": "Kazakhstan"
       }
     }, 
@@ -24948,7 +25496,13 @@
       "type": "Feature", 
       "id": "KEN", 
       "properties": {
-        "score": "24", 
+        "score": {
+          "year2000": "37.9", 
+          "year2015": "24", 
+          "year2005": "36.6", 
+          "year1990": "34.8", 
+          "year1995": "40"
+        }, 
         "name": "Kenya"
       }
     }, 
@@ -25103,7 +25657,13 @@
       "type": "Feature", 
       "id": "KGZ", 
       "properties": {
-        "score": "9.4", 
+        "score": {
+          "year2000": "20.2", 
+          "year2015": "9.4", 
+          "year2005": "14.3", 
+          "year1990": "-", 
+          "year1995": "24.1"
+        }, 
         "name": "Kyrgyz Republic"
       }
     }, 
@@ -25186,7 +25746,13 @@
       "type": "Feature", 
       "id": "KHM", 
       "properties": {
-        "score": "22.6", 
+        "score": {
+          "year2000": "45", 
+          "year2015": "22.6", 
+          "year2005": "29.8", 
+          "year1990": "46.9", 
+          "year1995": "45.2"
+        }, 
         "name": "Cambodia"
       }
     }, 
@@ -25277,6 +25843,13 @@
       "type": "Feature", 
       "id": "KOR", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "South Korea"
       }
     }, 
@@ -25375,6 +25948,13 @@
       "type": "Feature", 
       "id": "CS-KM", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Kosovo"
       }
     }, 
@@ -25425,7 +26005,13 @@
       "type": "Feature", 
       "id": "KWT", 
       "properties": {
-        "score": "5", 
+        "score": {
+          "year2000": "<5", 
+          "year2015": "5", 
+          "year2005": "<5", 
+          "year1990": "24.3", 
+          "year1995": "16"
+        }, 
         "name": "Kuwait"
       }
     }, 
@@ -25588,7 +26174,13 @@
       "type": "Feature", 
       "id": "LAO", 
       "properties": {
-        "score": "28.5", 
+        "score": {
+          "year2000": "48.7", 
+          "year2015": "28.5", 
+          "year2005": "36.9", 
+          "year1990": "52.9", 
+          "year1995": "51.1"
+        }, 
         "name": "Lao PDR"
       }
     }, 
@@ -25647,7 +26239,13 @@
       "type": "Feature", 
       "id": "LBN", 
       "properties": {
-        "score": "6.4", 
+        "score": {
+          "year2000": "9", 
+          "year2015": "6.4", 
+          "year2005": "10.4", 
+          "year1990": "12.1", 
+          "year1995": "9.4"
+        }, 
         "name": "Lebanon"
       }
     }, 
@@ -25770,7 +26368,13 @@
       "type": "Feature", 
       "id": "LBR", 
       "properties": {
-        "score": "30.8", 
+        "score": {
+          "year2000": "46.8", 
+          "year2015": "30.8", 
+          "year2005": "41.5", 
+          "year1990": "54.4", 
+          "year1995": "55.2"
+        }, 
         "name": "Liberia"
       }
     }, 
@@ -26009,7 +26613,13 @@
       "type": "Feature", 
       "id": "LBY", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Libya"
       }
     }, 
@@ -26064,7 +26674,13 @@
       "type": "Feature", 
       "id": "LKA", 
       "properties": {
-        "score": "25.5", 
+        "score": {
+          "year2000": "27", 
+          "year2015": "25.5", 
+          "year2005": "25.9", 
+          "year1990": "31.3", 
+          "year1995": "29.7"
+        }, 
         "name": "Sri Lanka"
       }
     }, 
@@ -26127,7 +26743,13 @@
       "type": "Feature", 
       "id": "LSO", 
       "properties": {
-        "score": "23.5", 
+        "score": {
+          "year2000": "32.7", 
+          "year2015": "23.5", 
+          "year2005": "30.2", 
+          "year1990": "25.8", 
+          "year1995": "28.5"
+        }, 
         "name": "Lesotho"
       }
     }, 
@@ -26218,7 +26840,13 @@
       "type": "Feature", 
       "id": "LTU", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "6.7", 
+          "year2015": "<5", 
+          "year2005": "5.1", 
+          "year1990": "-", 
+          "year1995": "9.4"
+        }, 
         "name": "Lithuania"
       }
     }, 
@@ -26261,6 +26889,13 @@
       "type": "Feature", 
       "id": "LUX", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Luxembourg"
       }
     }, 
@@ -26363,7 +26998,13 @@
       "type": "Feature", 
       "id": "LVA", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "8.3", 
+          "year2015": "<5", 
+          "year2005": "5.4", 
+          "year1990": "-", 
+          "year1995": "7.7"
+        }, 
         "name": "Latvia"
       }
     }, 
@@ -26634,7 +27275,13 @@
       "type": "Feature", 
       "id": "MAR", 
       "properties": {
-        "score": "9.5", 
+        "score": {
+          "year2000": "15.7", 
+          "year2015": "9.5", 
+          "year2005": "17.7", 
+          "year1990": "18.7", 
+          "year1995": "18.8"
+        }, 
         "name": "Morocco"
       }
     }, 
@@ -26757,7 +27404,13 @@
       "type": "Feature", 
       "id": "MDA", 
       "properties": {
-        "score": "9.1", 
+        "score": {
+          "year2000": "15.3", 
+          "year2015": "9.1", 
+          "year2005": "15.7", 
+          "year1990": "-", 
+          "year1995": "16"
+        }, 
         "name": "Moldova"
       }
     }, 
@@ -26968,7 +27621,13 @@
       "type": "Feature", 
       "id": "MDG", 
       "properties": {
-        "score": "36.3", 
+        "score": {
+          "year2000": "44.1", 
+          "year2015": "36.3", 
+          "year2005": "44.4", 
+          "year1990": "44.8", 
+          "year1995": "45.1"
+        }, 
         "name": "Madagascar"
       }
     }, 
@@ -27663,7 +28322,13 @@
       "type": "Feature", 
       "id": "MEX", 
       "properties": {
-        "score": "7.3", 
+        "score": {
+          "year2000": "10.8", 
+          "year2015": "7.3", 
+          "year2005": "8.9", 
+          "year1990": "16.8", 
+          "year1995": "16.9"
+        }, 
         "name": "Mexico"
       }
     }, 
@@ -27746,7 +28411,13 @@
       "type": "Feature", 
       "id": "MKD", 
       "properties": {
-        "score": "5.9", 
+        "score": {
+          "year2000": "7.9", 
+          "year2015": "5.9", 
+          "year2005": "8.6", 
+          "year1990": "-", 
+          "year1995": "11.2"
+        }, 
         "name": "Macedonia, FYR"
       }
     }, 
@@ -28065,7 +28736,13 @@
       "type": "Feature", 
       "id": "MLI", 
       "properties": {
-        "score": "29.6", 
+        "score": {
+          "year2000": "43.9", 
+          "year2015": "29.6", 
+          "year2005": "38.3", 
+          "year1990": "51.9", 
+          "year1995": "51.3"
+        }, 
         "name": "Mali"
       }
     }, 
@@ -28150,6 +28827,13 @@
       "type": "Feature", 
       "id": "MLT", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Malta"
       }
     }, 
@@ -28444,7 +29128,13 @@
       "type": "Feature", 
       "id": "MMR", 
       "properties": {
-        "score": "23.5", 
+        "score": {
+          "year2000": "45.1", 
+          "year2015": "23.5", 
+          "year2005": "37.4", 
+          "year1990": "56.3", 
+          "year1995": "53.3"
+        }, 
         "name": "Myanmar"
       }
     }, 
@@ -28531,7 +29221,13 @@
       "type": "Feature", 
       "id": "MNE", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "<5", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Montenegro"
       }
     }, 
@@ -28846,7 +29542,13 @@
       "type": "Feature", 
       "id": "MNG", 
       "properties": {
-        "score": "14.7", 
+        "score": {
+          "year2000": "33.1", 
+          "year2015": "14.7", 
+          "year2005": "27", 
+          "year1990": "32", 
+          "year1995": "39.3"
+        }, 
         "name": "Mongolia"
       }
     }, 
@@ -29169,7 +29871,13 @@
       "type": "Feature", 
       "id": "MOZ", 
       "properties": {
-        "score": "32.5", 
+        "score": {
+          "year2000": "49.2", 
+          "year2015": "32.5", 
+          "year2005": "42.4", 
+          "year1990": "64.5", 
+          "year1995": "63.2"
+        }, 
         "name": "Mozambique"
       }
     }, 
@@ -29340,7 +30048,13 @@
       "type": "Feature", 
       "id": "MRT", 
       "properties": {
-        "score": "22.6", 
+        "score": {
+          "year2000": "33.5", 
+          "year2015": "22.6", 
+          "year2005": "29.6", 
+          "year1990": "40", 
+          "year1995": "36.6"
+        }, 
         "name": "Mauritania"
       }
     }, 
@@ -29467,7 +30181,13 @@
       "type": "Feature", 
       "id": "MWI", 
       "properties": {
-        "score": "27.3", 
+        "score": {
+          "year2000": "45.3", 
+          "year2015": "27.3", 
+          "year2005": "39.1", 
+          "year1990": "58.9", 
+          "year1995": "55.9"
+        }, 
         "name": "Malawi"
       }
     }, 
@@ -29736,7 +30456,13 @@
       "type": "Feature", 
       "id": "MYS", 
       "properties": {
-        "score": "10.3", 
+        "score": {
+          "year2000": "15.5", 
+          "year2015": "10.3", 
+          "year2005": "14.6", 
+          "year1990": "20.4", 
+          "year1995": "17.4"
+        }, 
         "name": "Malaysia"
       }
     }, 
@@ -29927,7 +30653,13 @@
       "type": "Feature", 
       "id": "NAM", 
       "properties": {
-        "score": "31.8", 
+        "score": {
+          "year2000": "32.5", 
+          "year2015": "31.8", 
+          "year2005": "28.8", 
+          "year1990": "35.8", 
+          "year1995": "37"
+        }, 
         "name": "Namibia"
       }
     }, 
@@ -29994,6 +30726,13 @@
       "type": "Feature", 
       "id": "NCL", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "New Caledonia"
       }
     }, 
@@ -30240,7 +30979,13 @@
       "type": "Feature", 
       "id": "NER", 
       "properties": {
-        "score": "34.5", 
+        "score": {
+          "year2000": "53", 
+          "year2015": "34.5", 
+          "year2005": "42.8", 
+          "year1990": "64.7", 
+          "year1995": "62.7"
+        }, 
         "name": "Niger"
       }
     }, 
@@ -30487,7 +31232,13 @@
       "type": "Feature", 
       "id": "NGA", 
       "properties": {
-        "score": "32.8", 
+        "score": {
+          "year2000": "41", 
+          "year2015": "32.8", 
+          "year2005": "35.2", 
+          "year1990": "47.7", 
+          "year1995": "47.1"
+        }, 
         "name": "Nigeria"
       }
     }, 
@@ -30710,7 +31461,13 @@
       "type": "Feature", 
       "id": "NIC", 
       "properties": {
-        "score": "13.6", 
+        "score": {
+          "year2000": "25.6", 
+          "year2015": "13.6", 
+          "year2005": "17.8", 
+          "year1990": "38.3", 
+          "year1995": "32.2"
+        }, 
         "name": "Nicaragua"
       }
     }, 
@@ -30781,6 +31538,13 @@
       "type": "Feature", 
       "id": "NLD", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Netherlands"
       }
     }, 
@@ -31161,6 +31925,13 @@
       "type": "Feature", 
       "id": "NOR", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Norway"
       }
     }, 
@@ -31267,7 +32038,13 @@
       "type": "Feature", 
       "id": "NPL", 
       "properties": {
-        "score": "22.2", 
+        "score": {
+          "year2000": "36.9", 
+          "year2015": "22.2", 
+          "year2005": "31.6", 
+          "year1990": "44.5", 
+          "year1995": "40.3"
+        }, 
         "name": "Nepal"
       }
     }, 
@@ -31552,6 +32329,13 @@
       "type": "Feature", 
       "id": "NZL", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "New Zealand"
       }
     }, 
@@ -31760,7 +32544,13 @@
       "type": "Feature", 
       "id": "OMN", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "13.1", 
+          "year2015": "-", 
+          "year2005": "11.4", 
+          "year1990": "20.1", 
+          "year1995": "18.4"
+        }, 
         "name": "Oman"
       }
     }, 
@@ -32039,7 +32829,13 @@
       "type": "Feature", 
       "id": "PAK", 
       "properties": {
-        "score": "33.9", 
+        "score": {
+          "year2000": "37.9", 
+          "year2015": "33.9", 
+          "year2005": "38.3", 
+          "year1990": "43.6", 
+          "year1995": "40.9"
+        }, 
         "name": "Pakistan"
       }
     }, 
@@ -32262,7 +33058,13 @@
       "type": "Feature", 
       "id": "PAN", 
       "properties": {
-        "score": "9.6", 
+        "score": {
+          "year2000": "20.1", 
+          "year2015": "9.6", 
+          "year2005": "18.1", 
+          "year1990": "21.5", 
+          "year1995": "18.4"
+        }, 
         "name": "Panama"
       }
     }, 
@@ -32581,7 +33383,13 @@
       "type": "Feature", 
       "id": "PER", 
       "properties": {
-        "score": "9.1", 
+        "score": {
+          "year2000": "20.9", 
+          "year2015": "9.1", 
+          "year2005": "18.8", 
+          "year1990": "30.7", 
+          "year1995": "25"
+        }, 
         "name": "Peru"
       }
     }, 
@@ -33062,7 +33870,13 @@
       "type": "Feature", 
       "id": "PHL", 
       "properties": {
-        "score": "20.1", 
+        "score": {
+          "year2000": "26.2", 
+          "year2015": "20.1", 
+          "year2005": "22.1", 
+          "year1990": "30.7", 
+          "year1995": "28.9"
+        }, 
         "name": "Philippines"
       }
     }, 
@@ -33415,7 +34229,13 @@
       "type": "Feature", 
       "id": "PNG", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Papua New Guinea"
       }
     }, 
@@ -33610,6 +34430,13 @@
       "type": "Feature", 
       "id": "POL", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Poland"
       }
     }, 
@@ -33660,6 +34487,13 @@
       "type": "Feature", 
       "id": "PRI", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Puerto Rico"
       }
     }, 
@@ -33846,7 +34680,13 @@
       "type": "Feature", 
       "id": "PRK", 
       "properties": {
-        "score": "28.8", 
+        "score": {
+          "year2000": "40.4", 
+          "year2015": "28.8", 
+          "year2005": "32.4", 
+          "year1990": "30.1", 
+          "year1995": "35.9"
+        }, 
         "name": "North Korea"
       }
     }, 
@@ -33993,6 +34833,13 @@
       "type": "Feature", 
       "id": "PRT", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Portugal"
       }
     }, 
@@ -34139,7 +34986,13 @@
       "type": "Feature", 
       "id": "PRY", 
       "properties": {
-        "score": "10.5", 
+        "score": {
+          "year2000": "13.5", 
+          "year2015": "10.5", 
+          "year2005": "12", 
+          "year1990": "17.2", 
+          "year1995": "15.8"
+        }, 
         "name": "Paraguay"
       }
     }, 
@@ -34190,7 +35043,13 @@
       "type": "Feature", 
       "id": "QAT", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Qatar"
       }
     }, 
@@ -34381,7 +35240,13 @@
       "type": "Feature", 
       "id": "ROU", 
       "properties": {
-        "score": "5.3", 
+        "score": {
+          "year2000": "8.6", 
+          "year2015": "5.3", 
+          "year2005": "6.1", 
+          "year1990": "9.1", 
+          "year1995": "9.6"
+        }, 
         "name": "Romania"
       }
     }, 
@@ -36838,7 +37703,13 @@
       "type": "Feature", 
       "id": "RUS", 
       "properties": {
-        "score": "6.6", 
+        "score": {
+          "year2000": "10.4", 
+          "year2015": "6.6", 
+          "year2005": "7.2", 
+          "year1990": "-", 
+          "year1995": "11.7"
+        }, 
         "name": "Russian Federation"
       }
     }, 
@@ -36905,7 +37776,13 @@
       "type": "Feature", 
       "id": "RWA", 
       "properties": {
-        "score": "30.3", 
+        "score": {
+          "year2000": "58.5", 
+          "year2015": "30.3", 
+          "year2005": "44.5", 
+          "year1990": "53.9", 
+          "year1995": "66.3"
+        }, 
         "name": "Rwanda"
       }
     }, 
@@ -37032,6 +37909,13 @@
       "type": "Feature", 
       "id": "ESH", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Western Sahara"
       }
     }, 
@@ -37350,7 +38234,13 @@
       "type": "Feature", 
       "id": "SAU", 
       "properties": {
-        "score": "5.1", 
+        "score": {
+          "year2000": "10.4", 
+          "year2015": "5.1", 
+          "year2005": "11.8", 
+          "year1990": "15.8", 
+          "year1995": "14.3"
+        }, 
         "name": "Saudi Arabia"
       }
     }, 
@@ -37681,7 +38571,13 @@
       "type": "Feature", 
       "id": "SDN", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Sudan"
       }
     }, 
@@ -37948,7 +38844,13 @@
       "type": "Feature", 
       "id": "SSD", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "South Sudan"
       }
     }, 
@@ -38139,7 +39041,13 @@
       "type": "Feature", 
       "id": "SEN", 
       "properties": {
-        "score": "23.2", 
+        "score": {
+          "year2000": "37.9", 
+          "year2015": "23.2", 
+          "year2005": "28.5", 
+          "year1990": "36.8", 
+          "year1995": "36.9"
+        }, 
         "name": "Senegal"
       }
     }, 
@@ -38320,6 +39228,13 @@
       "type": "Feature", 
       "id": "SLB", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Solomon Islands"
       }
     }, 
@@ -38422,7 +39337,13 @@
       "type": "Feature", 
       "id": "SLE", 
       "properties": {
-        "score": "38.9", 
+        "score": {
+          "year2000": "53.5", 
+          "year2015": "38.9", 
+          "year2005": "52.4", 
+          "year1990": "58.8", 
+          "year1995": "56"
+        }, 
         "name": "Sierra Leone"
       }
     }, 
@@ -38517,7 +39438,13 @@
       "type": "Feature", 
       "id": "SLV", 
       "properties": {
-        "score": "11.1", 
+        "score": {
+          "year2000": "16.8", 
+          "year2015": "11.1", 
+          "year2005": "13.1", 
+          "year1990": "22.4", 
+          "year1995": "18.6"
+        }, 
         "name": "El Salvador"
       }
     }, 
@@ -38628,7 +39555,13 @@
       "type": "Feature", 
       "id": "SOM", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Somalia"
       }
     }, 
@@ -38787,6 +39720,13 @@
       "type": "Feature", 
       "id": "SOM", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Somalia"
       }
     }, 
@@ -38985,7 +39925,13 @@
       "type": "Feature", 
       "id": "SRB", 
       "properties": {
-        "score": "7.1", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "7.1", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Serbia"
       }
     }, 
@@ -39104,7 +40050,13 @@
       "type": "Feature", 
       "id": "SUR", 
       "properties": {
-        "score": "10.4", 
+        "score": {
+          "year2000": "16.5", 
+          "year2015": "10.4", 
+          "year2005": "13.1", 
+          "year1990": "18.5", 
+          "year1995": "16.5"
+        }, 
         "name": "Suriname"
       }
     }, 
@@ -39251,7 +40203,13 @@
       "type": "Feature", 
       "id": "SVK", 
       "properties": {
-        "score": "5.2", 
+        "score": {
+          "year2000": "8", 
+          "year2015": "5.2", 
+          "year2005": "7.4", 
+          "year1990": "-", 
+          "year1995": "8.2"
+        }, 
         "name": "Slovak Republic"
       }
     }, 
@@ -39338,6 +40296,13 @@
       "type": "Feature", 
       "id": "SVN", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Slovenia"
       }
     }, 
@@ -39512,6 +40477,13 @@
       "type": "Feature", 
       "id": "SWE", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Sweden"
       }
     }, 
@@ -39570,7 +40542,13 @@
       "type": "Feature", 
       "id": "SWZ", 
       "properties": {
-        "score": "26", 
+        "score": {
+          "year2000": "30.4", 
+          "year2015": "26", 
+          "year2005": "27.4", 
+          "year1990": "22.8", 
+          "year1995": "25.8"
+        }, 
         "name": "Swaziland"
       }
     }, 
@@ -39693,7 +40671,13 @@
       "type": "Feature", 
       "id": "SYR", 
       "properties": {
-        "score": "-", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "-", 
+          "year2005": "-", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Syrian Arab Republic"
       }
     }, 
@@ -39940,7 +40924,13 @@
       "type": "Feature", 
       "id": "TCD", 
       "properties": {
-        "score": "46.4", 
+        "score": {
+          "year2000": "52", 
+          "year2015": "46.4", 
+          "year2005": "53.1", 
+          "year1990": "65", 
+          "year1995": "60.6"
+        }, 
         "name": "Chad"
       }
     }, 
@@ -40031,7 +41021,13 @@
       "type": "Feature", 
       "id": "TGO", 
       "properties": {
-        "score": "23", 
+        "score": {
+          "year2000": "38.6", 
+          "year2015": "23", 
+          "year2005": "36.4", 
+          "year1990": "42.5", 
+          "year1995": "44.1"
+        }, 
         "name": "Togo"
       }
     }, 
@@ -40302,7 +41298,13 @@
       "type": "Feature", 
       "id": "THA", 
       "properties": {
-        "score": "11.9", 
+        "score": {
+          "year2000": "17.6", 
+          "year2015": "11.9", 
+          "year2005": "13.6", 
+          "year1990": "28.4", 
+          "year1995": "22.3"
+        }, 
         "name": "Thailand"
       }
     }, 
@@ -40481,7 +41483,13 @@
       "type": "Feature", 
       "id": "TJK", 
       "properties": {
-        "score": "30.3", 
+        "score": {
+          "year2000": "40.4", 
+          "year2015": "30.3", 
+          "year2005": "36.5", 
+          "year1990": "-", 
+          "year1995": "40.3"
+        }, 
         "name": "Tajikistan"
       }
     }, 
@@ -40712,7 +41720,13 @@
       "type": "Feature", 
       "id": "TKM", 
       "properties": {
-        "score": "12.9", 
+        "score": {
+          "year2000": "22.2", 
+          "year2015": "12.9", 
+          "year2005": "17.5", 
+          "year1990": "-", 
+          "year1995": "24.5"
+        }, 
         "name": "Turkmenistan"
       }
     }, 
@@ -40771,7 +41785,13 @@
       "type": "Feature", 
       "id": "TLS", 
       "properties": {
-        "score": "40.7", 
+        "score": {
+          "year2000": "-", 
+          "year2015": "40.7", 
+          "year2005": "42.7", 
+          "year1990": "-", 
+          "year1995": "-"
+        }, 
         "name": "Timor-Leste"
       }
     }, 
@@ -40818,7 +41838,13 @@
       "type": "Feature", 
       "id": "TTO", 
       "properties": {
-        "score": "8.3", 
+        "score": {
+          "year2000": "12.3", 
+          "year2015": "8.3", 
+          "year2005": "11.4", 
+          "year1990": "13.7", 
+          "year1995": "14.7"
+        }, 
         "name": "Trinidad & Tobago"
       }
     }, 
@@ -40957,7 +41983,13 @@
       "type": "Feature", 
       "id": "TUN", 
       "properties": {
-        "score": "5.6", 
+        "score": {
+          "year2000": "8.9", 
+          "year2015": "5.6", 
+          "year2005": "6.7", 
+          "year1990": "11.5", 
+          "year1995": "14.2"
+        }, 
         "name": "Tunisia"
       }
     }, 
@@ -41246,7 +42278,13 @@
       "type": "Feature", 
       "id": "TUR", 
       "properties": {
-        "score": "5.1", 
+        "score": {
+          "year2000": "10.5", 
+          "year2015": "5.1", 
+          "year2005": "7.6", 
+          "year1990": "14.5", 
+          "year1995": "13.4"
+        }, 
         "name": "Turkey"
       }
     }, 
@@ -41297,6 +42335,13 @@
       "type": "Feature", 
       "id": "TWN", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Taiwan"
       }
     }, 
@@ -41507,7 +42552,13 @@
       "type": "Feature", 
       "id": "TZA", 
       "properties": {
-        "score": "28.7", 
+        "score": {
+          "year2000": "42.5", 
+          "year2015": "28.7", 
+          "year2005": "36.4", 
+          "year1990": "42.2", 
+          "year1995": "45.2"
+        }, 
         "name": "Tanzania"
       }
     }, 
@@ -41630,7 +42681,13 @@
       "type": "Feature", 
       "id": "UGA", 
       "properties": {
-        "score": "27.6", 
+        "score": {
+          "year2000": "39.3", 
+          "year2015": "27.6", 
+          "year2005": "32.2", 
+          "year1990": "39.8", 
+          "year1995": "40.9"
+        }, 
         "name": "Uganda"
       }
     }, 
@@ -42037,7 +43094,13 @@
       "type": "Feature", 
       "id": "UKR", 
       "properties": {
-        "score": "<5", 
+        "score": {
+          "year2000": "13.4", 
+          "year2015": "<5", 
+          "year2005": "<5", 
+          "year1990": "-", 
+          "year1995": "7.1"
+        }, 
         "name": "Ukraine"
       }
     }, 
@@ -42136,7 +43199,13 @@
       "type": "Feature", 
       "id": "URY", 
       "properties": {
-        "score": "5.7", 
+        "score": {
+          "year2000": "7.6", 
+          "year2015": "5.7", 
+          "year2005": "8.1", 
+          "year1990": "12.2", 
+          "year1995": "9.4"
+        }, 
         "name": "Uruguay"
       }
     }, 
@@ -43965,6 +45034,13 @@
       "type": "Feature", 
       "id": "USA", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "United States of America"
       }
     }, 
@@ -44195,7 +45271,13 @@
       "type": "Feature", 
       "id": "UZB", 
       "properties": {
-        "score": "13.3", 
+        "score": {
+          "year2000": "21.9", 
+          "year2015": "13.3", 
+          "year2005": "18.5", 
+          "year1990": "-", 
+          "year1995": "23.7"
+        }, 
         "name": "Uzbekistan"
       }
     }, 
@@ -44578,7 +45660,13 @@
       "type": "Feature", 
       "id": "VEN", 
       "properties": {
-        "score": "7", 
+        "score": {
+          "year2000": "15.2", 
+          "year2015": "7", 
+          "year2005": "13.1", 
+          "year1990": "16.3", 
+          "year1995": "15.3"
+        }, 
         "name": "Venezuela, RB"
       }
     }, 
@@ -44769,7 +45857,13 @@
       "type": "Feature", 
       "id": "VNM", 
       "properties": {
-        "score": "14.7", 
+        "score": {
+          "year2000": "30.3", 
+          "year2015": "14.7", 
+          "year2005": "24.6", 
+          "year1990": "44.6", 
+          "year1995": "38.8"
+        }, 
         "name": "Vietnam"
       }
     }, 
@@ -44838,6 +45932,13 @@
       "type": "Feature", 
       "id": "VUT", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "Vanuatu"
       }
     }, 
@@ -44888,6 +45989,13 @@
       "type": "Feature", 
       "id": "PSE", 
       "properties": {
+        "score": {
+          "year2000": "nc", 
+          "year2015": "nc", 
+          "year2005": "nc", 
+          "year1990": "nc", 
+          "year1995": "nc"
+        }, 
         "name": "West Bank"
       }
     }, 
@@ -45078,7 +46186,13 @@
       "type": "Feature", 
       "id": "YEM", 
       "properties": {
-        "score": "34.2", 
+        "score": {
+          "year2000": "42.9", 
+          "year2015": "34.2", 
+          "year2005": "42.1", 
+          "year1990": "44.4", 
+          "year1995": "44.4"
+        }, 
         "name": "Yemen, Rep."
       }
     }, 
@@ -45471,7 +46585,13 @@
       "type": "Feature", 
       "id": "ZAF", 
       "properties": {
-        "score": "12.4", 
+        "score": {
+          "year2000": "18.6", 
+          "year2015": "12.4", 
+          "year2005": "21", 
+          "year1990": "18.7", 
+          "year1995": "16.5"
+        }, 
         "name": "South Africa"
       }
     }, 
@@ -45730,7 +46850,13 @@
       "type": "Feature", 
       "id": "ZMB", 
       "properties": {
-        "score": "41.1", 
+        "score": {
+          "year2000": "50.9", 
+          "year2015": "41.1", 
+          "year2005": "46.7", 
+          "year1990": "47", 
+          "year1995": "49"
+        }, 
         "name": "Zambia"
       }
     }, 
@@ -45893,7 +47019,13 @@
       "type": "Feature", 
       "id": "ZWE", 
       "properties": {
-        "score": "30.8", 
+        "score": {
+          "year2000": "40.8", 
+          "year2015": "30.8", 
+          "year2005": "39.2", 
+          "year1990": "33.3", 
+          "year1995": "38.1"
+        }, 
         "name": "Zimbabwe"
       }
     }

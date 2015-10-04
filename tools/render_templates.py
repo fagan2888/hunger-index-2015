@@ -56,7 +56,7 @@ def create_index_page():
 
     table_entries = json.loads(open("../data/table_data.json", "r").read())["data"]
     for entry in table_entries:
-        entry['level'] = get_level_from_score(entry['score'])
+        entry['level'] = get_level_from_score(entry['score']['year2015'])
 
     context = {"table_entries": table_entries,
                "m": messages,

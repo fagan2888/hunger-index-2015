@@ -41,33 +41,23 @@ function getSeverity(d) {
     zoom: 4
   });
 
-  /* add default stamen tile layer */
-  /*
-     new L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {
-     minZoom: 0,
-     maxZoom: 18,
-     attribution: 'Map data © <a href="http://www.openstreetmap.org">OpenStreetMap contributors</a>'
-     }).addTo(map);
-     */
   new L.tileLayer('http://a{s}.acetate.geoiq.com/tiles/acetate-base/{z}/{x}/{y}.png', {
       subdomains: '0123',
       minZoom: 0,
       maxZoom: 18
       }).addTo(map);
 
-
-
   var info = L.control();
   var geojsonLayer;
 
   function style(feature) {
     return {
-      fillColor: getColor(feature.properties.score),
-      weight: feature.properties.score ? 1 : 0,
+      fillColor: getColor(feature.properties.score.year2015),
+      weight: feature.properties.score.year2015 ? 1 : 0,
       opacity: 0.3,
       color: 'white',
       dashArray: '',
-      fillOpacity: feature.properties.score ? 0.7 : 0
+      fillOpacity: feature.properties.score.year2015 ? 0.7 : 0
     };
   }
 
@@ -100,8 +90,20 @@ function getSeverity(d) {
   }
 
   function onEachFeature(feature, layer) {
-    // set up popups
-    var popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="/countries/' + feature.id + '">See country data</p>';
+    console.log(feature.properties.name);
+
+    if (typeof feature.properties.score !== 'undefined') {
+      // country is in the index (not industrialized)
+
+      // set up popups
+      var popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score.year2015 + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score.year2015) + '</strong></p> <p><a class="button small radius" href="/countries/' + feature.id + '">Find out more</a></p>';
+    } else {
+      var popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong> Industrialized country</p>';
+
+
+    }
+
+
     layer.bindPopup(popupContent, {autopan: true});
     // set up mouseover highlights
     layer.on({
@@ -118,12 +120,11 @@ function getSeverity(d) {
     style: style,
     onEachFeature: onEachFeature
   });       
+  console.log(geojsonLayer);
   geojsonLayer.addTo(map);
 
   $(document).ready(function() {
     $('#country-table tbody').on( 'click', 'tr', function (ev) {
-      console.log(this.id);
-      // reference: https://github.com/jplusplus/rsf-index-2015/blob/master/src/app/map/map.controller.coffee
       var f = geojsonLayer.getLayer(this.id);
       map.setView(f.getBounds().getCenter());
       f.openPopup();

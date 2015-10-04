@@ -31,7 +31,7 @@
             {% for entry in table_entries %}
             <tr id="{{ entry.id }}" class="{{ entry.level }}" role="row">
               <td>{{ entry.name }}</td>
-              <td>{{ entry.score }}</td>
+              <td>{{ entry.score.year2015 }}</td>
             </tr>
             {% endfor %}
           </table>
