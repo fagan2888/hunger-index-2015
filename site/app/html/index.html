@@ -4,802 +4,815 @@
 <!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html> <!--<![endif]-->
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global Hunger Index</title>
-  	<meta name="description" content="Global Hunger Index 2015">
-    
-    <link rel="stylesheet" href="styles/leaflet.css">    
-    <link rel="stylesheet" href="fonts/foundation-icons/foundation-icons.css" />    
-    <link rel="stylesheet" href="styles/app.css">
-    
-    
-    <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Hunger Index</title>
+  <meta name="description" content="Global Hunger Index 2015">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="/styles/leaflet.css">    
+  <link rel="stylesheet" href="/fonts/foundation-icons/foundation-icons.css" />    
+  <link rel="stylesheet" href="/styles/app.css">
+
+
+  <script src="/scripts/modernizr.js"></script>
+
+  <link rel="shortcut icon" href="/images/favicon.ico">
 </head>
 <body>
 
-    <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="#">
-              <img src="images/ghi.svg" onerror="this.src='images/ghi.png'" alt="Global Hunger Index 2015">
-              <span>Global Hunger Index 2015</span>
-            </a></h1>
-           </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="has-dropdown"> <a href="#">Language</a>
-              <ul class="dropdown">
-                <li class="active"><a href="#">English</a></li>
-                <li><a href="#">German</a></li>
-              </ul>
-            </li>
-          </ul>
-          <!-- Left Nav Section -->
-          <ul class="left">
-            <li><a href="#">Trends of Hunger</a></li>
-            <li><a href="#">Methodology</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Press</a></li>
-          </ul>
-        </section>
-    </nav>
-	<div id="main-map" class="row collapse full-width">
-    	<div id="map-application" class="large-8 columns">
-        <div id="map" class="map"></div>
-	    </div>
-      <div class="large-4 columns">
-        <div class="column-container">
-          <div class="row collapse">
-            <h3 class="large-6 columns">Ranking <span class="year">2015</span></h3>
-            <p class="large-6 columns"><a class="button tiny secondary radius" href="#">Share/Embed</a></p>
-          </div>
-          <div class="row collapse">
-            <p class="large-12 columns">Ranking of every country in <span class="year">2015</span> according to the IFPRI index.</p>
-          </div>          
-          <div class="row">
-            <div id="table-container">
-              <table id="country-table" class="display" width="100%" cellspacing="0">
-                
-                  <tr id="AFG" role="row">
-                    <td>Afghanistan</td>
-                    <td>35.4</td>
-                  </tr>
-                
-                  <tr id="AGO" role="row">
-                    <td>Angola</td>
-                    <td>32.6</td>
-                  </tr>
-                
-                  <tr id="ALB" role="row">
-                    <td>Albania</td>
-                    <td>13.2</td>
-                  </tr>
-                
-                  <tr id="ARG" role="row">
-                    <td>Argentina</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="ARM" role="row">
-                    <td>Armenia</td>
-                    <td>11.2</td>
-                  </tr>
-                
-                  <tr id="AZE" role="row">
-                    <td>Azerbaijan</td>
-                    <td>10</td>
-                  </tr>
-                
-                  <tr id="BDI" role="row">
-                    <td>Burundi</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="BEN" role="row">
-                    <td>Benin</td>
-                    <td>21.8</td>
-                  </tr>
-                
-                  <tr id="BFA" role="row">
-                    <td>Burkina Faso</td>
-                    <td>31.8</td>
-                  </tr>
-                
-                  <tr id="BGD" role="row">
-                    <td>Bangladesh</td>
-                    <td>27.3</td>
-                  </tr>
-                
-                  <tr id="BGR" role="row">
-                    <td>Bulgaria</td>
-                    <td>8.5</td>
-                  </tr>
-                
-                  <tr id="BIH" role="row">
-                    <td>Bosnia & Herzegovina</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="BLR" role="row">
-                    <td>Belarus</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="BOL" role="row">
-                    <td>Bolivia</td>
-                    <td>16.9</td>
-                  </tr>
-                
-                  <tr id="BRA" role="row">
-                    <td>Brazil</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="BTN" role="row">
-                    <td>Bhutan</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="BWA" role="row">
-                    <td>Botswana</td>
-                    <td>23.1</td>
-                  </tr>
-                
-                  <tr id="CAF" role="row">
-                    <td>Central African Republic</td>
-                    <td>46.9</td>
-                  </tr>
-                
-                  <tr id="CHL" role="row">
-                    <td>Chile</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="CHN" role="row">
-                    <td>China</td>
-                    <td>8.6</td>
-                  </tr>
-                
-                  <tr id="CIV" role="row">
-                    <td>Côte d'Ivoire</td>
-                    <td>26.3</td>
-                  </tr>
-                
-                  <tr id="CMR" role="row">
-                    <td>Cameroon</td>
-                    <td>24.2</td>
-                  </tr>
-                
-                  <tr id="COD" role="row">
-                    <td>Congo, Dem. Rep.</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="COG" role="row">
-                    <td>Congo, Rep.</td>
-                    <td>26.6</td>
-                  </tr>
-                
-                  <tr id="COL" role="row">
-                    <td>Colombia</td>
-                    <td>8.8</td>
-                  </tr>
-                
-                  <tr id="CRI" role="row">
-                    <td>Costa Rica</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="CUB" role="row">
-                    <td>Cuba</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="DJI" role="row">
-                    <td>Djibouti</td>
-                    <td>33.2</td>
-                  </tr>
-                
-                  <tr id="DOM" role="row">
-                    <td>Dominican Republic</td>
-                    <td>10.8</td>
-                  </tr>
-                
-                  <tr id="DZA" role="row">
-                    <td>Algeria</td>
-                    <td>8.7</td>
-                  </tr>
-                
-                  <tr id="ECU" role="row">
-                    <td>Ecuador</td>
-                    <td>14</td>
-                  </tr>
-                
-                  <tr id="EGY" role="row">
-                    <td>Egypt, Arab Rep.</td>
-                    <td>13.5</td>
-                  </tr>
-                
-                  <tr id="ERI" role="row">
-                    <td>Eritrea</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="EST" role="row">
-                    <td>Estonia</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="ETH" role="row">
-                    <td>Ethiopia</td>
-                    <td>33.9</td>
-                  </tr>
-                
-                  <tr id="FJI" role="row">
-                    <td>Fiji</td>
-                    <td>8.7</td>
-                  </tr>
-                
-                  <tr id="GAB" role="row">
-                    <td>Gabon</td>
-                    <td>12.5</td>
-                  </tr>
-                
-                  <tr id="GEO" role="row">
-                    <td>Georgia</td>
-                    <td>8.5</td>
-                  </tr>
-                
-                  <tr id="GHA" role="row">
-                    <td>Ghana</td>
-                    <td>15.5</td>
-                  </tr>
-                
-                  <tr id="GIN" role="row">
-                    <td>Guinea</td>
-                    <td>28.8</td>
-                  </tr>
-                
-                  <tr id="GMB" role="row">
-                    <td>Gambia, The</td>
-                    <td>21.5</td>
-                  </tr>
-                
-                  <tr id="GNB" role="row">
-                    <td>Guinea-Bissau</td>
-                    <td>30.3</td>
-                  </tr>
-                
-                  <tr id="GTM" role="row">
-                    <td>Guatemala</td>
-                    <td>21.1</td>
-                  </tr>
-                
-                  <tr id="GUY" role="row">
-                    <td>Guyana</td>
-                    <td>14.4</td>
-                  </tr>
-                
-                  <tr id="HND" role="row">
-                    <td>Honduras</td>
-                    <td>13.4</td>
-                  </tr>
-                
-                  <tr id="HRV" role="row">
-                    <td>Croatia</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="HTI" role="row">
-                    <td>Haiti</td>
-                    <td>37.3</td>
-                  </tr>
-                
-                  <tr id="IDN" role="row">
-                    <td>Indonesia</td>
-                    <td>22.1</td>
-                  </tr>
-                
-                  <tr id="IND" role="row">
-                    <td>India</td>
-                    <td>29</td>
-                  </tr>
-                
-                  <tr id="IRN" role="row">
-                    <td>Iran, Islamic Rep.</td>
-                    <td>6.8</td>
-                  </tr>
-                
-                  <tr id="IRQ" role="row">
-                    <td>Iraq</td>
-                    <td>22.2</td>
-                  </tr>
-                
-                  <tr id="JAM" role="row">
-                    <td>Jamaica</td>
-                    <td>8.1</td>
-                  </tr>
-                
-                  <tr id="JOR" role="row">
-                    <td>Jordan</td>
-                    <td>5.8</td>
-                  </tr>
-                
-                  <tr id="KAZ" role="row">
-                    <td>Kazakhstan</td>
-                    <td>8</td>
-                  </tr>
-                
-                  <tr id="KEN" role="row">
-                    <td>Kenya</td>
-                    <td>24</td>
-                  </tr>
-                
-                  <tr id="KGZ" role="row">
-                    <td>Kyrgyz Republic</td>
-                    <td>9.4</td>
-                  </tr>
-                
-                  <tr id="KHM" role="row">
-                    <td>Cambodia</td>
-                    <td>22.6</td>
-                  </tr>
-                
-                  <tr id="KWT" role="row">
-                    <td>Kuwait</td>
-                    <td>5</td>
-                  </tr>
-                
-                  <tr id="LAO" role="row">
-                    <td>Lao PDR</td>
-                    <td>28.5</td>
-                  </tr>
-                
-                  <tr id="LBN" role="row">
-                    <td>Lebanon</td>
-                    <td>6.4</td>
-                  </tr>
-                
-                  <tr id="LBR" role="row">
-                    <td>Liberia</td>
-                    <td>30.8</td>
-                  </tr>
-                
-                  <tr id="LBY" role="row">
-                    <td>Libya</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="LKA" role="row">
-                    <td>Sri Lanka</td>
-                    <td>25.5</td>
-                  </tr>
-                
-                  <tr id="LSO" role="row">
-                    <td>Lesotho</td>
-                    <td>23.5</td>
-                  </tr>
-                
-                  <tr id="LTU" role="row">
-                    <td>Lithuania</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="LVA" role="row">
-                    <td>Latvia</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="MAR" role="row">
-                    <td>Morocco</td>
-                    <td>9.5</td>
-                  </tr>
-                
-                  <tr id="MDA" role="row">
-                    <td>Moldova</td>
-                    <td>9.1</td>
-                  </tr>
-                
-                  <tr id="MDG" role="row">
-                    <td>Madagascar</td>
-                    <td>36.3</td>
-                  </tr>
-                
-                  <tr id="MEX" role="row">
-                    <td>Mexico</td>
-                    <td>7.3</td>
-                  </tr>
-                
-                  <tr id="MKD" role="row">
-                    <td>Macedonia, FYR</td>
-                    <td>5.9</td>
-                  </tr>
-                
-                  <tr id="MLI" role="row">
-                    <td>Mali</td>
-                    <td>29.6</td>
-                  </tr>
-                
-                  <tr id="MMR" role="row">
-                    <td>Myanmar</td>
-                    <td>23.5</td>
-                  </tr>
-                
-                  <tr id="MNE" role="row">
-                    <td>Montenegro</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="MNG" role="row">
-                    <td>Mongolia</td>
-                    <td>14.7</td>
-                  </tr>
-                
-                  <tr id="MOZ" role="row">
-                    <td>Mozambique</td>
-                    <td>32.5</td>
-                  </tr>
-                
-                  <tr id="MRT" role="row">
-                    <td>Mauritania</td>
-                    <td>22.6</td>
-                  </tr>
-                
-                  <tr id="MWI" role="row">
-                    <td>Malawi</td>
-                    <td>27.3</td>
-                  </tr>
-                
-                  <tr id="MYS" role="row">
-                    <td>Malaysia</td>
-                    <td>10.3</td>
-                  </tr>
-                
-                  <tr id="NAM" role="row">
-                    <td>Namibia</td>
-                    <td>31.8</td>
-                  </tr>
-                
-                  <tr id="NER" role="row">
-                    <td>Niger</td>
-                    <td>34.5</td>
-                  </tr>
-                
-                  <tr id="NGA" role="row">
-                    <td>Nigeria</td>
-                    <td>32.8</td>
-                  </tr>
-                
-                  <tr id="NIC" role="row">
-                    <td>Nicaragua</td>
-                    <td>13.6</td>
-                  </tr>
-                
-                  <tr id="NPL" role="row">
-                    <td>Nepal</td>
-                    <td>22.2</td>
-                  </tr>
-                
-                  <tr id="OMN" role="row">
-                    <td>Oman</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="PAK" role="row">
-                    <td>Pakistan</td>
-                    <td>33.9</td>
-                  </tr>
-                
-                  <tr id="PAN" role="row">
-                    <td>Panama</td>
-                    <td>9.6</td>
-                  </tr>
-                
-                  <tr id="PER" role="row">
-                    <td>Peru</td>
-                    <td>9.1</td>
-                  </tr>
-                
-                  <tr id="PHL" role="row">
-                    <td>Philippines</td>
-                    <td>20.1</td>
-                  </tr>
-                
-                  <tr id="PNG" role="row">
-                    <td>Papua New Guinea</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="PRK" role="row">
-                    <td>North Korea</td>
-                    <td>28.8</td>
-                  </tr>
-                
-                  <tr id="PRY" role="row">
-                    <td>Paraguay</td>
-                    <td>10.5</td>
-                  </tr>
-                
-                  <tr id="QAT" role="row">
-                    <td>Qatar</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="ROU" role="row">
-                    <td>Romania</td>
-                    <td>5.3</td>
-                  </tr>
-                
-                  <tr id="RUS" role="row">
-                    <td>Russian Federation</td>
-                    <td>6.6</td>
-                  </tr>
-                
-                  <tr id="RWA" role="row">
-                    <td>Rwanda</td>
-                    <td>30.3</td>
-                  </tr>
-                
-                  <tr id="SAU" role="row">
-                    <td>Saudi Arabia</td>
-                    <td>5.1</td>
-                  </tr>
-                
-                  <tr id="SDN" role="row">
-                    <td>Sudan</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="SSD" role="row">
-                    <td>South Sudan</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="SEN" role="row">
-                    <td>Senegal</td>
-                    <td>23.2</td>
-                  </tr>
-                
-                  <tr id="SLE" role="row">
-                    <td>Sierra Leone</td>
-                    <td>38.9</td>
-                  </tr>
-                
-                  <tr id="SLV" role="row">
-                    <td>El Salvador</td>
-                    <td>11.1</td>
-                  </tr>
-                
-                  <tr id="SOM" role="row">
-                    <td>Somalia</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="SRB" role="row">
-                    <td>Serbia</td>
-                    <td>7.1</td>
-                  </tr>
-                
-                  <tr id="SUR" role="row">
-                    <td>Suriname</td>
-                    <td>10.4</td>
-                  </tr>
-                
-                  <tr id="SVK" role="row">
-                    <td>Slovak Republic</td>
-                    <td>5.2</td>
-                  </tr>
-                
-                  <tr id="SWZ" role="row">
-                    <td>Swaziland</td>
-                    <td>26</td>
-                  </tr>
-                
-                  <tr id="SYR" role="row">
-                    <td>Syrian Arab Republic</td>
-                    <td>-</td>
-                  </tr>
-                
-                  <tr id="TCD" role="row">
-                    <td>Chad</td>
-                    <td>46.4</td>
-                  </tr>
-                
-                  <tr id="TGO" role="row">
-                    <td>Togo</td>
-                    <td>23</td>
-                  </tr>
-                
-                  <tr id="THA" role="row">
-                    <td>Thailand</td>
-                    <td>11.9</td>
-                  </tr>
-                
-                  <tr id="TJK" role="row">
-                    <td>Tajikistan</td>
-                    <td>30.3</td>
-                  </tr>
-                
-                  <tr id="TKM" role="row">
-                    <td>Turkmenistan</td>
-                    <td>12.9</td>
-                  </tr>
-                
-                  <tr id="TLS" role="row">
-                    <td>Timor-Leste</td>
-                    <td>40.7</td>
-                  </tr>
-                
-                  <tr id="TTO" role="row">
-                    <td>Trinidad & Tobago</td>
-                    <td>8.3</td>
-                  </tr>
-                
-                  <tr id="TUN" role="row">
-                    <td>Tunisia</td>
-                    <td>5.6</td>
-                  </tr>
-                
-                  <tr id="TUR" role="row">
-                    <td>Turkey</td>
-                    <td>5.1</td>
-                  </tr>
-                
-                  <tr id="TZA" role="row">
-                    <td>Tanzania</td>
-                    <td>28.7</td>
-                  </tr>
-                
-                  <tr id="UGA" role="row">
-                    <td>Uganda</td>
-                    <td>27.6</td>
-                  </tr>
-                
-                  <tr id="UKR" role="row">
-                    <td>Ukraine</td>
-                    <td><5</td>
-                  </tr>
-                
-                  <tr id="URY" role="row">
-                    <td>Uruguay</td>
-                    <td>5.7</td>
-                  </tr>
-                
-                  <tr id="UZB" role="row">
-                    <td>Uzbekistan</td>
-                    <td>13.3</td>
-                  </tr>
-                
-                  <tr id="VEN" role="row">
-                    <td>Venezuela, RB</td>
-                    <td>7</td>
-                  </tr>
-                
-                  <tr id="VNM" role="row">
-                    <td>Vietnam</td>
-                    <td>14.7</td>
-                  </tr>
-                
-                  <tr id="YEM" role="row">
-                    <td>Yemen, Rep.</td>
-                    <td>34.2</td>
-                  </tr>
-                
-                  <tr id="ZAF" role="row">
-                    <td>South Africa</td>
-                    <td>12.4</td>
-                  </tr>
-                
-                  <tr id="ZMB" role="row">
-                    <td>Zambia</td>
-                    <td>41.1</td>
-                  </tr>
-                
-                  <tr id="ZWE" role="row">
-                    <td>Zimbabwe</td>
-                    <td>30.8</td>
-                  </tr>
-                
-              </table>
-            </div>
-          </div>
-        </div><!-- /column-container -->
-	    </div>
-	</div>
-  <div class="row">
-    <ul class="ghi-levels">
-      <li class="extra-alarming">Extremely alarming >= 30</li>
-      <li class="alarming">Alarming 20-29.9</li>
-      <li class="serious">Serious 10-19.9</li>
-      <li class="moderation">Moderation 5-9.9</li>
-      <li class="low">Low <= 4.9</li>
-      <li class="no-data">No data</li>
-      <li class="indust-country">Industrialized country</li>
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">
+            <img src="/images/ghi.svg" onerror="this.src='/images/ghi.png'" alt="Global Hunger Index 2015">
+            <span>Global Hunger Index 2015</span>
+          </a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-dropdown"> <a href="#">Language</a>
+          <ul class="dropdown">
+            <li class="active"><a href="#">English</a></li>
+            <li><a href="#">German</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li><a href="/trends/">Trends of Hunger</a></li>
+        <li><a href="/methodology/">Methodology</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </section>
+  </nav>
+
+  
+
+<div id="main-map" class="row collapse full-width">
+  <div id="map-application" class="large-8 columns">
+    <div id="map" class="map"></div>
   </div>
-	<section id="home-blocks">
+  <div class="large-4 columns">
+    <div class="column-container">
+      <h3 class="row">
+        <span>Ranking</span>
+        <button href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown">2015</button><br>
+        <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
+          <li><a href="#">2015</a></li>
+          <li><a href="#">2014</a></li>
+          <li><a href="#">2013</a></li>
+        </ul>
+        <a class="button tiny secondary radius" href="#">Share/Embed</a>
+      </h3>
+      <div class="row collapse">
+        <p class="large-12 columns">Ranking of every country in <span class="year">2015</span> according to the IFPRI index.</p>
+      </div>          
       <div class="row">
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-              <h2>Presentation</h2>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
-          </a>
-        </div><!-- /Block -->
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-              <h2>Methodology</h2>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
-          </a>
-        </div><!-- /Block -->
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-          <h2>Testimonials</h2>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
-          </a>
-        </div><!-- /Block -->
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-              <h2>Press Contacts</h2>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
-          </a>
-        </div><!-- /Block -->
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-              <h2>Help Us</h2>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
-          </a>
-        </div><!-- /Block -->
-        <div class="large-4 medium-6 small-12 columns">
-          <a href="#">
-              <h2>Other</h2>
-              <p><img src="http://placehold.it/300x200"></p>
-              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jâ­cama salsify.</p>
-          </a>
-        </div><!-- /Block -->
-      </div>
-    </section><!-- /#Home Blocks -->
-    
-    <div id="footer">
-      <div class="row">
-        <div class="medium-4 medium-4 push-8 columns">
-          <ul class="credits">
-              <li><i class="fi-eye small"></i> <a target="_blank" href="#">Source code</a></li>
-              <li><i class="fi-heart small"></i> Made by <a target="_blank" href="http://jplusplus.org">Journalism++</a></li>
-            </ul>
-         </div>
-         <div class="medium-8 medium-8 pull-4 columns">
-            <ul class="orgs">
-              <li><a target="_blank" href="http://www.welthungerhilfe.de/en/home-en.html"><img src="images/ifpri_white.png"></a></li>
-              <li><a target="_blank" href="https://www.concern.net"><img src="images/concern-worldwide_white.png"></a></li>
-              <li><a target="_blank" href="http://www.welthungerhilfe.de/en/home-en.html"><img src="images/welthungerhilfe_white.png"></a></li>
-           </ul>
+        <div id="table-container">
+          <table id="country-table" class="display" width="100%" cellspacing="0">
+            
+            <tr id="AFG" class="alarming" role="row">
+              <td>Afghanistan</td>
+              <td>35.4</td>
+            </tr>
+            
+            <tr id="AGO" class="serious" role="row">
+              <td>Angola</td>
+              <td>32.6</td>
+            </tr>
+            
+            <tr id="ALB" class="moderate" role="row">
+              <td>Albania</td>
+              <td>13.2</td>
+            </tr>
+            
+            <tr id="ARG" class="low" role="row">
+              <td>Argentina</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="ARM" class="moderate" role="row">
+              <td>Armenia</td>
+              <td>11.2</td>
+            </tr>
+            
+            <tr id="AZE" class="moderate" role="row">
+              <td>Azerbaijan</td>
+              <td>10</td>
+            </tr>
+            
+            <tr id="BDI" class="no-data" role="row">
+              <td>Burundi</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="BEN" class="serious" role="row">
+              <td>Benin</td>
+              <td>21.8</td>
+            </tr>
+            
+            <tr id="BFA" class="serious" role="row">
+              <td>Burkina Faso</td>
+              <td>31.8</td>
+            </tr>
+            
+            <tr id="BGD" class="serious" role="row">
+              <td>Bangladesh</td>
+              <td>27.3</td>
+            </tr>
+            
+            <tr id="BGR" class="low" role="row">
+              <td>Bulgaria</td>
+              <td>8.5</td>
+            </tr>
+            
+            <tr id="BIH" class="low" role="row">
+              <td>Bosnia & Herzegovina</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="BLR" class="low" role="row">
+              <td>Belarus</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="BOL" class="moderate" role="row">
+              <td>Bolivia</td>
+              <td>16.9</td>
+            </tr>
+            
+            <tr id="BRA" class="low" role="row">
+              <td>Brazil</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="BTN" class="no-data" role="row">
+              <td>Bhutan</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="BWA" class="serious" role="row">
+              <td>Botswana</td>
+              <td>23.1</td>
+            </tr>
+            
+            <tr id="CAF" class="alarming" role="row">
+              <td>Central African Republic</td>
+              <td>46.9</td>
+            </tr>
+            
+            <tr id="CHL" class="low" role="row">
+              <td>Chile</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="CHN" class="low" role="row">
+              <td>China</td>
+              <td>8.6</td>
+            </tr>
+            
+            <tr id="CIV" class="serious" role="row">
+              <td>Côte d'Ivoire</td>
+              <td>26.3</td>
+            </tr>
+            
+            <tr id="CMR" class="serious" role="row">
+              <td>Cameroon</td>
+              <td>24.2</td>
+            </tr>
+            
+            <tr id="COD" class="no-data" role="row">
+              <td>Congo, Dem. Rep.</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="COG" class="serious" role="row">
+              <td>Congo, Rep.</td>
+              <td>26.6</td>
+            </tr>
+            
+            <tr id="COL" class="low" role="row">
+              <td>Colombia</td>
+              <td>8.8</td>
+            </tr>
+            
+            <tr id="CRI" class="low" role="row">
+              <td>Costa Rica</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="CUB" class="low" role="row">
+              <td>Cuba</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="DJI" class="serious" role="row">
+              <td>Djibouti</td>
+              <td>33.2</td>
+            </tr>
+            
+            <tr id="DOM" class="moderate" role="row">
+              <td>Dominican Republic</td>
+              <td>10.8</td>
+            </tr>
+            
+            <tr id="DZA" class="low" role="row">
+              <td>Algeria</td>
+              <td>8.7</td>
+            </tr>
+            
+            <tr id="ECU" class="moderate" role="row">
+              <td>Ecuador</td>
+              <td>14</td>
+            </tr>
+            
+            <tr id="EGY" class="moderate" role="row">
+              <td>Egypt, Arab Rep.</td>
+              <td>13.5</td>
+            </tr>
+            
+            <tr id="ERI" class="no-data" role="row">
+              <td>Eritrea</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="EST" class="low" role="row">
+              <td>Estonia</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="ETH" class="serious" role="row">
+              <td>Ethiopia</td>
+              <td>33.9</td>
+            </tr>
+            
+            <tr id="FJI" class="low" role="row">
+              <td>Fiji</td>
+              <td>8.7</td>
+            </tr>
+            
+            <tr id="GAB" class="moderate" role="row">
+              <td>Gabon</td>
+              <td>12.5</td>
+            </tr>
+            
+            <tr id="GEO" class="low" role="row">
+              <td>Georgia</td>
+              <td>8.5</td>
+            </tr>
+            
+            <tr id="GHA" class="moderate" role="row">
+              <td>Ghana</td>
+              <td>15.5</td>
+            </tr>
+            
+            <tr id="GIN" class="serious" role="row">
+              <td>Guinea</td>
+              <td>28.8</td>
+            </tr>
+            
+            <tr id="GMB" class="serious" role="row">
+              <td>Gambia, The</td>
+              <td>21.5</td>
+            </tr>
+            
+            <tr id="GNB" class="serious" role="row">
+              <td>Guinea-Bissau</td>
+              <td>30.3</td>
+            </tr>
+            
+            <tr id="GTM" class="serious" role="row">
+              <td>Guatemala</td>
+              <td>21.1</td>
+            </tr>
+            
+            <tr id="GUY" class="moderate" role="row">
+              <td>Guyana</td>
+              <td>14.4</td>
+            </tr>
+            
+            <tr id="HND" class="moderate" role="row">
+              <td>Honduras</td>
+              <td>13.4</td>
+            </tr>
+            
+            <tr id="HRV" class="low" role="row">
+              <td>Croatia</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="HTI" class="alarming" role="row">
+              <td>Haiti</td>
+              <td>37.3</td>
+            </tr>
+            
+            <tr id="IDN" class="serious" role="row">
+              <td>Indonesia</td>
+              <td>22.1</td>
+            </tr>
+            
+            <tr id="IND" class="serious" role="row">
+              <td>India</td>
+              <td>29</td>
+            </tr>
+            
+            <tr id="IRN" class="low" role="row">
+              <td>Iran, Islamic Rep.</td>
+              <td>6.8</td>
+            </tr>
+            
+            <tr id="IRQ" class="serious" role="row">
+              <td>Iraq</td>
+              <td>22.2</td>
+            </tr>
+            
+            <tr id="JAM" class="low" role="row">
+              <td>Jamaica</td>
+              <td>8.1</td>
+            </tr>
+            
+            <tr id="JOR" class="low" role="row">
+              <td>Jordan</td>
+              <td>5.8</td>
+            </tr>
+            
+            <tr id="KAZ" class="low" role="row">
+              <td>Kazakhstan</td>
+              <td>8</td>
+            </tr>
+            
+            <tr id="KEN" class="serious" role="row">
+              <td>Kenya</td>
+              <td>24</td>
+            </tr>
+            
+            <tr id="KGZ" class="low" role="row">
+              <td>Kyrgyz Republic</td>
+              <td>9.4</td>
+            </tr>
+            
+            <tr id="KHM" class="serious" role="row">
+              <td>Cambodia</td>
+              <td>22.6</td>
+            </tr>
+            
+            <tr id="KWT" class="low" role="row">
+              <td>Kuwait</td>
+              <td>5</td>
+            </tr>
+            
+            <tr id="LAO" class="serious" role="row">
+              <td>Lao PDR</td>
+              <td>28.5</td>
+            </tr>
+            
+            <tr id="LBN" class="low" role="row">
+              <td>Lebanon</td>
+              <td>6.4</td>
+            </tr>
+            
+            <tr id="LBR" class="serious" role="row">
+              <td>Liberia</td>
+              <td>30.8</td>
+            </tr>
+            
+            <tr id="LBY" class="no-data" role="row">
+              <td>Libya</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="LKA" class="serious" role="row">
+              <td>Sri Lanka</td>
+              <td>25.5</td>
+            </tr>
+            
+            <tr id="LSO" class="serious" role="row">
+              <td>Lesotho</td>
+              <td>23.5</td>
+            </tr>
+            
+            <tr id="LTU" class="low" role="row">
+              <td>Lithuania</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="LVA" class="low" role="row">
+              <td>Latvia</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="MAR" class="low" role="row">
+              <td>Morocco</td>
+              <td>9.5</td>
+            </tr>
+            
+            <tr id="MDA" class="low" role="row">
+              <td>Moldova</td>
+              <td>9.1</td>
+            </tr>
+            
+            <tr id="MDG" class="alarming" role="row">
+              <td>Madagascar</td>
+              <td>36.3</td>
+            </tr>
+            
+            <tr id="MEX" class="low" role="row">
+              <td>Mexico</td>
+              <td>7.3</td>
+            </tr>
+            
+            <tr id="MKD" class="low" role="row">
+              <td>Macedonia, FYR</td>
+              <td>5.9</td>
+            </tr>
+            
+            <tr id="MLI" class="serious" role="row">
+              <td>Mali</td>
+              <td>29.6</td>
+            </tr>
+            
+            <tr id="MMR" class="serious" role="row">
+              <td>Myanmar</td>
+              <td>23.5</td>
+            </tr>
+            
+            <tr id="MNE" class="low" role="row">
+              <td>Montenegro</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="MNG" class="moderate" role="row">
+              <td>Mongolia</td>
+              <td>14.7</td>
+            </tr>
+            
+            <tr id="MOZ" class="serious" role="row">
+              <td>Mozambique</td>
+              <td>32.5</td>
+            </tr>
+            
+            <tr id="MRT" class="serious" role="row">
+              <td>Mauritania</td>
+              <td>22.6</td>
+            </tr>
+            
+            <tr id="MWI" class="serious" role="row">
+              <td>Malawi</td>
+              <td>27.3</td>
+            </tr>
+            
+            <tr id="MYS" class="moderate" role="row">
+              <td>Malaysia</td>
+              <td>10.3</td>
+            </tr>
+            
+            <tr id="NAM" class="serious" role="row">
+              <td>Namibia</td>
+              <td>31.8</td>
+            </tr>
+            
+            <tr id="NER" class="serious" role="row">
+              <td>Niger</td>
+              <td>34.5</td>
+            </tr>
+            
+            <tr id="NGA" class="serious" role="row">
+              <td>Nigeria</td>
+              <td>32.8</td>
+            </tr>
+            
+            <tr id="NIC" class="moderate" role="row">
+              <td>Nicaragua</td>
+              <td>13.6</td>
+            </tr>
+            
+            <tr id="NPL" class="serious" role="row">
+              <td>Nepal</td>
+              <td>22.2</td>
+            </tr>
+            
+            <tr id="OMN" class="no-data" role="row">
+              <td>Oman</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="PAK" class="serious" role="row">
+              <td>Pakistan</td>
+              <td>33.9</td>
+            </tr>
+            
+            <tr id="PAN" class="low" role="row">
+              <td>Panama</td>
+              <td>9.6</td>
+            </tr>
+            
+            <tr id="PER" class="low" role="row">
+              <td>Peru</td>
+              <td>9.1</td>
+            </tr>
+            
+            <tr id="PHL" class="serious" role="row">
+              <td>Philippines</td>
+              <td>20.1</td>
+            </tr>
+            
+            <tr id="PNG" class="no-data" role="row">
+              <td>Papua New Guinea</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="PRK" class="serious" role="row">
+              <td>North Korea</td>
+              <td>28.8</td>
+            </tr>
+            
+            <tr id="PRY" class="moderate" role="row">
+              <td>Paraguay</td>
+              <td>10.5</td>
+            </tr>
+            
+            <tr id="QAT" class="no-data" role="row">
+              <td>Qatar</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="ROU" class="low" role="row">
+              <td>Romania</td>
+              <td>5.3</td>
+            </tr>
+            
+            <tr id="RUS" class="low" role="row">
+              <td>Russian Federation</td>
+              <td>6.6</td>
+            </tr>
+            
+            <tr id="RWA" class="serious" role="row">
+              <td>Rwanda</td>
+              <td>30.3</td>
+            </tr>
+            
+            <tr id="SAU" class="low" role="row">
+              <td>Saudi Arabia</td>
+              <td>5.1</td>
+            </tr>
+            
+            <tr id="SDN" class="no-data" role="row">
+              <td>Sudan</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="SSD" class="no-data" role="row">
+              <td>South Sudan</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="SEN" class="serious" role="row">
+              <td>Senegal</td>
+              <td>23.2</td>
+            </tr>
+            
+            <tr id="SLE" class="alarming" role="row">
+              <td>Sierra Leone</td>
+              <td>38.9</td>
+            </tr>
+            
+            <tr id="SLV" class="moderate" role="row">
+              <td>El Salvador</td>
+              <td>11.1</td>
+            </tr>
+            
+            <tr id="SOM" class="no-data" role="row">
+              <td>Somalia</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="SRB" class="low" role="row">
+              <td>Serbia</td>
+              <td>7.1</td>
+            </tr>
+            
+            <tr id="SUR" class="moderate" role="row">
+              <td>Suriname</td>
+              <td>10.4</td>
+            </tr>
+            
+            <tr id="SVK" class="low" role="row">
+              <td>Slovak Republic</td>
+              <td>5.2</td>
+            </tr>
+            
+            <tr id="SWZ" class="serious" role="row">
+              <td>Swaziland</td>
+              <td>26</td>
+            </tr>
+            
+            <tr id="SYR" class="no-data" role="row">
+              <td>Syrian Arab Republic</td>
+              <td>-</td>
+            </tr>
+            
+            <tr id="TCD" class="alarming" role="row">
+              <td>Chad</td>
+              <td>46.4</td>
+            </tr>
+            
+            <tr id="TGO" class="serious" role="row">
+              <td>Togo</td>
+              <td>23</td>
+            </tr>
+            
+            <tr id="THA" class="moderate" role="row">
+              <td>Thailand</td>
+              <td>11.9</td>
+            </tr>
+            
+            <tr id="TJK" class="serious" role="row">
+              <td>Tajikistan</td>
+              <td>30.3</td>
+            </tr>
+            
+            <tr id="TKM" class="moderate" role="row">
+              <td>Turkmenistan</td>
+              <td>12.9</td>
+            </tr>
+            
+            <tr id="TLS" class="alarming" role="row">
+              <td>Timor-Leste</td>
+              <td>40.7</td>
+            </tr>
+            
+            <tr id="TTO" class="low" role="row">
+              <td>Trinidad & Tobago</td>
+              <td>8.3</td>
+            </tr>
+            
+            <tr id="TUN" class="low" role="row">
+              <td>Tunisia</td>
+              <td>5.6</td>
+            </tr>
+            
+            <tr id="TUR" class="low" role="row">
+              <td>Turkey</td>
+              <td>5.1</td>
+            </tr>
+            
+            <tr id="TZA" class="serious" role="row">
+              <td>Tanzania</td>
+              <td>28.7</td>
+            </tr>
+            
+            <tr id="UGA" class="serious" role="row">
+              <td>Uganda</td>
+              <td>27.6</td>
+            </tr>
+            
+            <tr id="UKR" class="low" role="row">
+              <td>Ukraine</td>
+              <td><5</td>
+            </tr>
+            
+            <tr id="URY" class="low" role="row">
+              <td>Uruguay</td>
+              <td>5.7</td>
+            </tr>
+            
+            <tr id="UZB" class="moderate" role="row">
+              <td>Uzbekistan</td>
+              <td>13.3</td>
+            </tr>
+            
+            <tr id="VEN" class="low" role="row">
+              <td>Venezuela, RB</td>
+              <td>7</td>
+            </tr>
+            
+            <tr id="VNM" class="moderate" role="row">
+              <td>Vietnam</td>
+              <td>14.7</td>
+            </tr>
+            
+            <tr id="YEM" class="serious" role="row">
+              <td>Yemen, Rep.</td>
+              <td>34.2</td>
+            </tr>
+            
+            <tr id="ZAF" class="moderate" role="row">
+              <td>South Africa</td>
+              <td>12.4</td>
+            </tr>
+            
+            <tr id="ZMB" class="alarming" role="row">
+              <td>Zambia</td>
+              <td>41.1</td>
+            </tr>
+            
+            <tr id="ZWE" class="serious" role="row">
+              <td>Zimbabwe</td>
+              <td>30.8</td>
+            </tr>
+            
+          </table>
         </div>
       </div>
-    </div><!-- /#Footer -->  
-	
-	<script src="scripts/leaflet.js"></script>
-	<script src="scripts/leaflet.ajax.min.js"></script>
-	<!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/datatables/media/js/jquery.dataTables.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-	
-	<!-- build:js scripts/main.js -->
-	<script src="scripts/main.js"></script>
-	<!-- endbuild -->
+    </div><!-- /column-container -->
+  </div>
+</div>
+<div class="row">
+  <ul class="ghi-levels">
+    <li class="extra-alarming">Extremely alarming >= 30</li>
+    <li class="alarming">Alarming 20-29.9</li>
+    <li class="serious">Serious 10-19.9</li>
+    <li class="moderation">Moderation 5-9.9</li>
+    <li class="low">Low <= 4.9</li>
+    <li class="no-data">No data</li>
+    <li class="indust-country">Industrialized country</li>
+  </ul>
+</div>
+<section id="home-blocks">
+  <div class="row">
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Presentation</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+      </a>
+    </div><!-- /Block -->
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Methodology</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+      </a>
+    </div><!-- /Block -->
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Testimonials</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+      </a>
+    </div><!-- /Block -->
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Press Contacts</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+      </a>
+    </div><!-- /Block -->
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Help Us</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+      </a>
+    </div><!-- /Block -->
+    <div class="large-4 medium-6 small-12 columns">
+      <a href="#">
+        <h3>Other</h3>
+        <p><img src="http://placehold.it/300x200"></p>
+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jâ­cama salsify.</p>
+      </a>
+    </div><!-- /Block -->
+  </div>
+</section><!-- /#Home Blocks -->
+
+
+
+  <div id="footer">
+    <div class="row">
+      <div class="medium-4 medium-4 push-8 columns">
+        <ul class="credits">
+          <li><i class="fi-eye small"></i> <a target="_blank" href="">Source code</a></li>
+          <li><i class="fi-heart small"></i> Made by <a target="_blank" href="http://jplusplus.org">Journalism++</a></li>
+        </ul>
+      </div>
+      <div class="medium-8 medium-8 pull-4 columns">
+        <ul class="orgs">
+          <li><a target="_blank" href="http://www.welthungerhilfe.de/en/home-en.html"><img src="/images/ifpri_white.png"></a></li>
+          <li><a target="_blank" href="https://www.concern.net"><img src="/images/concern-worldwide_white.png"></a></li>
+          <li><a target="_blank" href="http://www.welthungerhilfe.de/en/home-en.html"><img src="/images/welthungerhilfe_white.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /#Footer -->  
+
+  <script src="/scripts/leaflet.js"></script>
+  <script src="/scripts/leaflet.ajax.min.js"></script>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/scripts/jquery.js"></script>
+  <script src="/scripts/jquery.dataTables.js"></script>
+  <script src="/scripts/foundation.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  
+<script src="/scripts/main.js"></script>
+
+  <!-- endbuild -->
 </body>
 </html>
