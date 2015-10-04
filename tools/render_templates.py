@@ -29,16 +29,52 @@ template_dir = "../site/jinja_templates"
 env = jinja2.Environment(loader=jinja2.FileSystemLoader([template_dir]))
 
 
+def get_level_from_score(score):
+    level = ""
+    if score == "-":
+        level = "no-data"
+    elif score == "<5":
+        level = "low"
+    elif float(score) >= 50:
+        level = "extra-alarming"
+    elif float(score) >= 35:
+        level = "alarming"
+    elif float(score) >= 20:
+        level = "serious"
+    elif float(score) >= 10:
+        level = "moderate"
+    elif float(score) >= 0:
+        level = "low"
+    else:
+        print "Unexpected score: ", score
+    return level
+
+'''
+
+  return d >= 50 ? '#ab0635' :
+    d >= 35  ? '#e9841d' :
+    d >= 20  ? '#fbe0c7' :
+    d >= 10  ? '#bedcb3' :
+    d >= 0   ? '#4caf45' :
+    '#eaeaea';
+
+'''
+
+
 def create_index_page():
     '''Generates the index page with the list of available packages.
     Accepts a list of pkg_info dicts, which are generated with the
     process_datapackage function.'''
     template = env.get_template("index.html")
 
+    table_entries = json.loads(open("../data/table_data.json", "r").read())["data"]
+    for entry in table_entries:
+        entry['level'] = get_level_from_score(entry['score'])
+
     csvdata = csv.reader(open("../data/messages.csv", 'r'))
     messages = {label: text for label, text, text_de in csvdata}
 
-    context = {"table_entries": json.loads(open("../data/table_data.json", "r").read())["data"],
+    context = {"table_entries": table_entries,
                "m": messages,
                }
     contents = template.render(**context)
