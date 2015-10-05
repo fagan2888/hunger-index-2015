@@ -69,6 +69,7 @@ f = open("../site/app/data/countrydata.geo.json", 'w')
 f.write(json.dumps(geodata, indent=2))
 f.close()
 
+
 # table data
 table_entries = []
 for entry in geodata['features']:
@@ -81,49 +82,42 @@ for entry in geodata['features']:
          'id': country_id,
          'score': entry['properties']['score'],
          'details': {
-             'undernourished': {
-                 1990: {'score': indicators[country_name]['under-1990'],
-                        'estimate': bool(indicators[country_name]['under-1990-est'])},
-                 1995: {'score': indicators[country_name]['under-1995'],
-                        'estimate': bool(indicators[country_name]['under-1995-est'])},
-                 2000: {'score': indicators[country_name]['under-2000'],
-                        'estimate': bool(indicators[country_name]['under-2000-est'])},
-                 2005: {'score': indicators[country_name]['under-2005'],
-                        'estimate': bool(indicators[country_name]['under-2005-est'])},
-                 2015: {'score': indicators[country_name]['under-2015'],
-                        'estimate': bool(indicators[country_name]['under-2015-est'])},
-             },
-             'stunting': {
-                 1990: {'score': indicators[country_name]['stunting-1990'],
-                        'estimate': bool(indicators[country_name]['stunting-1990-est'])},
-                 1995: {'score': indicators[country_name]['stunting-1995'],
-                        'estimate': bool(indicators[country_name]['stunting-1995-est'])},
-                 2000: {'score': indicators[country_name]['stunting-2000'],
-                        'estimate': bool(indicators[country_name]['stunting-2000-est'])},
-                 2005: {'score': indicators[country_name]['stunting-2005'],
-                        'estimate': bool(indicators[country_name]['stunting-2005-est'])},
-                 2015: {'score': indicators[country_name]['stunting-2015'],
-                        'estimate': bool(indicators[country_name]['stunting-2015-est'])},
-             },
-             'wasting': {
-                 1990: {'score': indicators[country_name]['wasting-1990'],
-                        'estimate': bool(indicators[country_name]['wasting-1990-est'])},
-                 1995: {'score': indicators[country_name]['wasting-1995'],
-                        'estimate': bool(indicators[country_name]['wasting-1995-est'])},
-                 2000: {'score': indicators[country_name]['wasting-2000'],
-                        'estimate': bool(indicators[country_name]['wasting-2000-est'])},
-                 2005: {'score': indicators[country_name]['wasting-2005'],
-                        'estimate': bool(indicators[country_name]['wasting-2005-est'])},
-                 2015: {'score': indicators[country_name]['wasting-2015'],
-                        'estimate': bool(indicators[country_name]['wasting-2015-est'])},
-             },
-             'mortality': {
-                 1990: {'score': indicators[country_name]['mortality-1990']},
-                 1995: {'score': indicators[country_name]['mortality-1995']},
-                 2000: {'score': indicators[country_name]['mortality-2000']},
-                 2005: {'score': indicators[country_name]['mortality-2005']},
-                 2013: {'score': indicators[country_name]['mortality-2013']},
-             }}}
+             'undernourished_1990': {'score': indicators[country_name]['under-1990'],
+                                     'estimate': bool(indicators[country_name]['under-1990-est'])},
+             'undernourished_1995': {'score': indicators[country_name]['under-1995'],
+                                     'estimate': bool(indicators[country_name]['under-1995-est'])},
+             'undernourished_2000': {'score': indicators[country_name]['under-2000'],
+                                     'estimate': bool(indicators[country_name]['under-2000-est'])},
+             'undernourished_2005': {'score': indicators[country_name]['under-2005'],
+                                     'estimate': bool(indicators[country_name]['under-2005-est'])},
+             'undernourished_2015': {'score': indicators[country_name]['under-2015'],
+                                     'estimate': bool(indicators[country_name]['under-2015-est'])},
+             'stunting_1990': {'score': indicators[country_name]['stunting-1990'],
+                               'estimate': bool(indicators[country_name]['stunting-1990-est'])},
+             'stunting_1995': {'score': indicators[country_name]['stunting-1995'],
+                               'estimate': bool(indicators[country_name]['stunting-1995-est'])},
+             'stunting_2000': {'score': indicators[country_name]['stunting-2000'],
+                               'estimate': bool(indicators[country_name]['stunting-2000-est'])},
+             'stunting_2005': {'score': indicators[country_name]['stunting-2005'],
+                               'estimate': bool(indicators[country_name]['stunting-2005-est'])},
+             'stunting_2015': {'score': indicators[country_name]['stunting-2015'],
+                               'estimate': bool(indicators[country_name]['stunting-2015-est'])},
+             'wasting_1990': {'score': indicators[country_name]['wasting-1990'],
+                              'estimate': bool(indicators[country_name]['wasting-1990-est'])},
+             'wasting_1995': {'score': indicators[country_name]['wasting-1995'],
+                              'estimate': bool(indicators[country_name]['wasting-1995-est'])},
+             'wasting_2000': {'score': indicators[country_name]['wasting-2000'],
+                              'estimate': bool(indicators[country_name]['wasting-2000-est'])},
+             'wasting_2005': {'score': indicators[country_name]['wasting-2005'],
+                              'estimate': bool(indicators[country_name]['wasting-2005-est'])},
+             'wasting_2015': {'score': indicators[country_name]['wasting-2015'],
+                              'estimate': bool(indicators[country_name]['wasting-2015-est'])},
+             'mortality_1990': {'score': indicators[country_name]['mortality-1990']},
+             'mortality_1995': {'score': indicators[country_name]['mortality-1995']},
+             'mortality_2000': {'score': indicators[country_name]['mortality-2000']},
+             'mortality_2005': {'score': indicators[country_name]['mortality-2005']},
+             'mortality_2013': {'score': indicators[country_name]['mortality-2013']},
+         }}
     table_entries.append(d)
 
 # https://stackoverflow.com/a/73044
@@ -131,6 +125,6 @@ for entry in geodata['features']:
 
 table_data = {'data': table_entries}
 
-f = open("../data/table_data.json", 'w')
+f = open("../data/country-details.json", 'w')
 f.write(json.dumps(table_data, indent=2))
 f.close()

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+<script src="{{ relpath }}scripts/leaflet.js"></script>
+<script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
+<script src="{{ relpath }}scripts/Chart.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section id="home-blocks">
+  <div class="row">
+    <div class="large-12 medium-12 small-12 columns">
+      <h3>Home / {{ name }}</h3>
+
+      <h2>{{ name }}</h2>
+
+      <p>{{ name }} has a Global Hunger Index score of {{ score.year2015 }} in 2015.</p>
+      <p>Hunger level: XXX</p>
+
+      <p>Score evolution: XXX points (XXX in 2005)</p>
+
+      <h2>Global hunger index evolution</h2>
+      <ul>
+        <li>{{ score.year1990 }}</li>
+        <li>{{ score.year1995 }}</li>
+        <li>{{ score.year2000 }}</li>
+        <li>{{ score.year2005 }}</li>
+        <li>{{ score.year2015 }}</li>
+      </ul>
+
+      <h2>Detailed score for 2015</h2>
+      <ul>
+        <li>Undernourished: {{ d.undernourished_2015.score }}</li>
+        <li>Stunting: {{ d.stunting_2015.score }}</li>
+        <li>Mortality: {{ d.mortality_2013.score }}</li>
+        <li>Wasting: {{ d.wasting_2015.score }}</li>
+      </ul>
+      
+      <h2>Evolution from 1990 to 2015</h2>
+      
+
+
+    </div><!-- /Block -->
+  </div>
+</section><!-- /#Home Blocks -->
+
+{% endblock %}

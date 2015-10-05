@@ -85,6 +85,35 @@ def create_static_page(name):
     f.close()
 
 
+def create_country_pages():
+    template = env.get_template("country.html")
+    country_data = json.loads(open("../data/country-details.json", "r").read())["data"]
+    country_codes = [entry['id'] for entry in country_data]
+
+    for country_code in country_codes:
+        country = None
+        for c in country_data:
+            if c['id'] == country_code:
+                country = c
+                break
+        if not country:
+            print "Could not find country!!"
+
+        context = {"score": country['score'],
+                   "d": country['details'],
+                   "name": country['name'],
+                   "m": messages,
+                   "relpath": "../../",
+                   }
+        contents = template.render(**context)
+        dirname = "../site/app/html/countries/%s/" % country_code
+        if not os.path.exists(dirname):
+            os.makedirs(dirname)
+        f = codecs.open(os.path.join(dirname, "index.html"), 'w', 'utf-8')
+        f.write(contents)
+        f.close()
+
+
 def create_trends_page():
     template = env.get_template("trends.html")
     table_entries = json.loads(open("../data/table_data.json", "r").read())["data"]
@@ -107,3 +136,4 @@ if __name__ == "__main__":
     create_trends_page()
     for p in static_pages:
         create_static_page(p)
+    create_country_pages()
