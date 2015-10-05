@@ -6350,11 +6350,12 @@ th.hide-for-touch {
     #main-map .large-4 #table-container {
       height: 304px;
       overflow-y: scroll; }
-      #main-map .large-4 #table-container table tr td {
-        padding: 0.5625rem 0.9375rem; }
-    #main-map .large-4 .row {
+  #main-map .column-container {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; }
+    #main-map .column-container .row {
       padding: 0.5rem 0 0; }
-      #main-map .large-4 .row p {
+      #main-map .column-container .row p {
         font-size: 0.875rem;
         margin-bottom: 0;
         padding-right: 0; }
@@ -6438,7 +6439,7 @@ th.hide-for-touch {
     border-right-color: #eaeaea; }
 
 .ghi-levels {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0;
   margin: 0; }
   .ghi-levels li {
     list-style-type: none;
