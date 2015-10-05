@@ -56,7 +56,7 @@ Ethiopia experienced multiple, simultaneous civil wars between 1974 and 1991, al
 Only one country—Kuwait—experienced an increase in its score between 2000 and 2015. However, the increase, from a 4.2 score to a 5.0 score between the 2000 GHI and 2015 GHI, is small in absolute terms and Kuwait’s hunger level is still categorized as low. Most importantly, Kuwait’s 2015 score of 5.0 represents a dramatic improvement compared to 1990 and 1995, when its GHI scores were 24.3 (serious) and 16.1 (moderate) respectively. In fact, according to the 2014 GHI report, which compared 2014 scores with 1990 scores, Kuwait was the biggest “winner,” given that it experienced the largest percentage reduction in GHI scores among all the countries for which scores were calculated. The unusually high score in 1990 was due to Iraq’s invasion of Kuwait, which precipitated the first Gulf War. The evolution of Kuwait’s hunger levels should be evaluated in that context.
 
 #####Figure2-3
-![GHI Chapter two figure three"](http://library.ifpri.info/files/2015/10/ghi_2015_ch02_fig03.png" #fig2.3")
+![GHI Chapter two figure three](http://library.ifpri.info/files/2015/10/ghi_2015_ch02_fig03.png "#fig2.3")
 
 Eight countries still suffer from levels of hunger that are alarming. The majority of those are in Africa south of the Sahara. The three exceptions are Afghanistan, Haiti, and Timor-Leste. In last year’s GHI report, based on the previous GHI formula, two countries had extremely alarming 2014 GHI scores—Burundi and Eritrea. Scores could not be calculated for these countries this year due to lack of data on undernourishment, but it is likely that they persist as hunger hot spots.
 
