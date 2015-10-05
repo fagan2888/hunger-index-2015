@@ -121,26 +121,28 @@ $notcalculated-grey: #eaeaea;
     background-color: #f9f9f9;
     p {
         margin: 0;
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         line-height: 1.2;
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: 0.5rem;
+        padding-top: 0.25rem;
         
         .button {
-            margin-bottom: 1rem;
+            margin-bottom: 0;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
             }
         }
         
     p:last-child {
+        text-align: center;
         margin: 0.25rem 0 0;
+        padding-bottom: 0.75rem;
         }
 
 
     .leaflet-popup-content {
-        margin: 20px 0 0;
+        margin: 1rem 0 0;
         background-color: #fff;
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
@@ -189,11 +191,16 @@ $notcalculated-grey: #eaeaea;
     .button {
         margin-bottom: 0;
         }
+        
+    button.dropdown:focus {
+        outline: none;
+        }
 }
 
 #table-container {
     border-bottom: 1px solid #ddd;
     #country-table {
+        tbody tr td { cursor: pointer; }
         tbody tr td:nth-child(2) {
             border-right: 1rem solid #fff;
             }
@@ -248,7 +255,7 @@ $notcalculated-grey: #eaeaea;
         display: block;
         color: #54544b;
         }
-    .columns:hover, .columns:focus {
+    .columns:hover {
         background-color: $notcalculated-grey;
         -o-transition:.5s;
         -ms-transition:.5s;
@@ -260,7 +267,30 @@ $notcalculated-grey: #eaeaea;
      .columns a:hover, .columns a:hover h3 {   
         color: $primary-color;
         }
+     .columns:focus {
+        color: $primary-color;
+        }
 }
+
+/* Static pages
+*/
+
+#static-content {
+    .row h1 {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem;
+        }
+        
+    .row p > strong {
+        font-family: $font-family-sans-serif-narrow;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        }
+}
+
+
+/* Trends page
+*/
 
 
 
@@ -268,16 +298,14 @@ $notcalculated-grey: #eaeaea;
 */
 
 #footer {
+    color: #fff;
     background-color: $jet;
-    padding: 1rem;
     ul li {
         display: inline-block;
         list-style-type:none;
-        margin-left: 10px;
         }
     ul.orgs li {
-        margin-right: 10px;
-        margin-left: 0;
+        margin-right: 1.5rem;
         a {
             display: inline-block;
             height: 60px;
@@ -288,6 +316,12 @@ $notcalculated-grey: #eaeaea;
                 }
             }
         }
+    .credits {
+        li {
+            margin-left: 1rem;
+            i { margin-right: 0.25rem; }
+            }
+    }
 }
 
 /* Media Queries
