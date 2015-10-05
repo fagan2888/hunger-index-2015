@@ -272,6 +272,23 @@ $notcalculated-grey: #eaeaea;
         }
 }
 
+/* Static pages
+*/
+
+#main-content {
+    .row h1 {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem;
+        }
+        
+    .row p > strong {
+        font-family: $font-family-sans-serif-narrow;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        }
+}
+
+
 
 
 /* Footer
