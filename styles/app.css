@@ -6368,19 +6368,21 @@ th.hide-for-touch {
   background-color: #f9f9f9; }
   .leaflet-container .leaflet-popup .leaflet-popup-content-wrapper p {
     margin: 0;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     line-height: 1.2;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 0.5rem; }
+    padding-top: 0.25rem; }
     .leaflet-container .leaflet-popup .leaflet-popup-content-wrapper p .button {
-      margin-bottom: 1rem;
+      margin-bottom: 0;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem; }
   .leaflet-container .leaflet-popup .leaflet-popup-content-wrapper p:last-child {
-    margin: 0.25rem 0 0; }
+    text-align: center;
+    margin: 0.25rem 0 0;
+    padding-bottom: 0.75rem; }
   .leaflet-container .leaflet-popup .leaflet-popup-content-wrapper .leaflet-popup-content {
-    margin: 20px 0 0;
+    margin: 1rem 0 0;
     background-color: #fff;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px; }
@@ -6418,8 +6420,13 @@ th.hide-for-touch {
 .year-select .button {
   margin-bottom: 0; }
 
+.year-select button.dropdown:focus {
+  outline: none; }
+
 #table-container {
   border-bottom: 1px solid #ddd; }
+  #table-container #country-table tbody tr td {
+    cursor: pointer; }
   #table-container #country-table tbody tr td:nth-child(2) {
     border-right: 1rem solid #fff; }
   #table-container #country-table .extra-alarming td:nth-child(2) {
@@ -6480,7 +6487,7 @@ th.hide-for-touch {
   display: block;
   color: #54544b; }
 
-#home-blocks .columns:hover, #home-blocks .columns:focus {
+#home-blocks .columns:hover {
   background-color: #eaeaea;
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -6492,18 +6499,30 @@ th.hide-for-touch {
 #home-blocks .columns a:hover, #home-blocks .columns a:hover h3 {
   color: #89a527; }
 
+#home-blocks .columns:focus {
+  color: #89a527; }
+
+/* Static pages
+*/
+#main-content .row h1 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem; }
+
+#main-content .row p > strong {
+  font-family: "PT Sans Narrow Bold", "DejaVu Sans", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem; }
+
 /* Footer
 */
 #footer {
-  background-color: #54544b;
-  padding: 1rem; }
+  color: #fff;
+  background-color: #54544b; }
   #footer ul li {
     display: inline-block;
-    list-style-type: none;
-    margin-left: 10px; }
+    list-style-type: none; }
   #footer ul.orgs li {
-    margin-right: 10px;
-    margin-left: 0; }
+    margin-right: 1.5rem; }
     #footer ul.orgs li a {
       display: inline-block;
       height: 60px;
@@ -6511,6 +6530,10 @@ th.hide-for-touch {
       #footer ul.orgs li a img {
         height: 100%;
         width: auto; }
+  #footer .credits li {
+    margin-left: 1rem; }
+    #footer .credits li i {
+      margin-right: 0.25rem; }
 
 /* Media Queries
 */
