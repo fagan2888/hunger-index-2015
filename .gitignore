@@ -4,4 +4,5 @@
 site/app/html
 
 site/dist/
-
+/site/app/data/countrydata.geo.json
+/site/.publish/

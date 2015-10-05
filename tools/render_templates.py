@@ -20,7 +20,7 @@ import codecs
 import markdown
 
 # Specify the static page names to render
-static_pages = ["about", "contact", "hunger", "methodology"]
+static_pages = ["about", "contact", "hunger", "methodology", "trends"]
 
 # set up Jinja
 template_dir = "../site/jinja_templates"

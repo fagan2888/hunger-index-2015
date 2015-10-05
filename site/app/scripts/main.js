@@ -90,18 +90,15 @@ function getSeverity(d) {
   }
 
   function onEachFeature(feature, layer) {
-    console.log(feature.properties.name);
 
-    if (typeof feature.properties.score !== 'undefined') {
-      // country is in the index (not industrialized)
-
-      // set up popups
-      var popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score.year2015 + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score.year2015) + '</strong></p> <p><a class="button small radius" href="/countries/' + feature.id + '">Find out more</a></p>';
+    // set up popups
+    var popupContent;
+    if (feature.properties.score.year2015 !== 'nc') {
+      popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score.year2015 + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score.year2015) + '</strong></p> <p><a class="button small radius" href="/countries/' + feature.id + '">Find out more</a></p>';
     } else {
-      var popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong> Industrialized country</p>';
-
-
+      popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong> Not calculated</p>';
     }
+
 
 
     layer.bindPopup(popupContent, {autopan: true});
@@ -116,11 +113,10 @@ function getSeverity(d) {
   }
 
   // https://gis.stackexchange.com/a/102125
-  geojsonLayer = new L.GeoJSON.AJAX('data/mockdata.geo.json', {
+  geojsonLayer = new L.GeoJSON.AJAX('data/countrydata.geo.json', {
     style: style,
     onEachFeature: onEachFeature
   });       
-  console.log(geojsonLayer);
   geojsonLayer.addTo(map);
 
   $(document).ready(function() {

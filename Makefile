@@ -17,6 +17,9 @@ build:
 serve:
 	cd site; gulp watch
 
+deploy:
+	cd site; gulp deploy
+
 clean:
 	rm -fr site/dist
 

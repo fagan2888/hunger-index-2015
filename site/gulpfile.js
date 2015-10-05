@@ -9,6 +9,7 @@ var open = require('open');
 var browserSync = require('browser-sync').create();
 var wiredep = require('wiredep').stream;
 var gutil = require('gulp-load-utils')(['log']);
+var ghPages = require('gulp-gh-pages');
 
 // Load plugins
 var $ = require('gulp-load-plugins')();
@@ -41,7 +42,9 @@ gulp.task('scripts', function () {
     return gulp.src(['app/scripts/**/*.js'])
         .pipe($.jshint('.jshintrc'))
         .pipe($.jshint.reporter('default'))
-        .pipe($.size());
+        .pipe(gulp.dest('dist/scripts'))
+        .pipe($.size())
+        .pipe(browserSync.stream());
 });
 
 // HTML
@@ -181,3 +184,9 @@ gulp.task('watch', ['connect', 'serve'], function () {
     gulp.watch('app/images/**/*.*',['images']);
 
 });
+
+gulp.task('deploy', function() {
+  return gulp.src("./dist/**/*")
+    .pipe(ghPages());
+});
+
