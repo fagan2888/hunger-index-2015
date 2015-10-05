@@ -1,6 +1,6 @@
 # About
 **What is the Global Hunger Index?**  
-The Global Hunger Index (GHI) is a tool designed to comprehensively measure and track hunger globally, regionally, and by country.<sup>1</sup> Each year, the International Food Policy Research Institute (IFPRI) calculates GHI scores in order to assess progress, or the lack thereof, in decreasing hunger. The GHI is designed to raise awareness and understanding of regional and country differences in the struggle against hunger. By calling attention to the issue, we hope that the GHI will trigger action to reduce hunger around the world.
+The Global Hunger Index (GHI) is a tool designed to comprehensively measure and track hunger globally, regionally, and by country[^country]. Each year, the International Food Policy Research Institute (IFPRI) calculates GHI scores in order to assess progress, or the lack thereof, in decreasing hunger. The GHI is designed to raise awareness and understanding of regional and country differences in the struggle against hunger. By calling attention to the issue, we hope that the GHI will trigger action to reduce hunger around the world.
 
 **How do you interpret a GHI score?**  
 An increase in a country's GHI score indicates that the hunger situation is worsening, while a decrease in the score indicates improvement in the country's hunger situation.
@@ -42,6 +42,6 @@ Further improvements in collecting high-quality data on hunger and undernutritio
 
 **More information can be found at: [www.ifpri.org/ghi/2015](http://www.ifpri.org/ghi/2015/)**
 
-<sup>1</sup> <small>For background information on the GHI concept, see Wiesmann (2004) and Wiesmann, von Braun, and Feldbrügge (2000).</small>  
+[^country]: For background information on the GHI concept, see Wiesmann (2004) and Wiesmann, von Braun, and Feldbrügge (2000).
 <sup>2</sup> <small>According to recent estimates, undernutrition is responsible for 45 percent of deaths among children younger than five years old (Black et al. 2013).</small>  
 <sup>3</sup> <small>The latest undernourishment estimates from the Food and Agriculture Organization of the United Nations (FAO) include projections for 2014–2016, which are used in the calculation of the 2015 GHI (FAO, IFAD, and WFP 2015).</small>
