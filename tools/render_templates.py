@@ -60,6 +60,7 @@ def create_index_page():
 
     context = {"table_entries": table_entries,
                "m": messages,
+               "relpath": "",
                }
     contents = template.render(**context)
     f = codecs.open("../site/app/html/index.html", 'w', 'utf-8')
@@ -73,6 +74,7 @@ def create_static_page(name):
     content = markdown.markdown(open("../data/pages/%s.md" % name, "r").read())
     context = {"md_content": content,
                "m": messages,
+               "relpath": "../",
                }
     contents = template.render(**context)
     dirname = "../site/app/html/%s/" % name
