@@ -2,6 +2,7 @@
 
 import json
 import csv
+import copy
 
 geodata = json.loads(open("../data/ghi-countries.geo.json", "r").read())
 scores = csv.DictReader(open("../data/ghi-scores.csv", "r"))
@@ -14,6 +15,7 @@ for row in ind_reader:
     indicators[country] = info
 
 country_codes = [entry['id'] for entry in geodata['features']]
+years = [1990, 1995, 2000, 2005, 2015]
 
 for s in scores:
     if s['countrycode3'] in country_codes:
@@ -47,6 +49,20 @@ for entry in geodata['features']:
             'year1995': 'nc',
             'year1990': 'nc',
         }
+
+# divide into yearly files
+for year in years:
+    year_data = copy.deepcopy(geodata)
+    year_data['features'] = []
+    for entry in geodata['features']:
+        # copy entry
+        new_entry = copy.deepcopy(entry)
+        # replace score dict with value for this year
+        new_entry['properties']['score'] = new_entry['properties']['score']['year' + str(year)]
+        year_data['features'].append(new_entry)
+    f = open("../site/app/data/countrydata-%d.geo.json" % year, 'w')
+    f.write(json.dumps(year_data, indent=2))
+    f.close()
 
 
 f = open("../site/app/data/countrydata.geo.json", 'w')
