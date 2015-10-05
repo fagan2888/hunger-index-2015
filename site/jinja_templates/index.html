@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block scripts %}
-<script src="scripts/main.js"></script>
+<script src="{{ relpath }}scripts/leaflet.js"></script>
+<script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
+<script src="{{ relpath }}scripts/main.js"></script>
 {% endblock %}
 
 {% block content %}

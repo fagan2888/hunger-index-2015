@@ -133,21 +133,3 @@ function getSeverity(d) {
 
 }(window, document, L));
 
-/*
-   $(document).ready(function() {
-   $('#country-table').DataTable( {
-   "scrollY": "500px",
-   "scrollCollapse": true,
-   "paging": false,
-   "ordering": false,
-   "info": false,
-   "filter": false,
-   "ajax": "data/table_data.json",
-   "columns": [
-   { "data": "name" },
-   { "data": "score" }
-   ]
-   } );
-   } );
-   */
-

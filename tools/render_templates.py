@@ -20,7 +20,7 @@ import codecs
 import markdown
 
 # Specify the static page names to render
-static_pages = ["about", "contact", "hunger", "methodology", "trends"]
+static_pages = ["about", "contact", "hunger", "methodology"]
 
 # set up Jinja
 template_dir = "../site/jinja_templates"
@@ -84,7 +84,26 @@ def create_static_page(name):
     f.write(contents)
     f.close()
 
+
+def create_trends_page():
+    template = env.get_template("trends.html")
+    table_entries = json.loads(open("../data/table_data.json", "r").read())["data"]
+
+    context = {"table_entries": table_entries,
+               "m": messages,
+               "relpath": "../",
+               }
+    contents = template.render(**context)
+    dirname = "../site/app/html/trends/"
+    if not os.path.exists(dirname):
+        os.makedirs(dirname)
+    f = codecs.open("../site/app/html/trends/index.html", 'w', 'utf-8')
+    f.write(contents)
+    f.close()
+
+
 if __name__ == "__main__":
     create_index_page()
+    create_trends_page()
     for p in static_pages:
         create_static_page(p)

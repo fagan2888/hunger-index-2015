@@ -1,101 +1,25 @@
 {% extends "base.html" %}
 
 {% block scripts %}
-<script src="/scripts/main.js"></script>
+<script src="{{ relpath }}scripts/jquery.dataTables.js"></script>
+<script src="{{ relpath }}scripts/trends.js"></script>
 {% endblock %}
 
 {% block content %}
 
-<div id="main-map" class="row collapse full-width">
-  <div id="map-application" class="large-8 columns">
-    <div id="map" class="map"></div>
-  </div>
-  <div class="large-4 columns">
-    <div class="column-container">
-      <h3 class="row">
-        <span>Ranking</span>
-        <button href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown">2015</button><br>
-        <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
-          <li><a href="#">2015</a></li>
-          <li><a href="#">2014</a></li>
-          <li><a href="#">2013</a></li>
-        </ul>
-        <a class="button tiny secondary radius" href="#">Share/Embed</a>
-      </h3>
-      <div class="row collapse">
-        <p class="large-12 columns">Ranking of every country in <span class="year">2015</span> according to the IFPRI index.</p>
-      </div>          
-      <div class="row">
-        <div id="table-container">
-          <table id="country-table" class="display" width="100%" cellspacing="0">
-            {% for entry in table_entries %}
-            <tr id="{{ entry.id }}" class="{{ entry.level }}" role="row">
-              <td>{{ entry.name }}</td>
-              <td>{{ entry.score }}</td>
-            </tr>
-            {% endfor %}
-          </table>
-        </div>
-      </div>
-    </div><!-- /column-container -->
-  </div>
-</div>
-<div class="row">
-  <ul class="ghi-levels">
-    <li class="extra-alarming">Extremely alarming >= 30</li>
-    <li class="alarming">Alarming 20-29.9</li>
-    <li class="serious">Serious 10-19.9</li>
-    <li class="moderation">Moderation 5-9.9</li>
-    <li class="low">Low <= 4.9</li>
-    <li class="no-data">No data</li>
-    <li class="indust-country">Industrialized country</li>
-  </ul>
-</div>
-<section id="home-blocks">
-  <div class="row">
-    <div class="large-4 medium-6 small-12 columns">
-      <a href="#">
-        <h3>Presentation</h3>
-        <p><img src="http://placehold.it/300x200"></p>
-        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-      </a>
-    </div><!-- /Block -->
-    <div class="large-4 medium-6 small-12 columns">
-      <a href="#">
-        <h3>Methodology</h3>
-        <p><img src="http://placehold.it/300x200"></p>
-        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-      </a>
-    </div><!-- /Block -->
-    <div class="large-4 medium-6 small-12 columns">
-      <a href="#">
-        <h3>Testimonials</h3>
-        <p><img src="http://placehold.it/300x200"></p>
-        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-      </a>
-    </div><!-- /Block -->
-    <div class="large-4 medium-6 small-12 columns">
-      <a href="#">
-        <h3>Press Contacts</h3>
-        <p><img src="http://placehold.it/300x200"></p>
-        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-      </a>
-    </div><!-- /Block -->
-    <div class="large-4 medium-6 small-12 columns">
-      <a href="#">
-        <h3>Help Us</h3>
-        <p><img src="http://placehold.it/300x200"></p>
-        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-      </a>
-    </div><!-- /Block -->
-    <div class="large-4 medium-6 small-12 columns">
-      <a href="#">
-        <h3>Other</h3>
-        <p><img src="http://placehold.it/300x200"></p>
-        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jâ­cama salsify.</p>
-      </a>
-    </div><!-- /Block -->
-  </div>
-</section><!-- /#Home Blocks -->
+<h1>Trends</h1>
+
+<p>The trends table goes here!</p>
+
+<table id="trends-table">
+
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+
+</table>
 
 {% endblock content %}
