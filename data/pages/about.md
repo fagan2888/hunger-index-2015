@@ -14,7 +14,7 @@ The four component indicators are:
 *   Undernourishment: the proportion of undernourished people as a percentage of the population (reflecting the share of the population with insufficient caloric intake);
 *   Child wasting: the proportion of children under the age of five who suffer from wasting (low weight for their height, reflecting acute undernutrition);
 *   Child stunting: the proportion of children under the age of five who suffer from stunting (low height for their age, reflecting chronic undernutrition); and
-*   Child mortality: the mortality rate of children under the age of five (partially reflecting the fatal synergy of inadequate nutrition and unhealthy environments).<sup>2</sup>
+*   Child mortality: the mortality rate of children under the age of five (partially reflecting the fatal synergy of inadequate nutrition and unhealthy environments)[^2].
 
 **Why are scores based on these four indicators?**  
 Hunger is a multidimensional problem. To reflect the [multidimensional nature of hunger](../hunger/), the GHI combines the four component indicators into one index. There are several advantages to measuring hunger using this [multidimensional approach](http://library.ifpri.info/files/2015/10/ghi_2015_ch01_fig01.png). It reflects the nutrition situation of not only the population as a whole, but also of children—a vulnerable subset of the population for whom a lack of dietary energy, protein, or micronutrients (essential vitamins and minerals) leads to a high risk of illness, poor physical and cognitive development, or death. It also combines independently measured indicators to reduce the effects of random measurement errors.
@@ -26,7 +26,7 @@ The 2015 GHI has been calculated for 117 countries for which data on the four co
 The scores are based on source data that are continuously revised by the [international organizations](http://library.ifpri.info/files/2015/10/ghi_2015_appendix_a.png) that compile them, and each year's GHI report reflects these revisions. While these revisions result in improvements in the data, they also mean that the GHI scores from different years' reports are not comparable with one another. Also, with the use of the [revised](http://www.zef.de/fileadmin/webfiles/downloads/zef_wp/zef_wp_139.pdf) formula in this year's report, direct comparisons between this report's findings and the scores from previous GHI reports are not possible. This year's report contains GHI scores for 2015 and four reference periods—1990, 1995, 2000, and 2005. All scores were calculated using the revised formula. This allows for valid comparisons of hunger levels over time.
 
 **How current is the GHI?**  
-The GHI is only as current as the data for its four component indicators. The 2015 GHI reflects the most recent country-level data and projections available between 2010 and 2016. It therefore reflects hunger levels during this period rather than solely capturing the conditions in 2015.<sup>3</sup>
+The GHI is only as current as the data for its four component indicators. The 2015 GHI reflects the most recent country-level data and projections available between 2010 and 2016. It therefore reflects hunger levels during this period rather than solely capturing the conditions in 2015[^3].
 
 **What time periods do the data cover?**  
 The 1990, 1995, 2000, 2005, and 2015 GHI scores presented in this year' s report reflect the latest revised data for the four component indicators of the GHI. The 1990 GHI scores are based on data from 1988 through 1992; the 1995 scores are based on data from 1993–1997; the 2000 scores are based on data from 1998 through 2002; the 2005 scores are based on data from 2003 through 2007; and the 2015 scores are based on data and projections from 2010 through 2016\. Where original source data were not available, the estimates for the GHI component indicators were based on the most recent data available. See [table](http://library.ifpri.info/files/2015/10/ghi_2015_appendix_a.png) for more detailed background information on the data sources and reference periods for the 1990, 1995, 2000, 2005, and 2015 GHI scores.
@@ -44,6 +44,6 @@ Further improvements in collecting high-quality data on hunger and undernutritio
 
 [^country]: For background information on the GHI concept, see Wiesmann (2004) and Wiesmann, von Braun, and Feldbrügge (2000).
 
+[^2]: According to recent estimates, undernutrition is responsible for 45 percent of deaths among children younger than five years old (Black et al. 2013).
 
-<sup>2</sup> <small>According to recent estimates, undernutrition is responsible for 45 percent of deaths among children younger than five years old (Black et al. 2013).</small>  
-<sup>3</sup> <small>The latest undernourishment estimates from the Food and Agriculture Organization of the United Nations (FAO) include projections for 2014–2016, which are used in the calculation of the 2015 GHI (FAO, IFAD, and WFP 2015).</small>
+[^3]: The latest undernourishment estimates from the Food and Agriculture Organization of the United Nations (FAO) include projections for 2014–2016, which are used in the calculation of the 2015 GHI (FAO, IFAD, and WFP 2015).

@@ -71,7 +71,7 @@ def create_index_page():
 def create_static_page(name):
     template = env.get_template("static.html")
 
-    content = markdown.markdown(codecs.open("../data/pages/%s.md" % name, "r", 'utf-8').read())
+    content = markdown.markdown(codecs.open("../data/pages/%s.md" % name, "r", 'utf-8').read(), extensions=['markdown.extensions.footnotes'])
     context = {"md_content": content,
                "m": messages,
                "relpath": "../",
