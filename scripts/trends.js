@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#trends-table").DataTable({ajax:"../data/table_data.json",columns:[{data:"name"},{data:"score"}]})});
