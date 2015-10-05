@@ -43,5 +43,7 @@ Further improvements in collecting high-quality data on hunger and undernutritio
 **More information can be found at: [www.ifpri.org/ghi/2015](http://www.ifpri.org/ghi/2015/)**
 
 [^country]: For background information on the GHI concept, see Wiesmann (2004) and Wiesmann, von Braun, and Feldbrügge (2000).
+
+
 <sup>2</sup> <small>According to recent estimates, undernutrition is responsible for 45 percent of deaths among children younger than five years old (Black et al. 2013).</small>  
 <sup>3</sup> <small>The latest undernourishment estimates from the Food and Agriculture Organization of the United Nations (FAO) include projections for 2014–2016, which are used in the calculation of the 2015 GHI (FAO, IFAD, and WFP 2015).</small>
