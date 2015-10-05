@@ -52,12 +52,12 @@ function getSeverity(d) {
 
   function style(feature) {
     return {
-      fillColor: getColor(feature.properties.score.year2015),
-      weight: feature.properties.score.year2015 ? 1 : 0,
+      fillColor: getColor(feature.properties.score),
+      weight: feature.properties.score ? 1 : 0,
       opacity: 0.3,
       color: 'white',
       dashArray: '',
-      fillOpacity: feature.properties.score.year2015 ? 0.7 : 0
+      fillOpacity: feature.properties.score ? 0.7 : 0
     };
   }
 
@@ -93,8 +93,8 @@ function getSeverity(d) {
 
     // set up popups
     var popupContent;
-    if (feature.properties.score.year2015 !== 'nc') {
-      popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score.year2015 + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score.year2015) + '</strong></p> <p><a class="button small radius" href="/countries/' + feature.id + '">Find out more</a></p>';
+    if (feature.properties.score !== 'nc') {
+      popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="/countries/' + feature.id + '">Find out more</a></p>';
     } else {
       popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong> Not calculated</p>';
     }
@@ -113,7 +113,7 @@ function getSeverity(d) {
   }
 
   // https://gis.stackexchange.com/a/102125
-  geojsonLayer = new L.GeoJSON.AJAX('data/countrydata.geo.json', {
+  geojsonLayer = new L.GeoJSON.AJAX('data/countrydata-2015.geo.json', {
     style: style,
     onEachFeature: onEachFeature
   });       
@@ -121,12 +121,23 @@ function getSeverity(d) {
 
   $(document).ready(function() {
     $('#country-table tbody').on( 'click', 'tr', function (ev) {
+      // clicking on a country in the table focuses the map on it
       var f = geojsonLayer.getLayer(this.id);
       map.setView(f.getBounds().getCenter());
       f.openPopup();
     } );
+    $('#year-drop li a').click( function(ev) {
+      // year dropdown refreshes map
+      var year = this.className;
+      geojsonLayer.clearLayers();geojsonLayer = new L.GeoJSON.AJAX('data/countrydata-' + year + '.geo.json', {
+        style: style,
+        onEachFeature: onEachFeature
+      });       
+      geojsonLayer.addTo(map);
+      $('#year-button').text(year);
 
-  } );
+    });
+  });
 
 
 
