@@ -63,11 +63,14 @@ gulp.task('html', ['styles', 'scripts'], function () {
     // This is *AWFUL*, but I am in a hurry
     gulp.src([ 'app/lib/scripts/*.js', 'app/scripts/*.js', 
                'app/bower_components/datatables/media/js/jquery.dataTables.js',
-               'app/bower_components/foundation/js/foundation.min.js',
                'app/bower_components/jquery/dist/jquery.js',
+               'app/bower_components/foundation/js/foundation.min.js',
+               'app/bower_components/foundation/js/foundation/foundation.magellan.js',
                'app/bower_components/chartjs/Chart.min.js',
                'app/bower_components/foundation/js/vendor/modernizr.js',
                ])
+        // Make everything into one file! Add main.js
+        //.pipe(concat('app.js'))
         .pipe(jsFilter)
         //.pipe($.uglify())
         .pipe(jsFilter.restore())
