@@ -40,7 +40,9 @@ No, due to missing or unavailable data, GHI scores could not be calculated for a
 ####**What's needed to solve the data gap problem?**  
 Further improvements in collecting high-quality data on hunger and undernutrition will allow for a more complete and current assessment of the state of global hunger, which can, in turn, better guide efforts to end hunger.
 
-**More information can be found at: [www.ifpri.org/ghi/2015](http://www.ifpri.org/ghi/2015/)**
+
+
+####**More information can be found at: [www.ifpri.org/ghi/2015](http://www.ifpri.org/ghi/2015/)**
 
 [^country]: For background information on the GHI concept, see Wiesmann (2004) and Wiesmann, von Braun, and Feldbrügge (2000).
 
