@@ -50,6 +50,10 @@ $notcalculated-grey: #eaeaea;
     max-width: initial;
 }
 
+.spaced-row {
+    padding: 2rem 0;
+}
+
 /* Topbar
 */
 
@@ -237,9 +241,7 @@ $notcalculated-grey: #eaeaea;
 /* Home Blocks
 */
 
-#home-blocks {
-    padding: 2rem 0 4rem;
-    
+#home-blocks {    
     h3 {
         font-size: 1.375rem;
         text-transform: uppercase;
@@ -270,11 +272,23 @@ $notcalculated-grey: #eaeaea;
         }
 }
 
+/* Country page
+*/
+
+#country {
+    ul {
+        margin: 0;    
+        li {
+            list-style-type:none;
+            }
+    }
+}
+
+
 /* Static pages
 */
 
 #static-content {
-    padding: 2rem 0;
     
     .row h1 {
         border-bottom: 1px solid #ccc;

@@ -23,50 +23,83 @@
       ]
   };
   var scoreChart = new Chart(context).Line(scoreData);
+  
+  function getSeverityClass(d) {                                                    
+    if (d === '-') { return 'no-data'; }                                            
+    if (d === '<5') { return 'low'; }                                              
+    return d >= 50 ? 'extra-alarming' :                                            
+      d >= 35  ? 'alarming' :                                                      
+      d >= 20  ? 'serious' :                                                        
+      d >= 10  ? 'moderate' :                                                      
+      d >= 0   ? 'low' :                                                            
+      'not-calculated';                                                            
+  } 
 </script>
 
 {% endblock %}
 
 {% block content %}
-<section id="home-blocks">
+<section id="country" class="spaced-row getSeverityClass({{ score.year2015 }})">
   <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <h3>Home / {{ name }}</h3>
-
-      <h2>{{ name }}</h2>
-
-      <p>{{ name }} has a Global Hunger Index score of {{ score.year2015 }} in 2015.</p>
-      <p>Hunger level: XXX</p>
-
-      {% if scorediff %}
-      <p>Score evolution: {{ scorediff }} points ({{ score.year2005 }} in 2005)</p>
-      {% endif %}
-
-
-      <h2>Global hunger index evolution</h2>
-      <canvas id="chart-score" width="600" height="250"></canvas>
-      <ul>
-        <li></li>
-        <li>{{ score.year1995 }}</li>
-        <li>{{ score.year2000 }}</li>
-        <li>{{ score.year2005 }}</li>
-        <li>{{ score.year2015 }}</li>
+    <div class="large-12 columns">
+      <ul class="breadcrumbs">
+        <li><a href="{{ relpath }}">Home</a></li> <li class="current">{{ name }}</li>
       </ul>
-
-      <h2>Detailed score for 2015</h2>
-      <ul>
-        <li>Undernourished: {{ d.undernourished_2015.score }}</li>
-        <li>Stunting: {{ d.stunting_2015.score }}</li>
-        <li>Mortality: {{ d.mortality_2013.score }}</li>
-        <li>Wasting: {{ d.wasting_2015.score }}</li>
-      </ul>
-      
-      <h2>Evolution from 1990 to 2015</h2>
-      
-
-
-    </div><!-- /Block -->
+    </div>
   </div>
-</section><!-- /#Home Blocks -->
+  
+  <div class="row">  
+    <h1 class="large-12 columns">{{ name }}</h1>
+  </div>
+  
+  <div class="row collapse full-width">
+    <!-- map goes here -->
+  </div>
+  
+  <div class="row">
+    <p>{{ name }} has a Global Hunger Index score of {{ score.year2015 }} in 2015.</p>
+    <p>Hunger level: XXX</p>
+
+    {% if scorediff %}
+    <p>Score evolution: <i class="fi-arrow-down"></i> / <i class="fi-arrow-up"></i> {{ scorediff }} points ({{ score.year2005 }} in 2005)</p>
+    {% endif %}
+  </div>
+  
+  <div class="row">
+    <h3 class="large-12 columns">Global hunger index evolution</h3>
+    <div class="large-12 columns">
+      <canvas id="chart-score" width="600" height="250"></canvas>
+    </div>
+  </div>
+  
+  <div class="row">  
+      <h3>Detailed score for 2015</h3>
+     <table>
+      <thead>
+        <tr>
+          <th> &nbsp;</th>
+          <td>{{ m.country_score_undernourished }}</td>
+          <td>{{ m.country_score_stunting }}</td>
+          <td>{{ m.country_score_mortality }}</td>
+          <td>{{ m.country_score_wasting }}</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>{{ m.country_score_data }}</th>
+          <td>{{ d.undernourished_2015.score }}</td>
+          <td>{{ d.stunting_2015.score }}</td>
+          <td>{{ d.mortality_2013.score }}</td>
+          <td>{{ d.wasting_2015.score }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="row">  
+    <h3>Evolution from 1990 to 2015</h3>
+  </div>
+
+</section>
 
 {% endblock %}
