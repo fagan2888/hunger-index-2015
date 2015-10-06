@@ -1311,12 +1311,12 @@ select {
 
 .breadcrumbs {
   border-style: solid;
-  border-width: 1px;
+  border-width: 0px;
   display: block;
   list-style: none;
   margin-left: 0;
   overflow: hidden;
-  padding: 0.5625rem 0.875rem 0.5625rem;
+  padding: 0.5625rem 0 0.5625rem;
   background-color: #f4f4f4;
   border-color: gainsboro;
   border-radius: 3px; }
@@ -6313,6 +6313,9 @@ th.hide-for-touch {
   margin-right: auto;
   max-width: initial; }
 
+.spaced-row {
+  padding: 2rem 0; }
+
 /* Topbar
 */
 #testing {
@@ -6471,43 +6474,52 @@ th.hide-for-touch {
 
 /* Home Blocks
 */
-#home-blocks {
-  padding: 2rem 0 4rem; }
-  #home-blocks h3 {
-    font-size: 1.375rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-top: 1rem; }
-  #home-blocks p {
-    line-height: 1.4; }
-  #home-blocks .columns a {
-    outline: 0;
-    color: #54544b; }
-  #home-blocks .columns:hover {
-    background-color: #eaeaea;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    border-radius: 4px; }
-  #home-blocks .columns a:hover, #home-blocks .columns a:hover h3 {
-    color: #89a527; }
-  #home-blocks .columns:focus {
-    color: #89a527; }
+#home-blocks h3 {
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 1rem; }
+
+#home-blocks p {
+  line-height: 1.4; }
+
+#home-blocks .columns a {
+  outline: 0;
+  color: #54544b; }
+
+#home-blocks .columns:hover {
+  background-color: #eaeaea;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 4px; }
+
+#home-blocks .columns a:hover, #home-blocks .columns a:hover h3 {
+  color: #89a527; }
+
+#home-blocks .columns:focus {
+  color: #89a527; }
+
+/* Country page
+*/
+#country-info ul {
+  margin: 0; }
+  #country-info ul li {
+    list-style-type: none; }
 
 /* Static pages
 */
-#static-content {
-  padding: 2rem 0; }
-  #static-content .row h1 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.75rem; }
-  #static-content .row p > strong {
-    font-family: "PT Sans Narrow Bold", "DejaVu Sans", Roboto, Arial, sans-serif;
-    font-size: 1rem;
-    margin-bottom: 0.5rem; }
+#static-content .row h1 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.75rem; }
+
+#static-content .row p > strong {
+  font-family: "PT Sans Narrow Bold", "DejaVu Sans", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem; }
 
 /* Trends page
 */

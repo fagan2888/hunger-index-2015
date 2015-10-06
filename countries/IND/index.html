@@ -54,43 +54,74 @@
     </div>
 
   
-<section id="country-info">
+<section id="country-info" class="spaced-row getSeverityClass(29.0)">
   <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <h3><a href="../../">Home</a> / India</h3>
-
-      <h2>India</h2>
-
-      <p>India has a Global Hunger Index score of 29.0 in 2015.</p>
-      <p>Hunger level: XXX</p>
-
-      
-      <p>Score evolution: -9.5 points (38.5 in 2005)</p>
-      
-
-
-      <h2>Global hunger index evolution</h2>
-      <canvas id="chart-score" width="600" height="250"></canvas>
-
-      <h2>Detailed score for 2015</h2>
-      <ul>
-        <li>Undernourished: 15.2</li>
-        <li>Stunting: 38.8</li>
-        <li>Mortality: 5.3</li>
-        <li>Wasting: 15</li>
+    <div class="row">
+    <div class="large-12 columns">
+      <ul class="breadcrumbs">
+        <li><a href="../../">Home</a></li> <li class="current">India</li>
       </ul>
-      
-      <h2>Evolution from 1990 to 2015</h2>
-      
-      <canvas id="chart-undernourished" width="250" height="250"></canvas>
-      <canvas id="chart-stunting" width="250" height="250"></canvas>
-      <canvas id="chart-mortality" width="250" height="250"></canvas>
-      <canvas id="chart-wasting" width="250" height="250"></canvas>
-
-
-    </div><!-- /Block -->
+    </div>
   </div>
-</section><!-- /#Home Blocks -->
+  
+  <div class="row">  
+    <h1 class="large-12 columns">India</h1>
+  </div>
+  
+  <div class="row collapse full-width">
+    <!-- map goes here -->
+  </div>
+  
+  <div class="row"> 
+    <p>India has a Global Hunger Index score of 29.0 in 2015.</p>
+    <p>Hunger level: XXX</p>
+
+    
+    <p>Score evolution: <i class="fi-arrow-down"></i> / <i class="fi-arrow-up"></i> -9.5 points (38.5 in 2005)</p>
+    
+  </div>
+
+  <div class="row">
+    <h3 class="large-12 columns">Global hunger index evolution</h3>
+    <div class="large-12 columns">
+      <canvas id="chart-score" width="600" height="250"></canvas>
+    </div>
+  </div>
+
+  <div class="row">  
+     <h3 class="large-12 columns">Detailed score for 2015</h3>
+     <table class="large-12 columns">
+      <thead>
+        <tr>
+          <th> &nbsp;</th>
+          <td>Proportion of undernourished in population (%)</td>
+          <td>Prevalence of stunting in children under five years (%)</td>
+          <td>Under five mortality rate (%)</td>
+          <td>Prevalence of wasting in children under five years (%)</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Country data (in %)</th>
+          <td>15.2</td>
+          <td>38.8</td>
+          <td>5.3</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="row">    
+    <h3 class="large-12 columns">Evolution from 1990 to 2015</h3>
+    
+    <canvas id="chart-undernourished" width="250" height="250"></canvas>
+    <canvas id="chart-stunting" width="250" height="250"></canvas>
+    <canvas id="chart-mortality" width="250" height="250"></canvas>
+    <canvas id="chart-wasting" width="250" height="250"></canvas>
+  </div>
+  
+</section>
 
 
 
@@ -150,6 +181,7 @@
              29.0]
     }],
   };
+
   var scoreChart = new Chart(context).Line(scoreData, {
       scaleOverride: true,
       scaleSteps: 6,
@@ -157,6 +189,18 @@
       scaleStartValue: 5,
       bezierCurve: false 
   });
+
+  function getSeverityClass(d) {                                                    
+    if (d === '-') { return 'no-data'; }                                            
+    if (d === '<5') { return 'low'; }                                              
+    return d >= 50 ? 'extra-alarming' :                                            
+      d >= 35  ? 'alarming' :                                                      
+      d >= 20  ? 'serious' :                                                        
+      d >= 10  ? 'moderate' :                                                      
+      d >= 0   ? 'low' :                                                            
+      'not-calculated';                                                            
+  }
+  
 </script>
 
 

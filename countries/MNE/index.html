@@ -54,41 +54,72 @@
     </div>
 
   
-<section id="country-info">
+<section id="country-info" class="spaced-row getSeverityClass(<5)">
   <div class="row">
-    <div class="large-12 medium-12 small-12 columns">
-      <h3><a href="../../">Home</a> / Montenegro</h3>
-
-      <h2>Montenegro</h2>
-
-      <p>Montenegro has a Global Hunger Index score of <5 in 2015.</p>
-      <p>Hunger level: XXX</p>
-
-      
-
-
-      <h2>Global hunger index evolution</h2>
-      <canvas id="chart-score" width="600" height="250"></canvas>
-
-      <h2>Detailed score for 2015</h2>
-      <ul>
-        <li>Undernourished: 0.3</li>
-        <li>Stunting: 9.4</li>
-        <li>Mortality: 0.5</li>
-        <li>Wasting: 2.8</li>
+    <div class="row">
+    <div class="large-12 columns">
+      <ul class="breadcrumbs">
+        <li><a href="../../">Home</a></li> <li class="current">Montenegro</li>
       </ul>
-      
-      <h2>Evolution from 1990 to 2015</h2>
-      
-      <canvas id="chart-undernourished" width="250" height="250"></canvas>
-      <canvas id="chart-stunting" width="250" height="250"></canvas>
-      <canvas id="chart-mortality" width="250" height="250"></canvas>
-      <canvas id="chart-wasting" width="250" height="250"></canvas>
-
-
-    </div><!-- /Block -->
+    </div>
   </div>
-</section><!-- /#Home Blocks -->
+  
+  <div class="row">  
+    <h1 class="large-12 columns">Montenegro</h1>
+  </div>
+  
+  <div class="row collapse full-width">
+    <!-- map goes here -->
+  </div>
+  
+  <div class="row"> 
+    <p>Montenegro has a Global Hunger Index score of <5 in 2015.</p>
+    <p>Hunger level: XXX</p>
+
+    
+  </div>
+
+  <div class="row">
+    <h3 class="large-12 columns">Global hunger index evolution</h3>
+    <div class="large-12 columns">
+      <canvas id="chart-score" width="600" height="250"></canvas>
+    </div>
+  </div>
+
+  <div class="row">  
+     <h3 class="large-12 columns">Detailed score for 2015</h3>
+     <table class="large-12 columns">
+      <thead>
+        <tr>
+          <th> &nbsp;</th>
+          <td>Proportion of undernourished in population (%)</td>
+          <td>Prevalence of stunting in children under five years (%)</td>
+          <td>Under five mortality rate (%)</td>
+          <td>Prevalence of wasting in children under five years (%)</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Country data (in %)</th>
+          <td>0.3</td>
+          <td>9.4</td>
+          <td>0.5</td>
+          <td>2.8</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="row">    
+    <h3 class="large-12 columns">Evolution from 1990 to 2015</h3>
+    
+    <canvas id="chart-undernourished" width="250" height="250"></canvas>
+    <canvas id="chart-stunting" width="250" height="250"></canvas>
+    <canvas id="chart-mortality" width="250" height="250"></canvas>
+    <canvas id="chart-wasting" width="250" height="250"></canvas>
+  </div>
+  
+</section>
 
 
 
@@ -148,6 +179,7 @@
              5]
     }],
   };
+
   var scoreChart = new Chart(context).Line(scoreData, {
       scaleOverride: true,
       scaleSteps: 6,
@@ -155,6 +187,18 @@
       scaleStartValue: 5,
       bezierCurve: false 
   });
+
+  function getSeverityClass(d) {                                                    
+    if (d === '-') { return 'no-data'; }                                            
+    if (d === '<5') { return 'low'; }                                              
+    return d >= 50 ? 'extra-alarming' :                                            
+      d >= 35  ? 'alarming' :                                                      
+      d >= 20  ? 'serious' :                                                        
+      d >= 10  ? 'moderate' :                                                      
+      d >= 0   ? 'low' :                                                            
+      'not-calculated';                                                            
+  }
+  
 </script>
 
 
