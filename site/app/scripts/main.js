@@ -23,6 +23,16 @@ function getSeverity(d) {
     'Not calculated';
 }
 
+function getSeverityClass(d) {
+  if (d === '-') { return 'no-data'; }
+  if (d === '<5') { return 'low'; }
+  return d >= 50 ? 'extra-alarming' :
+    d >= 35  ? 'alarming' :
+    d >= 20  ? 'serious' :
+    d >= 10  ? 'moderate' :
+    d >= 0   ? 'low' :
+    'not-calculated';
+}
 
 
 (function (window, document, L, undefined) {
@@ -116,13 +126,36 @@ function getSeverity(d) {
   });       
   geojsonLayer.addTo(map);
 
-  $(document).ready(function() {
+  function populateTable(year) {
+    // reload table
+    $.getJSON( "data/countrydata-" + year + ".geo.json", function( data ) {
+      var items = [];
+      $('#country-table tbody').empty();
+      $.each( data.features, function( key, c ) {
+        if (c.properties.score !== 'nc' && c.properties.score !== '-') {
+          $('<tr>').attr("id", c.id)
+            .attr("class", getSeverityClass(c.properties.score))
+            .attr("role", "row")
+            .append(
+                $('<td>').text(c.properties.name),
+                $('<td>').text(c.properties.score)
+                ).appendTo('#country-table');
+        }
+      });
+    });
+
     $('#country-table tbody').on( 'click', 'tr', function (ev) {
       // clicking on a country in the table focuses the map on it
+      console.log(this);
       var f = geojsonLayer.getLayer(this.id);
       map.setView(f.getBounds().getCenter());
       f.openPopup();
-    } );
+    });
+  }
+
+  $(document).ready(function() {
+    populateTable('2015');
+
     $('#year-drop li a').click( function(ev) {
       // year dropdown refreshes map
       var year = this.className;
@@ -132,6 +165,7 @@ function getSeverity(d) {
       });       
       geojsonLayer.addTo(map);
       $('#year-button').text(year);
+      populateTable(year);
 
     });
   });
