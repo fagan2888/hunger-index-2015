@@ -99,7 +99,23 @@ def create_country_pages():
         if not country:
             print "Could not find country!!"
 
-        context = {"score": country['score'],
+        scores = {}
+        for entry in country['score']:
+            score = country['score'][entry]
+            if not score in ["<5", "-"]:
+                score = float(score)
+            elif score == "-":
+                score = "null"
+            elif score == "<5":
+                score = 2.5
+            scores[entry] = score
+
+        scorediff = None
+        if type(scores['year2015']) == float and type(scores['year2005']) == float:
+            scorediff = scores['year2005'] - scores['year2015']
+
+        context = {"score": scores,
+                   "scorediff": scorediff,
                    "d": country['details'],
                    "name": country['name'],
                    "m": messages,
