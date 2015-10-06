@@ -18,7 +18,7 @@
 
 <tr>
 
-<td>PUN</td>
+<td>CWA</td>
 
 <td>prevalence of wasting in children under five years old (in %)</td>
 
