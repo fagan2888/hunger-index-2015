@@ -59,18 +59,22 @@
 
       <h2>Kuwait</h2>
 
-      <p>Kuwait has a Global Hunger Index score of 5 in 2015.</p>
+      <p>Kuwait has a Global Hunger Index score of 5.0 in 2015.</p>
       <p>Hunger level: XXX</p>
 
-      <p>Score evolution: XXX points (<5 in 2005)</p>
+      
+      <p>Score evolution: -2.5 points (2.5 in 2005)</p>
+      
+
 
       <h2>Global hunger index evolution</h2>
+      <canvas id="chart-score" width="600" height="250"></canvas>
       <ul>
-        <li>24.3</li>
-        <li>16</li>
-        <li><5</li>
-        <li><5</li>
-        <li>5</li>
+        <li></li>
+        <li>16.0</li>
+        <li>2.5</li>
+        <li>2.5</li>
+        <li>5.0</li>
       </ul>
 
       <h2>Detailed score for 2015</h2>
@@ -121,6 +125,27 @@
 <script src="../../scripts/leaflet.js"></script>
 <script src="../../scripts/leaflet.ajax.min.js"></script>
 <script src="../../scripts/Chart.min.js"></script>
+<script>
+  var context = $('#chart-score').get(0).getContext('2d');
+  var scoreData = {
+      labels: ["1990", "1995", "2000", "2005", "2015"],
+      datasets: [
+          {
+              label: "Global hunger index evolution",
+              fillColor: "rgba(220,220,220,0.2)",
+              strokeColor: "rgba(220,220,220,1)",
+              pointColor: "rgba(220,220,220,1)",
+              pointStrokeColor: "#fff",
+              pointHighlightFill: "#fff",
+              pointHighlightStroke: "rgba(220,220,220,1)",
+              data: [24.3, 16.0, 2.5, 2.5, 5.0]
+          },
+
+      ]
+  };
+  var scoreChart = new Chart(context).Line(scoreData);
+</script>
+
 
   <!-- endbuild -->
 </body>

@@ -62,11 +62,15 @@
       <p>Senegal has a Global Hunger Index score of 23.2 in 2015.</p>
       <p>Hunger level: XXX</p>
 
-      <p>Score evolution: XXX points (28.5 in 2005)</p>
+      
+      <p>Score evolution: 5.3 points (28.5 in 2005)</p>
+      
+
 
       <h2>Global hunger index evolution</h2>
+      <canvas id="chart-score" width="600" height="250"></canvas>
       <ul>
-        <li>36.8</li>
+        <li></li>
         <li>36.9</li>
         <li>37.9</li>
         <li>28.5</li>
@@ -121,6 +125,27 @@
 <script src="../../scripts/leaflet.js"></script>
 <script src="../../scripts/leaflet.ajax.min.js"></script>
 <script src="../../scripts/Chart.min.js"></script>
+<script>
+  var context = $('#chart-score').get(0).getContext('2d');
+  var scoreData = {
+      labels: ["1990", "1995", "2000", "2005", "2015"],
+      datasets: [
+          {
+              label: "Global hunger index evolution",
+              fillColor: "rgba(220,220,220,0.2)",
+              strokeColor: "rgba(220,220,220,1)",
+              pointColor: "rgba(220,220,220,1)",
+              pointStrokeColor: "#fff",
+              pointHighlightFill: "#fff",
+              pointHighlightStroke: "rgba(220,220,220,1)",
+              data: [36.8, 36.9, 37.9, 28.5, 23.2]
+          },
+
+      ]
+  };
+  var scoreChart = new Chart(context).Line(scoreData);
+</script>
+
 
   <!-- endbuild -->
 </body>

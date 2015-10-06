@@ -62,14 +62,18 @@
       <p>Paraguay has a Global Hunger Index score of 10.5 in 2015.</p>
       <p>Hunger level: XXX</p>
 
-      <p>Score evolution: XXX points (12 in 2005)</p>
+      
+      <p>Score evolution: 1.5 points (12.0 in 2005)</p>
+      
+
 
       <h2>Global hunger index evolution</h2>
+      <canvas id="chart-score" width="600" height="250"></canvas>
       <ul>
-        <li>17.2</li>
+        <li></li>
         <li>15.8</li>
         <li>13.5</li>
-        <li>12</li>
+        <li>12.0</li>
         <li>10.5</li>
       </ul>
 
@@ -121,6 +125,27 @@
 <script src="../../scripts/leaflet.js"></script>
 <script src="../../scripts/leaflet.ajax.min.js"></script>
 <script src="../../scripts/Chart.min.js"></script>
+<script>
+  var context = $('#chart-score').get(0).getContext('2d');
+  var scoreData = {
+      labels: ["1990", "1995", "2000", "2005", "2015"],
+      datasets: [
+          {
+              label: "Global hunger index evolution",
+              fillColor: "rgba(220,220,220,0.2)",
+              strokeColor: "rgba(220,220,220,1)",
+              pointColor: "rgba(220,220,220,1)",
+              pointStrokeColor: "#fff",
+              pointHighlightFill: "#fff",
+              pointHighlightStroke: "rgba(220,220,220,1)",
+              data: [17.2, 15.8, 13.5, 12.0, 10.5]
+          },
+
+      ]
+  };
+  var scoreChart = new Chart(context).Line(scoreData);
+</script>
+
 
   <!-- endbuild -->
 </body>

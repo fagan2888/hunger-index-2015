@@ -59,18 +59,20 @@
 
       <h2>Oman</h2>
 
-      <p>Oman has a Global Hunger Index score of - in 2015.</p>
+      <p>Oman has a Global Hunger Index score of null in 2015.</p>
       <p>Hunger level: XXX</p>
 
-      <p>Score evolution: XXX points (11.4 in 2005)</p>
+      
+
 
       <h2>Global hunger index evolution</h2>
+      <canvas id="chart-score" width="600" height="250"></canvas>
       <ul>
-        <li>20.1</li>
+        <li></li>
         <li>18.4</li>
         <li>13.1</li>
         <li>11.4</li>
-        <li>-</li>
+        <li>null</li>
       </ul>
 
       <h2>Detailed score for 2015</h2>
@@ -121,6 +123,27 @@
 <script src="../../scripts/leaflet.js"></script>
 <script src="../../scripts/leaflet.ajax.min.js"></script>
 <script src="../../scripts/Chart.min.js"></script>
+<script>
+  var context = $('#chart-score').get(0).getContext('2d');
+  var scoreData = {
+      labels: ["1990", "1995", "2000", "2005", "2015"],
+      datasets: [
+          {
+              label: "Global hunger index evolution",
+              fillColor: "rgba(220,220,220,0.2)",
+              strokeColor: "rgba(220,220,220,1)",
+              pointColor: "rgba(220,220,220,1)",
+              pointStrokeColor: "#fff",
+              pointHighlightFill: "#fff",
+              pointHighlightStroke: "rgba(220,220,220,1)",
+              data: [20.1, 18.4, 13.1, 11.4, null]
+          },
+
+      ]
+  };
+  var scoreChart = new Chart(context).Line(scoreData);
+</script>
+
 
   <!-- endbuild -->
 </body>
