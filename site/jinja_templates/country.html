@@ -5,33 +5,45 @@
 <script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
 <script src="{{ relpath }}scripts/Chart.min.js"></script>
 <script>
+
+  // Global chart config
+  Chart.defaults.global.responsive = true;
+
+  // Global Hunger Index score chart
   var context = $('#chart-score').get(0).getContext('2d');
   var scoreData = {
-      labels: ["1990", "1995", "2000", "2005", "2015"],
-      datasets: [
-          {
-              label: "Global hunger index evolution",
-              fillColor: "rgba(220,220,220,0.2)",
-              strokeColor: "rgba(220,220,220,1)",
-              pointColor: "rgba(220,220,220,1)",
-              pointStrokeColor: "#fff",
-              pointHighlightFill: "#fff",
-              pointHighlightStroke: "rgba(220,220,220,1)",
-              data: [{{ score.year1990 }}, {{ score.year1995 }}, {{ score.year2000 }}, {{ score.year2005 }}, {{ score.year2015 }}]
-          },
+    labels: ["1990", "1995", "2000", "2005", "2015"],
+    datasets: [
+    {
+      label: "Global hunger index evolution",
+      fillColor: "rgba(220,220,220,0.2)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
 
-      ]
+      data: [{{ score.year1990|replace("<", "") }}, {{ score.year1995|replace("<", "") }}, 
+             {{ score.year2000|replace("<", "") }}, {{ score.year2005|replace("<", "") }}, 
+             {{ score.year2015|replace("<", "") }}]
+    }],
   };
-  var scoreChart = new Chart(context).Line(scoreData);
+  var scoreChart = new Chart(context).Line(scoreData, {
+      scaleOverride: true,
+      scaleSteps: 6,
+      scaleStepWidth: 10,
+      scaleStartValue: 5,
+      bezierCurve: false 
+  });
 </script>
 
 {% endblock %}
 
 {% block content %}
-<section id="home-blocks">
+<section id="country-info">
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
-      <h3>Home / {{ name }}</h3>
+      <h3><a href="../../">Home</a> / {{ name }}</h3>
 
       <h2>{{ name }}</h2>
 
@@ -45,13 +57,6 @@
 
       <h2>Global hunger index evolution</h2>
       <canvas id="chart-score" width="600" height="250"></canvas>
-      <ul>
-        <li></li>
-        <li>{{ score.year1995 }}</li>
-        <li>{{ score.year2000 }}</li>
-        <li>{{ score.year2005 }}</li>
-        <li>{{ score.year2015 }}</li>
-      </ul>
 
       <h2>Detailed score for 2015</h2>
       <ul>
@@ -63,6 +68,10 @@
       
       <h2>Evolution from 1990 to 2015</h2>
       
+      <canvas id="chart-undernourished" width="250" height="250"></canvas>
+      <canvas id="chart-stunting" width="250" height="250"></canvas>
+      <canvas id="chart-mortality" width="250" height="250"></canvas>
+      <canvas id="chart-wasting" width="250" height="250"></canvas>
 
 
     </div><!-- /Block -->

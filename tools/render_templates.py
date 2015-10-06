@@ -106,13 +106,11 @@ def create_country_pages():
                 score = float(score)
             elif score == "-":
                 score = "null"
-            elif score == "<5":
-                score = 2.5
             scores[entry] = score
 
         scorediff = None
         if type(scores['year2015']) == float and type(scores['year2005']) == float:
-            scorediff = scores['year2005'] - scores['year2015']
+            scorediff = scores['year2015'] - scores['year2005']
 
         context = {"score": scores,
                    "scorediff": scorediff,
