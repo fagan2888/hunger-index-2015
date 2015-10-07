@@ -102,7 +102,7 @@ def create_country_pages():
         scores = {}
         for entry in country['score']:
             score = country['score'][entry]
-            if not score in ["<5", "-"]:
+            if score not in ["<5", "-"]:
                 score = float(score)
             elif score == "-":
                 score = "null"
@@ -114,6 +114,7 @@ def create_country_pages():
 
         context = {"score": scores,
                    "scorediff": scorediff,
+                   "score_evolution": "up" if scorediff > 0 else "down",
                    "d": country['details'],
                    "name": country['name'],
                    "m": messages,

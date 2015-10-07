@@ -34,7 +34,16 @@
       scaleSteps: 6,
       scaleStepWidth: 10,
       scaleStartValue: 5,
-      bezierCurve: false 
+      bezierCurve: false, 
+      // tooltips can be defined by functions too
+      // https://github.com/nnnick/Chart.js/issues/499
+      tooltipTemplate: function (d) {
+        if (d.value === 5) {
+          return d.label + ": <" + d.value;
+        } else {
+          return d.label + ": " + d.value;
+        }
+      }
   });
 
   function getSeverityClass(d) {                                                    
@@ -49,9 +58,8 @@
   }
   
  $(document).ready(function(){
-  
-  $('#country-info').addClass('getSeverityClass({{ score.year2015 }})');
-
+   $('#country-info').addClass(getSeverityClass({{ score.year2015 }}));
+   $('#score-value i').addClass("fi-arrow-{{ score_evolution }}");
  });
   
 </script>
@@ -82,7 +90,7 @@
       <p>Hunger level: <strong class="severity">XXX</strong></p>
 
       {% if scorediff %}
-      <p id="score-value">Score evolution: <i class="fi-arrow-down"></i> / <i class="fi-arrow-up"></i> <strong class="severity">{{ scorediff }}</strong> points ({{ score.year2005 }} in 2005)</p>
+        <p id="score-value">Score evolution: <i></i> <strong class="severity">{{ scorediff }}</strong> points ({{ score.year2005 }} in 2005)</p>
       {% endif %}
     </div>
   </div>
