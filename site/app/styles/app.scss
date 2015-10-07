@@ -248,7 +248,8 @@ $notcalculated-grey: #eaeaea;
     li {
         list-style-type: none;
         display: inline-block;
-        font-family: 'PT Sans Bold', 'DejaVu Sans', Roboto, Arial, sans-serif;
+        font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif;
+        font-weight: bold;
         font-size: 80%;
         line-height: 1;
         border-left: 18px solid #fff;
@@ -257,6 +258,7 @@ $notcalculated-grey: #eaeaea;
         em {
             font-family: 'PT Sans', 'DejaVu Sans', Roboto, Arial, sans-serif;
             font-style: normal;
+            font-weight: normal;
             }
         }
     .extra-alarming { border-color: $alarming-red; }
