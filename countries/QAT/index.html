@@ -73,8 +73,8 @@
   
   <div class="row">
     <div class="large-12 columns"> 
-      <p><strong class="severity">Qatar</strong> has a Global Hunger Index score of <strong class="severity">null</strong> in 2015.</p>
-      <p>Hunger level: <strong class="severity">XXX</strong></p>
+      <p>Qatar has a Global Hunger Index score of null in 2015.</p>
+      <p>Hunger level: XXX</p>
 
       
     </div>
@@ -90,7 +90,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Detailed score for 2015</h3>
-      <table id="detailed-score">
+      <table>
         <thead>
           <tr>
             <th> &nbsp;</th>
@@ -239,6 +239,14 @@
       scaleSteps: 5,
       scaleStepWidth: 20,
       bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        if (d.label === "1990" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1995" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2000" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2005" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2015" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        return d.label + ": " + d.value;
+      }
   });
   // Stunting chart
   var context = $('#chart-stunting').get(0).getContext('2d');
@@ -265,7 +273,16 @@
       scaleSteps: 5,
       scaleStepWidth: 20,
       bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        if (d.label === "1990" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1995" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2000" && true) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2005" && true) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2015" && true) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        return d.label + ": " + d.value;
+      }
   });
+  console.log(stuntingChart);
   // Wasting chart
   var context = $('#chart-wasting').get(0).getContext('2d');
   var wastingData = {
@@ -291,6 +308,14 @@
       scaleSteps: 5,
       scaleStepWidth: 20,
       bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        if (d.label === "1990" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1995" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2000" && true) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2005" && true) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2015" && true) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        return d.label + ": " + d.value;
+      }
   });
   // Mortality chart
   var context = $('#chart-mortality').get(0).getContext('2d');
@@ -317,6 +342,9 @@
       scaleSteps: 5,
       scaleStepWidth: 20,
       bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        return d.label + ": " + d.value;
+      }
   });
 
 
