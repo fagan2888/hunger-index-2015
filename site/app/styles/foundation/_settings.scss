@@ -93,8 +93,8 @@ $font-family-sans-serif-narrow: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, 
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal;
-// $font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
 
 // $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
@@ -214,8 +214,7 @@ $title-font-family: $font-family-sans-serif-narrow;
 
 // We use these to control header font styles
 $header-font-family: $title-font-family;
-$header-font-weight: bold;
-// $header-font-weight: $font-weight-normal;
+$header-font-weight: $font-weight-bold;
 // $header-font-style: normal;
 // $header-font-color: $jet;
 // $header-line-height: 1.4;
@@ -1412,8 +1411,7 @@ $button-bg-color: $primary-color;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: $font-weight-normal;
-$topbar-title-weight: bold;
+$topbar-title-weight: $font-weight-bold;
 $topbar-title-font-size: rem-calc(16);
 
 // Set the link colors and styles for top-level nav
@@ -1467,8 +1465,7 @@ $topbar-menu-link-font-size: rem-calc(13);
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
-//$topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
-$topbar-breakpoint: #{lower-bound(800px)};
+$topbar-breakpoint: #{lower-bound(800px)}; // Change to 9999px for always mobile layout
 // $topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
 
 // Top-bar input styles
