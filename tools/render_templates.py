@@ -51,6 +51,27 @@ def get_level_from_score(score):
     return level
 
 
+def get_verbose_level_from_score(score):
+    level = ""
+    if score == "-":
+        level = "No data"
+    elif score == "<5":
+        level = "Low"
+    elif float(score) >= 50:
+        level = "Extremely alarming"
+    elif float(score) >= 35:
+        level = "Alarming"
+    elif float(score) >= 20:
+        level = "Serious"
+    elif float(score) >= 10:
+        level = "Moderate"
+    elif float(score) >= 0:
+        level = "Low"
+    else:
+        print "Unexpected score: ", score
+    return level
+
+
 def create_index_page():
     template = env.get_template("index.html")
 
@@ -120,6 +141,10 @@ def create_country_pages():
                    "m": messages,
                    "relpath": "../../",
                    }
+        if scorediff:
+            context["level"] = get_verbose_level_from_score(scores['year2015'])
+            context["level_class"] = get_level_from_score(scores['year2015'])
+
         contents = template.render(**context)
         dirname = "../site/app/html/countries/%s/" % country_code
         if not os.path.exists(dirname):

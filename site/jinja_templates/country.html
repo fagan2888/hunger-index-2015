@@ -227,7 +227,7 @@
   <div class="row">
     <div class="large-12 columns"> 
       <p>{{ name }} has a Global Hunger Index score of {{ score.year2015 }} in 2015.</p>
-      <p>Hunger level: XXX</p>
+      <p>Hunger level: <span class="{{ level_class }}">{{ level }}</span></p>
 
       {% if scorediff %}
       <p id="score-value">Score evolution: <i></i> {{ scorediff }} points ({{ score.year2005 }} in 2005)</p>
