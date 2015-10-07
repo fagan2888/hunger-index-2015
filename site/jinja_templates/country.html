@@ -71,6 +71,14 @@
       scaleSteps: 5,
       scaleStepWidth: 20,
       bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        if (d.label === "1990" && {{ d.undernourished_1990.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1995" && {{ d.undernourished_1995.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2000" && {{ d.undernourished_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2005" && {{ d.undernourished_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2015" && {{ d.undernourished_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        return d.label + ": " + d.value;
+      }
   });
   // Stunting chart
   var context = $('#chart-stunting').get(0).getContext('2d');
@@ -97,7 +105,16 @@
       scaleSteps: 5,
       scaleStepWidth: 20,
       bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        if (d.label === "1990" && {{ d.stunting_1990.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1995" && {{ d.stunting_1995.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2000" && {{ d.stunting_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2005" && {{ d.stunting_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2015" && {{ d.stunting_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        return d.label + ": " + d.value;
+      }
   });
+  console.log(stuntingChart);
   // Wasting chart
   var context = $('#chart-wasting').get(0).getContext('2d');
   var wastingData = {
@@ -123,6 +140,14 @@
       scaleSteps: 5,
       scaleStepWidth: 20,
       bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        if (d.label === "1990" && {{ d.wasting_1990.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1995" && {{ d.wasting_1995.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2000" && {{ d.wasting_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2005" && {{ d.wasting_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2015" && {{ d.wasting_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        return d.label + ": " + d.value;
+      }
   });
   // Mortality chart
   var context = $('#chart-mortality').get(0).getContext('2d');
@@ -149,6 +174,9 @@
       scaleSteps: 5,
       scaleStepWidth: 20,
       bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        return d.label + ": " + d.value;
+      }
   });
 
 
@@ -198,11 +226,11 @@
   
   <div class="row">
     <div class="large-12 columns"> 
-      <p><strong class="severity">{{ name }}</strong> has a Global Hunger Index score of <strong class="severity">{{ score.year2015 }}</strong> in 2015.</p>
-      <p>Hunger level: <strong class="severity">XXX</strong></p>
+      <p>{{ name }} has a Global Hunger Index score of {{ score.year2015 }} in 2015.</p>
+      <p>Hunger level: XXX</p>
 
       {% if scorediff %}
-        <p id="score-value">Score evolution: <i></i> <strong class="severity">{{ scorediff }}</strong> points ({{ score.year2005 }} in 2005)</p>
+      <p id="score-value">Score evolution: <i></i> {{ scorediff }} points ({{ score.year2005 }} in 2005)</p>
       {% endif %}
     </div>
   </div>
@@ -217,7 +245,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Detailed score for 2015</h3>
-      <table id="detailed-score">
+      <table>
         <thead>
           <tr>
             <th> &nbsp;</th>
