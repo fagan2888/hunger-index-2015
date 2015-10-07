@@ -42,15 +42,15 @@ function getSeverityClass(d) {
 
   /* create leaflet map */
   var map = L.map('map', {
-    center: [52.5377, 13.3958],
+    center: [32.5377, 13.3958],
     scrollWheelZoom: false,
     boxZoom: false,
-    zoom: 4
+    zoom: 2
   });
 
   new L.tileLayer('http://a{s}.acetate.geoiq.com/tiles/acetate-base/{z}/{x}/{y}.png', {
       subdomains: '0123',
-      minZoom: 0,
+      minZoom: 2,
       maxZoom: 18
       }).addTo(map);
 
@@ -125,6 +125,14 @@ function getSeverityClass(d) {
     onEachFeature: onEachFeature
   });       
   geojsonLayer.addTo(map);
+
+  // zoom on click
+  // https://stackoverflow.com/a/24529886
+  map.on('popupopen', function(centerMarker) {
+          var cM = map.project(centerMarker.popup._latlng);
+          cM.y -= centerMarker.popup._container.clientHeight/8
+          map.setView(map.unproject(cM),4, {animate: true});
+      });
 
   function populateTable(year) {
     // reload table

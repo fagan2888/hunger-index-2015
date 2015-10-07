@@ -204,7 +204,16 @@
       scaleSteps: 6,
       scaleStepWidth: 10,
       scaleStartValue: 5,
-      bezierCurve: false 
+      bezierCurve: false, 
+      // tooltips can be defined by functions too
+      // https://github.com/nnnick/Chart.js/issues/499
+      tooltipTemplate: function (d) {
+        if (d.value === 5) {
+          return d.label + ": <" + d.value;
+        } else {
+          return d.label + ": " + d.value;
+        }
+      }
   });
 
   function getSeverityClass(d) {                                                    
@@ -219,9 +228,7 @@
   }
   
  $(document).ready(function(){
-  
-  $('#country-info').addClass('getSeverityClass(20.1)');
-
+   $('#country-info').addClass(getSeverityClass(20.1));
  });
   
 </script>
