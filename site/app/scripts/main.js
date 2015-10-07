@@ -45,6 +45,7 @@ function getSeverityClass(d) {
     center: [32.5377, 13.3958],
     scrollWheelZoom: false,
     boxZoom: false,
+    worldCopyJump: true,
     zoom: 2
   });
 
@@ -131,7 +132,7 @@ function getSeverityClass(d) {
   map.on('popupopen', function(centerMarker) {
           var cM = map.project(centerMarker.popup._latlng);
           cM.y -= centerMarker.popup._container.clientHeight/8
-          map.setView(map.unproject(cM),4, {animate: true});
+          map.setView(map.unproject(cM),2, {animate: true});
       });
 
   function populateTable(year) {
