@@ -6511,6 +6511,27 @@ th.hide-for-touch {
   #country-info ul li {
     list-style-type: none; }
 
+#country-info.extra-alarming strong.severity {
+  color: #AB0635; }
+
+#country-info.alarming strong.severity {
+  color: #e9841d; }
+
+#country-info.serious strong.severity {
+  color: #fbe0c7; }
+
+#country-info.moderate strong.severity {
+  color: #bedcb3; }
+
+#country-info.low strong.severity {
+  color: #4caf45; }
+
+#country-info.no-data strong.severity {
+  color: #808080; }
+
+#country-info.not-calculated strong.severity {
+  color: #eaeaea; }
+
 /* Static pages
 */
 #static-content .row h1 {

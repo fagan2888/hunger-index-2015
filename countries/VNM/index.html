@@ -73,11 +73,11 @@
   
   <div class="row">
     <div class="large-12 columns"> 
-      <p>Vietnam has a Global Hunger Index score of 14.7 in 2015.</p>
-      <p>Hunger level: XXX</p>
+      <p><strong class="severity">Vietnam</strong> has a Global Hunger Index score of <strong class="severity">14.7</strong> in 2015.</p>
+      <p>Hunger level: <strong class="severity">XXX</strong></p>
 
       
-      <p id="score-value">Score evolution: <i></i> -9.9 points (24.6 in 2005)</p>
+        <p id="score-value">Score evolution: <i></i> <strong class="severity">-9.9</strong> points (24.6 in 2005)</p>
       
     </div>
   </div>
@@ -92,7 +92,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Detailed score for 2015</h3>
-      <table>
+      <table id="detailed-score">
         <thead>
           <tr>
             <th> &nbsp;</th>
@@ -215,6 +215,118 @@
         }
       }
   });
+
+  // Undernourished chart
+  var context = $('#chart-undernourished').get(0).getContext('2d');
+  var underData = {
+    labels: ["1990", "1995", "2000", "2005", "2015"],
+    datasets: [
+    {
+      fillColor: "rgba(220,220,220,0.2)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+
+      data: [45.6, 
+             35.4, 
+             28.1, 
+             19, 
+             11]
+    }],
+  };
+  var underChart = new Chart(context).Line(underData, {
+      scaleOverride: true,
+      scaleSteps: 5,
+      scaleStepWidth: 20,
+      bezierCurve: false, 
+  });
+  // Stunting chart
+  var context = $('#chart-stunting').get(0).getContext('2d');
+  var stuntingData = {
+    labels: ["1990", "1995", "2000", "2005", "2015"],
+    datasets: [
+    {
+      fillColor: "rgba(220,220,220,0.2)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+
+      data: [61.3, 
+             52.5, 
+             43, 
+             33.2, 
+             19.4]
+    }],
+  };
+  var stuntingChart = new Chart(context).Line(stuntingData, {
+      scaleOverride: true,
+      scaleSteps: 5,
+      scaleStepWidth: 20,
+      bezierCurve: false, 
+  });
+  // Wasting chart
+  var context = $('#chart-wasting').get(0).getContext('2d');
+  var wastingData = {
+    labels: ["1990", "1995", "2000", "2005", "2015"],
+    datasets: [
+    {
+      fillColor: "rgba(220,220,220,0.2)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+
+      data: [11.1, 
+             13.5, 
+             9, 
+             10.7, 
+             5.7]
+    }],
+  };
+  var wastingChart = new Chart(context).Line(wastingData, {
+      scaleOverride: true,
+      scaleSteps: 5,
+      scaleStepWidth: 20,
+      bezierCurve: false, 
+  });
+  // Mortality chart
+  var context = $('#chart-mortality').get(0).getContext('2d');
+  var mortalityData = {
+    labels: ["1990", "1995", "2000", "2005", "2013"],
+    datasets: [
+    {
+      fillColor: "rgba(220,220,220,0.2)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+
+      data: [5.1, 
+             4.2, 
+             3.5, 
+             3, 
+             2.4]
+    }],
+  };
+  var mortalityChart = new Chart(context).Line(mortalityData, {
+      scaleOverride: true,
+      scaleSteps: 5,
+      scaleStepWidth: 20,
+      bezierCurve: false, 
+  });
+
+
+
+
+
+
+
 
   function getSeverityClass(d) {                                                    
     if (d === '-') { return 'no-data'; }                                            
