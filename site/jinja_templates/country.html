@@ -58,9 +58,8 @@
   }
   
  $(document).ready(function(){
-  
-  $('#country-info').addClass('getSeverityClass({{ score.year2015 }})');
-
+   $('#country-info').addClass(getSeverityClass({{ score.year2015 }}));
+   $('#score-value i').addClass("fi-arrow-{{ score_evolution }}");
  });
   
 </script>
@@ -91,7 +90,7 @@
       <p>Hunger level: XXX</p>
 
       {% if scorediff %}
-      <p>Score evolution: <i class="fi-arrow-down"></i> / <i class="fi-arrow-up"></i> {{ scorediff }} points ({{ score.year2005 }} in 2005)</p>
+      <p id="score-value">Score evolution: <i></i> {{ scorediff }} points ({{ score.year2005 }} in 2005)</p>
       {% endif %}
     </div>
   </div>
