@@ -59,6 +59,7 @@
   
  $(document).ready(function(){
    $('#country-info').addClass(getSeverityClass({{ score.year2015 }}));
+   $('#hunger-level .severity').text(getSeverityClass({{ score.year2015 }}));
    $('#score-value i').addClass("fi-arrow-{{ score_evolution }}");
  });
   
@@ -67,7 +68,7 @@
 {% endblock %}
 
 {% block content %}
-<section id="country-info" class="spaced-row">
+<section id="country-info">
   <div class="row">
     <div class="large-12 columns">
       <ul class="breadcrumbs">
@@ -84,13 +85,13 @@
     <!-- map goes here -->
   </div>
   
-  <div class="row">
+  <div id="summary" class="row">
     <div class="large-12 columns"> 
-      <p><strong class="severity">{{ name }}</strong> has a Global Hunger Index score of <strong class="severity">{{ score.year2015 }}</strong> in 2015.</p>
-      <p>Hunger level: <strong class="severity">XXX</strong></p>
+      <p><em class="severity">{{ name }}</em> has a Global Hunger Index score of <em class="severity">{{ score.year2015 }}</em> in 2015.</p>
+      <p id="hunger-level"><strong>Hunger level:</strong> <em class="severity"></em></p>
 
       {% if scorediff %}
-        <p id="score-value">Score evolution: <i></i> <strong class="severity">{{ scorediff }}</strong> points ({{ score.year2005 }} in 2005)</p>
+        <p id="score-value"><strong>Score evolution:</strong> <i></i> <em class="severity">{{ scorediff }}</em> points ({{ score.year2005 }} in 2005)</p>
       {% endif %}
     </div>
   </div>
@@ -109,10 +110,10 @@
         <thead>
           <tr>
             <th> &nbsp;</th>
-            <td>{{ m.country_score_undernourished }}</td>
-            <td>{{ m.country_score_stunting }}</td>
-            <td>{{ m.country_score_mortality }}</td>
-            <td>{{ m.country_score_wasting }}</td>
+            <th>{{ m.country_score_undernourished }}</th>
+            <th>{{ m.country_score_stunting }}</th>
+            <th>{{ m.country_score_mortality }}</th>
+            <th>{{ m.country_score_wasting }}</th>
           </tr>
         </thead>
         <tbody>
