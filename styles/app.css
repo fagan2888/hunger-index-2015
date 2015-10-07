@@ -4639,7 +4639,7 @@ meta.foundation-mq-topbar {
       .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
         color: #FFFFFF;
         display: block;
-        font-weight: normal;
+        font-weight: bold;
         padding: 0 0.9375rem;
         width: 75%; }
   .top-bar .toggle-topbar {
@@ -6473,7 +6473,7 @@ th.hide-for-touch {
     margin: .25rem 0;
     padding-bottom: 0; }
     .ghi-levels li em {
-      font-family: 'PT Sans Regular', 'DejaVu Sans', Roboto, Arial, sans-serif;
+      font-family: 'PT Sans', 'DejaVu Sans', Roboto, Arial, sans-serif;
       font-style: normal; }
   .ghi-levels .extra-alarming {
     border-color: #AB0635; }
