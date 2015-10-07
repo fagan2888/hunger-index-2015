@@ -153,7 +153,7 @@ function getSeverityClass(d) {
       });
     });
 
-    $('#country-table tbody').on( 'click', 'tr', function (ev) {
+    $('#country-table').on( 'click', 'tr', function (ev) {
       // clicking on a country in the table focuses the map on it
       console.log(this);
       var f = geojsonLayer.getLayer(this.id);
