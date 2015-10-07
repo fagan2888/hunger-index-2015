@@ -54,9 +54,8 @@
     </div>
 
   
-<section id="country-info" class="spaced-row getSeverityClass(12.4)">
+<section id="country-info" class="spaced-row">
   <div class="row">
-    <div class="row">
     <div class="large-12 columns">
       <ul class="breadcrumbs">
         <li><a href="../../">Home</a></li> <li class="current">South Africa</li>
@@ -72,53 +71,72 @@
     <!-- map goes here -->
   </div>
   
-  <div class="row"> 
-    <p>South Africa has a Global Hunger Index score of 12.4 in 2015.</p>
-    <p>Hunger level: XXX</p>
+  <div class="row">
+    <div class="large-12 columns"> 
+      <p>South Africa has a Global Hunger Index score of 12.4 in 2015.</p>
+      <p>Hunger level: XXX</p>
 
-    
-    <p>Score evolution: <i class="fi-arrow-down"></i> / <i class="fi-arrow-up"></i> -8.6 points (21.0 in 2005)</p>
-    
+      
+      <p>Score evolution: <i class="fi-arrow-down"></i> / <i class="fi-arrow-up"></i> -8.6 points (21.0 in 2005)</p>
+      
+    </div>
   </div>
 
   <div class="row">
     <h3 class="large-12 columns">Global hunger index evolution</h3>
-    <div class="large-12 columns">
-      <canvas id="chart-score" width="600" height="250"></canvas>
-    </div>
+  </div>
+  <div class="row">
+    <canvas id="chart-score" class="large-12 columns"></canvas>
   </div>
 
-  <div class="row">  
-     <h3 class="large-12 columns">Detailed score for 2015</h3>
-     <table class="large-12 columns">
-      <thead>
-        <tr>
-          <th> &nbsp;</th>
-          <td>Proportion of undernourished in population (%)</td>
-          <td>Prevalence of stunting in children under five years (%)</td>
-          <td>Under five mortality rate (%)</td>
-          <td>Prevalence of wasting in children under five years (%)</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Country data (in %)</th>
-          <td>1.7</td>
-          <td>22.9</td>
-          <td>4.4</td>
-          <td>3.6</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Detailed score for 2015</h3>
+      <table>
+        <thead>
+          <tr>
+            <th> &nbsp;</th>
+            <td>Proportion of undernourished in population (%)</td>
+            <td>Prevalence of stunting in children under five years (%)</td>
+            <td>Under five mortality rate (%)</td>
+            <td>Prevalence of wasting in children under five years (%)</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Country data (in %)</th>
+            <td>1.7</td>
+            <td>22.9</td>
+            <td>4.4</td>
+            <td>3.6</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
   <div class="row">    
     <h3 class="large-12 columns">Evolution from 1990 to 2015</h3>
-    
-    <canvas id="chart-undernourished" width="250" height="250"></canvas>
-    <canvas id="chart-stunting" width="250" height="250"></canvas>
-    <canvas id="chart-mortality" width="250" height="250"></canvas>
-    <canvas id="chart-wasting" width="250" height="250"></canvas>
+  </div>
+  <div class="row">
+    <div class="medium-6 columns">
+      <h4>Proportion of undernourished in population (%)</h4>
+      <canvas id="chart-undernourished" width="auto" height="250px"></canvas>
+    </div>
+    <div class="medium-6 columns">
+      <h4>Prevalence of stunting in children under five years (%)</h4>
+      <canvas id="chart-stunting" width="auto" height="250px"></canvas>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-6 columns">
+      <h4>Under five mortality rate (%)</h4>
+      <canvas id="chart-mortality" width="auto" height="250px"></canvas>
+    </div>
+    <div class="medium-6 columns">      
+      <h4>Prevalence of wasting in children under five years (%)</h4>
+      <canvas id="chart-wasting" width="auto" height="250px"></canvas>
+    </div>
   </div>
   
 </section>
@@ -147,7 +165,6 @@
   <!-- bower:js -->
   <script src="../../scripts/jquery.js"></script>
   <script src="../../scripts/foundation.min.js"></script>
-  <script src="../../scripts/foundation.magellan.js"></script>
   <script src="../../scripts/foundation-scripts.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
@@ -187,16 +204,7 @@
       scaleSteps: 6,
       scaleStepWidth: 10,
       scaleStartValue: 5,
-      bezierCurve: false, 
-      // tooltips can be defined by functions too
-      // https://github.com/nnnick/Chart.js/issues/499
-      tooltipTemplate: function (d) {
-        if (d.value === 5) {
-          return d.label + ": <" + d.value;
-        } else {
-          return d.label + ": " + d.value;
-        }
-      }
+      bezierCurve: false 
   });
 
   function getSeverityClass(d) {                                                    
@@ -209,6 +217,12 @@
       d >= 0   ? 'low' :                                                            
       'not-calculated';                                                            
   }
+  
+ $(document).ready(function(){
+  
+  $('#country-info').addClass('getSeverityClass(12.4)');
+
+ });
   
 </script>
 
