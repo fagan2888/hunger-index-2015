@@ -54,7 +54,7 @@
     </div>
 
   
-<section id="country-info" class="spaced-row">
+<section id="country-info">
   <div class="row">
     <div class="large-12 columns">
       <ul class="breadcrumbs">
@@ -71,10 +71,10 @@
     <!-- map goes here -->
   </div>
   
-  <div class="row">
+  <div id="summary" class="row">
     <div class="large-12 columns"> 
-      <p>Latvia has a Global Hunger Index score of <5 in 2015.</p>
-      <p>Hunger level: XXX</p>
+      <p><em class="">Latvia</em> has a Global Hunger Index score of <em class=""><5</em> in 2015.</p>
+      <p id="hunger-level"><strong>Hunger level:</strong> <em class=""></em></p>
 
       
     </div>
@@ -94,10 +94,10 @@
         <thead>
           <tr>
             <th> &nbsp;</th>
-            <td>Proportion of undernourished in population (%)</td>
-            <td>Prevalence of stunting in children under five years (%)</td>
-            <td>Under five mortality rate (%)</td>
-            <td>Prevalence of wasting in children under five years (%)</td>
+            <th>Proportion of undernourished in population (%)</th>
+            <th>Prevalence of stunting in children under five years (%)</th>
+            <th>Under five mortality rate (%)</th>
+            <th>Prevalence of wasting in children under five years (%)</th>
           </tr>
         </thead>
         <tbody>
@@ -346,13 +346,6 @@
         return d.label + ": " + d.value;
       }
   });
-
-
-
-
-
-
-
 
   function getSeverityClass(d) {                                                    
     if (d === '-') { return 'no-data'; }                                            

@@ -54,7 +54,7 @@
     </div>
 
   
-<section id="country-info" class="spaced-row">
+<section id="country-info">
   <div class="row">
     <div class="large-12 columns">
       <ul class="breadcrumbs">
@@ -71,13 +71,13 @@
     <!-- map goes here -->
   </div>
   
-  <div class="row">
+  <div id="summary" class="row">
     <div class="large-12 columns"> 
-      <p>Guyana has a Global Hunger Index score of 14.4 in 2015.</p>
-      <p>Hunger level: XXX</p>
+      <p><em class="moderate">Guyana</em> has a Global Hunger Index score of <em class="moderate">14.4</em> in 2015.</p>
+      <p id="hunger-level"><strong>Hunger level:</strong> <em class="moderate">Moderate</em></p>
 
       
-      <p id="score-value">Score evolution: <i></i> -2.9 points (17.3 in 2005)</p>
+        <p id="score-value"><strong>Score evolution:</strong> <i></i> <em class="severity">-2.9</em> points (17.3 in 2005)</p>
       
     </div>
   </div>
@@ -96,10 +96,10 @@
         <thead>
           <tr>
             <th> &nbsp;</th>
-            <td>Proportion of undernourished in population (%)</td>
-            <td>Prevalence of stunting in children under five years (%)</td>
-            <td>Under five mortality rate (%)</td>
-            <td>Prevalence of wasting in children under five years (%)</td>
+            <th>Proportion of undernourished in population (%)</th>
+            <th>Prevalence of stunting in children under five years (%)</th>
+            <th>Under five mortality rate (%)</th>
+            <th>Prevalence of wasting in children under five years (%)</th>
           </tr>
         </thead>
         <tbody>
@@ -348,13 +348,6 @@
         return d.label + ": " + d.value;
       }
   });
-
-
-
-
-
-
-
 
   function getSeverityClass(d) {                                                    
     if (d === '-') { return 'no-data'; }                                            

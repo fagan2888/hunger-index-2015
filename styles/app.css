@@ -1,21 +1,24 @@
 /* Type
 */
 @font-face {
-  font-family: 'PT Sans Regular';
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
   src: local("PT Sans Regular"), url("../fonts/PTS55F_W.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'PT Sans Bold';
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: bold;
   src: local("PT Sans Bold"), url("../fonts/PTS75F_W.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'PT Sans Narrow';
+  font-weight: normal;
   src: local("PT Sans Narrow Regular"), url("../fonts/PTN57F_W.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'PT Sans Narrow Bold';
+  font-family: 'PT Sans Narrow';
   font-weight: bold;
   src: local("PT Sans Narrow Bold"), url("../fonts/PTN77F_W.ttf") format("truetype"); }
 
@@ -82,7 +85,7 @@ body {
   background: #fff;
   color: #54544b;
   cursor: auto;
-  font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -970,7 +973,7 @@ select {
       background: #EFEFEF;
       color: #54544b;
       display: block;
-      font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+      font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
       font-size: 1rem;
       padding: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
@@ -1372,7 +1375,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -3407,7 +3410,7 @@ kbd {
 
 .label {
   display: inline-block;
-  font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
   margin-bottom: auto;
@@ -3798,7 +3801,7 @@ button:focus {
   .pricing-table .title {
     background-color: #333333;
     color: #EEEEEE;
-    font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+    font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
     font-size: 1rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -3806,7 +3809,7 @@ button:focus {
   .pricing-table .price {
     background-color: #F6F6F6;
     color: #333333;
-    font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+    font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
     font-size: 2rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -4060,7 +4063,7 @@ button:focus {
 
 .side-nav {
   display: block;
-  font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
   list-style-position: outside;
   list-style-type: none;
   margin: 0;
@@ -4082,7 +4085,7 @@ button:focus {
         color: #b9d652; }
     .side-nav li.active > a:first-child:not(.button) {
       color: #b9d652;
-      font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+      font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
       font-weight: normal; }
     .side-nav li.divider {
       border-top: 1px solid;
@@ -4202,7 +4205,7 @@ button:focus {
   .sub-nav li {
     color: #999999;
     float: left;
-    font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+    font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
     font-size: 0.875rem;
     font-weight: normal;
     margin-left: 1rem;
@@ -4397,7 +4400,7 @@ table {
       display: block;
       background-color: #EFEFEF;
       color: #54544b;
-      font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+      font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
       font-size: 1rem;
       padding: 1rem 2rem; }
       .tabs dd > a:hover,
@@ -4713,7 +4716,7 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li > a {
       color: #FFFFFF;
       display: block;
-      font-family: "PT Sans Regular", "DejaVu Sans", Roboto, Arial, sans-serif;
+      font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       padding-left: 0.9375rem;
@@ -5275,9 +5278,9 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #54544b;
-  font-family: "PT Sans Narrow Bold", "DejaVu Sans", Roboto, Arial, sans-serif;
+  font-family: "PT Sans Narrow", "DejaVu Sans", Roboto, Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
@@ -6303,6 +6306,8 @@ th.hide-for-touch {
   .show-for-print {
     display: none !important; } }
 
+/* Mixins
+*/
 /* Colours
 */
 /* Layout
@@ -6335,10 +6340,11 @@ th.hide-for-touch {
 */
 #main-map {
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  border-bottom: 1px solid #ccc; }
   #main-map #map-application {
-    height: 100%;
-    display: inline-block; }
+    height: 500px;
+    background: #eaeaea url(../images/preloader.gif) no-repeat center center; }
   #main-map .map {
     width: 100%;
     height: 500px; }
@@ -6346,9 +6352,11 @@ th.hide-for-touch {
     height: 100%; }
     #main-map .large-4 #table-container {
       height: 412px;
-      overflow-y: scroll; }
-      #main-map .large-4 #table-container table {
-        margin-bottom: 0; }
+      overflow-y: scroll;
+      border-top: 1px solid #ccc; }
+      #main-map .large-4 #table-container #country-table {
+        margin-bottom: 0;
+        border: 0; }
       #main-map .large-4 #table-container table tr td {
         padding: 0.5625rem 0.9375rem; }
     #main-map .large-4 .row {
@@ -6363,6 +6371,9 @@ th.hide-for-touch {
   font-weight: bold; }
 
 .leaflet-container .leaflet-popup .leaflet-popup-content-wrapper {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px;
   background-color: #f9f9f9; }
   .leaflet-container .leaflet-popup .leaflet-popup-content-wrapper p {
@@ -6443,8 +6454,13 @@ th.hide-for-touch {
   #table-container #country-table .indust-country td:nth-child(2) {
     border-right-color: #eaeaea; }
 
+#map-legend {
+  border-bottom: 1px solid #ccc; }
+  #map-legend .columns {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; }
+
 .ghi-levels {
-  border-bottom: 1px solid #ccc;
   padding: 0.5rem 0;
   margin: 0; }
   .ghi-levels li {
@@ -6479,7 +6495,7 @@ th.hide-for-touch {
 #home-blocks h3 {
   font-size: 1.375rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   padding-top: 1rem; }
 
 #home-blocks p {
@@ -6491,11 +6507,13 @@ th.hide-for-touch {
 
 #home-blocks .columns:hover {
   background-color: #eaeaea;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px; }
 
 #home-blocks .columns a:hover, #home-blocks .columns a:hover h3 {
@@ -6506,30 +6524,69 @@ th.hide-for-touch {
 
 /* Country page
 */
-#country-info ul {
-  margin: 0; }
-  #country-info ul li {
-    list-style-type: none; }
+#country-info {
+  padding-top: 1.25rem; }
+  #country-info .breadcrumbs {
+    margin-bottom: 0; }
+  #country-info .row h3 {
+    padding-top: 2rem; }
+  #country-info .row h4 {
+    font-size: 1.125rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 1rem; }
+  #country-info #summary p {
+    margin-bottom: 0.25rem; }
+  #country-info em {
+    font-style: normal; }
+  #country-info #hunger-level em.severity {
+    text-transform: capitalize; }
+  #country-info #summary strong {
+    font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #ddd;
+    padding: 0.2rem 0.45rem;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px; }
 
-#country-info.extra-alarming strong.severity {
+#country-info.extra-alarming em.severity,
+#country-info.extra-alarming #detailed-score tbody td,
+#country-info.extra-alarming .fi-arrow-down, #country-info.extra-alarming .fi-arrow-up {
   color: #AB0635; }
 
-#country-info.alarming strong.severity {
+#country-info.alarming em.severity,
+#country-info.alarming #detailed-score tbody td,
+#country-info.alarming .fi-arrow-down, #country-info.alarming .fi-arrow-up {
   color: #e9841d; }
 
-#country-info.serious strong.severity {
+#country-info.serious em.severity,
+#country-info.serious #detailed-score tbody td,
+#country-info.serious .fi-arrow-down, #country-info.serious .fi-arrow-up {
   color: #fbe0c7; }
 
-#country-info.moderate strong.severity {
+#country-info.moderate em.severity,
+#country-info.moderate #detailed-score tbody td,
+#country-info.moderate .fi-arrow-down, #country-info.moderate .fi-arrow-up {
   color: #bedcb3; }
 
-#country-info.low strong.severity {
+#country-info.low em.severity {
   color: #4caf45; }
 
-#country-info.no-data strong.severity {
+#country-info.low .fi-arrow-down, #country-info.low .fi-arrow-up {
+  color: #4caf45; }
+
+#country-info.no-data em.severity,
+#country-info.no-data #detailed-score tbody td,
+#country-info.no-data .fi-arrow-down, #country-info.no-data .fi-arrow-up {
   color: #808080; }
 
-#country-info.not-calculated strong.severity {
+#country-info.not-calculated em.severity,
+#country-info.not-calculated #detailed-score tbody td,
+#country-info.not-calculated .fi-arrow-down, #country-info.not-calculated .fi-arrow-up {
   color: #eaeaea; }
 
 /* Static pages
@@ -6540,7 +6597,7 @@ th.hide-for-touch {
   margin-bottom: 1.75rem; }
 
 #static-content .row p > strong {
-  font-family: "PT Sans Narrow Bold", "DejaVu Sans", Roboto, Arial, sans-serif;
+  font-family: "PT Sans Narrow", "DejaVu Sans", Roboto, Arial, sans-serif;
   font-size: 1rem;
   margin-bottom: 0.5rem; }
 
