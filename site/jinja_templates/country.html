@@ -198,11 +198,11 @@
   
   <div class="row">
     <div class="large-12 columns"> 
-      <p>{{ name }} has a Global Hunger Index score of {{ score.year2015 }} in 2015.</p>
-      <p>Hunger level: XXX</p>
+      <p><strong class="severity">{{ name }}</strong> has a Global Hunger Index score of <strong class="severity">{{ score.year2015 }}</strong> in 2015.</p>
+      <p>Hunger level: <strong class="severity">XXX</strong></p>
 
       {% if scorediff %}
-      <p id="score-value">Score evolution: <i></i> {{ scorediff }} points ({{ score.year2005 }} in 2005)</p>
+        <p id="score-value">Score evolution: <i></i> <strong class="severity">{{ scorediff }}</strong> points ({{ score.year2005 }} in 2005)</p>
       {% endif %}
     </div>
   </div>
@@ -217,7 +217,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Detailed score for 2015</h3>
-      <table>
+      <table id="detailed-score">
         <thead>
           <tr>
             <th> &nbsp;</th>

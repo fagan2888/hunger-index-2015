@@ -285,6 +285,34 @@ $notcalculated-grey: #eaeaea;
     }
 }
 
+#country-info.extra-alarming {
+    strong.severity { color: $alarming-red; }
+}
+
+#country-info.alarming {
+    strong.severity { color: $alarming-orange; }
+}
+
+#country-info.serious {
+    strong.severity { color: $serious-light-orange; }
+}
+
+#country-info.moderate {
+    strong.severity { color: $moderate-light-green; }
+}
+
+#country-info.low {
+    strong.severity { color: $low-green; }
+}
+
+#country-info.no-data {
+    strong.severity { color: $nodata-grey; }
+}
+
+#country-info.not-calculated {
+    strong.severity { color: $notcalculated-grey; }
+}
+
 
 /* Static pages
 */
