@@ -48,14 +48,19 @@
       'not-calculated';                                                            
   }
   
+ $(document).ready(function(){
+  
+  $('#country-info').addClass('getSeverityClass({{ score.year2015 }})');
+
+ });
+  
 </script>
 
 {% endblock %}
 
 {% block content %}
-<section id="country-info" class="spaced-row getSeverityClass({{ score.year2015 }})">
+<section id="country-info" class="spaced-row">
   <div class="row">
-    <div class="row">
     <div class="large-12 columns">
       <ul class="breadcrumbs">
         <li><a href="../../">Home</a></li> <li class="current">{{ name }}</li>
@@ -71,53 +76,72 @@
     <!-- map goes here -->
   </div>
   
-  <div class="row"> 
-    <p>{{ name }} has a Global Hunger Index score of {{ score.year2015 }} in 2015.</p>
-    <p>Hunger level: XXX</p>
+  <div class="row">
+    <div class="large-12 columns"> 
+      <p>{{ name }} has a Global Hunger Index score of {{ score.year2015 }} in 2015.</p>
+      <p>Hunger level: XXX</p>
 
-    {% if scorediff %}
-    <p>Score evolution: <i class="fi-arrow-down"></i> / <i class="fi-arrow-up"></i> {{ scorediff }} points ({{ score.year2005 }} in 2005)</p>
-    {% endif %}
+      {% if scorediff %}
+      <p>Score evolution: <i class="fi-arrow-down"></i> / <i class="fi-arrow-up"></i> {{ scorediff }} points ({{ score.year2005 }} in 2005)</p>
+      {% endif %}
+    </div>
   </div>
 
   <div class="row">
     <h3 class="large-12 columns">Global hunger index evolution</h3>
-    <div class="large-12 columns">
-      <canvas id="chart-score" width="600" height="250"></canvas>
-    </div>
+  </div>
+  <div class="row">
+    <canvas id="chart-score" class="large-12 columns"></canvas>
   </div>
 
-  <div class="row">  
-     <h3 class="large-12 columns">Detailed score for 2015</h3>
-     <table class="large-12 columns">
-      <thead>
-        <tr>
-          <th> &nbsp;</th>
-          <td>{{ m.country_score_undernourished }}</td>
-          <td>{{ m.country_score_stunting }}</td>
-          <td>{{ m.country_score_mortality }}</td>
-          <td>{{ m.country_score_wasting }}</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>{{ m.country_score_data }}</th>
-          <td>{{ d.undernourished_2015.score }}</td>
-          <td>{{ d.stunting_2015.score }}</td>
-          <td>{{ d.mortality_2013.score }}</td>
-          <td>{{ d.wasting_2015.score }}</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Detailed score for 2015</h3>
+      <table>
+        <thead>
+          <tr>
+            <th> &nbsp;</th>
+            <td>{{ m.country_score_undernourished }}</td>
+            <td>{{ m.country_score_stunting }}</td>
+            <td>{{ m.country_score_mortality }}</td>
+            <td>{{ m.country_score_wasting }}</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>{{ m.country_score_data }}</th>
+            <td>{{ d.undernourished_2015.score }}</td>
+            <td>{{ d.stunting_2015.score }}</td>
+            <td>{{ d.mortality_2013.score }}</td>
+            <td>{{ d.wasting_2015.score }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
   <div class="row">    
     <h3 class="large-12 columns">Evolution from 1990 to 2015</h3>
-    
-    <canvas id="chart-undernourished" width="250" height="250"></canvas>
-    <canvas id="chart-stunting" width="250" height="250"></canvas>
-    <canvas id="chart-mortality" width="250" height="250"></canvas>
-    <canvas id="chart-wasting" width="250" height="250"></canvas>
+  </div>
+  <div class="row">
+    <div class="medium-6 columns">
+      <h4>{{ m.country_score_undernourished }}</h4>
+      <canvas id="chart-undernourished" width="auto" height="250px"></canvas>
+    </div>
+    <div class="medium-6 columns">
+      <h4>{{ m.country_score_stunting }}</h4>
+      <canvas id="chart-stunting" width="auto" height="250px"></canvas>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-6 columns">
+      <h4>{{ m.country_score_mortality }}</h4>
+      <canvas id="chart-mortality" width="auto" height="250px"></canvas>
+    </div>
+    <div class="medium-6 columns">      
+      <h4>{{ m.country_score_wasting }}</h4>
+      <canvas id="chart-wasting" width="auto" height="250px"></canvas>
+    </div>
   </div>
   
 </section>
