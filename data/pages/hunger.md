@@ -6,6 +6,6 @@
 
  **Malnutrition** refers more broadly to both undernutrition (problems of deficiencies) and overnutrition (problems of unbalanced diets, which includes consuming too many calories in relation to energy requirements, with or without low intake of micronutrient-rich foods).
 
-In this report,**“hunger”** refers to the index based on the four component indicators. Taken together, the component indicators reflect deficiencies in calories as well as in micronutrients. Thus, the GHI reflects both aspects of hunger.
+In this report, **“hunger”** refers to the index based on the four component indicators. Taken together, the component indicators reflect deficiencies in calories as well as in micronutrients. Thus, the GHI reflects both aspects of hunger.
 
 [^1]: FAO considers the composition of a population by age and sex to calculate its average minimum energy requirement for an individual engaged in low physical activity. This requirement varies by country—from about 1,650 to more than 1,900 kilocalories per person per day for developing countries in 2014–2016 (FAO 2015). Each country’s average minimum energy requirement for low physical activity is used to estimate undernourishment (FAO, IFAD, and WFP 2015).
