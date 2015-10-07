@@ -303,6 +303,7 @@ $notcalculated-grey: #eaeaea;
 
 #country-info {
     padding-top: 1.25rem;
+    padding-bottom: 4rem;
     .breadcrumbs { margin-bottom: 0; }
     .row h3 { padding-top: 2rem; }
     .row h4 {
@@ -324,6 +325,9 @@ $notcalculated-grey: #eaeaea;
         background: #ddd;
         padding: 0.2rem 0.45rem;
         @include border-radius(2px);
+        }
+    canvas {
+        margin-bottom: 1rem;
         }
 }
 
