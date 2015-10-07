@@ -11,3 +11,4 @@
 
 # GitHub Pages cache
 /site/.publish/
+node_modules

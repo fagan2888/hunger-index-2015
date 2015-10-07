@@ -1412,7 +1412,7 @@ $button-bg-color: $primary-color;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(16);
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: $white;
@@ -1454,7 +1454,7 @@ $button-bg-color: $primary-color;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
-// $topbar-menu-link-font-size: rem-calc(13);
+$topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
 // $topbar-menu-link-color: $white;
 // $topbar-menu-icon-color: $white;
@@ -1466,6 +1466,7 @@ $button-bg-color: $primary-color;
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
 //$topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
+$topbar-breakpoint: #{lower-bound(800px)};
 // $topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
 
 // Top-bar input styles

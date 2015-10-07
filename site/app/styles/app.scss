@@ -82,7 +82,6 @@ $notcalculated-grey: #eaeaea;
 #main-map {
     padding: 0;
     overflow: hidden;
-    border-bottom: 1px solid #ddd;
     #map-application {
         height: 100%;
         display: inline-block;
@@ -94,8 +93,9 @@ $notcalculated-grey: #eaeaea;
     .large-4 {
         height: 100%;
         #table-container {
-            height: 304px;
+            height: 412px;
             overflow-y: scroll;
+            table { margin-bottom: 0; }
             table tr td { padding: 0.5625rem 0.9375rem; }
             }
         .row {
@@ -213,6 +213,7 @@ $notcalculated-grey: #eaeaea;
 }
 
 .ghi-levels {
+    border-bottom: 1px solid #ccc;
     padding: 0.5rem 0;
     margin: 0;
     li {
@@ -222,7 +223,7 @@ $notcalculated-grey: #eaeaea;
         font-size: 80%;
         line-height: 1;
         border-left: 18px solid #fff;
-        margin-bottom: .45rem;
+        margin: .25rem 0;
         padding-bottom: 0;
         em {
             font-family: 'PT Sans Regular', 'DejaVu Sans', Roboto, Arial, sans-serif;
@@ -351,4 +352,5 @@ $notcalculated-grey: #eaeaea;
 @media #{$medium-only} {    
     #main-map .large-4 #table-container { -webkit-overflow-scrolling: touch; }
 }
+
 
