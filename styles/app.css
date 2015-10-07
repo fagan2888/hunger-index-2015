@@ -6525,7 +6525,8 @@ th.hide-for-touch {
 /* Country page
 */
 #country-info {
-  padding-top: 1.25rem; }
+  padding-top: 1.25rem;
+  padding-bottom: 4rem; }
   #country-info .breadcrumbs {
     margin-bottom: 0; }
   #country-info .row h3 {
@@ -6552,6 +6553,8 @@ th.hide-for-touch {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     border-radius: 2px; }
+  #country-info canvas {
+    margin-bottom: 1rem; }
 
 #country-info.extra-alarming em.severity,
 #country-info.extra-alarming #detailed-score tbody td,
