@@ -179,13 +179,6 @@
       }
   });
 
-
-
-
-
-
-
-
   function getSeverityClass(d) {                                                    
     if (d === '-') { return 'no-data'; }                                            
     if (d === '<5') { return 'low'; }                                              
@@ -207,7 +200,7 @@
 {% endblock %}
 
 {% block content %}
-<section id="country-info" class="spaced-row">
+<section id="country-info">
   <div class="row">
     <div class="large-12 columns">
       <ul class="breadcrumbs">
@@ -224,13 +217,13 @@
     <!-- map goes here -->
   </div>
   
-  <div class="row">
+  <div id="summary" class="row">
     <div class="large-12 columns"> 
-      <p>{{ name }} has a Global Hunger Index score of {{ score.year2015 }} in 2015.</p>
-      <p>Hunger level: <span class="{{ level_class }}">{{ level }}</span></p>
+      <p><em class="{{ level_class }}">{{ name }}</em> has a Global Hunger Index score of <em class="{{ level_class }}">{{ score.year2015 }}</em> in 2015.</p>
+      <p id="hunger-level"><strong>Hunger level:</strong> <em class="{{ level_class }}">{{ level }}</em></p>
 
       {% if scorediff %}
-      <p id="score-value">Score evolution: <i></i> {{ scorediff }} points ({{ score.year2005 }} in 2005)</p>
+        <p id="score-value"><strong>Score evolution:</strong> <i></i> <em class="severity">{{ scorediff }}</em> points ({{ score.year2005 }} in 2005)</p>
       {% endif %}
     </div>
   </div>
@@ -249,10 +242,10 @@
         <thead>
           <tr>
             <th> &nbsp;</th>
-            <td>{{ m.country_score_undernourished }}</td>
-            <td>{{ m.country_score_stunting }}</td>
-            <td>{{ m.country_score_mortality }}</td>
-            <td>{{ m.country_score_wasting }}</td>
+            <th>{{ m.country_score_undernourished }}</th>
+            <th>{{ m.country_score_stunting }}</th>
+            <th>{{ m.country_score_mortality }}</th>
+            <th>{{ m.country_score_wasting }}</th>
           </tr>
         </thead>
         <tbody>

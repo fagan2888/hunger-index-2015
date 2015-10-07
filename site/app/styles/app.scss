@@ -2,12 +2,14 @@
 */
 
 @font-face {
-    font-family: 'PT Sans Regular';
+    font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: normal; 
 	src: local('PT Sans Regular'), url('../fonts/PTS55F_W.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'PT Sans Bold';
+    font-family: 'PT Sans';
 	font-style: normal;
 	font-weight: bold; 
 	src: local('PT Sans Bold'), url('../fonts/PTS75F_W.ttf') format('truetype');
@@ -16,18 +18,36 @@
 
 @font-face {
     font-family: 'PT Sans Narrow';
+	font-weight: normal;
 	src: local('PT Sans Narrow Regular'), url('../fonts/PTN57F_W.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'PT Sans Narrow Bold';
+    font-family: 'PT Sans Narrow';
 	font-weight: bold; 
 	src: local('PT Sans Narrow Bold'), url('../fonts/PTN77F_W.ttf') format('truetype');
 }
 
-
 @import "foundation/settings";
 @import "foundation";
+
+/* Mixins
+*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($time) {
+       -ms-transition: $time;
+      -moz-transition: $time;
+   -webkit-transition: $time;
+           transition: $time;
+}
+
 
 /* Colours
 */
@@ -82,9 +102,10 @@ $notcalculated-grey: #eaeaea;
 #main-map {
     padding: 0;
     overflow: hidden;
+    border-bottom: 1px solid #ccc;
     #map-application {
-        height: 100%;
-        display: inline-block;
+        height: 500px;
+        background: $notcalculated-grey url(../images/preloader.gif) no-repeat center center;
         }
     .map {
         width: 100%;
@@ -95,7 +116,8 @@ $notcalculated-grey: #eaeaea;
         #table-container {
             height: 412px;
             overflow-y: scroll;
-            table { margin-bottom: 0; }
+            border-top: 1px solid #ccc;
+            #country-table { margin-bottom: 0; border: 0; }
             table tr td { padding: 0.5625rem 0.9375rem; }
             }
         .row {
@@ -115,7 +137,7 @@ $notcalculated-grey: #eaeaea;
 }
 
 .leaflet-container .leaflet-popup .leaflet-popup-content-wrapper {
-    border-radius: 4px;
+    @include border-radius(4px);
     background-color: #f9f9f9;
     p {
         margin: 0;
@@ -212,8 +234,15 @@ $notcalculated-grey: #eaeaea;
         }
 }
 
-.ghi-levels {
+#map-legend {
     border-bottom: 1px solid #ccc;
+    .columns {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        }
+}
+
+.ghi-levels {
     padding: 0.5rem 0;
     margin: 0;
     li {
@@ -246,7 +275,7 @@ $notcalculated-grey: #eaeaea;
     h3 {
         font-size: 1.375rem;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         padding-top: 1rem;
         }
     p {
@@ -258,12 +287,8 @@ $notcalculated-grey: #eaeaea;
         }
     .columns:hover {
         background-color: $notcalculated-grey;
-        -o-transition:.5s;
-        -ms-transition:.5s;
-        -moz-transition:.5s;
-        -webkit-transition:.5s;
-        transition:.5s;
-        border-radius: 4px;
+        @include transition(.5s);
+        @include border-radius(4px);
         }
      .columns a:hover, .columns a:hover h3 {   
         color: $primary-color;
@@ -277,40 +302,70 @@ $notcalculated-grey: #eaeaea;
 */
 
 #country-info {
-    ul {
-        margin: 0;    
-        li {
-            list-style-type:none;
-            }
-    }
+    padding-top: 1.25rem;
+    .breadcrumbs { margin-bottom: 0; }
+    .row h3 { padding-top: 2rem; }
+    .row h4 {
+        font-size: 1.125rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-top: 1rem;
+        }
+    #summary p {
+        margin-bottom: 0.25rem;
+        }
+    em { font-style: normal; }
+    #hunger-level em.severity { text-transform: capitalize; }
+    #summary strong {
+        font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        background: #ddd;
+        padding: 0.2rem 0.45rem;
+        @include border-radius(2px);
+        }
 }
 
 #country-info.extra-alarming {
-    strong.severity { color: $alarming-red; }
+    em.severity,
+    #detailed-score tbody td,
+    .fi-arrow-down,.fi-arrow-up { color: $alarming-red; }
 }
 
 #country-info.alarming {
-    strong.severity { color: $alarming-orange; }
+    em.severity,
+    #detailed-score tbody td,
+    .fi-arrow-down,.fi-arrow-up { color: $alarming-orange; }
 }
 
 #country-info.serious {
-    strong.severity { color: $serious-light-orange; }
+    em.severity,
+    #detailed-score tbody td,
+    .fi-arrow-down,.fi-arrow-up { color: $serious-light-orange; }
 }
 
 #country-info.moderate {
-    strong.severity { color: $moderate-light-green; }
+    em.severity,
+    #detailed-score tbody td,
+    .fi-arrow-down,.fi-arrow-up { color: $moderate-light-green; }
 }
 
 #country-info.low {
-    strong.severity { color: $low-green; }
+    em.severity { color: $low-green; }
+    .fi-arrow-down,.fi-arrow-up { color: $low-green; }
 }
 
 #country-info.no-data {
-    strong.severity { color: $nodata-grey; }
+    em.severity,
+    #detailed-score tbody td,
+    .fi-arrow-down,.fi-arrow-up { color: $nodata-grey; }
 }
 
 #country-info.not-calculated {
-    strong.severity { color: $notcalculated-grey; }
+    em.severity,
+    #detailed-score tbody td,
+    .fi-arrow-down,.fi-arrow-up { color: $notcalculated-grey; }
 }
 
 

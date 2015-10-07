@@ -87,8 +87,8 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-$font-family-sans-serif: 'PT Sans Regular', 'DejaVu Sans', Roboto, Arial, sans-serif;
-$font-family-sans-serif-narrow: 'PT Sans Narrow Bold', 'DejaVu Sans', Roboto, Arial, sans-serif;
+$font-family-sans-serif: 'PT Sans', 'DejaVu Sans', Roboto, Arial, sans-serif;
+$font-family-sans-serif-narrow: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -214,6 +214,7 @@ $title-font-family: $font-family-sans-serif-narrow;
 
 // We use these to control header font styles
 $header-font-family: $title-font-family;
+$header-font-weight: bold;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
