@@ -59,8 +59,23 @@ for year in years:
         new_entry = copy.deepcopy(entry)
         # replace score dict with value for this year
         new_entry['properties']['score'] = new_entry['properties']['score']['year' + str(year)]
+        if new_entry['properties']['score'] not in ('nc', '-'):
+            if new_entry['properties']['score'] == "<5":
+                new_entry['properties']['score'] = 2.5
+            new_entry['properties']['score'] = float(new_entry['properties']['score'])
         year_data['features'].append(new_entry)
     f = open("../site/app/data/countrydata-%d.geo.json" % year, 'w')
+
+    # Sort the table by score
+    # https://stackoverflow.com/a/73044
+    year_data['features'].sort(lambda x, y: cmp(x['properties']['score'], y['properties']['score']))
+    year_data['features'].reverse()
+
+    # Revert values
+    for entry in year_data['features']:
+        if entry['properties']['score'] == 2.5:
+            entry['properties']['score'] = "<5"
+
     f.write(json.dumps(year_data, indent=2))
     f.close()
 
@@ -119,9 +134,6 @@ for entry in geodata['features']:
              'mortality_2013': {'score': indicators[country_name]['mortality-2013']},
          }}
     table_entries.append(d)
-
-# https://stackoverflow.com/a/73044
-# table_entries.sort(lambda x, y: cmp(x['score']['year2015'], y['score']['year2015']))
 
 table_data = {'data': table_entries}
 
