@@ -59,11 +59,11 @@
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(220,220,220,1)",
 
-      data: [{{ d.undernourished_1990.score }}, 
-             {{ d.undernourished_1995.score }}, 
-             {{ d.undernourished_2000.score }}, 
-             {{ d.undernourished_2005.score }}, 
-             {{ d.undernourished_2015.score }}]
+      data: [{{ d.undernourished_1990.score|replace("-", "null") }}, 
+             {{ d.undernourished_1995.score|replace("-", "null") }}, 
+             {{ d.undernourished_2000.score|replace("-", "null") }}, 
+             {{ d.undernourished_2005.score|replace("-", "null") }}, 
+             {{ d.undernourished_2015.score|replace("-", "null") }}]
     }],
   };
   var underChart = new Chart(context).Line(underData, {
@@ -93,11 +93,11 @@
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(220,220,220,1)",
 
-      data: [{{ d.stunting_1990.score }}, 
-             {{ d.stunting_1995.score }}, 
-             {{ d.stunting_2000.score }}, 
-             {{ d.stunting_2005.score }}, 
-             {{ d.stunting_2015.score }}]
+      data: [{{ d.stunting_1990.score|replace("-", "null") }}, 
+             {{ d.stunting_1995.score|replace("-", "null") }}, 
+             {{ d.stunting_2000.score|replace("-", "null") }}, 
+             {{ d.stunting_2005.score|replace("-", "null") }}, 
+             {{ d.stunting_2015.score|replace("-", "null") }}]
     }],
   };
   var stuntingChart = new Chart(context).Line(stuntingData, {
@@ -128,11 +128,11 @@
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(220,220,220,1)",
 
-      data: [{{ d.wasting_1990.score }}, 
-             {{ d.wasting_1995.score }}, 
-             {{ d.wasting_2000.score }}, 
-             {{ d.wasting_2005.score }}, 
-             {{ d.wasting_2015.score }}]
+      data: [{{ d.wasting_1990.score|replace("-", "null") }}, 
+             {{ d.wasting_1995.score|replace("-", "null") }}, 
+             {{ d.wasting_2000.score|replace("-", "null") }}, 
+             {{ d.wasting_2005.score|replace("-", "null") }}, 
+             {{ d.wasting_2015.score|replace("-", "null") }}]
     }],
   };
   var wastingChart = new Chart(context).Line(wastingData, {
@@ -162,11 +162,11 @@
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(220,220,220,1)",
 
-      data: [{{ d.mortality_1990.score }}, 
-             {{ d.mortality_1995.score }}, 
-             {{ d.mortality_2000.score }}, 
-             {{ d.mortality_2005.score }}, 
-             {{ d.mortality_2013.score }}]
+      data: [{{ d.mortality_1990.score|replace("-", "null") }}, 
+             {{ d.mortality_1995.score|replace("-", "null") }}, 
+             {{ d.mortality_2000.score|replace("-", "null") }}, 
+             {{ d.mortality_2005.score|replace("-", "null") }}, 
+             {{ d.mortality_2013.score|replace("-", "null") }}]
     }],
   };
   var mortalityChart = new Chart(context).Line(mortalityData, {

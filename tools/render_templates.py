@@ -123,10 +123,10 @@ def create_country_pages():
         scores = {}
         for entry in country['score']:
             score = country['score'][entry]
-            if score not in ["<5", "-"]:
-                score = float(score)
-            elif score == "-":
+            if "-" in score:
                 score = "null"
+            elif score not in ["<5", "-"]:
+                score = float(score)
             scores[entry] = score
 
         scorediff = None
