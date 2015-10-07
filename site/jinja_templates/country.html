@@ -46,6 +46,139 @@
       }
   });
 
+  // Undernourished chart
+  var context = $('#chart-undernourished').get(0).getContext('2d');
+  var underData = {
+    labels: ["1990", "1995", "2000", "2005", "2015"],
+    datasets: [
+    {
+      fillColor: "rgba(220,220,220,0.2)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+
+      data: [{{ d.undernourished_1990.score }}, 
+             {{ d.undernourished_1995.score }}, 
+             {{ d.undernourished_2000.score }}, 
+             {{ d.undernourished_2005.score }}, 
+             {{ d.undernourished_2015.score }}]
+    }],
+  };
+  var underChart = new Chart(context).Line(underData, {
+      scaleOverride: true,
+      scaleSteps: 5,
+      scaleStepWidth: 20,
+      bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        if (d.label === "1990" && {{ d.undernourished_1990.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1995" && {{ d.undernourished_1995.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2000" && {{ d.undernourished_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2005" && {{ d.undernourished_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2015" && {{ d.undernourished_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        return d.label + ": " + d.value;
+      }
+  });
+  // Stunting chart
+  var context = $('#chart-stunting').get(0).getContext('2d');
+  var stuntingData = {
+    labels: ["1990", "1995", "2000", "2005", "2015"],
+    datasets: [
+    {
+      fillColor: "rgba(220,220,220,0.2)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+
+      data: [{{ d.stunting_1990.score }}, 
+             {{ d.stunting_1995.score }}, 
+             {{ d.stunting_2000.score }}, 
+             {{ d.stunting_2005.score }}, 
+             {{ d.stunting_2015.score }}]
+    }],
+  };
+  var stuntingChart = new Chart(context).Line(stuntingData, {
+      scaleOverride: true,
+      scaleSteps: 5,
+      scaleStepWidth: 20,
+      bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        if (d.label === "1990" && {{ d.stunting_1990.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1995" && {{ d.stunting_1995.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2000" && {{ d.stunting_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2005" && {{ d.stunting_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2015" && {{ d.stunting_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        return d.label + ": " + d.value;
+      }
+  });
+  console.log(stuntingChart);
+  // Wasting chart
+  var context = $('#chart-wasting').get(0).getContext('2d');
+  var wastingData = {
+    labels: ["1990", "1995", "2000", "2005", "2015"],
+    datasets: [
+    {
+      fillColor: "rgba(220,220,220,0.2)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+
+      data: [{{ d.wasting_1990.score }}, 
+             {{ d.wasting_1995.score }}, 
+             {{ d.wasting_2000.score }}, 
+             {{ d.wasting_2005.score }}, 
+             {{ d.wasting_2015.score }}]
+    }],
+  };
+  var wastingChart = new Chart(context).Line(wastingData, {
+      scaleOverride: true,
+      scaleSteps: 5,
+      scaleStepWidth: 20,
+      bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        if (d.label === "1990" && {{ d.wasting_1990.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1995" && {{ d.wasting_1995.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2000" && {{ d.wasting_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2005" && {{ d.wasting_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "2015" && {{ d.wasting_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        return d.label + ": " + d.value;
+      }
+  });
+  // Mortality chart
+  var context = $('#chart-mortality').get(0).getContext('2d');
+  var mortalityData = {
+    labels: ["1990", "1995", "2000", "2005", "2013"],
+    datasets: [
+    {
+      fillColor: "rgba(220,220,220,0.2)",
+      strokeColor: "rgba(220,220,220,1)",
+      pointColor: "rgba(220,220,220,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(220,220,220,1)",
+
+      data: [{{ d.mortality_1990.score }}, 
+             {{ d.mortality_1995.score }}, 
+             {{ d.mortality_2000.score }}, 
+             {{ d.mortality_2005.score }}, 
+             {{ d.mortality_2013.score }}]
+    }],
+  };
+  var mortalityChart = new Chart(context).Line(mortalityData, {
+      scaleOverride: true,
+      scaleSteps: 5,
+      scaleStepWidth: 20,
+      bezierCurve: false, 
+      tooltipTemplate: function (d) {
+        return d.label + ": " + d.value;
+      }
+  });
+
   function getSeverityClass(d) {                                                    
     if (d === '-') { return 'no-data'; }                                            
     if (d === '<5') { return 'low'; }                                              
@@ -106,7 +239,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3>Detailed score for 2015</h3>
-      <table id="detailed-score">
+      <table>
         <thead>
           <tr>
             <th> &nbsp;</th>
