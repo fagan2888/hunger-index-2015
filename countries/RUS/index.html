@@ -54,7 +54,7 @@
     </div>
 
   
-<section id="country-info">
+<section id="country-info" class="low">
   <div class="row">
     <div class="large-12 columns">
       <ul class="breadcrumbs">
@@ -73,11 +73,11 @@
   
   <div id="summary" class="row">
     <div class="large-12 columns"> 
-      <p><em class="low">Russian Federation</em> has a Global Hunger Index score of <em class="low">6.6</em> in 2015.</p>
-      <p id="hunger-level"><strong>Hunger level:</strong> <em class="low">Low</em></p>
+      <p class="severity">Russian Federation has a Global Hunger Index score of <strong>6.6</strong> in 2015.</p>
+      <p id="hunger-level"><em>Hunger level:</em> <strong>Low</strong></p>
 
       
-        <p id="score-value"><strong>Score evolution:</strong> <i></i> <em class="severity">-0.6</em> points (7.2 in 2005)</p>
+        <p id="score-value"><em>Score evolution:</em> <strong class="down"><i class="fi-arrow-down"></i> -0.6 points </strong> (7.2 in 2005)</p>
       
     </div>
   </div>
@@ -360,11 +360,6 @@
       d >= 0   ? 'low' :                                                            
       'not-calculated';                                                            
   }
-  
- $(document).ready(function(){
-   $('#country-info').addClass(getSeverityClass(6.6));
-   $('#score-value i').addClass("fi-arrow-down");
- });
   
 </script>
 

@@ -6539,15 +6539,18 @@ th.hide-for-touch {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding-top: 1rem; }
-  #country-info #summary p {
-    margin-bottom: 0.25rem; }
   #country-info em {
     font-style: normal; }
-  #country-info #hunger-level em.severity {
-    text-transform: capitalize; }
-  #country-info #summary strong {
+  #country-info #hunger-level strong {
+    text-transform: capitalize;
+    font-weight: bold; }
+  #country-info #summary p {
+    margin-bottom: 0.25rem; }
+  #country-info #summary p#hunger-level em,
+  #country-info #summary p#score-value em {
+    font-size: 0.925rem;
     font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif;
-    font-weight: bold;
+    font-style: normal;
     text-transform: uppercase;
     background: #ddd;
     padding: 0.2rem 0.45rem;
@@ -6555,44 +6558,96 @@ th.hide-for-touch {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     border-radius: 2px; }
+  #country-info #summary p#score-value .up, #country-info #summary p#score-value .fi-arrow-up {
+    color: #267640; }
+  #country-info #summary p#score-value .down, #country-info #summary p#score-value .fi-arrow-down {
+    color: #8f3422; }
   #country-info canvas {
     margin-bottom: 1rem; }
 
 #country-info.extra-alarming em.severity,
-#country-info.extra-alarming #detailed-score tbody td,
-#country-info.extra-alarming .fi-arrow-down, #country-info.extra-alarming .fi-arrow-up {
+#country-info.extra-alarming #detailed-score tbody td {
   color: #AB0635; }
 
+#country-info.extra-alarming p.severity strong {
+  background-color: #AB0635;
+  padding: 0.2rem 0.45rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
 #country-info.alarming em.severity,
-#country-info.alarming #detailed-score tbody td,
-#country-info.alarming .fi-arrow-down, #country-info.alarming .fi-arrow-up {
+#country-info.alarming #detailed-score tbody td {
   color: #e9841d; }
 
+#country-info.alarming p.severity strong {
+  background-color: #e9841d;
+  padding: 0.2rem 0.45rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
 #country-info.serious em.severity,
-#country-info.serious #detailed-score tbody td,
-#country-info.serious .fi-arrow-down, #country-info.serious .fi-arrow-up {
+#country-info.serious #detailed-score tbody td {
   color: #fbe0c7; }
 
+#country-info.serious p.severity strong {
+  background-color: #fbe0c7;
+  padding: 0.2rem 0.45rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
 #country-info.moderate em.severity,
-#country-info.moderate #detailed-score tbody td,
-#country-info.moderate .fi-arrow-down, #country-info.moderate .fi-arrow-up {
+#country-info.moderate #detailed-score tbody td {
   color: #bedcb3; }
 
-#country-info.low em.severity {
+#country-info.moderate p.severity strong {
+  background-color: #bedcb3;
+  padding: 0.2rem 0.45rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+#country-info.low em.severity,
+#country-info.low #detailed-score tbody td {
   color: #4caf45; }
 
-#country-info.low .fi-arrow-down, #country-info.low .fi-arrow-up {
-  color: #4caf45; }
+#country-info.low p.severity strong {
+  background-color: #4caf45;
+  padding: 0.2rem 0.45rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
 
 #country-info.no-data em.severity,
-#country-info.no-data #detailed-score tbody td,
-#country-info.no-data .fi-arrow-down, #country-info.no-data .fi-arrow-up {
+#country-info.no-data #detailed-score tbody td {
   color: #808080; }
 
+#country-info.no-data p.severity strong {
+  background-color: #808080;
+  padding: 0.2rem 0.45rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
 #country-info.not-calculated em.severity,
-#country-info.not-calculated #detailed-score tbody td,
-#country-info.not-calculated .fi-arrow-down, #country-info.not-calculated .fi-arrow-up {
+#country-info.not-calculated #detailed-score tbody td {
   color: #eaeaea; }
+
+#country-info.not-calculated p.severity strong {
+  background-color: #eaeaea;
+  padding: 0.2rem 0.45rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
 
 /* Static pages
 */
