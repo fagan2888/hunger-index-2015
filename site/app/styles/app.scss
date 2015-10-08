@@ -229,16 +229,20 @@ $notcalculated-grey: #eaeaea;
     border-bottom: 1px solid #ddd;
     #country-table {
         tbody tr td { cursor: pointer; }
-        tbody tr td:nth-child(2) {
-            border-right: 1rem solid #fff;
+        tbody tr td span { padding: 0.25rem 0.5rem; }
+        tbody tr td.score span {
+            font-size: 0.75rem;
+            font-weight: bold;
+            @include border-radius(4px);
+            background-color: #f9f9f9;
             }
-        .extra-alarming td:nth-child(2) { border-right-color: $alarming-red; }
-        .alarming td:nth-child(2)       { border-right-color: $alarming-orange; }
-        .serious td:nth-child(2)        { border-right-color: $serious-light-orange; }
-        .moderate td:nth-child(2)       { border-right-color: $moderate-light-green; }
-        .low td:nth-child(2)            { border-right-color: $low-green; }
-        .no-data td:nth-child(2)        { border-right-color: $nodata-grey; }
-        .indust-country td:nth-child(2) { border-right-color: $notcalculated-grey; }
+        .extra-alarming td.score span { background-color: $alarming-red; }
+        .alarming td.score span       { background-color: $alarming-orange; }
+        .serious td.score span        { background-color: $serious-light-orange; }
+        .moderate td.score span       { background-color: $moderate-light-green; }
+        .low td.score span            { background-color: $low-green; }
+        .no-data td.score span        { background-color: $nodata-grey; }
+        .indust-country td.score span { background-color: $notcalculated-grey; }
         }
 }
 

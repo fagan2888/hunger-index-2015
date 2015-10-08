@@ -155,8 +155,8 @@ function getSeverityClass(d) {
             .attr("class", getSeverityClass(c.properties.score))
             .attr("role", "row")
             .append(
-                $('<td>').text(c.properties.name),
-                $('<td>').text(c.properties.score)
+                $('<td class="name">').text(c.properties.name).wrapInner('<span />'),
+                $('<td class="score">').text(c.properties.score).wrapInner('<span />')
                 ).appendTo('#country-table');
         }
       });
@@ -170,9 +170,8 @@ function getSeverityClass(d) {
     });
   }
 
-  $(document).ready(function() {
+  $(document).ready(function() {    
     populateTable('2015');
-
     $('#year-drop li a').click( function(ev) {
       // year dropdown refreshes map
       var year = this.className;
