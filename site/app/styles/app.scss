@@ -290,20 +290,21 @@ $notcalculated-grey: #eaeaea;
     p {
         line-height: 1.4;
         }
-    .columns a {
+    a.columns {
         outline: 0;
         color: #54544b;
-        }
-    .columns:hover {
-        background-color: $notcalculated-grey;
-        @include transition(.5s);
-        @include border-radius(4px);
-        }
-     .columns a:hover, .columns a:hover h3 {   
-        color: $primary-color;
-        }
-     .columns:focus {
-        color: $primary-color;
+        
+        h3 { color: $primary-color; }
+        
+        &.columns:hover {
+            color: #444;
+            background-color: $notcalculated-grey;
+            @include transition(.5s);
+            @include border-radius(4px);
+            }
+         &.columns:focus {
+            color: $primary-color;
+            }
         }
 }
 
@@ -425,6 +426,17 @@ $notcalculated-grey: #eaeaea;
         background-color: $notcalculated-grey;
         padding: 0.2rem 0.45rem;
         @include border-radius(10px);
+        }
+}
+
+/* Trends page
+*/
+
+#trends-content {
+    #trends-table_wrapper {
+        table#trends-table {
+            max-width: 100%;
+            }
         }
 }
 

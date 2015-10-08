@@ -17,7 +17,7 @@ $(document).ready(function() {
     'info': false
   } );
 
-  $("div.trends-toolbar").html('<label for="year">Year</label> <select name="year" id="year"> <option value="2015" selected>2015</option> <option value="2005">2005</option> <option value="2000">2000</option> <option value="1995">1995</option> <option value="1990">1990</option> </select> <label for="zone">Zone</label> <select name="zone" id="zone"> <option value="all" selected>All countries</option> <option value="MENA">Near East and North Africa</option> <option value="WAF">West Africa</option> <option value="CSAF">Central and Southern Africa</option> <option value="EAF">East Africa</option> <option value="SA">South America</option> <option value="CAR">Central America and the Caribbean</option> <option value="SEA">South, East and Southeast Asia</option> <option value="EEFSU">Eastern Europe and the Commonwealth of Independent States</option> </select>');
+  $("div.trends-toolbar").html('<div class="large-4 columns"><label for="year">Year</label> <select name="year" id="year"> <option value="2015" selected>2015</option> <option value="2005">2005</option> <option value="2000">2000</option> <option value="1995">1995</option> <option value="1990">1990</option> </select></div><div class="large-4 columns"><label for="zone">Zone</label> <select name="zone" id="zone"> <option value="all" selected>All countries</option> <option value="MENA">Near East and North Africa</option> <option value="WAF">West Africa</option> <option value="CSAF">Central and Southern Africa</option> <option value="EAF">East Africa</option> <option value="SA">South America</option> <option value="CAR">Central America and the Caribbean</option> <option value="SEA">South, East and Southeast Asia</option> <option value="EEFSU">Eastern Europe and the Commonwealth of Independent States</option> </select></div>');
 
   $("div.trends-toolbar #year option").click( function () { 
     var year = this.value; 
@@ -29,7 +29,10 @@ $(document).ready(function() {
     table.column(5).search(zone).draw()
 
   });
-
+  
+  $("div#trends-table_filter").addClass("large-4 columns");
+  $("#trends-table_wrapper .large-4").wrapAll( "<div class='row' />");
+  $("#trends-table").wrap( "<div class='row'><div class='large-12 columns'></div></div>");
 
 } );
 
