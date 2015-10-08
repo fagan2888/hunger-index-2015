@@ -29,9 +29,13 @@
     }],
   };
 
+  // determine max bounds from the data's max value
+  var max_value = Math.max.apply(Math, scoreData.datasets[0].data);
+  var steps = Math.ceil(max_value/5) * 5 / 10;
+
   var scoreChart = new Chart(context).Line(scoreData, {
       scaleOverride: true,
-      scaleSteps: 6,
+      scaleSteps: steps, 
       scaleStepWidth: 10,
       scaleStartValue: 5,
       bezierCurve: false, 
@@ -114,7 +118,6 @@
         return d.label + ": " + d.value;
       }
   });
-  console.log(stuntingChart);
   // Wasting chart
   var context = $('#chart-wasting').get(0).getContext('2d');
   var wastingData = {
