@@ -209,11 +209,9 @@
       // tooltips can be defined by functions too
       // https://github.com/nnnick/Chart.js/issues/499
       tooltipTemplate: function (d) {
-        if (d.value === 5) {
-          return d.label + ": <" + d.value;
-        } else {
-          return d.label + ": " + d.value;
-        }
+        if (d.value === 5) { return d.label + ": <" + d.value; } 
+        if (d.value === null) { return d.label + ": No data"; }
+        return d.label + ": " + d.value;
       }
   });
 
@@ -248,7 +246,8 @@
         if (d.label === "2000" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2005" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2015" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        return d.label + ": " + d.value;
+        if (d.value === null) { return d.label + ": No data"; }
+      return d.label + ": " + d.value;
       }
   });
   // Stunting chart
@@ -282,6 +281,7 @@
         if (d.label === "2000" && true) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2005" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2015" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.value === null) { return d.label + ": No data"; }
         return d.label + ": " + d.value;
       }
   });
@@ -317,6 +317,7 @@
         if (d.label === "2000" && true) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2005" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2015" && false) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.value === null) { return d.label + ": No data"; }
         return d.label + ": " + d.value;
       }
   });
@@ -346,6 +347,7 @@
       scaleStepWidth: 20,
       bezierCurve: false, 
       tooltipTemplate: function (d) {
+        if (d.value === null) { return d.label + ": No data"; }
         return d.label + ": " + d.value;
       }
   });

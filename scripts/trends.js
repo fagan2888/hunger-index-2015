@@ -11,10 +11,10 @@ $(document).ready(function() {
       { data: 'score' }
     ],
     // hide zone column
+    'columnDefs': [ {'targets': [5], 'visible': false} ],
     "dom": '<"trends-toolbar">frtip',
     'paging': false,
-    // 'responsive': true,
-    'columnDefs': [ {'targets': [5], 'visible': false} ],
+    'responsive': true,
     'info': false
   } );
 

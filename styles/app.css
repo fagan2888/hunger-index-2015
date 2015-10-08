@@ -1320,8 +1320,8 @@ select {
   margin-left: 0;
   overflow: hidden;
   padding: 0.5625rem 0 0.5625rem;
-  background-color: #f4f4f4;
-  border-color: gainsboro;
+  background-color: transparent;
+  border-color: transparent;
   border-radius: 3px; }
   .breadcrumbs > * {
     color: #89a527;
@@ -6650,6 +6650,10 @@ th.hide-for-touch {
 */
 #trends-content #trends-table_wrapper table#trends-table {
   max-width: 100%; }
+
+#trends-content #trends-table_wrapper thead th:nth-child(6),
+#trends-content #trends-table_wrapper tbody td:nth-child(6) {
+  display: none; }
 
 /* Static pages
 */
