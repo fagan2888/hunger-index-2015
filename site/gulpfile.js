@@ -75,7 +75,7 @@ gulp.task('html', ['styles', 'scripts'], function () {
         .pipe(jsFilter.restore())
         .pipe(gulp.dest('dist/scripts'));
 
-    gulp.src(['app/lib/styles/leaflet.css'])
+    gulp.src(['app/lib/styles/*.css'])
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('dist/styles'))
         .pipe($.size());   
