@@ -6501,26 +6501,24 @@ th.hide-for-touch {
 #home-blocks p {
   line-height: 1.4; }
 
-#home-blocks .columns a {
+#home-blocks a.columns {
   outline: 0;
   color: #54544b; }
-
-#home-blocks .columns:hover {
-  background-color: #eaeaea;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px; }
-
-#home-blocks .columns a:hover, #home-blocks .columns a:hover h3 {
-  color: #89a527; }
-
-#home-blocks .columns:focus {
-  color: #89a527; }
+  #home-blocks a.columns h3 {
+    color: #89a527; }
+  #home-blocks a.columns.columns:hover {
+    color: #444;
+    background-color: #eaeaea;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
+  #home-blocks a.columns.columns:focus {
+    color: #89a527; }
 
 /* Country page
 */
@@ -6646,6 +6644,11 @@ th.hide-for-touch {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px; }
+
+/* Trends page
+*/
+#trends-content #trends-table_wrapper table#trends-table {
+  max-width: 100%; }
 
 /* Static pages
 */
