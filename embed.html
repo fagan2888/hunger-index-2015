@@ -16,63 +16,39 @@
 
   <script src="scripts/modernizr.js"></script>
 
+    <link rel="stylesheet" href="styles/leaflet.zoomin.css" media="screen">
+
+    <script src="scripts/leaflet.js"></script>
+    <script src="scripts/leaflet.ajax.min.js"></script>
+    <script src="scripts/leaflet.zoomin.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <meta property="og:title"        content="Global Hunger Index 2015" />
+    <meta property="og:description"  content="Global Hunger Index 2015" />
+    <!--<meta property="og:image"        content="http://www.your-domain.com/path/image.jpg" />-->
+
   <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
 
-  <nav class="top-bar" data-topbar role="navigation">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="">
-            <img src="images/ghi.svg" onerror="this.src='images/ghi.png'" alt="Global Hunger Index 2015">
-            <span>Global Hunger Index 2015</span>
-          </a></h1>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    </ul>
-    <section class="top-bar-section">
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li class="has-dropdown"> <a href="#">Language</a>
-          <ul class="dropdown">
-            <li class="active"><a href="#">English</a></li>
-            <li><a href="#">German</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!-- Left Nav Section -->
-      <ul class="left">
-        <li><a href="trends/">Trends of Hunger</a></li>
-        <li><a href="methodology/">Methodology</a></li>
-        <li><a href="results/">Results</a></li>
-        <li><a href="about/">About</a></li>
-        <li><a href="contact/">Contact</a></li>
-      </ul>
-    </section>
-  </nav>
-
-  
-
-<div id="main-map" class="row collapse full-width">
-  <div class="large-8 columns">
-    <div id="map-application" class="row">
-      <div id="map" class="map"></div>
-    </div>
-    <div id="map-legend" class="row">
-      <ul class="ghi-levels large-block-grid-7 medium-block-grid-4 small-block-grid-2">
-        <li class="extra-alarming"><i class="fi-stop small"></i> Extremely alarming <em>&ge; 50</em></li>
-        <li class="alarming"><i class="fi-stop small"></i> Alarming <em>35.0-49.9</em></li>
-        <li class="serious"><i class="fi-stop small"></i> Serious <em>20.0-34.9</em></li>
-        <li class="moderate"><i class="fi-stop small"></i> Moderate <em>10.0-19.9</em></li>
-        <li class="low"><i class="fi-stop small"></i> Low <em>&le; 9.9</em></li>
-        <li class="no-data"><i class="fi-stop small"></i> No data</li>
-        <li class="indust-country"><i class="fi-stop small"></i> Industrialized country</li>
-      </ul>
+  <div id="main-map" class="row collapse full-width">
+    <div class="large-8 columns">
+      <div id="map-application" class="row">
+        <div id="map" class="map"></div>
+      </div>
+      <div id="map-legend" class="row">
+        <ul class="ghi-levels large-block-grid-7 medium-block-grid-4 small-block-grid-2">
+          <li class="extra-alarming"><i class="fi-stop small"></i> Extremely alarming <em>&ge; 50</em></li>
+          <li class="alarming"><i class="fi-stop small"></i> Alarming <em>35.0-49.9</em></li>
+          <li class="serious"><i class="fi-stop small"></i> Serious <em>20.0-34.9</em></li>
+          <li class="moderate"><i class="fi-stop small"></i> Moderate <em>10.0-19.9</em></li>
+          <li class="low"><i class="fi-stop small"></i> Low <em>&le; 9.9</em></li>
+          <li class="no-data"><i class="fi-stop small"></i> No data</li>
+          <li class="indust-country"><i class="fi-stop small"></i> Industrialized country</li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-
-
 
   <div id="footer">
     <div class="row">
@@ -103,18 +79,6 @@
 
   <!-- build:js scripts/main.js -->
   
-<link rel="stylesheet" href="styles/leaflet.zoomin.css" media="screen">
-
-<script src="scripts/leaflet.js"></script>
-<script src="scripts/leaflet.ajax.min.js"></script>
-<script src="scripts/leaflet.zoomin.js"></script>
-<script src="scripts/main.js"></script>
-
-<meta property="og:title"        content="Global Hunger Index 2015" />
-<meta property="og:description"  content="Global Hunger Index 2015" />
-<!--<meta property="og:image"        content="http://www.your-domain.com/path/image.jpg" />-->
-
-
   <!-- endbuild -->
 </body>
 </html>
