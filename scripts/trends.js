@@ -14,6 +14,7 @@ $(document).ready(function() {
     'columnDefs': [ {'targets': [5], 'visible': false} ],
     "dom": '<"trends-toolbar">frtip',
     'paging': false,
+    'responsive': true,
     'info': false
   } );
 
