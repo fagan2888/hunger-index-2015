@@ -152,6 +152,7 @@ for year in years:
     entries = []
     for row in table_entries:
         # fill out necessary fields
+        from render_templates import get_level_from_score
         entry = {
             "name": row["name"],
             "id": row["id"],
@@ -161,6 +162,8 @@ for year in years:
             "wasting": row["details"]["wasting_" + year]["score"],
             "mortality": row["details"]["mortality_" + year.replace("2015", "2013")]["score"],
         }
+
+        entry["DT_RowClass"] = get_level_from_score(entry["score"])
         entry["undernourished"] += "*" if row["details"]["undernourished_" + year]["estimate"] else ""
         entry["stunting"] += "*" if row["details"]["stunting_" + year]["estimate"] else ""
         entry["wasting"] += "*" if row["details"]["wasting_" + year]["estimate"] else ""
