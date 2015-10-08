@@ -519,6 +519,30 @@ $notcalculated-grey: #eaeaea;
     #footer ul.orgs li a { height: 40px; margin-right: 0.5rem; }
 }
 
+@media #{$landscape} {    
+    #main-map #map-application,
+    #main-map #map-application .map { height: 280px; }
+    #main-map .large-4 #table-container { height: 200px; }
+}
+
+@media #{$landscape} and (min-width: 40.063em) and (max-width: 64em) {
+    #main-map #map-application,
+    #main-map #map-application .map { height: 340px; }
+    #main-map .large-4 #table-container { height: 240px; }
+}
+
+@media #{$portrait} {
+    #main-map #map-application,
+    #main-map #map-application .map { height: 320px; }
+    #main-map .large-4 #table-container { height: 200px; }
+}
+
+@media #{$portrait}  and (min-width: 40.063em) and (max-width: 64em) {
+    #main-map #map-application,
+    #main-map #map-application .map { height: 500px; }
+    #main-map .large-4 #table-container { height: 260px; }
+}
+
 @media #{$medium-only} {    
     #main-map .large-4 #table-container { -webkit-overflow-scrolling: touch; }
     
