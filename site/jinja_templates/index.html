@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 
 {% block scripts %}
+<link rel="stylesheet" href="{{ relpath }}styles/leaflet.zoomin.css" media="screen">
+
 <script src="{{ relpath }}scripts/leaflet.js"></script>
 <script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
+<script src="{{ relpath }}scripts/leaflet.zoomin.js"></script>
 <script src="{{ relpath }}scripts/main.js"></script>
 
 <meta property="og:title"        content="Global Hunger Index 2015" />

@@ -46,13 +46,15 @@ function getSeverityClass(d) {
     scrollWheelZoom: false,
     boxZoom: false,
     worldCopyJump: true,
-    zoom: 2
+    zoom: 2,
+    minZoom: 2,
+    maxZoom: 18,
+    zoomControl: false
   });
+  map.addControl(new L.Control.ZoomMin())
 
   new L.tileLayer('http://a{s}.acetate.geoiq.com/tiles/acetate-base/{z}/{x}/{y}.png', {
       subdomains: '0123',
-      minZoom: 2,
-      maxZoom: 18
       }).addTo(map);
 
   var info = L.control();
