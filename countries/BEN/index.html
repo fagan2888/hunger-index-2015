@@ -20,38 +20,36 @@
 </head>
 <body>
 
-  <div id="testing">
-      <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="../../">
-                <img src="../../images/ghi.svg" onerror="this.src='../../images/ghi.png'" alt="Global Hunger Index 2015">
-                <span>Global Hunger Index 2015</span>
-              </a></h1>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="has-dropdown"> <a href="#">Language</a>
-              <ul class="dropdown">
-                <li class="active"><a href="#">English</a></li>
-                <li><a href="#">German</a></li>
-              </ul>
-            </li>
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="../../">
+            <img src="../../images/ghi.svg" onerror="this.src='../../images/ghi.png'" alt="Global Hunger Index 2015">
+            <span>Global Hunger Index 2015</span>
+          </a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-dropdown"> <a href="#">Language</a>
+          <ul class="dropdown">
+            <li class="active"><a href="#">English</a></li>
+            <li><a href="#">German</a></li>
           </ul>
-          <!-- Left Nav Section -->
-          <ul class="left">
-            <li><a href="../../trends/">Trends of Hunger</a></li>
-            <li><a href="../../methodology/">Methodology</a></li>
-            <li><a href="../../results/">Results</a></li>
-            <li><a href="../../about/">About</a></li>
-            <li><a href="../../contact/">Contact</a></li>
-          </ul>
-        </section>
-      </nav>
-    </div>
+        </li>
+      </ul>
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li><a href="../../trends/">Trends of Hunger</a></li>
+        <li><a href="../../methodology/">Methodology</a></li>
+        <li><a href="../../results/">Results</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../contact/">Contact</a></li>
+      </ul>
+    </section>
+  </nav>
 
   
 <section id="country-info" class="serious">
@@ -200,9 +198,13 @@
     }],
   };
 
+  // determine max bounds from the data's max value
+  var max_value = Math.max.apply(Math, scoreData.datasets[0].data);
+  var steps = Math.ceil(max_value/5) * 5 / 10;
+
   var scoreChart = new Chart(context).Line(scoreData, {
       scaleOverride: true,
-      scaleSteps: 6,
+      scaleSteps: steps, 
       scaleStepWidth: 10,
       scaleStartValue: 5,
       bezierCurve: false, 
@@ -285,7 +287,6 @@
         return d.label + ": " + d.value;
       }
   });
-  console.log(stuntingChart);
   // Wasting chart
   var context = $('#chart-wasting').get(0).getContext('2d');
   var wastingData = {
