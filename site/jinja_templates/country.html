@@ -191,7 +191,6 @@
   }
   
  $(document).ready(function(){
-   $('#country-info').addClass(getSeverityClass({{ score.year2015 }}));
    $('#score-value i').addClass("fi-arrow-{{ score_evolution }}");
  });
   
@@ -200,7 +199,7 @@
 {% endblock %}
 
 {% block content %}
-<section id="country-info">
+<section id="country-info" class="{{ level_class }}">
   <div class="row">
     <div class="large-12 columns">
       <ul class="breadcrumbs">
@@ -219,11 +218,11 @@
   
   <div id="summary" class="row">
     <div class="large-12 columns"> 
-      <p><em class="{{ level_class }}">{{ name }}</em> has a Global Hunger Index score of <em class="{{ level_class }}">{{ score.year2015 }}</em> in 2015.</p>
-      <p id="hunger-level"><strong>Hunger level:</strong> <em class="{{ level_class }}">{{ level }}</em></p>
+      <p class="severity">{{ name }} has a Global Hunger Index score of <strong>{{ score.year2015 }}</strong> in 2015.</p>
+      <p id="hunger-level"><em>Hunger level:</em> <strong>{{ level }}</strong></p>
 
       {% if scorediff %}
-        <p id="score-value"><strong>Score evolution:</strong> <i></i> <em class="severity">{{ scorediff }}</em> points ({{ score.year2005 }} in 2005)</p>
+        <p id="score-value"><em>Score evolution:</em> <strong class="{{ score_evolution }}"><i class="fi-arrow-{{ score_evolution }}"></i> {{ scorediff }} points </strong> ({{ score.year2005 }} in 2005)</p>
       {% endif %}
     </div>
   </div>
