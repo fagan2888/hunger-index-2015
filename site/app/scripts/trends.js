@@ -1,11 +1,14 @@
 $(document).ready(function() {
   $('#trends-table').DataTable( {
-    // 'scrollY': '500px',
-    // 'scrollCollapse': true,
-    'ajax': '../data/table_data.json',
+    'paging': false,
+    'ajax': '../data/trends-2015.json',
     'columns': [
-    { 'data': 'name' },
-    { 'data': 'score' }
+    { data: 'name' },
+    { data: 'undernourished' },
+    { data: 'stunting' },
+    { data: 'wasting' },
+    { data: 'mortality' },
+    { data: 'score' }
     ]
   } );
 } );

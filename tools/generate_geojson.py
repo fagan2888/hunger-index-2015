@@ -140,3 +140,30 @@ table_data = {'data': table_entries}
 f = open("../data/country-details.json", 'w')
 f.write(json.dumps(table_data, indent=2))
 f.close()
+
+
+# Trends table
+for year in years:
+    year = str(year)
+    entries = []
+    for row in table_entries:
+        entry = {
+            "name": row["name"],
+            "id": row["id"],
+            "score": row["score"]["year" + year],
+            "undernourished": row["details"]["undernourished_" + year]["score"],
+            "stunting": row["details"]["stunting_" + year]["score"],
+            "wasting": row["details"]["wasting_" + year]["score"],
+            "mortality": row["details"]["mortality_" + year.replace("2015", "2013")]["score"],
+        }
+        entry["undernourished"] += "*" if row["details"]["undernourished_" + year]["estimate"] else ""
+        entry["stunting"] += "*" if row["details"]["stunting_" + year]["estimate"] else ""
+        entry["wasting"] += "*" if row["details"]["wasting_" + year]["estimate"] else ""
+        entries.append(entry)
+    trends_data = {'data': entries}
+    f = open("../site/app/data/trends-%s.json" % year, 'w')
+    f.write(json.dumps(trends_data, indent=2))
+    f.close()
+
+
+
