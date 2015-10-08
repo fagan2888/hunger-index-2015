@@ -6351,7 +6351,7 @@ th.hide-for-touch {
   #main-map .large-4 {
     height: 100%; }
     #main-map .large-4 #table-container {
-      height: 412px;
+      height: 449px;
       overflow-y: scroll;
       border-top: 1px solid #ccc; }
       #main-map .large-4 #table-container #country-table {
@@ -6361,6 +6361,9 @@ th.hide-for-touch {
         padding: 0.5625rem 0.9375rem; }
     #main-map .large-4 .row {
       padding: 0.5rem 0 0; }
+      #main-map .large-4 .row .large-12 > strong {
+        font-size: 1.6875rem;
+        font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif; }
       #main-map .large-4 .row p {
         font-size: 0.875rem;
         margin-bottom: 0;
@@ -6454,12 +6457,6 @@ th.hide-for-touch {
   #table-container #country-table .indust-country td:nth-child(2) {
     border-right-color: #eaeaea; }
 
-#map-legend {
-  border-bottom: 1px solid #ccc; }
-  #map-legend .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
-
 .ghi-levels {
   padding: 0.5rem 0;
   margin: 0; }
@@ -6470,27 +6467,28 @@ th.hide-for-touch {
     font-weight: bold;
     font-size: 80%;
     line-height: 1;
-    border-left: 18px solid #fff;
-    margin: .25rem 0;
-    padding-bottom: 0; }
+    padding-bottom: 0.425rem; }
     .ghi-levels li em {
       font-family: 'PT Sans', 'DejaVu Sans', Roboto, Arial, sans-serif;
       font-style: normal;
-      font-weight: normal; }
-  .ghi-levels .extra-alarming {
-    border-color: #AB0635; }
-  .ghi-levels .alarming {
-    border-color: #e9841d; }
-  .ghi-levels .serious {
-    border-color: #fbe0c7; }
-  .ghi-levels .moderate {
-    border-color: #bedcb3; }
-  .ghi-levels .low {
-    border-color: #4caf45; }
-  .ghi-levels .no-data {
-    border-color: #808080; }
-  .ghi-levels .indust-country {
-    border-color: #eaeaea; }
+      font-weight: normal;
+      white-space: nowrap; }
+    .ghi-levels li .fi-stop {
+      vertical-align: bottom; }
+  .ghi-levels .extra-alarming .fi-stop {
+    color: #AB0635; }
+  .ghi-levels .alarming .fi-stop {
+    color: #e9841d; }
+  .ghi-levels .serious .fi-stop {
+    color: #fbe0c7; }
+  .ghi-levels .moderate .fi-stop {
+    color: #bedcb3; }
+  .ghi-levels .low .fi-stop {
+    color: #4caf45; }
+  .ghi-levels .no-data .fi-stop {
+    color: #808080; }
+  .ghi-levels .indust-country .fi-stop {
+    color: #eaeaea; }
 
 /* Home Blocks
 */
@@ -6509,9 +6507,9 @@ th.hide-for-touch {
 
 #home-blocks .columns:hover {
   background-color: #eaeaea;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
   transition: 0.5s;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -6691,10 +6689,37 @@ th.hide-for-touch {
 @media only screen and (max-width: 40em) {
   #main-map .large-4 #table-container {
     -webkit-overflow-scrolling: touch; }
+  #main-map .large-4 {
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent; }
   #footer ul.orgs li a {
     height: 40px;
     margin-right: 0.5rem; } }
 
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
   #main-map .large-4 #table-container {
-    -webkit-overflow-scrolling: touch; } }
+    -webkit-overflow-scrolling: touch; }
+  #main-map .large-4 {
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent; } }
+
+@media only screen and (min-width: 40.0625em) {
+  #main-map .large-4 {
+    -webkit-box-shadow: -10px 0 15px -15px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: -10px 0 15px -15px rgba(0, 0, 0, 0.7);
+    -ms-box-shadow: -10px 0 15px -15px rgba(0, 0, 0, 0.7);
+    box-shadow: -10px 0 15px -15px rgba(0, 0, 0, 0.7); } }
+
+@media only screen and (min-width: 64.0625em) {
+  .ghi-levels li {
+    padding-bottom: 0; }
+  .ghi-levels li.extra-alarming {
+    width: 16.2857%; }
+  .ghi-levels li.indust-countries {
+    width: 15.2857%; }
+  .ghi-levels li.no-data {
+    width: 11.2857%; } }
