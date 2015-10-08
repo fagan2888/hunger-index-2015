@@ -141,12 +141,17 @@ f = open("../data/country-details.json", 'w')
 f.write(json.dumps(table_data, indent=2))
 f.close()
 
+# Zones dataset
 
 # Trends table
+
+# get zones dataset
+zones = list(csv.DictReader(open("../data/regions.csv", "r")))
 for year in years:
     year = str(year)
     entries = []
     for row in table_entries:
+        # fill out necessary fields
         entry = {
             "name": row["name"],
             "id": row["id"],
@@ -159,6 +164,16 @@ for year in years:
         entry["undernourished"] += "*" if row["details"]["undernourished_" + year]["estimate"] else ""
         entry["stunting"] += "*" if row["details"]["stunting_" + year]["estimate"] else ""
         entry["wasting"] += "*" if row["details"]["wasting_" + year]["estimate"] else ""
+        # fetch this country's zone
+        for z in zones:
+            if z['code'] == entry["id"]:
+                entry['zone'] = z['zonecode']
+                break
+        if not entry.get('zone'):
+            print "No zone match: " + entry['name']
+            entry['zone'] = ''
+
+        # add it to the entry list
         entries.append(entry)
     trends_data = {'data': entries}
     f = open("../site/app/data/trends-%s.json" % year, 'w')
