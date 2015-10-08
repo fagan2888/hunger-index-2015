@@ -438,6 +438,9 @@ $notcalculated-grey: #eaeaea;
         table#trends-table {
             max-width: 100%;
             }
+        thead th:nth-child(6),
+        tbody td:nth-child(6) { display: none; }
+        
         }
 }
 
