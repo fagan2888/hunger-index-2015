@@ -45,13 +45,12 @@ function getSeverityClass(d) {
     center: [32.5377, 13.3958],
     scrollWheelZoom: false,
     boxZoom: false,
-    worldCopyJump: true,
-    zoom: 2,
-    minZoom: 2,
-    maxZoom: 18,
+    zoom: 5,
+    minZoom: 5,
+    maxZoom: 5,
     zoomControl: false
   });
-  map.addControl(new L.Control.ZoomMin())
+  // map.addControl(new L.Control.ZoomMin())
 
   new L.tileLayer('http://a{s}.acetate.geoiq.com/tiles/acetate-base/{z}/{x}/{y}.png', {
       subdomains: '0123',
@@ -130,7 +129,7 @@ function getSeverityClass(d) {
   }
 
   // https://gis.stackexchange.com/a/102125
-  geojsonLayer = new L.GeoJSON.AJAX('data/countrydata-2015.geo.json', {
+  geojsonLayer = new L.GeoJSON.AJAX('../../data/countrydata-2015.geo.json', {
     style: style,
     onEachFeature: onEachFeature
   });       
@@ -144,53 +143,14 @@ function getSeverityClass(d) {
           map.setView(map.unproject(cM),2, {animate: true});
       });
 
-  function populateTable(year) {
-    // reload table
-    $.getJSON( "data/countrydata-" + year + ".geo.json", function( data ) {
-      var items = [];
-      $('#country-table tbody').empty();
-      $.each( data.features, function( key, c ) {
-        if (c.properties.score !== 'nc' && c.properties.score !== '-') {
-          $('<tr>').attr("id", c.id)
-            .attr("class", getSeverityClass(c.properties.score))
-            .attr("role", "row")
-            .append(
-                $('<td class="name">').text(c.properties.name).wrapInner('<span />'),
-                $('<td class="score">').text(c.properties.score).wrapInner('<span />')
-                ).appendTo('#country-table');
-        }
-      });
-    });
-
-    $('#country-table').on( 'click', 'tr', function (ev) {
-      // clicking on a country in the table focuses the map on it
-      var f = geojsonLayer.getLayer(this.id);
-      map.setView(f.getBounds().getCenter());
-      f.openPopup();
-    });
-  }
-
-  $(document).ready(function() {    
-    populateTable('2015');
-    $('#year-drop li a').click( function(ev) {
-      // year dropdown refreshes map
-      var year = this.className;
-      geojsonLayer.clearLayers();geojsonLayer = new L.GeoJSON.AJAX('data/countrydata-' + year + '.geo.json', {
-        style: style,
-        onEachFeature: onEachFeature
-      });       
-      geojsonLayer.addTo(map);
-      $('#year-button').text(year);
-      populateTable(year);
-
-    });
-
-
-
-  });
-
-
-
+  // focus map on open country
+  var urlparts = window.location.href.split('/');
+  var country_id = urlparts[urlparts.length-2];
+  console.log(country_id);
+  //var f = geojsonLayer.getLayer(country_id);
+  //console.log(f);
+  //map.setView(f.getBounds().getCenter());
+  //f.openPopup();
 
 }(window, document, L));
 

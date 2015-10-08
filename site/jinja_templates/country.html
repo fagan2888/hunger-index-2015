@@ -4,6 +4,7 @@
 <script src="{{ relpath }}scripts/leaflet.js"></script>
 <script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
 <script src="{{ relpath }}scripts/Chart.min.js"></script>
+<script src="{{ relpath }}scripts/countrymap.js"></script>
 <script>
 
   // Global chart config
@@ -214,7 +215,9 @@
   </div>
   
   <div class="row collapse full-width">
-    <!-- map goes here -->
+    <div id="map-application" class="row">
+      <div id="map" class="map"></div>
+    </div>
   </div>
   
   <div id="summary" class="row">
