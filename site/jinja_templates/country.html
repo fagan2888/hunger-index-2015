@@ -38,11 +38,9 @@
       // tooltips can be defined by functions too
       // https://github.com/nnnick/Chart.js/issues/499
       tooltipTemplate: function (d) {
-        if (d.value === 5) {
-          return d.label + ": <" + d.value;
-        } else {
-          return d.label + ": " + d.value;
-        }
+        if (d.value === 5) { return d.label + ": <" + d.value; } 
+        if (d.value === null) { return d.label + ": No data"; }
+        return d.label + ": " + d.value;
       }
   });
 
@@ -77,7 +75,8 @@
         if (d.label === "2000" && {{ d.undernourished_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2005" && {{ d.undernourished_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2015" && {{ d.undernourished_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        return d.label + ": " + d.value;
+        if (d.value === null) { return d.label + ": No data"; }
+      return d.label + ": " + d.value;
       }
   });
   // Stunting chart
@@ -111,6 +110,7 @@
         if (d.label === "2000" && {{ d.stunting_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2005" && {{ d.stunting_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2015" && {{ d.stunting_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.value === null) { return d.label + ": No data"; }
         return d.label + ": " + d.value;
       }
   });
@@ -146,6 +146,7 @@
         if (d.label === "2000" && {{ d.wasting_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2005" && {{ d.wasting_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
         if (d.label === "2015" && {{ d.wasting_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.value === null) { return d.label + ": No data"; }
         return d.label + ": " + d.value;
       }
   });
@@ -175,6 +176,7 @@
       scaleStepWidth: 20,
       bezierCurve: false, 
       tooltipTemplate: function (d) {
+        if (d.value === null) { return d.label + ": No data"; }
         return d.label + ": " + d.value;
       }
   });
