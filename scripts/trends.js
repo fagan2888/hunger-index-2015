@@ -2,13 +2,56 @@ $(document).ready(function() {
   var table = $('#trends-table').DataTable( {
     'ajax': '../data/trends-2015.json',
     'columns': [
-      { data: 'name' },
-      { data: 'undernourished' },
-      { data: 'stunting' },
-      { data: 'wasting' },
-      { data: 'mortality' },
+      { data: 'country',
+        render: function (data, type, row) {
+          return type === 'display' ? '<a href="../countries/' + data.id + '">' + data.name + '</a>' : data.name;
+        }
+      },
+      { data: 'undernourished', 
+        render: function (data, type, row) {
+            // https://datatables.net/manual/orthogonal-data
+            if ( type === 'display' || type === 'filter' ) { return data; }
+            if (data === "-") { return 0; }
+            if (data.indexOf('*') > -1) { data = data.replace("*", ""); }
+            return parseFloat(data);
+        }
+      },
+      { data: 'stunting', 
+        render: function (data, type, row) {
+            if ( type === 'display' || type === 'filter' ) { return data; }
+            if (data === "-") { return 0; }
+            if (data.indexOf('*') > -1) { data = data.replace("*", ""); }
+            return parseFloat(data);
+        }
+      },
+
+      { data: 'wasting', 
+        render: function (data, type, row) {
+            if ( type === 'display' || type === 'filter' ) { return data; }
+            if (data === "-") { return 0; }
+            if (data.indexOf('*') > -1) { data = data.replace("*", ""); }
+            return parseFloat(data);
+        }
+      },
+
+      { data: 'mortality', 
+        render: function (data, type, row) {
+            if ( type === 'display' || type === 'filter' ) { return data; }
+            if (data === "-") { return 0; }
+            return parseFloat(data);
+        }
+      },
       { data: 'zone' },
-      { data: 'score' }
+      { data: 'score',
+        render: function (data, type, row) {
+            // https://datatables.net/manual/orthogonal-data
+            if ( type === 'display' || type === 'filter' ) { return data; }
+            if (data === "-") { return 0; }
+            if (data === "<5") { return 2.5; }
+            return parseFloat(data);
+          
+        }
+      }
     ],
     // hide zone column
     'columnDefs': [ {'targets': [5], 'visible': false} ],
