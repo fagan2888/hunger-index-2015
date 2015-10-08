@@ -2,7 +2,11 @@ $(document).ready(function() {
   var table = $('#trends-table').DataTable( {
     'ajax': '../data/trends-2015.json',
     'columns': [
-      { data: 'name' },
+      { data: 'country',
+        render: function (data, type, row) {
+          return type === 'display' ? '<a href="../countries/' + data.id + '">' + data.name + '</a>' : data.name;
+        }
+      },
       { data: 'undernourished', 
         render: function (data, type, row) {
             // https://datatables.net/manual/orthogonal-data

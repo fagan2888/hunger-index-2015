@@ -154,8 +154,7 @@ for year in years:
         # fill out necessary fields
         from render_templates import get_level_from_score
         entry = {
-            "name": row["name"],
-            "id": row["id"],
+            "country": {"name": row["name"], "id": row["id"]},
             "score": row["score"]["year" + year],
             "undernourished": row["details"]["undernourished_" + year]["score"],
             "stunting": row["details"]["stunting_" + year]["score"],
@@ -169,11 +168,11 @@ for year in years:
         entry["wasting"] += "*" if row["details"]["wasting_" + year]["estimate"] else ""
         # fetch this country's zone
         for z in zones:
-            if z['code'] == entry["id"]:
+            if z['code'] == entry["country"]["id"]:
                 entry['zone'] = z['zonecode']
                 break
         if not entry.get('zone'):
-            print "No zone match: " + entry['name']
+            print "No zone match: " + entry["country"]['name']
             entry['zone'] = ''
 
         # add it to the entry list
