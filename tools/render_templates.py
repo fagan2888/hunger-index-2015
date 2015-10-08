@@ -87,7 +87,12 @@ def create_index_page():
     f = codecs.open("../site/app/html/index.html", 'w', 'utf-8')
     f.write(contents)
     f.close()
-
+    # also generate the embed page
+    template = env.get_template("embed.html")
+    contents = template.render(**context)
+    f = codecs.open("../site/app/html/embed.html", 'w', 'utf-8')
+    f.write(contents)
+    f.close()
 
 def create_static_page(name):
     template = env.get_template("static.html")

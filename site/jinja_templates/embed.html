@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+<link rel="stylesheet" href="{{ relpath }}styles/leaflet.zoomin.css" media="screen">
+
+<script src="{{ relpath }}scripts/leaflet.js"></script>
+<script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
+<script src="{{ relpath }}scripts/leaflet.zoomin.js"></script>
+<script src="{{ relpath }}scripts/main.js"></script>
+
+<meta property="og:title"        content="Global Hunger Index 2015" />
+<meta property="og:description"  content="Global Hunger Index 2015" />
+<!--<meta property="og:image"        content="http://www.your-domain.com/path/image.jpg" />-->
+
+{% endblock %}
+
+{% block content %}
+
+<div id="main-map" class="row collapse full-width">
+  <div class="large-8 columns">
+    <div id="map-application" class="row">
+      <div id="map" class="map"></div>
+    </div>
+    <div id="map-legend" class="row">
+      <ul class="ghi-levels large-block-grid-7 medium-block-grid-4 small-block-grid-2">
+        <li class="extra-alarming"><i class="fi-stop small"></i> Extremely alarming <em>&ge; 50</em></li>
+        <li class="alarming"><i class="fi-stop small"></i> Alarming <em>35.0-49.9</em></li>
+        <li class="serious"><i class="fi-stop small"></i> Serious <em>20.0-34.9</em></li>
+        <li class="moderate"><i class="fi-stop small"></i> Moderate <em>10.0-19.9</em></li>
+        <li class="low"><i class="fi-stop small"></i> Low <em>&le; 9.9</em></li>
+        <li class="no-data"><i class="fi-stop small"></i> No data</li>
+        <li class="indust-country"><i class="fi-stop small"></i> Industrialized country</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
