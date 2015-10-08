@@ -518,26 +518,29 @@ $notcalculated-grey: #eaeaea;
 
     #footer ul.orgs li a { height: 40px; margin-right: 0.5rem; }
 }
-
+/*
 @media #{$landscape} {    
     #main-map #map-application,
     #main-map #map-application .map { height: 280px; }
     #main-map .large-4 #table-container { height: 200px; }
 }
-
+*/
 @media #{$landscape} and (min-width: 40.063em) and (max-width: 64em) {
     #main-map #map-application,
-    #main-map #map-application .map { height: 340px; }
-    #main-map .large-4 #table-container { height: 240px; }
+    #main-map #map-application .map { height: 280px; }
+    #main-map .large-4 #table-container { height: 200px; }
 }
-
+/*
 @media #{$portrait} {
     #main-map #map-application,
     #main-map #map-application .map { height: 320px; }
     #main-map .large-4 #table-container { height: 200px; }
-}
+}*/
 
-@media #{$portrait}  and (min-width: 40.063em) and (max-width: 64em) {
+/*and (max-width: 64em)
+*/
+
+@media #{$portrait} and (min-width: 40.063em) and (max-width: 64em) {
     #main-map #map-application,
     #main-map #map-application .map { height: 500px; }
     #main-map .large-4 #table-container { height: 260px; }
@@ -550,11 +553,14 @@ $notcalculated-grey: #eaeaea;
 }
 
 @media #{$medium-up} {
+    #main-map #map-application,
+    #main-map #map-application .map { height: 500px; }
+    #main-map .large-4 #table-container { height: 449px; }
     #main-map .large-4 { @include box-shadow(-10px, 0, 15px, -15px, rgba(0, 0, 0, 0.7)); }
     #home-blocks a.columns div { min-height: 9rem; }
 }
 
-@media #{$large-up} {
+@media #{$large-up} {    
     .ghi-levels li { padding-bottom: 0; }
     .ghi-levels li.extra-alarming { width: 16.2857%; }
     .ghi-levels li.indust-countries { width: 15.2857%; }
