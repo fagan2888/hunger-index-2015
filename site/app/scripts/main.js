@@ -108,9 +108,9 @@ function getSeverityClass(d) {
       // are we in the embed page? If so, links open in a new window
       var url = window.location.href;
       if (url.indexOf('embed') > -1) {
-      popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
       } else {
-      popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="countries/' + feature.id + '">Find out more</a></p>';
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="countries/' + feature.id + '">Find out more</a></p>';
       }
     } else {
       popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong> Not calculated</p>';
