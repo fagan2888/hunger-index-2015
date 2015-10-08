@@ -348,7 +348,11 @@ $notcalculated-grey: #eaeaea;
     em.severity,
     #detailed-score tbody td { color: $alarming-red; }
     
-    p.severity span { border-bottom: 2px solid $alarming-red; }
+    p.severity strong {
+        background-color: $alarming-red;
+        padding: 0.2rem 0.45rem;
+        @include border-radius(10px);
+        }
 }
 
 #country-info.alarming {
@@ -366,35 +370,55 @@ $notcalculated-grey: #eaeaea;
     em.severity,
     #detailed-score tbody td { color: $serious-light-orange; }
     
-    p.severity strong { border-bottom: 2px solid $serious-light-orange; }
+    p.severity strong {
+        background-color: $serious-light-orange;
+        padding: 0.2rem 0.45rem;
+        @include border-radius(10px);
+        }
 }
 
 #country-info.moderate {
     em.severity,
     #detailed-score tbody td { color: $moderate-light-green; }
     
-    p.severity span { border-bottom: 2px solid $moderate-light-green; }
+    p.severity strong {
+        background-color: $moderate-light-green;
+        padding: 0.2rem 0.45rem;
+        @include border-radius(10px);
+        }
 }
 
 #country-info.low {
     em.severity,
     #detailed-score tbody td  { color: $low-green; }
     
-    p.severity span { border-bottom: 2px solid $low-green; }
+    p.severity strong {
+        background-color: $low-green;
+        padding: 0.2rem 0.45rem;
+        @include border-radius(10px);
+        }
 }
 
 #country-info.no-data {
     em.severity,
     #detailed-score tbody td { color: $nodata-grey; }
     
-    p.severity span { border-bottom: 2px solid $nodata-grey; }
+    p.severity strong {
+        background-color: $nodata-grey;
+        padding: 0.2rem 0.45rem;
+        @include border-radius(10px);
+        }
 }
 
 #country-info.not-calculated {
     em.severity,
     #detailed-score tbody td { color: $notcalculated-grey; }
     
-    p.severity span { border-bottom: 2px solid $notcalculated-grey; }
+    p.severity strong {
+        background-color: $notcalculated-grey;
+        padding: 0.2rem 0.45rem;
+        @include border-radius(10px);
+        }
 }
 
 
