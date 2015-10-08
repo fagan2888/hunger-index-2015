@@ -7,6 +7,7 @@
       "zone": "SEA", 
       "wasting": "8.6", 
       "score": "44.9", 
+      "DT_RowClass": "alarming", 
       "id": "AFG", 
       "mortality": "11.9"
     }, 
@@ -17,6 +18,7 @@
       "zone": "CSAF", 
       "wasting": "8.2", 
       "score": "45.3", 
+      "DT_RowClass": "alarming", 
       "id": "AGO", 
       "mortality": "20.5"
     }, 
@@ -27,6 +29,7 @@
       "zone": "EEFSU", 
       "wasting": "7.3", 
       "score": "17.1", 
+      "DT_RowClass": "moderate", 
       "id": "ALB", 
       "mortality": "2"
     }, 
@@ -37,6 +40,7 @@
       "zone": "SA", 
       "wasting": "1.2", 
       "score": "5", 
+      "DT_RowClass": "low", 
       "id": "ARG", 
       "mortality": "1.7"
     }, 
@@ -47,6 +51,7 @@
       "zone": "EEFSU", 
       "wasting": "5.5", 
       "score": "14.1", 
+      "DT_RowClass": "moderate", 
       "id": "ARM", 
       "mortality": "2.3"
     }, 
@@ -57,6 +62,7 @@
       "zone": "EEFSU", 
       "wasting": "6.8", 
       "score": "16.7", 
+      "DT_RowClass": "moderate", 
       "id": "AZE", 
       "mortality": "5.2"
     }, 
@@ -67,6 +73,7 @@
       "zone": "EAF", 
       "wasting": "9", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "BDI", 
       "mortality": "11.9"
     }, 
@@ -77,6 +84,7 @@
       "zone": "WAF", 
       "wasting": "8.4", 
       "score": "33.3", 
+      "DT_RowClass": "serious", 
       "id": "BEN", 
       "mortality": "11.9"
     }, 
@@ -87,6 +95,7 @@
       "zone": "WAF", 
       "wasting": "24.4", 
       "score": "49.6", 
+      "DT_RowClass": "alarming", 
       "id": "BFA", 
       "mortality": "15.9"
     }, 
@@ -97,6 +106,7 @@
       "zone": "SEA", 
       "wasting": "11.8", 
       "score": "31", 
+      "DT_RowClass": "serious", 
       "id": "BGD", 
       "mortality": "6.7"
     }, 
@@ -107,6 +117,7 @@
       "zone": "EEFSU", 
       "wasting": "3.2", 
       "score": "9.2", 
+      "DT_RowClass": "low", 
       "id": "BGR", 
       "mortality": "1.6"
     }, 
@@ -117,6 +128,7 @@
       "zone": "EEFSU", 
       "wasting": "4", 
       "score": "6.8", 
+      "DT_RowClass": "low", 
       "id": "BIH", 
       "mortality": "0.8"
     }, 
@@ -127,6 +139,7 @@
       "zone": "EEFSU", 
       "wasting": "2.2", 
       "score": "<5", 
+      "DT_RowClass": "low", 
       "id": "BLR", 
       "mortality": "0.9"
     }, 
@@ -137,6 +150,7 @@
       "zone": "SA", 
       "wasting": "1.7", 
       "score": "27.2", 
+      "DT_RowClass": "serious", 
       "id": "BOL", 
       "mortality": "5.8"
     }, 
@@ -147,6 +161,7 @@
       "zone": "SA", 
       "wasting": "1.6", 
       "score": "6.7", 
+      "DT_RowClass": "low", 
       "id": "BRA", 
       "mortality": "2.3"
     }, 
@@ -157,6 +172,7 @@
       "zone": "SEA", 
       "wasting": "6*", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "BTN", 
       "mortality": "5.9"
     }, 
@@ -167,6 +183,7 @@
       "zone": "CSAF", 
       "wasting": "8*", 
       "score": "31.2", 
+      "DT_RowClass": "serious", 
       "id": "BWA", 
       "mortality": "6.4"
     }, 
@@ -177,6 +194,7 @@
       "zone": "CSAF", 
       "wasting": "12.2", 
       "score": "51", 
+      "DT_RowClass": "extra-alarming", 
       "id": "CAF", 
       "mortality": "16.9"
     }, 
@@ -187,6 +205,7 @@
       "zone": "SA", 
       "wasting": "0.5", 
       "score": "<5", 
+      "DT_RowClass": "low", 
       "id": "CHL", 
       "mortality": "0.9"
     }, 
@@ -197,6 +216,7 @@
       "zone": "SEA", 
       "wasting": "2.9", 
       "score": "13.2", 
+      "DT_RowClass": "moderate", 
       "id": "CHN", 
       "mortality": "2.4"
     }, 
@@ -207,6 +227,7 @@
       "zone": "WAF", 
       "wasting": "8.4", 
       "score": "32.7", 
+      "DT_RowClass": "serious", 
       "id": "CIV", 
       "mortality": "12.9"
     }, 
@@ -217,6 +238,7 @@
       "zone": "CSAF", 
       "wasting": "6.8", 
       "score": "34", 
+      "DT_RowClass": "serious", 
       "id": "CMR", 
       "mortality": "12.6"
     }, 
@@ -227,6 +249,7 @@
       "zone": "", 
       "wasting": "14", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "COD", 
       "mortality": "15.6"
     }, 
@@ -237,6 +260,7 @@
       "zone": "CSAF", 
       "wasting": "8", 
       "score": "33.5", 
+      "DT_RowClass": "serious", 
       "id": "COG", 
       "mortality": "9.5"
     }, 
@@ -247,6 +271,7 @@
       "zone": "SA", 
       "wasting": "1.5", 
       "score": "10.7", 
+      "DT_RowClass": "moderate", 
       "id": "COL", 
       "mortality": "2.2"
     }, 
@@ -257,6 +282,7 @@
       "zone": "CAR", 
       "wasting": "1.5*", 
       "score": "5.7", 
+      "DT_RowClass": "low", 
       "id": "CRI", 
       "mortality": "1"
     }, 
@@ -267,6 +293,7 @@
       "zone": "CAR", 
       "wasting": "2.7", 
       "score": "<5", 
+      "DT_RowClass": "low", 
       "id": "CUB", 
       "mortality": "0.7"
     }, 
@@ -277,6 +304,7 @@
       "zone": "EAF", 
       "wasting": "26", 
       "score": "46.1", 
+      "DT_RowClass": "alarming", 
       "id": "DJI", 
       "mortality": "8.8"
     }, 
@@ -287,6 +315,7 @@
       "zone": "CAR", 
       "wasting": "1.9", 
       "score": "18.1", 
+      "DT_RowClass": "moderate", 
       "id": "DOM", 
       "mortality": "3.5"
     }, 
@@ -297,6 +326,7 @@
       "zone": "MENA", 
       "wasting": "4", 
       "score": "12.2", 
+      "DT_RowClass": "moderate", 
       "id": "DZA", 
       "mortality": "3.4"
     }, 
@@ -307,6 +337,7 @@
       "zone": "SA", 
       "wasting": "2.3", 
       "score": "19", 
+      "DT_RowClass": "moderate", 
       "id": "ECU", 
       "mortality": "2.9"
     }, 
@@ -317,6 +348,7 @@
       "zone": "MENA", 
       "wasting": "5.3", 
       "score": "13.1", 
+      "DT_RowClass": "moderate", 
       "id": "EGY", 
       "mortality": "3.1"
     }, 
@@ -327,6 +359,7 @@
       "zone": "EAF", 
       "wasting": "12.9*", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "ERI", 
       "mortality": "7"
     }, 
@@ -337,6 +370,7 @@
       "zone": "EEFSU", 
       "wasting": "3.6*", 
       "score": "5.6", 
+      "DT_RowClass": "low", 
       "id": "EST", 
       "mortality": "0.7"
     }, 
@@ -347,6 +381,7 @@
       "zone": "EAF", 
       "wasting": "12.3", 
       "score": "48.5", 
+      "DT_RowClass": "alarming", 
       "id": "ETH", 
       "mortality": "11"
     }, 
@@ -357,6 +392,7 @@
       "zone": "SEA", 
       "wasting": "6.3", 
       "score": "9.3", 
+      "DT_RowClass": "low", 
       "id": "FJI", 
       "mortality": "2.3"
     }, 
@@ -367,6 +403,7 @@
       "zone": "CSAF", 
       "wasting": "3.8*", 
       "score": "16.2", 
+      "DT_RowClass": "moderate", 
       "id": "GAB", 
       "mortality": "7.6"
     }, 
@@ -377,6 +414,7 @@
       "zone": "EEFSU", 
       "wasting": "3", 
       "score": "10.2", 
+      "DT_RowClass": "moderate", 
       "id": "GEO", 
       "mortality": "2.5"
     }, 
@@ -387,6 +425,7 @@
       "zone": "WAF", 
       "wasting": "6.1", 
       "score": "23.3", 
+      "DT_RowClass": "serious", 
       "id": "GHA", 
       "mortality": "8.8"
     }, 
@@ -397,6 +436,7 @@
       "zone": "WAF", 
       "wasting": "10.8", 
       "score": "38", 
+      "DT_RowClass": "alarming", 
       "id": "GIN", 
       "mortality": "13.7"
     }, 
@@ -407,6 +447,7 @@
       "zone": "WAF", 
       "wasting": "7.4", 
       "score": "26.3", 
+      "DT_RowClass": "serious", 
       "id": "GMB", 
       "mortality": "9.8"
     }, 
@@ -417,6 +458,7 @@
       "zone": "WAF", 
       "wasting": "8.9", 
       "score": "41.8", 
+      "DT_RowClass": "alarming", 
       "id": "GNB", 
       "mortality": "15.7"
     }, 
@@ -427,6 +469,7 @@
       "zone": "CAR", 
       "wasting": "2.4*", 
       "score": "23.9", 
+      "DT_RowClass": "serious", 
       "id": "GTM", 
       "mortality": "4.1"
     }, 
@@ -437,6 +480,7 @@
       "zone": "SA", 
       "wasting": "8.3", 
       "score": "17.3", 
+      "DT_RowClass": "moderate", 
       "id": "GUY", 
       "mortality": "4.4"
     }, 
@@ -447,6 +491,7 @@
       "zone": "CAR", 
       "wasting": "1.4", 
       "score": "17.8", 
+      "DT_RowClass": "moderate", 
       "id": "HND", 
       "mortality": "3.1"
     }, 
@@ -457,6 +502,7 @@
       "zone": "EEFSU", 
       "wasting": "1.1*", 
       "score": "<5", 
+      "DT_RowClass": "low", 
       "id": "HRV", 
       "mortality": "0.7"
     }, 
@@ -467,6 +513,7 @@
       "zone": "CAR", 
       "wasting": "10.3", 
       "score": "45.4", 
+      "DT_RowClass": "alarming", 
       "id": "HTI", 
       "mortality": "9"
     }, 
@@ -477,6 +524,7 @@
       "zone": "SEA", 
       "wasting": "14.4", 
       "score": "26.5", 
+      "DT_RowClass": "serious", 
       "id": "IDN", 
       "mortality": "4.1"
     }, 
@@ -487,6 +535,7 @@
       "zone": "SEA", 
       "wasting": "20", 
       "score": "38.5", 
+      "DT_RowClass": "alarming", 
       "id": "IND", 
       "mortality": "7.5"
     }, 
@@ -497,6 +546,7 @@
       "zone": "MENA", 
       "wasting": "4.8", 
       "score": "9.5", 
+      "DT_RowClass": "low", 
       "id": "IRN", 
       "mortality": "2.6"
     }, 
@@ -507,6 +557,7 @@
       "zone": "MENA", 
       "wasting": "6.4", 
       "score": "23.6", 
+      "DT_RowClass": "serious", 
       "id": "IRQ", 
       "mortality": "4.1"
     }, 
@@ -517,6 +568,7 @@
       "zone": "CAR", 
       "wasting": "3.9", 
       "score": "8.2", 
+      "DT_RowClass": "low", 
       "id": "JAM", 
       "mortality": "2.1"
     }, 
@@ -527,6 +579,7 @@
       "zone": "MENA", 
       "wasting": "2.1*", 
       "score": "6.5", 
+      "DT_RowClass": "low", 
       "id": "JOR", 
       "mortality": "2.4"
     }, 
@@ -537,6 +590,7 @@
       "zone": "EEFSU", 
       "wasting": "4.9", 
       "score": "12.3", 
+      "DT_RowClass": "moderate", 
       "id": "KAZ", 
       "mortality": "3.3"
     }, 
@@ -547,6 +601,7 @@
       "zone": "EAF", 
       "wasting": "7.7", 
       "score": "36.6", 
+      "DT_RowClass": "alarming", 
       "id": "KEN", 
       "mortality": "9.8"
     }, 
@@ -557,6 +612,7 @@
       "zone": "EEFSU", 
       "wasting": "3.4", 
       "score": "14.3", 
+      "DT_RowClass": "moderate", 
       "id": "KGZ", 
       "mortality": "4"
     }, 
@@ -567,6 +623,7 @@
       "zone": "SEA", 
       "wasting": "8.3", 
       "score": "29.8", 
+      "DT_RowClass": "serious", 
       "id": "KHM", 
       "mortality": "6.4"
     }, 
@@ -577,6 +634,7 @@
       "zone": "MENA", 
       "wasting": "3.3", 
       "score": "<5", 
+      "DT_RowClass": "low", 
       "id": "KWT", 
       "mortality": "1.2"
     }, 
@@ -587,6 +645,7 @@
       "zone": "SEA", 
       "wasting": "7.3", 
       "score": "36.9", 
+      "DT_RowClass": "alarming", 
       "id": "LAO", 
       "mortality": "9.7"
     }, 
@@ -597,6 +656,7 @@
       "zone": "MENA", 
       "wasting": "6.6", 
       "score": "10.4", 
+      "DT_RowClass": "moderate", 
       "id": "LBN", 
       "mortality": "1.4"
     }, 
@@ -607,6 +667,7 @@
       "zone": "WAF", 
       "wasting": "7.8", 
       "score": "41.5", 
+      "DT_RowClass": "alarming", 
       "id": "LBR", 
       "mortality": "11.8"
     }, 
@@ -617,6 +678,7 @@
       "zone": "MENA", 
       "wasting": "6.5", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "LBY", 
       "mortality": "2.3"
     }, 
@@ -627,6 +689,7 @@
       "zone": "SEA", 
       "wasting": "14.7", 
       "score": "25.9", 
+      "DT_RowClass": "serious", 
       "id": "LKA", 
       "mortality": "1.4"
     }, 
@@ -637,6 +700,7 @@
       "zone": "CSAF", 
       "wasting": "5.6", 
       "score": "30.2", 
+      "DT_RowClass": "serious", 
       "id": "LSO", 
       "mortality": "12.3"
     }, 
@@ -647,6 +711,7 @@
       "zone": "EEFSU", 
       "wasting": "3.2*", 
       "score": "5.1", 
+      "DT_RowClass": "low", 
       "id": "LTU", 
       "mortality": "1"
     }, 
@@ -657,6 +722,7 @@
       "zone": "EEFSU", 
       "wasting": "3.6*", 
       "score": "5.4", 
+      "DT_RowClass": "low", 
       "id": "LVA", 
       "mortality": "1.3"
     }, 
@@ -667,6 +733,7 @@
       "zone": "MENA", 
       "wasting": "10.8", 
       "score": "17.7", 
+      "DT_RowClass": "moderate", 
       "id": "MAR", 
       "mortality": "4.1"
     }, 
@@ -677,6 +744,7 @@
       "zone": "EEFSU", 
       "wasting": "5.8", 
       "score": "15.7", 
+      "DT_RowClass": "moderate", 
       "id": "MDA", 
       "mortality": "2.2"
     }, 
@@ -687,6 +755,7 @@
       "zone": "EAF", 
       "wasting": "15.2", 
       "score": "44.4", 
+      "DT_RowClass": "alarming", 
       "id": "MDG", 
       "mortality": "8.2"
     }, 
@@ -697,6 +766,7 @@
       "zone": "CAR", 
       "wasting": "2", 
       "score": "8.9", 
+      "DT_RowClass": "low", 
       "id": "MEX", 
       "mortality": "2"
     }, 
@@ -707,6 +777,7 @@
       "zone": "EEFSU", 
       "wasting": "3.4", 
       "score": "8.6", 
+      "DT_RowClass": "low", 
       "id": "MKD", 
       "mortality": "1.4"
     }, 
@@ -717,6 +788,7 @@
       "zone": "WAF", 
       "wasting": "15.3", 
       "score": "38.3", 
+      "DT_RowClass": "alarming", 
       "id": "MLI", 
       "mortality": "17.2"
     }, 
@@ -727,6 +799,7 @@
       "zone": "SEA", 
       "wasting": "10.7", 
       "score": "37.4", 
+      "DT_RowClass": "alarming", 
       "id": "MMR", 
       "mortality": "6.7"
     }, 
@@ -737,6 +810,7 @@
       "zone": "EEFSU", 
       "wasting": "4.2", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "MNE", 
       "mortality": "-"
     }, 
@@ -747,6 +821,7 @@
       "zone": "SEA", 
       "wasting": "2.7", 
       "score": "27", 
+      "DT_RowClass": "serious", 
       "id": "MNG", 
       "mortality": "4.6"
     }, 
@@ -757,6 +832,7 @@
       "zone": "EAF", 
       "wasting": "5.4", 
       "score": "42.4", 
+      "DT_RowClass": "alarming", 
       "id": "MOZ", 
       "mortality": "13.3"
     }, 
@@ -767,6 +843,7 @@
       "zone": "WAF", 
       "wasting": "13.4", 
       "score": "29.6", 
+      "DT_RowClass": "serious", 
       "id": "MRT", 
       "mortality": "11"
     }, 
@@ -777,6 +854,7 @@
       "zone": "EAF", 
       "wasting": "6.3", 
       "score": "39.1", 
+      "DT_RowClass": "alarming", 
       "id": "MWI", 
       "mortality": "12.1"
     }, 
@@ -787,6 +865,7 @@
       "zone": "SEA", 
       "wasting": "14.7*", 
       "score": "14.6", 
+      "DT_RowClass": "moderate", 
       "id": "MYS", 
       "mortality": "0.8"
     }, 
@@ -797,6 +876,7 @@
       "zone": "CSAF", 
       "wasting": "7.5", 
       "score": "28.8", 
+      "DT_RowClass": "serious", 
       "id": "NAM", 
       "mortality": "7.3"
     }, 
@@ -807,6 +887,7 @@
       "zone": "WAF", 
       "wasting": "12.4", 
       "score": "42.8", 
+      "DT_RowClass": "alarming", 
       "id": "NER", 
       "mortality": "17.3"
     }, 
@@ -817,6 +898,7 @@
       "zone": "WAF", 
       "wasting": "12.3", 
       "score": "35.2", 
+      "DT_RowClass": "alarming", 
       "id": "NGA", 
       "mortality": "15.9"
     }, 
@@ -827,6 +909,7 @@
       "zone": "CAR", 
       "wasting": "0.3", 
       "score": "17.8", 
+      "DT_RowClass": "moderate", 
       "id": "NIC", 
       "mortality": "3.2"
     }, 
@@ -837,6 +920,7 @@
       "zone": "SEA", 
       "wasting": "12.7", 
       "score": "31.6", 
+      "DT_RowClass": "serious", 
       "id": "NPL", 
       "mortality": "6"
     }, 
@@ -847,6 +931,7 @@
       "zone": "", 
       "wasting": "6.3*", 
       "score": "11.4", 
+      "DT_RowClass": "moderate", 
       "id": "OMN", 
       "mortality": "1.3"
     }, 
@@ -857,6 +942,7 @@
       "zone": "SEA", 
       "wasting": "14.1*", 
       "score": "38.3", 
+      "DT_RowClass": "alarming", 
       "id": "PAK", 
       "mortality": "10.1"
     }, 
@@ -867,6 +953,7 @@
       "zone": "CAR", 
       "wasting": "1.3*", 
       "score": "18.1", 
+      "DT_RowClass": "moderate", 
       "id": "PAN", 
       "mortality": "2.3"
     }, 
@@ -877,6 +964,7 @@
       "zone": "SA", 
       "wasting": "1", 
       "score": "18.8", 
+      "DT_RowClass": "moderate", 
       "id": "PER", 
       "mortality": "2.8"
     }, 
@@ -887,6 +975,7 @@
       "zone": "SEA", 
       "wasting": "6", 
       "score": "22.1", 
+      "DT_RowClass": "serious", 
       "id": "PHL", 
       "mortality": "3.6"
     }, 
@@ -897,6 +986,7 @@
       "zone": "SEA", 
       "wasting": "4.4", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "PNG", 
       "mortality": "7.5"
     }, 
@@ -907,6 +997,7 @@
       "zone": "SEA", 
       "wasting": "8.5", 
       "score": "32.4", 
+      "DT_RowClass": "serious", 
       "id": "PRK", 
       "mortality": "3.3"
     }, 
@@ -917,6 +1008,7 @@
       "zone": "SA", 
       "wasting": "1.1", 
       "score": "12", 
+      "DT_RowClass": "moderate", 
       "id": "PRY", 
       "mortality": "2.9"
     }, 
@@ -927,6 +1019,7 @@
       "zone": "MENA", 
       "wasting": "2.5*", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "QAT", 
       "mortality": "1"
     }, 
@@ -937,6 +1030,7 @@
       "zone": "", 
       "wasting": "3*", 
       "score": "6.1", 
+      "DT_RowClass": "low", 
       "id": "ROU", 
       "mortality": "2.1"
     }, 
@@ -947,6 +1041,7 @@
       "zone": "EEFSU", 
       "wasting": "3.5*", 
       "score": "7.2", 
+      "DT_RowClass": "low", 
       "id": "RUS", 
       "mortality": "1.7"
     }, 
@@ -957,6 +1052,7 @@
       "zone": "EAF", 
       "wasting": "4.8", 
       "score": "44.5", 
+      "DT_RowClass": "alarming", 
       "id": "RWA", 
       "mortality": "10.6"
     }, 
@@ -967,6 +1063,7 @@
       "zone": "MENA", 
       "wasting": "11.8", 
       "score": "11.8", 
+      "DT_RowClass": "moderate", 
       "id": "SAU", 
       "mortality": "2"
     }, 
@@ -977,6 +1074,7 @@
       "zone": "EAF", 
       "wasting": "-", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "SDN", 
       "mortality": "-"
     }, 
@@ -987,6 +1085,7 @@
       "zone": "EAF", 
       "wasting": "-", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "SSD", 
       "mortality": "-"
     }, 
@@ -997,6 +1096,7 @@
       "zone": "WAF", 
       "wasting": "8.7", 
       "score": "28.5", 
+      "DT_RowClass": "serious", 
       "id": "SEN", 
       "mortality": "9.8"
     }, 
@@ -1007,6 +1107,7 @@
       "zone": "WAF", 
       "wasting": "10.2", 
       "score": "52.4", 
+      "DT_RowClass": "extra-alarming", 
       "id": "SLE", 
       "mortality": "20.2"
     }, 
@@ -1017,6 +1118,7 @@
       "zone": "CAR", 
       "wasting": "1.3", 
       "score": "13.1", 
+      "DT_RowClass": "moderate", 
       "id": "SLV", 
       "mortality": "2.4"
     }, 
@@ -1027,6 +1129,7 @@
       "zone": "EAF", 
       "wasting": "13.2", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "SOM", 
       "mortality": "17.4"
     }, 
@@ -1037,6 +1140,7 @@
       "zone": "EEFSU", 
       "wasting": "4.5", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "SRB", 
       "mortality": "-"
     }, 
@@ -1047,6 +1151,7 @@
       "zone": "SA", 
       "wasting": "4.9", 
       "score": "13.1", 
+      "DT_RowClass": "moderate", 
       "id": "SUR", 
       "mortality": "2.9"
     }, 
@@ -1057,6 +1162,7 @@
       "zone": "EEFSU", 
       "wasting": "4*", 
       "score": "7.4", 
+      "DT_RowClass": "low", 
       "id": "SVK", 
       "mortality": "1"
     }, 
@@ -1067,6 +1173,7 @@
       "zone": "CSAF", 
       "wasting": "2.9", 
       "score": "27.4", 
+      "DT_RowClass": "serious", 
       "id": "SWZ", 
       "mortality": "12.8"
     }, 
@@ -1077,6 +1184,7 @@
       "zone": "MENA", 
       "wasting": "10.3", 
       "score": "-", 
+      "DT_RowClass": "no-data", 
       "id": "SYR", 
       "mortality": "1.9"
     }, 
@@ -1087,6 +1195,7 @@
       "zone": "CSAF", 
       "wasting": "16.1", 
       "score": "53.1", 
+      "DT_RowClass": "extra-alarming", 
       "id": "TCD", 
       "mortality": "17.8"
     }, 
@@ -1097,6 +1206,7 @@
       "zone": "WAF", 
       "wasting": "16.3", 
       "score": "36.4", 
+      "DT_RowClass": "alarming", 
       "id": "TGO", 
       "mortality": "10.7"
     }, 
@@ -1107,6 +1217,7 @@
       "zone": "SEA", 
       "wasting": "4.7", 
       "score": "13.6", 
+      "DT_RowClass": "moderate", 
       "id": "THA", 
       "mortality": "1.8"
     }, 
@@ -1117,6 +1228,7 @@
       "zone": "EEFSU", 
       "wasting": "8.7", 
       "score": "36.5", 
+      "DT_RowClass": "alarming", 
       "id": "TJK", 
       "mortality": "6.5"
     }, 
@@ -1127,6 +1239,7 @@
       "zone": "EEFSU", 
       "wasting": "7.1", 
       "score": "17.5", 
+      "DT_RowClass": "moderate", 
       "id": "TKM", 
       "mortality": "7.1"
     }, 
@@ -1137,6 +1250,7 @@
       "zone": "", 
       "wasting": "14.3", 
       "score": "42.7", 
+      "DT_RowClass": "alarming", 
       "id": "TLS", 
       "mortality": "8"
     }, 
@@ -1147,6 +1261,7 @@
       "zone": "SA", 
       "wasting": "5*", 
       "score": "11.4", 
+      "DT_RowClass": "moderate", 
       "id": "TTO", 
       "mortality": "2.7"
     }, 
@@ -1157,6 +1272,7 @@
       "zone": "MENA", 
       "wasting": "3.4", 
       "score": "6.7", 
+      "DT_RowClass": "low", 
       "id": "TUN", 
       "mortality": "2.3"
     }, 
@@ -1167,6 +1283,7 @@
       "zone": "MENA", 
       "wasting": "1.1", 
       "score": "7.6", 
+      "DT_RowClass": "low", 
       "id": "TUR", 
       "mortality": "3.1"
     }, 
@@ -1177,6 +1294,7 @@
       "zone": "EAF", 
       "wasting": "3.5", 
       "score": "36.4", 
+      "DT_RowClass": "alarming", 
       "id": "TZA", 
       "mortality": "9"
     }, 
@@ -1187,6 +1305,7 @@
       "zone": "EAF", 
       "wasting": "6.3", 
       "score": "32.2", 
+      "DT_RowClass": "serious", 
       "id": "UGA", 
       "mortality": "10.9"
     }, 
@@ -1197,6 +1316,7 @@
       "zone": "EEFSU", 
       "wasting": "1.3*", 
       "score": "<5", 
+      "DT_RowClass": "low", 
       "id": "UKR", 
       "mortality": "1.5"
     }, 
@@ -1207,6 +1327,7 @@
       "zone": "SA", 
       "wasting": "3", 
       "score": "8.1", 
+      "DT_RowClass": "low", 
       "id": "URY", 
       "mortality": "1.4"
     }, 
@@ -1217,6 +1338,7 @@
       "zone": "EEFSU", 
       "wasting": "4.5", 
       "score": "18.5", 
+      "DT_RowClass": "moderate", 
       "id": "UZB", 
       "mortality": "5.5"
     }, 
@@ -1227,6 +1349,7 @@
       "zone": "SA", 
       "wasting": "4.8", 
       "score": "13.1", 
+      "DT_RowClass": "moderate", 
       "id": "VEN", 
       "mortality": "1.8"
     }, 
@@ -1237,6 +1360,7 @@
       "zone": "SEA", 
       "wasting": "10.7", 
       "score": "24.6", 
+      "DT_RowClass": "serious", 
       "id": "VNM", 
       "mortality": "3"
     }, 
@@ -1247,6 +1371,7 @@
       "zone": "MENA", 
       "wasting": "15.2", 
       "score": "42.1", 
+      "DT_RowClass": "alarming", 
       "id": "YEM", 
       "mortality": "7.5"
     }, 
@@ -1257,6 +1382,7 @@
       "zone": "CSAF", 
       "wasting": "7.4", 
       "score": "21", 
+      "DT_RowClass": "serious", 
       "id": "ZAF", 
       "mortality": "8"
     }, 
@@ -1267,6 +1393,7 @@
       "zone": "EAF", 
       "wasting": "5.6", 
       "score": "46.7", 
+      "DT_RowClass": "alarming", 
       "id": "ZMB", 
       "mortality": "12.7"
     }, 
@@ -1277,6 +1404,7 @@
       "zone": "EAF", 
       "wasting": "7.3", 
       "score": "39.2", 
+      "DT_RowClass": "alarming", 
       "id": "ZWE", 
       "mortality": "9.7"
     }

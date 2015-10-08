@@ -4379,7 +4379,7 @@ table {
   table tbody tr td,
   table tr td {
     display: table-cell;
-    line-height: 1.125rem; }
+    line-height: 1rem; }
 
 .tabs {
   margin-bottom: 0 !important;
@@ -6559,6 +6559,7 @@ th.hide-for-touch {
   #country-info #summary p#score-value .down, #country-info #summary p#score-value .fi-arrow-down {
     color: #8f3422; }
   #country-info canvas {
+    max-width: 100%;
     margin-bottom: 1rem; }
 
 #country-info.extra-alarming em.severity,
