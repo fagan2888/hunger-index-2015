@@ -1,38 +1,84 @@
-{% extends "base.html" %}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Hunger Index</title>
+  <meta name="description" content="Global Hunger Index 2015">
 
-{% block scripts %}
-<link rel="stylesheet" href="{{ relpath }}styles/leaflet.zoomin.css" media="screen">
+  <link rel="stylesheet" href="{{ relpath }}styles/leaflet.css">    
+  <link rel="stylesheet" href="{{ relpath }}fonts/foundation-icons/foundation-icons.css" />    
+  <link rel="stylesheet" href="{{ relpath }}styles/app.css">
 
-<script src="{{ relpath }}scripts/leaflet.js"></script>
-<script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
-<script src="{{ relpath }}scripts/leaflet.zoomin.js"></script>
-<script src="{{ relpath }}scripts/main.js"></script>
 
-<meta property="og:title"        content="Global Hunger Index 2015" />
-<meta property="og:description"  content="Global Hunger Index 2015" />
-<!--<meta property="og:image"        content="http://www.your-domain.com/path/image.jpg" />-->
+  <script src="{{ relpath }}scripts/modernizr.js"></script>
 
-{% endblock %}
+    <link rel="stylesheet" href="{{ relpath }}styles/leaflet.zoomin.css" media="screen">
 
-{% block content %}
+    <script src="{{ relpath }}scripts/leaflet.js"></script>
+    <script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
+    <script src="{{ relpath }}scripts/leaflet.zoomin.js"></script>
+    <script src="{{ relpath }}scripts/main.js"></script>
 
-<div id="main-map" class="row collapse full-width">
-  <div class="large-8 columns">
-    <div id="map-application" class="row">
-      <div id="map" class="map"></div>
-    </div>
-    <div id="map-legend" class="row">
-      <ul class="ghi-levels large-block-grid-7 medium-block-grid-4 small-block-grid-2">
-        <li class="extra-alarming"><i class="fi-stop small"></i> Extremely alarming <em>&ge; 50</em></li>
-        <li class="alarming"><i class="fi-stop small"></i> Alarming <em>35.0-49.9</em></li>
-        <li class="serious"><i class="fi-stop small"></i> Serious <em>20.0-34.9</em></li>
-        <li class="moderate"><i class="fi-stop small"></i> Moderate <em>10.0-19.9</em></li>
-        <li class="low"><i class="fi-stop small"></i> Low <em>&le; 9.9</em></li>
-        <li class="no-data"><i class="fi-stop small"></i> No data</li>
-        <li class="indust-country"><i class="fi-stop small"></i> Industrialized country</li>
-      </ul>
+    <meta property="og:title"        content="Global Hunger Index 2015" />
+    <meta property="og:description"  content="Global Hunger Index 2015" />
+    <!--<meta property="og:image"        content="http://www.your-domain.com/path/image.jpg" />-->
+
+  <link rel="shortcut icon" href="{{ relpath }}images/favicon.ico">
+</head>
+<body>
+
+  <div id="main-map" class="row collapse full-width">
+    <div class="large-8 columns">
+      <div id="map-application" class="row">
+        <div id="map" class="map"></div>
+      </div>
+      <div id="map-legend" class="row">
+        <ul class="ghi-levels large-block-grid-7 medium-block-grid-4 small-block-grid-2">
+          <li class="extra-alarming"><i class="fi-stop small"></i> Extremely alarming <em>&ge; 50</em></li>
+          <li class="alarming"><i class="fi-stop small"></i> Alarming <em>35.0-49.9</em></li>
+          <li class="serious"><i class="fi-stop small"></i> Serious <em>20.0-34.9</em></li>
+          <li class="moderate"><i class="fi-stop small"></i> Moderate <em>10.0-19.9</em></li>
+          <li class="low"><i class="fi-stop small"></i> Low <em>&le; 9.9</em></li>
+          <li class="no-data"><i class="fi-stop small"></i> No data</li>
+          <li class="indust-country"><i class="fi-stop small"></i> Industrialized country</li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 
-{% endblock content %}
+  <div id="footer">
+    <div class="row">
+      <div class="medium-8 medium-8 columns">
+        <ul class="orgs">
+          <li><a target="_blank" href="http://www.welthungerhilfe.de/en/home-en.html"><img src="{{ relpath }}images/ifpri_white.png"></a></li>
+          <li><a target="_blank" href="https://www.concern.net"><img src="{{ relpath }}images/concern-worldwide_white.png"></a></li>
+          <li><a target="_blank" href="http://www.welthungerhilfe.de/en/home-en.html"><img src="{{ relpath }}images/welthungerhilfe_white.png"></a></li>
+        </ul>
+      </div>
+      <div class="medium-4 medium-4 columns">
+        <ul class="credits">
+          <li><i class="fi-eye small"></i> <a target="_blank" href="">Source code</a></li>
+          <li><i class="fi-heart small"></i> Made by <a target="_blank" href="http://jplusplus.org">Journalism++</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /#Footer -->  
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="{{ relpath }}scripts/jquery.js"></script>
+  <script src="{{ relpath }}scripts/foundation.min.js"></script>
+  <script src="{{ relpath }}scripts/foundation.magellan.js"></script>
+  <script src="{{ relpath }}scripts/foundation-scripts.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  {% block scripts %}{% endblock %}
+  <!-- endbuild -->
+</body>
+</html>
