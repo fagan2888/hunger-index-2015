@@ -319,7 +319,6 @@ $notcalculated-grey: #eaeaea;
 */
 
 #country-info {
-    padding-top: 1.25rem;
     padding-bottom: 4rem;
     .breadcrumbs { margin-bottom: 0; }
     .row h3 { padding-top: 2rem; }
@@ -329,6 +328,7 @@ $notcalculated-grey: #eaeaea;
         text-transform: uppercase;
         letter-spacing: 1px;
         padding-top: 1rem;
+        min-height: 4.5rem;
         }
     em { font-style: normal; }
     #hunger-level strong {
@@ -349,8 +349,8 @@ $notcalculated-grey: #eaeaea;
             @include border-radius(2px);
             }
         p#score-value {
-            .up, .fi-arrow-up { color: #267640; }
-            .down, .fi-arrow-down { color: #8f3422;}
+            .up, .fi-arrow-up { color: #8f3422; }
+            .down, .fi-arrow-down { color: #267640;}
             }
         }
     
