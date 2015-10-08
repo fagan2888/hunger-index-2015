@@ -85,10 +85,6 @@ $notcalculated-grey: #eaeaea;
 /* Topbar
 */
 
-#testing {
-    background: $oil;
-}
-
 .top-bar {
     .name a {
         display: inline-block;
@@ -280,13 +276,8 @@ $notcalculated-grey: #eaeaea;
 /* Home Blocks
 */
 
-#home-blocks {    
-    h3 {
-        font-size: 1.375rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        padding-top: 1rem;
-        }
+#home-blocks {
+    .row { margin-bottom: 1rem; }
     p {
         line-height: 1.4;
         }
@@ -294,15 +285,27 @@ $notcalculated-grey: #eaeaea;
         outline: 0;
         color: #54544b;
         
-        h3 { color: $primary-color; }
+        div {
+            padding: 0 0.75rem 0.45rem;
+            background-color: #f8f8f8;
+            @include border-radius(4px);
+            }
         
-        &.columns:hover {
+        h3 {
+            color: $primary-color;
+            font-size: 1.375rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-top: 1rem;
+            }
+        
+        &.columns:hover div {
             color: #444;
             background-color: $notcalculated-grey;
             @include transition(.5s);
             @include border-radius(4px);
             }
-         &.columns:focus {
+         &.columns:focus div {
             color: $primary-color;
             }
         }
@@ -474,7 +477,7 @@ $notcalculated-grey: #eaeaea;
 
 #footer {
     color: #fff;
-    background-color: $jet;
+    background-color: $oil;
     padding: 2rem 0;
     ul li {
         display: inline-block;
@@ -506,6 +509,8 @@ $notcalculated-grey: #eaeaea;
     #main-map .large-4 #table-container { -webkit-overflow-scrolling: touch; }
 
     #main-map .large-4 { @include box-shadow(0, 0, 0, 0, transparent); }
+    
+    #home-blocks a.columns div { min-height: 12rem; }
 
     #footer ul.orgs li a { height: 40px; margin-right: 0.5rem; }
 }
@@ -518,6 +523,7 @@ $notcalculated-grey: #eaeaea;
 
 @media #{$medium-up} {
     #main-map .large-4 { @include box-shadow(-10px, 0, 15px, -15px, rgba(0, 0, 0, 0.7)); }
+    #home-blocks a.columns div { min-height: 9rem; }
 }
 
 @media #{$large-up} {
@@ -525,6 +531,9 @@ $notcalculated-grey: #eaeaea;
     .ghi-levels li.extra-alarming { width: 16.2857%; }
     .ghi-levels li.indust-countries { width: 15.2857%; }
     .ghi-levels li.no-data { width: 11.2857%; }
+    
+    
+    #home-blocks a.columns div { min-height: 8rem; }
 }
 
 

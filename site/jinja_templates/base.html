@@ -20,38 +20,36 @@
 </head>
 <body>
 
-  <div id="testing">
-      <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="{{ relpath }}">
-                <img src="{{ relpath }}images/ghi.svg" onerror="this.src='{{ relpath }}images/ghi.png'" alt="Global Hunger Index 2015">
-                <span>Global Hunger Index 2015</span>
-              </a></h1>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="has-dropdown"> <a href="#">Language</a>
-              <ul class="dropdown">
-                <li class="active"><a href="#">English</a></li>
-                <li><a href="#">German</a></li>
-              </ul>
-            </li>
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="{{ relpath }}">
+            <img src="{{ relpath }}images/ghi.svg" onerror="this.src='{{ relpath }}images/ghi.png'" alt="Global Hunger Index 2015">
+            <span>Global Hunger Index 2015</span>
+          </a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-dropdown"> <a href="#">Language</a>
+          <ul class="dropdown">
+            <li class="active"><a href="#">English</a></li>
+            <li><a href="#">German</a></li>
           </ul>
-          <!-- Left Nav Section -->
-          <ul class="left">
-            <li><a href="{{ relpath }}trends/">Trends of Hunger</a></li>
-            <li><a href="{{ relpath }}methodology/">{{ m.block_methodology_title }}</a></li>
-            <li><a href="{{ relpath }}results/">{{ m.block_results_title }}</a></li>
-            <li><a href="{{ relpath }}about/">{{ m.block_about_title }}</a></li>
-            <li><a href="{{ relpath }}contact/">{{ m.block_contact_title }}</a></li>
-          </ul>
-        </section>
-      </nav>
-    </div>
+        </li>
+      </ul>
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li><a href="{{ relpath }}trends/">Trends of Hunger</a></li>
+        <li><a href="{{ relpath }}methodology/">{{ m.block_methodology_title }}</a></li>
+        <li><a href="{{ relpath }}results/">{{ m.block_results_title }}</a></li>
+        <li><a href="{{ relpath }}about/">{{ m.block_about_title }}</a></li>
+        <li><a href="{{ relpath }}contact/">{{ m.block_contact_title }}</a></li>
+      </ul>
+    </section>
+  </nav>
 
   {% block content %}{% endblock %}
 
