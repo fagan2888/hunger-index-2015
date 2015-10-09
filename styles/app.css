@@ -6506,15 +6506,14 @@ body {
 
 /* Home Blocks
 */
-#home-blocks .row {
-  margin-bottom: 1rem; }
-
 #home-blocks p {
   line-height: 1.4; }
 
 #home-blocks a.columns {
   outline: 0;
-  color: #54544b; }
+  color: #54544b;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
   #home-blocks a.columns div {
     padding: 0 0.75rem 0.45rem;
     background-color: #f8f8f8;
@@ -6545,7 +6544,8 @@ body {
 /* Share Modal dialog
 */
 #shareModal p i {
-  font-size: 2.25rem; }
+  font-size: 2.25rem;
+  margin-right: 0.5rem; }
 
 /* Country page
 */
@@ -6784,7 +6784,7 @@ body {
 /* Media Queries
 */
 @media only screen and (max-width: 40em) {
-  #main-map .large-4 #table-container {
+  #main-map {
     -webkit-overflow-scrolling: touch; }
   #main-map .large-4 {
     -webkit-box-shadow: 0 0 0 0 transparent;
@@ -6792,42 +6792,32 @@ body {
     -ms-box-shadow: 0 0 0 0 transparent;
     box-shadow: 0 0 0 0 transparent; }
   #home-blocks a.columns div {
-    min-height: 12rem; }
+    min-height: 8rem; }
   #footer ul.orgs li a {
     height: 40px;
     margin-right: 0.5rem; } }
 
-/*
-@media only screen and (orientation: landscape) {    
-    #main-map #map-application,
-    #main-map #map-application .map { height: 280px; }
-    #main-map .large-4 #table-container { height: 200px; }
-}
-*/
 @media only screen and (orientation: landscape) and (max-width: 40em) {
   #main-map #map-application,
   #main-map #map-application .map {
-    height: 280px; }
+    height: 200px; }
   #main-map .large-4 #table-container {
-    height: 200px; } }
+    height: 180px; } }
 
-/*
-@media only screen and (orientation: portrait) {
-    #main-map #map-application,
-    #main-map #map-application .map { height: 320px; }
-    #main-map .large-4 #table-container { height: 200px; }
-}*/
-/*and (max-width: 64em)
-*/
 @media only screen and (orientation: portrait) and (max-width: 40em) {
   #main-map #map-application,
   #main-map #map-application .map {
-    height: 500px; }
+    height: 400px; }
   #main-map .large-4 #table-container {
     height: 260px; } }
 
-@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #main-map #map-application,
+  #main-map #map-application .map {
+    height: 400px; }
   #main-map .large-4 #table-container {
+    height: 260px; }
+  #main-map {
     -webkit-overflow-scrolling: touch; }
   #main-map .large-4 {
     -webkit-box-shadow: 0 0 0 0 transparent;
@@ -6835,7 +6825,7 @@ body {
     -ms-box-shadow: 0 0 0 0 transparent;
     box-shadow: 0 0 0 0 transparent; } }
 
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
   #main-map #map-application,
   #main-map #map-application .map {
     height: 500px; }
@@ -6847,7 +6837,7 @@ body {
     -ms-box-shadow: -10px 0 15px -15px rgba(0, 0, 0, 0.7);
     box-shadow: -10px 0 15px -15px rgba(0, 0, 0, 0.7); }
   #home-blocks a.columns div {
-    min-height: 9rem; } }
+    min-height: 8rem; } }
 
 @media only screen and (min-width: 64.0625em) {
   .ghi-levels li {
