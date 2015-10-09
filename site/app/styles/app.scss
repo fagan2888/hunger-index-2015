@@ -289,13 +289,14 @@ body {
 */
 
 #home-blocks {
-    .row { margin-bottom: 1rem; }
     p {
         line-height: 1.4;
         }
     a.columns {
         outline: 0;
         color: #54544b;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         
         div {
             padding: 0 0.75rem 0.45rem;
@@ -327,7 +328,10 @@ body {
 */
 
 #shareModal {
-  p i { font-size: 2.25rem; }
+  p i {
+    font-size: 2.25rem;
+    margin-right: 0.5rem;
+    }
 }
 
 
@@ -597,54 +601,42 @@ body {
 
 @media #{$small-only} {
 
-    #main-map .large-4 #table-container { -webkit-overflow-scrolling: touch; }
+    #main-map { -webkit-overflow-scrolling: touch; }
 
     #main-map .large-4 { @include box-shadow(0, 0, 0, 0, transparent); }
-    
-    #home-blocks a.columns div { min-height: 12rem; }
 
+    #home-blocks a.columns div { min-height: 8rem; }
+    
     #footer ul.orgs li a { height: 40px; margin-right: 0.5rem; }
 }
-/*
-@media #{$landscape} {    
-    #main-map #map-application,
-    #main-map #map-application .map { height: 280px; }
-    #main-map .large-4 #table-container { height: 200px; }
-}
-*/
+
 @media #{$landscape} and (max-width: 40em) {
     #main-map #map-application,
-    #main-map #map-application .map { height: 280px; }
-    #main-map .large-4 #table-container { height: 200px; }
+    #main-map #map-application .map { height: 200px; }
+    #main-map .large-4 #table-container { height: 180px; }
 }
-/*
-@media #{$portrait} {
-    #main-map #map-application,
-    #main-map #map-application .map { height: 320px; }
-    #main-map .large-4 #table-container { height: 200px; }
-}*/
-
-/*and (max-width: 64em)
-*/
 
 @media #{$portrait} and (max-width: 40em) {
     #main-map #map-application,
-    #main-map #map-application .map { height: 500px; }
+    #main-map #map-application .map { height: 400px; }
     #main-map .large-4 #table-container { height: 260px; }
 }
 
-@media #{$medium-only} {    
-    #main-map .large-4 #table-container { -webkit-overflow-scrolling: touch; }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    #main-map #map-application,
+    #main-map #map-application .map { height: 400px; }
+    #main-map .large-4 #table-container { height: 260px; }
+    #main-map { -webkit-overflow-scrolling: touch; }
     
     #main-map .large-4 { @include box-shadow(0, 0, 0, 0, transparent); }
 }
 
-@media #{$medium-up} {
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
     #main-map #map-application,
     #main-map #map-application .map { height: 500px; }
-    #main-map .large-4 #table-container { height: 463px;; }
+    #main-map .large-4 #table-container { height: 463px; }
     #main-map .large-4 { @include box-shadow(-10px, 0, 15px, -15px, rgba(0, 0, 0, 0.7)); }
-    #home-blocks a.columns div { min-height: 9rem; }
+    #home-blocks a.columns div { min-height: 8rem; }
 }
 
 @media #{$large-up} {    
