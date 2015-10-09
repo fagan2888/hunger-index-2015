@@ -52,24 +52,42 @@ def get_level_from_score(score):
     return level
 
 
-def get_verbose_level_from_score(score):
+def get_verbose_level_from_score(score, lang="en"):
     level = ""
-    if score == "-":
-        level = "No data"
-    elif score == "<5":
-        level = "Low"
-    elif float(score) >= 50:
-        level = "Extremely alarming"
-    elif float(score) >= 35:
-        level = "Alarming"
-    elif float(score) >= 20:
-        level = "Serious"
-    elif float(score) >= 10:
-        level = "Moderate"
-    elif float(score) >= 0:
-        level = "Low"
+    if lang == "de":
+        if score == "-":
+            level = "Keine Angaben"
+        elif score == "<5":
+            level = "Wenig"
+        elif float(score) >= 50:
+            level = "Gravierend"
+        elif float(score) >= 35:
+            level = "Sehr ernst"
+        elif float(score) >= 20:
+            level = "Ernst"
+        elif float(score) >= 10:
+            level = u"Mäßig"
+        elif float(score) >= 0:
+            level = "Wenig"
+        else:
+            print "Unexpected score: ", score
     else:
-        print "Unexpected score: ", score
+        if score == "-":
+            level = "No data"
+        elif score == "<5":
+            level = "Low"
+        elif float(score) >= 50:
+            level = "Extremely alarming"
+        elif float(score) >= 35:
+            level = "Alarming"
+        elif float(score) >= 20:
+            level = "Serious"
+        elif float(score) >= 10:
+            level = "Moderate"
+        elif float(score) >= 0:
+            level = "Low"
+        else:
+            print "Unexpected score: ", score
     return level
 
 
@@ -181,6 +199,8 @@ def create_country_pages():
                    "name": country['name'],
                    "m": messages,
                    "relpath": "../../",
+                   "linkrelpath": "../../",
+                   "lang": "en",
                    }
         if scorediff:
             context["level"] = get_verbose_level_from_score(scores['year2015'])
@@ -195,10 +215,13 @@ def create_country_pages():
         f.close()
         # german language site
         context["m"] = messages_de
-        context["relpath"] = '../../'
-        context["linkrelpath"] = '../../de/'
+        context["relpath"] = '../../../'
+        context["linkrelpath"] = '../../../de/'
+        context["lang"] = 'de'
+        if scorediff:
+            context["level"] = get_verbose_level_from_score(scores['year2015'], lang="de")
         contents = template.render(**context)
-        dirname = "../site/app/html/countries/%s/" % country_code
+        dirname = "../site/app/html/de/countries/%s/" % country_code
         if not os.path.exists(dirname):
             os.makedirs(dirname)
         f = codecs.open(os.path.join(dirname, "index.html"), 'w', 'utf-8')

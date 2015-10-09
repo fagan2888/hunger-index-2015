@@ -16,7 +16,7 @@
     labels: ["1990", "1995", "2000", "2005", "2015"],
     datasets: [
     {
-      label: "Global hunger index evolution",
+      label: "{{ m.country_ghi_chart }}",
       fillColor: "rgba(220,220,220,0.2)",
       strokeColor: "rgba(220,220,220,1)",
       pointColor: "rgba(220,220,220,1)",
@@ -75,11 +75,11 @@
       scaleStepWidth: 20,
       bezierCurve: false, 
       tooltipTemplate: function (d) {
-        if (d.label === "1990" && {{ d.undernourished_1990.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "1995" && {{ d.undernourished_1995.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "2000" && {{ d.undernourished_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "2005" && {{ d.undernourished_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "2015" && {{ d.undernourished_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1990" && {{ d.undernourished_1990.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "1995" && {{ d.undernourished_1995.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "2000" && {{ d.undernourished_2000.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "2005" && {{ d.undernourished_2005.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "2015" && {{ d.undernourished_2015.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
         if (d.value === null) { return d.label + ": No data"; }
       return d.label + ": " + d.value;
       }
@@ -110,11 +110,11 @@
       scaleStepWidth: 20,
       bezierCurve: false, 
       tooltipTemplate: function (d) {
-        if (d.label === "1990" && {{ d.stunting_1990.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "1995" && {{ d.stunting_1995.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "2000" && {{ d.stunting_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "2005" && {{ d.stunting_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "2015" && {{ d.stunting_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1990" && {{ d.stunting_1990.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "1995" && {{ d.stunting_1995.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "2000" && {{ d.stunting_2000.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "2005" && {{ d.stunting_2005.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "2015" && {{ d.stunting_2015.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
         if (d.value === null) { return d.label + ": No data"; }
         return d.label + ": " + d.value;
       }
@@ -145,11 +145,11 @@
       scaleStepWidth: 20,
       bezierCurve: false, 
       tooltipTemplate: function (d) {
-        if (d.label === "1990" && {{ d.wasting_1990.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "1995" && {{ d.wasting_1995.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "2000" && {{ d.wasting_2000.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "2005" && {{ d.wasting_2005.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
-        if (d.label === "2015" && {{ d.wasting_2015.estimate|lower }}) { return d.label + ": " + d.value + ' (IFPRI estimate)'; }
+        if (d.label === "1990" && {{ d.wasting_1990.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "1995" && {{ d.wasting_1995.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "2000" && {{ d.wasting_2000.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "2005" && {{ d.wasting_2005.estimate|lower }}) { return d.label + ": " + d.value + ' ({{ m.ifpri_estimate }})'; }
+        if (d.label === "2015" && {{ d.wasting_2015.estimate|lower }}) { return d.label + ": " + d.value + ' {{ m.ifpri_estimate }})'; }
         if (d.value === null) { return d.label + ": No data"; }
         return d.label + ": " + d.value;
       }
@@ -226,18 +226,23 @@
       {% if score.year2015 == "null" %}
       <p>A 2015 GHI score could not be calculated for Sudan because data for all underlying indicators were not available.</p>
       {% else %}
-      <p class="severity">{{ name }} has a Global Hunger Index score of <strong>{{ score.year2015 }}</strong> in 2015.</p>
-      <p id="hunger-level"><em>Hunger level:</em> <strong>{{ level }}</strong></p>
+      {% if lang == "de" %}
+      <p class="severity">Der 2015 WHI-Wert für {{ name }} ist <strong>{{ score.year2015 }}</strong>.</p>
+      {% else %}
+      <p class="severity">The 2015 GHI Score for {{ name }} is <strong>{{ score.year2015 }}</strong>.</p>
+      {% endif %}
+
+      <p id="hunger-level"><em>{{ m.map_level }}</em> <strong>{{ level }}</strong></p>
       {% endif %}
 
       {% if scorediff %}
-        <p id="score-value"><em>Score evolution:</em> <strong class="{{ score_evolution }}"><i class="fi-arrow-{{ score_evolution }}"></i> {{ scorediff }} points </strong> ({{ score.year2005 }} in 2005)</p>
+        <p id="score-value"><em>{{ m.evolution }}</em> <strong class="{{ score_evolution }}"><i class="fi-arrow-{{ score_evolution }}"></i> {{ scorediff }} {{ m.points }} </strong> ({{ score.year2005 }} in 2005) {{ lang }}</p>
       {% endif %}
     </div>
   </div>
 
   <div class="row">
-    <h3 class="large-12 columns">Global hunger index evolution</h3>
+    <h3 class="large-12 columns">{{ m.country_ghi_chart }}</h3>
   </div>
   <div class="row">
     <canvas id="chart-score" class="large-12 columns"></canvas>
@@ -245,7 +250,7 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <h3>Detailed score for 2015</h3>
+      <h3>{{ m.country_detailed_score }}</h3>
       <table>
         <thead>
           <tr>
@@ -270,7 +275,7 @@
   </div>
 
   <div class="row">    
-    <h3 class="large-12 columns">Evolution from 1990 to 2015</h3>
+    <h3 class="large-12 columns">{{ country_evolution_detail }}</h3>
   </div>
   <div class="row">
     <div class="medium-6 small-12 columns">
