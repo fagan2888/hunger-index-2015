@@ -145,7 +145,7 @@ function getSeverityClass(d) {
     var urlparts = window.location.href.split('/');
     var country_id = urlparts[urlparts.length-2];
     var f = geojsonLayer.getLayer(country_id);
-    map.setView(f.getBounds().getCenter());
+    map.setView(f.getBounds().getCenter(), map.getZoom(), { animate: false });
     f.openPopup();
   });
 
