@@ -241,12 +241,25 @@ def create_trends_page():
                "table_entries": table_entries,
                "m": messages,
                "relpath": "../",
+               "linkrelpath": "../",
                }
     contents = template.render(**context)
     dirname = "../site/app/html/trends/"
     if not os.path.exists(dirname):
         os.makedirs(dirname)
     f = codecs.open("../site/app/html/trends/index.html", 'w', 'utf-8')
+    f.write(contents)
+    f.close()
+    # german
+    context["m"] = messages_de
+    context["relpath"] = '../'
+    context["linkrelpath"] = '../de/'
+    context["lang"] = 'de'
+    contents = template.render(**context)
+    dirname = "../site/app/html/de/trends/"
+    if not os.path.exists(dirname):
+        os.makedirs(dirname)
+    f = codecs.open("../site/app/html/de/trends/index.html", 'w', 'utf-8')
     f.write(contents)
     f.close()
 
