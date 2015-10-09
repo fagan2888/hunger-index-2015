@@ -73,8 +73,7 @@ $(document).ready(function() {
 
   $('div.trends-toolbar #zone option').click( function () { 
     var zone = this.value; 
-    table.column(5).search(zone).draw();
-
+    if (zone === 'all') { zone = ''; } table.column(5).search(zone).draw();
   });
   
   $('div#trends-table_filter').addClass('large-5 columns toolbar-column');
