@@ -6343,8 +6343,7 @@ body {
   overflow: hidden;
   border-bottom: 1px solid #ccc; }
   #main-map #map-application {
-    height: 500px;
-    background: #eaeaea url(../images/preloader.gif) no-repeat center center; }
+    height: 500px; }
   #main-map .map {
     width: 100%;
     height: 500px;
@@ -6820,7 +6819,13 @@ body {
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   #main-map #map-application,
   #main-map #map-application .map {
-    height: 400px; }
+    height: 310px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
   #main-map .large-4 #table-container {
     height: 260px; }
   #main-map {
@@ -6856,3 +6861,6 @@ body {
     width: 11.2857%; }
   #home-blocks a.columns div {
     min-height: 8rem; } }
+
+#chart-score {
+  height: 250px; }
