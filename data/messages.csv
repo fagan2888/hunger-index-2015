@@ -40,7 +40,7 @@ share_description,Share this visualization with others on your preferred social 
 embed_title,Embed,
 embed_description,Use the following embed code to embed this visualization in your on website.,
 map_ranking,GHI Scores,
-ranking_description,GHI scores by country, from highest to lowest hunger levels.,
+ranking_description,"GHI scores by country, from highest to lowest hunger levels.",
 map_find_out_more,Find out more,
 country_ghi_description,The 2015 GHI Score for <country> is <score>,
 country_score_evolution,<score> points (<prev_score> in <year>),
