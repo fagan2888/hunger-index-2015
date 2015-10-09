@@ -13,42 +13,29 @@ function getColor(d) {
     '#eaeaea';
 }
 
-function getSeverity(d, lang) {
-  if (lang === 'de') {
-    if (d === '-') { return 'Keine Angaben'; }
-    if (d === '<5') { return 'Wenig'; }
-    return d >= 50 ? 'Gravierend' :
-      d >= 35  ? 'Sehr ernst' :
-      d >= 20  ? 'Ernst' :
-      d >= 10  ? 'Mäßig' :
-      d >= 0   ? 'Wenig' :
-      'Nicht berechnet';
-  } else {
-    if (d === '-') { return 'No data'; }
-    if (d === '<5') { return 'Low'; }
-    return d >= 50 ? 'Extremely alarming' :
-      d >= 35  ? 'Alarming' :
-      d >= 20  ? 'Serious' :
-      d >= 10  ? 'Moderate' :
-      d >= 0   ? 'Low' :
-      'Not calculated';
-  }
+function getSeverity(d) {
+  if (d === '-') { return 'No data'; }
+  if (d === '<5') { return 'Low'; }
+  return d >= 50 ? 'Extremely alarming' :
+    d >= 35  ? 'Alarming' :
+    d >= 20  ? 'Serious' :
+    d >= 10  ? 'Moderate' :
+    d >= 0   ? 'Low' :
+    'Not calculated';
 }
 
-var messages_en = {
-  findout: 'Find out more',
-  insuf_data: 'INSUFFICIENT DATA',
-  not_calculated: 'Not calculated',
-  score: 'Score',
-  level: 'Level'
-};
-var messages_de = {
-  findout: 'Mehr erfahren',
-  insuf_data: 'UNZUREICHENDE DATEN',
-  not_calculated: 'Nicht berechnet',
-  score: 'Punkte',
-  level: 'Wert'
-};
+/*
+function getSeverityClass(d) {
+  if (d === '-') { return 'no-data'; }
+  if (d === '<5') { return 'low'; }
+  return d >= 50 ? 'extra-alarming' :
+    d >= 35  ? 'alarming' :
+    d >= 20  ? 'serious' :
+    d >= 10  ? 'moderate' :
+    d >= 0   ? 'low' :
+    'not-calculated';
+}
+*/
 
 (function (window, document, L, undefined) {
   'use strict';
@@ -111,35 +98,20 @@ var messages_de = {
 
   function onEachFeature(feature, layer) {
     // set up popups
-    var url = window.location.href;
-    var m;
-    var level;
-    if (url.indexOf('/de') > -1) {
-      m = messages_de;
-      level = getSeverity(feature.properties.score, 'de');
-    } else {
-      m = messages_en;
-      level = getSeverity(feature.properties.score, 'en');
-    }
-    var popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4>';
-
+    var popupContent;
     if (feature.properties.score === '-') {
-      popupContent += '<p><strong>' + m.insuf_data + '</strong></p>';
-    } else if (feature.properties.score === 'nc') {
-      popupContent += '<p>' + m.score + ': <strong>' + m.not_calculated + '</strong></p>';
-    } else {
-      popupContent += '<p>' + m.score + ': <strong>' + feature.properties.score + '</strong></p>';
-      popupContent += '<p>' + m.level + ': <strong>' + level + '</strong></p>';
-    }
-
-    if (feature.properties.score !== 'nc') {
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p><strong>INSUFFICIENT DATA</strong></p><p><a class="button small radius" target="_blank" href="../' + feature.id + '">Find out more</a></p>';
+    } else if (feature.properties.score !== 'nc') {
+      // are we in the embed page? If so, links open in a new window
+      var url = window.location.href;
       if (url.indexOf('embed') > -1) {
-        popupContent += '<p><a class="button small radius" target="_blank" href="../' + feature.id + '">' + m.findout + '</a></p>';
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" target="_blank" href="../' + feature.id + '">Find out more</a></p>';
       } else {
-        popupContent += '<p><a class="button small radius" href="../' + feature.id + '">' + m.findout + '</a></p>';
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="../' + feature.id + '">Find out more</a></p>';
       }
+    } else {
+      popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong> Not calculated</p>';
     }
-    // done with popup setup
 
     layer.bindPopup(popupContent, {autopan: true});
     // set up mouseover highlights
@@ -153,13 +125,7 @@ var messages_de = {
   }
 
   // https://gis.stackexchange.com/a/102125
-  var jsonfile;
-  if (window.location.href.indexOf('/de') > -1) {
-    jsonfile = '../../../data/countrydata-2015.geo.json';
-  } else {
-    jsonfile = '../../data/countrydata-2015.geo.json';
-  }
-  geojsonLayer = new L.GeoJSON.AJAX(jsonfile, {
+  geojsonLayer = new L.GeoJSON.AJAX('../../data/countrydata-2015.geo.json', {
     style: style,
     onEachFeature: onEachFeature
   });       
