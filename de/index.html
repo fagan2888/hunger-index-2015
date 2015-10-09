@@ -17,6 +17,11 @@
 
 
   <script src="../scripts/modernizr.js"></script>
+  
+  <meta property="og:url"          content="http://ghi.ifpri.org" />
+  <meta property="og:title"        content="Global Hunger Index 2015" />
+  <meta property="og:description"  content="The Global Hunger Index (GHI) is a tool designed to comprehensively measure and track hunger globally, regionally, and by country.1 Each year, the International Food Policy Research Institute (IFPRI) calculates GHI scores in order to assess progress, or the lack thereof, in decreasing hunger. The GHI is designed to raise awareness and understanding of regional and country differences in the struggle against hunger. By calling attention to the issue, we hope that the GHI will trigger action to reduce hunger around the world." />
+  <meta property="og:image"        content="http://ghi.ifpri.org/images/ghi-share.png" />
 
   <link rel="shortcut icon" href="../images/favicon.ico">
 </head>
@@ -26,8 +31,8 @@
     <ul class="title-area">
       <li class="name">
         <h1><a href="../de/">
-            <img src="../images/ghi.svg" onerror="this.src='../images/ghi.png'" alt="Global Hunger Index 2015">
-            <span>Global Hunger Index 2015</span>
+            <img src="../images/ghi.svg" onerror="this.src='../images/ghi.png'" alt="2015 Welthunger-Index">
+            <span>2015 Welthunger-Index</span>
           </a></h1>
       </li>
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -61,8 +66,8 @@
         <h4> Teilen </h4>
         <p> Teile diese Grafik mit anderen in deinen sozialen Netzwerken </p>
         <p>
-          <a target="_blank" class="twitter-share-button" href="https://twitter.com/intent/tweet?url=%20&amp;text=Global%20Hunger%20Index%202015%20-%20"><i class="fi-social-twitter large"></i></a>
-          <a target="_blank" class="fb-share-button" href="http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjplusplus.github.io%2Fhunger-index-2015%2F"><i class="fi-social-facebook large"></i></a>
+          <a target="_blank" class="twitter-share-button" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fghi.ifpri.org%2F&amp;text=Global%20Hunger%20Index%202015%20-%20"><i class="fi-social-twitter large"></i></a>
+          <a target="_blank" class="fb-share-button" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fghi.ifpri.org%2F"><i class="fi-social-facebook large"></i></a>
         </p>
       </div>
       <div class="large-6 columns">      
@@ -92,29 +97,29 @@
     </div>
   </div>
   <div class="large-4 columns">
-      <div class="row">
-        <div class="large-12 columns year-select">
-          <strong>Ranking </strong>
-          <button id="year-button" href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown">2015</button>
-          <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
-            <li><a class="2015" href="#">2015</a></li>
-            <li><a class="2005" href="#">2005</a></li>
-            <li><a class="2000" href="#">2000</a></li>
-            <li><a class="1995" href="#">1995</a></li>
-            <li><a class="1990" href="#">1990</a></li>
-          </ul>
-          <a class="button right tiny secondary radius" href="#" data-reveal-id="shareModal">
-            <i class="fi-share"></i> Teilen/Einbetten
-          </a>
-        </div>
-        <p class="large-12 columns">WHI-Werte nach Ländern, von den höchsten zu den niedrigsten</p>
+    <div class="row">
+      <div class="large-12 columns year-select">
+        <strong>Ranking </strong>
+        <button id="year-button" href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown">2015</button>
+        <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
+          <li><a class="2015" href="#">2015</a></li>
+          <li><a class="2005" href="#">2005</a></li>
+          <li><a class="2000" href="#">2000</a></li>
+          <li><a class="1995" href="#">1995</a></li>
+          <li><a class="1990" href="#">1990</a></li>
+        </ul>
+        <a class="button right tiny secondary radius" href="#" data-reveal-id="shareModal">
+          <i class="fi-share"></i> Teilen/Einbetten
+        </a>
       </div>
-      <div class="row">
-        <div id="table-container">
-          <table id="country-table" class="display" width="100%" cellspacing="0">
-          </table>
-        </div>
+      <p class="large-12 columns">WHI-Werte nach Ländern, von den höchsten zu den niedrigsten</p>
+    </div>
+    <div class="row">
+      <div id="table-container">
+        <table id="country-table" class="display" width="100%" cellspacing="0">
+        </table>
       </div>
+    </div>
   </div>
 </div>
 <section id="home-blocks" class="spaced-row">
@@ -197,9 +202,6 @@
 <script src="../scripts/leaflet.zoomin.js"></script>
 <script src="../scripts/main.js"></script>
 
-<meta property="og:title"        content="Global Hunger Index 2015" />
-<meta property="og:description"  content="Global Hunger Index 2015" />
-<!--<meta property="og:image"        content="http://www.your-domain.com/path/image.jpg" />-->
 
   <!-- endbuild -->
 </body>

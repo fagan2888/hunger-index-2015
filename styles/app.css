@@ -6312,6 +6312,9 @@ th.hide-for-touch {
 */
 /* Layout
 */
+body {
+  height: 100%; }
+
 .full-width {
   width: 100%;
   margin-left: auto;
@@ -6715,10 +6718,68 @@ th.hide-for-touch {
       #footer ul.orgs li a img {
         height: 100%;
         width: auto; }
-  #footer .credits li:first-child {
+  #footer ul.credits li:first-child {
     margin-right: 1rem; }
-  #footer .credits li i {
+  #footer ul.credits li i {
     margin-right: 0.25rem; }
+
+/* Embed page
+*/
+#embed-map {
+  height: 100%; }
+  #embed-map .map-wrapper {
+    position: relative;
+    height: 100%; }
+    #embed-map .map-wrapper #map-application,
+    #embed-map .map-wrapper #map-application .map {
+      height: 100%;
+      padding: 0; }
+    #embed-map .map-wrapper #map-legend {
+      display: block;
+      background: #fff;
+      width: auto;
+      bottom: 10px;
+      left: 15px;
+      padding: 0;
+      position: absolute;
+      -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+      -ms-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); }
+      #embed-map .map-wrapper #map-legend #ghi-brand {
+        font-size: 1rem;
+        line-height: 1rem;
+        background-color: #333333;
+        padding: 0.5rem 0.75rem;
+        margin: 0; }
+        #embed-map .map-wrapper #map-legend #ghi-brand a {
+          outline: none;
+          color: #fff;
+          display: inline-block; }
+          #embed-map .map-wrapper #map-legend #ghi-brand a img {
+            width: 36px;
+            height: auto;
+            display: inline-block;
+            padding-right: 5px; }
+          #embed-map .map-wrapper #map-legend #ghi-brand a span {
+            display: inline-block; }
+      #embed-map .map-wrapper #map-legend .ghi-levels {
+        padding: 0.5rem 0.75rem; }
+        #embed-map .map-wrapper #map-legend .ghi-levels li {
+          display: block;
+          padding: 0.25rem 0;
+          border-bottom: 1px solid #ccc; }
+          #embed-map .map-wrapper #map-legend .ghi-levels li:last-child {
+            border-bottom: 0; }
+          #embed-map .map-wrapper #map-legend .ghi-levels li.extra-alarming,
+          #embed-map .map-wrapper #map-legend .ghi-levels li.no-data,
+          #embed-map .map-wrapper #map-legend .ghi-levels li.indust-countries {
+            width: auto; }
+          #embed-map .map-wrapper #map-legend .ghi-levels li em {
+            display: inline-block;
+            float: right; }
+          #embed-map .map-wrapper #map-legend .ghi-levels li i {
+            padding-right: 5px; }
 
 /* Media Queries
 */
