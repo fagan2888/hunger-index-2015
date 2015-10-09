@@ -71,6 +71,10 @@ $notcalculated-grey: #eaeaea;
 /* Layout
 */
 
+body {
+    height: 100%;
+}
+
 .full-width {
     width: 100%;
     margin-left: auto;
@@ -521,9 +525,70 @@ $notcalculated-grey: #eaeaea;
                 }
             }
         }
-    .credits {
+    ul.credits {
         li:first-child { margin-right: 1rem; }
         li i { margin-right: 0.25rem; }
+        }
+}
+
+/* Embed page
+*/
+
+#embed-map {
+    height: 100%;
+    
+    .map-wrapper {
+        position: relative;
+        height: 100%;
+        
+        #map-application,
+        #map-application .map { height: 100%; padding: 0; }
+        
+        #map-legend {
+            display: block;
+            background: #fff;
+            width: auto;
+            bottom: 10px;
+            left: 15px;
+            padding: 0;
+            position: absolute;
+            @include box-shadow( 5px, 5px, 5px, 0, rgba(0, 0, 0, 0.5));
+        
+            #ghi-brand {
+                font-size: 1rem;
+                line-height: 1rem;
+                background-color: $oil;
+                padding: 0.5rem 0.75rem;
+                margin: 0;
+                a {
+                    outline: none;
+                    color: #fff;
+                    display: inline-block;
+                    img {
+                        width: 36px;
+                        height: auto;
+                        display: inline-block;
+                        padding-right: 5px;
+                        }
+                    span { display: inline-block; }
+                    }
+                }
+                
+            .ghi-levels {
+                padding: 0.5rem 0.75rem;
+                li {
+                    display: block;
+                    padding: 0.25rem 0;
+                    border-bottom: 1px solid #ccc;
+                    &:last-child { border-bottom: 0; }
+                    &.extra-alarming,
+                    &.no-data,
+                    &.indust-countries { width: auto; }
+                    em { display:  inline-block; float: right; }
+                    i { padding-right: 5px; }
+                    }
+                }
+            }
         }
 }
 
