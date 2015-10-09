@@ -14,15 +14,26 @@ function getColor(d) {
     '#eaeaea';
 }
 
-function getSeverity(d) {
-  if (d === '-') { return 'No data'; }
-  if (d === '<5') { return 'Low'; }
-  return d >= 50 ? 'Extremely alarming' :
-    d >= 35  ? 'Alarming' :
-    d >= 20  ? 'Serious' :
-    d >= 10  ? 'Moderate' :
-    d >= 0   ? 'Low' :
-    'Not calculated';
+function getSeverity(d, lang) {
+  if (lang === 'de') {
+    if (d === '-') { return 'Keine Angaben'; }
+    if (d === '<5') { return 'Wenig'; }
+    return d >= 50 ? 'Gravierend' :
+      d >= 35  ? 'Sehr ernst' :
+      d >= 20  ? 'Ernst' :
+      d >= 10  ? 'Mäßig' :
+      d >= 0   ? 'Wenig' :
+      'Nicht berechnet';
+  } else {
+    if (d === '-') { return 'No data'; }
+    if (d === '<5') { return 'Low'; }
+    return d >= 50 ? 'Extremely alarming' :
+      d >= 35  ? 'Alarming' :
+      d >= 20  ? 'Serious' :
+      d >= 10  ? 'Moderate' :
+      d >= 0   ? 'Low' :
+      'Not calculated';
+  }
 }
 
 function getSeverityClass(d) {
@@ -118,13 +129,15 @@ var messages_de = {
 
   function onEachFeature(feature, layer) {
     // set up popups
-    
-    var url = window.location.href
+    var url = window.location.href;
     var m;
+    var level;
     if (url.indexOf('/de') > -1) {
       m = messages_de;
+      level = getSeverity(feature.properties.score, 'de');
     } else {
       m = messages_en;
+      level = getSeverity(feature.properties.score, 'en');
     }
 
     var popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4>';
@@ -135,7 +148,7 @@ var messages_de = {
       popupContent += '<p>' + m.score + ': <strong>' + m.not_calculated + '</strong></p>';
     } else {
       popupContent += '<p>' + m.score + ': <strong>' + feature.properties.score + '</strong></p>';
-      popupContent += '<p>' + m.level + ': <strong>' + getSeverity(feature.properties.score) + '</strong></p>';
+      popupContent += '<p>' + m.level + ': <strong>' + level + '</strong></p>';
     }
 
     if (feature.properties.score !== 'nc') {
