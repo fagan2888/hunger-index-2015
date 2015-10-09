@@ -630,7 +630,15 @@ body {
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
     #main-map #map-application,
-    #main-map #map-application .map { height: 400px; }
+    #main-map #map-application .map {
+        height: 310px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        }
     #main-map .large-4 #table-container { height: 260px; }
     #main-map { -webkit-overflow-scrolling: touch; }
     
