@@ -1,9 +1,16 @@
 /*jslint browser: true*/
 /*global $ */
 
+var urlbase;
+if (window.location.href.indexOf('de') > 1) {
+  urlbase = '../../';
+} else {
+  urlbase = '../';
+}
+
 $(document).ready(function() {
   var table = $('#trends-table').DataTable( {
-    'ajax': '../data/trends-2015.json',
+    'ajax': urlbase + 'data/trends-2015.json',
     'columns': [
       { data: 'country',
         render: function (data, type) {
@@ -68,7 +75,7 @@ $(document).ready(function() {
 
   $('select#year').change(function () { 
     var year = this.value; 
-    table.ajax.url('../data/trends-' + year + '.json').load();
+    table.ajax.url(urlbase + 'data/trends-' + year + '.json').load();
   });
 
   $('select#zone').change(function () { 
