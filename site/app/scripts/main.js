@@ -45,9 +45,10 @@ function getSeverityClass(d) {
   /* create leaflet map */
   var map = L.map('map', {
     center: [32.5377, 13.3958],
+    maxBounds: [[90, 180], [-90, -180]],
     scrollWheelZoom: false,
     boxZoom: false,
-    worldCopyJump: true,
+    // worldCopyJump: true,
     zoom: 2,
     minZoom: 2,
     maxZoom: 18,
