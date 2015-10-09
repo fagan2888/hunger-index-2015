@@ -1,5 +1,6 @@
 /*jslint browser: true*/
 /*global L */
+/*global $ */
 
 function getColor(d) {
   if (d === '-') { return '#808080'; }
@@ -23,6 +24,7 @@ function getSeverity(d) {
     'Not calculated';
 }
 
+/*
 function getSeverityClass(d) {
   if (d === '-') { return 'no-data'; }
   if (d === '<5') { return 'low'; }
@@ -33,7 +35,7 @@ function getSeverityClass(d) {
     d >= 0   ? 'low' :
     'not-calculated';
 }
-
+*/
 
 (function (window, document, L, undefined) {
   'use strict';
@@ -90,14 +92,14 @@ function getSeverityClass(d) {
     geojsonLayer.resetStyle(e.target);
   }
 
-  function zoomToFeature(e) {
-    map.fitBounds(e.target.getBounds());
-  }
+  //function zoomToFeature(e) {
+  //  map.fitBounds(e.target.getBounds());
+  //}
 
   function onEachFeature(feature, layer) {
     // set up popups
     var popupContent;
-    if (feature.properties.score === "-") {
+    if (feature.properties.score === '-') {
         popupContent = '<h4>' + feature.properties.name + '</h4> <p><strong>INSUFFICIENT DATA</strong></p>';
     } else if (feature.properties.score !== 'nc') {
       // are we in the embed page? If so, links open in a new window
@@ -133,7 +135,7 @@ function getSeverityClass(d) {
   var country_id = urlparts[urlparts.length-2];
   console.log(country_id);
   console.log(geojsonLayer);
-  var f = geojsonLayer.getLayer("MAR");
+  var f = geojsonLayer.getLayer('MAR');
   console.log(f);
   map.setView(f.getBounds().getCenter());
   f.openPopup();
@@ -142,7 +144,7 @@ function getSeverityClass(d) {
   // https://stackoverflow.com/a/24529886
   map.on('popupopen', function(centerMarker) {
           var cM = map.project(centerMarker.popup._latlng);
-          cM.y -= centerMarker.popup._container.clientHeight/8
+          cM.y -= centerMarker.popup._container.clientHeight/8;
           map.setView(map.unproject(cM),2, {animate: true});
       });
 

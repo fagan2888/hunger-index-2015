@@ -1,3 +1,8 @@
+/*jslint browser: true*/
+/*global document */
+/*global $ */
+/*global Modernizr */
+
 // Foundation JavaScript
 $(document).foundation();
 
