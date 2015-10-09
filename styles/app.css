@@ -6793,3 +6793,6 @@ th.hide-for-touch {
     width: 11.2857%; }
   #home-blocks a.columns div {
     min-height: 8rem; } }
+
+tr.highlight td {
+  background: red !important; }

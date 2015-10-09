@@ -104,17 +104,17 @@ function getSeverityClass(d) {
     // set up popups
     var popupContent;
     if (feature.properties.score === '-') {
-        popupContent = '<h4>' + feature.properties.name + '</h4> <p><strong>INSUFFICIENT DATA</strong></p><p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
+        popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4> <p><strong>INSUFFICIENT DATA</strong></p><p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
     } else if (feature.properties.score !== 'nc') {
       // are we in the embed page? If so, links open in a new window
       var url = window.location.href;
       if (url.indexOf('embed') > -1) {
-        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
+        popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
       } else {
-        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="countries/' + feature.id + '">Find out more</a></p>';
+        popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="countries/' + feature.id + '">Find out more</a></p>';
       }
     } else {
-      popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong> Not calculated</p>';
+      popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4> <p>Score: <strong> Not calculated</p>';
     }
 
 
@@ -151,7 +151,7 @@ function getSeverityClass(d) {
       $('#country-table tbody').empty();
       $.each( data.features, function( key, c ) {
         if (c.properties.score !== 'nc' && c.properties.score !== '-') {
-          $('<tr>').attr('id', c.id)
+          $('<tr>').attr('id', 'table-' + c.id)
             .attr('class', getSeverityClass(c.properties.score))
             .attr('role', 'row')
             .append(
@@ -164,10 +164,24 @@ function getSeverityClass(d) {
 
     $('#country-table').on( 'click', 'tr', function () {
       // clicking on a country in the table focuses the map on it
-      var f = geojsonLayer.getLayer(this.id);
+      var f = geojsonLayer.getLayer(this.id.replace('table-', ''));
       map.setView(f.getBounds().getCenter());
       f.openPopup();
     });
+
+    map.on('popupopen', function(e) {
+      $('#table-container tr').removeClass('highlight');
+      // https://stackoverflow.com/questions/12701240/how-to-identify-leaflets-marker-during-a-popupopen-event#comment50813535_12712987
+      var country_id = e.popup._contentNode.childNodes[0].id;
+      var container = $('#table-container');
+      // https://stackoverflow.com/a/2906009
+      var scroll_offset = $('#table-' + country_id).offset().top - container.offset().top + container.scrollTop();
+      $('#table-container').animate({
+        scrollTop: scroll_offset
+      }, 300);
+      $('#table-' + country_id).addClass('highlight');
+    });
+
   }
 
   $(document).ready(function() {    
@@ -182,15 +196,7 @@ function getSeverityClass(d) {
       geojsonLayer.addTo(map);
       $('#year-button').text(year);
       populateTable(year);
-
     });
-
-
-
   });
-
-
-
-
 }(window, document, L));
 
