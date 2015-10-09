@@ -1,4 +1,5 @@
 /*jslint browser: true*/
+/*jshint camelcase: false */
 /*global L */
 /*global $ */
 
@@ -177,7 +178,7 @@ function getSeverityClass(d) {
       // https://stackoverflow.com/a/2906009
       var scroll_offset = $('#table-' + country_id).offset().top - container.offset().top + container.scrollTop();
       $('#table-container').animate({
-        scrollTop: scroll_offset
+        scrollTop: scroll_offset,
       }, 300);
       $('#table-' + country_id).addClass('highlight');
     });

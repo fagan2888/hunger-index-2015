@@ -1,4 +1,5 @@
 /*jslint browser: true*/
+/*jshint camelcase: false */
 /*global L */
 /*global $ */
 
