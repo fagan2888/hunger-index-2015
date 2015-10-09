@@ -224,7 +224,7 @@
   <div id="summary" class="row">
     <div class="large-12 columns"> 
       {% if score.year2015 == "null" %}
-      <p>A 2015 GHI score could not be calculated for Sudan because data for all underlying indicators were not available.</p>
+      <p>A 2015 GHI score could not be calculated for {{ name }} because data for all underlying indicators were not available.</p>
       {% else %}
       {% if lang == "de" %}
       <p class="severity">Der 2015 WHI-Wert für {{ name }} ist <strong>{{ score.year2015 }}</strong>.</p>

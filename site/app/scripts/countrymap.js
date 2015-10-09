@@ -14,7 +14,7 @@ function getColor(d) {
 }
 
 function getSeverity(d, lang) {
-  if (lang == "de") {
+  if (lang === 'de') {
     if (d === '-') { return 'Keine Angaben'; }
     if (d === '<5') { return 'Wenig'; }
     return d >= 50 ? 'Gravierend' :
