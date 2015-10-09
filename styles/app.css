@@ -6348,8 +6348,9 @@ th.hide-for-touch {
   #main-map .large-4 {
     height: 100%; }
     #main-map .large-4 #table-container {
-      height: 449px;
+      height: 463px;
       overflow-y: scroll;
+      border: 0;
       border-top: 1px solid #ccc; }
       #main-map .large-4 #table-container #country-table {
         margin-bottom: 0;
@@ -6360,14 +6361,14 @@ th.hide-for-touch {
       padding: 0.5rem 0 0; }
       #main-map .large-4 .row .large-12 > strong {
         font-size: 1.6875rem;
-        font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif; }
+        font-family: "PT Sans Narrow", "DejaVu Sans", Roboto, Arial, sans-serif; }
       #main-map .large-4 .row p {
         font-size: 0.875rem;
         margin-bottom: 0;
         padding-right: 0; }
 
 .leaflet-container {
-  font-family: 'PT Sans', 'DejaVu Sans', Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
   font-weight: bold; }
 
 .leaflet-container .leaflet-popup .leaflet-popup-content-wrapper {
@@ -6418,7 +6419,7 @@ th.hide-for-touch {
   background-color: transparent;
   border-bottom: 1px solid #89a527;
   color: #89a527;
-  font-family: 'PT Sans Narrow','DejaVu Sans', Roboto, Arial, sans-serif;
+  font-family: "PT Sans Narrow", "DejaVu Sans", Roboto, Arial, sans-serif;
   font-size: 1.6875rem;
   padding: 0 1.1rem 0 0;
   margin: 0; }
@@ -6468,7 +6469,7 @@ th.hide-for-touch {
   .ghi-levels li {
     list-style-type: none;
     display: inline-block;
-    font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif;
+    font-family: "PT Sans Narrow", "DejaVu Sans", Roboto, Arial, sans-serif;
     font-weight: bold;
     font-size: 80%;
     line-height: 1;
@@ -6476,7 +6477,7 @@ th.hide-for-touch {
     .ghi-levels li span {
       white-space: nowrap; }
     .ghi-levels li em {
-      font-family: 'PT Sans', 'DejaVu Sans', Roboto, Arial, sans-serif;
+      font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
       font-style: normal;
       font-weight: normal;
       white-space: nowrap;
@@ -6566,7 +6567,7 @@ th.hide-for-touch {
   #country-info #summary p#hunger-level em,
   #country-info #summary p#score-value em {
     font-size: 0.925rem;
-    font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif;
+    font-family: "PT Sans Narrow", "DejaVu Sans", Roboto, Arial, sans-serif;
     font-style: normal;
     text-transform: uppercase;
     background: #ddd;
