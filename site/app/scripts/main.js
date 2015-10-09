@@ -35,7 +35,20 @@ function getSeverityClass(d) {
     d >= 0   ? 'low' :
     'not-calculated';
 }
-
+var messages_en = {
+  findout: 'Find out more',
+  insuf_data: 'INSUFFICIENT DATA',
+  not_calculated: 'Not calculated',
+  score: 'Score',
+  level: 'Level'
+};
+var messages_de = {
+  findout: 'Mehr erfahren',
+  insuf_data: 'UNZUREICHENDE DATEN',
+  not_calculated: 'Nicht berechnet',
+  score: 'Punkte',
+  level: 'Wert'
+};
 
 (function (window, document, L, undefined) {
   'use strict';
@@ -100,26 +113,39 @@ function getSeverityClass(d) {
   //function zoomToFeature(e) {
   //  map.fitBounds(e.target.getBounds());
   //}
+  
+
 
   function onEachFeature(feature, layer) {
-
     // set up popups
-    var popupContent;
-    if (feature.properties.score === '-') {
-        popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4> <p><strong>INSUFFICIENT DATA</strong></p><p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
-    } else if (feature.properties.score !== 'nc') {
-      // are we in the embed page? If so, links open in a new window
-      var url = window.location.href;
-      if (url.indexOf('embed') > -1) {
-        popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
-      } else {
-        popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="countries/' + feature.id + '">Find out more</a></p>';
-      }
+    
+    var url = window.location.href
+    var m;
+    if (url.indexOf('/de') > -1) {
+      m = messages_de;
     } else {
-      popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4> <p>Score: <strong> Not calculated</p>';
+      m = messages_en;
     }
 
+    var popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4>';
 
+    if (feature.properties.score === '-') {
+      popupContent += '<p><strong>' + m.insuf_data + '</strong></p>';
+    } else if (feature.properties.score === 'nc') {
+      popupContent += '<p>' + m.score + ': <strong>' + m.not_calculated + '</strong></p>';
+    } else {
+      popupContent += '<p>' + m.score + ': <strong>' + feature.properties.score + '</strong></p>';
+      popupContent += '<p>' + m.level + ': <strong>' + getSeverity(feature.properties.score) + '</strong></p>';
+    }
+
+    if (feature.properties.score !== 'nc') {
+      if (url.indexOf('embed') > -1) {
+        popupContent += '<p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">' + m.findout + '</a></p>';
+      } else {
+        popupContent += '<p><a class="button small radius" href="countries/' + feature.id + '">' + m.findout + '</a></p>';
+      }
+    }
+    // done with popup setup
 
     layer.bindPopup(popupContent, {autopan: true});
     // set up mouseover highlights
@@ -133,7 +159,13 @@ function getSeverityClass(d) {
   }
 
   // https://gis.stackexchange.com/a/102125
-  geojsonLayer = new L.GeoJSON.AJAX('data/countrydata-2015.geo.json', {
+  var jsonfile;
+  if (window.location.href.indexOf('/de') > -1) {
+    jsonfile = '../data/countrydata-2015.geo.json';
+  } else {
+    jsonfile = 'data/countrydata-2015.geo.json';
+  }
+  geojsonLayer = new L.GeoJSON.AJAX(jsonfile, {
     style: style,
     onEachFeature: onEachFeature
   });       
@@ -149,7 +181,13 @@ function getSeverityClass(d) {
 
   function populateTable(year) {
     // reload table
-    $.getJSON( 'data/countrydata-' + year + '.geo.json', function( data ) {
+    var jsonroot;
+    if (window.location.href.indexOf('/de') > -1) {
+      jsonroot = '../data/countrydata-';
+    } else {
+      jsonroot = 'data/countrydata-';
+    }
+    $.getJSON( jsonroot + year + '.geo.json', function( data ) {
       $('#country-table tbody').empty();
       $.each( data.features, function( key, c ) {
         if (c.properties.score !== 'nc' && c.properties.score !== '-') {
@@ -190,8 +228,13 @@ function getSeverityClass(d) {
 
   $(document).ready(function() {    
     populateTable('2015');
+    geojsonLayer.on('data:loaded', function() {
+      // FADE OUT SPINNER
+      console.log('fadeout');
+    });
     $('#year-drop li a').click( function() {
       // year dropdown refreshes map
+      // FADE IN SPINNER
       var year = this.className;
       geojsonLayer.clearLayers();geojsonLayer = new L.GeoJSON.AJAX('data/countrydata-' + year + '.geo.json', {
         style: style,

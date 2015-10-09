@@ -15,7 +15,7 @@ TODO:
 import os
 import jinja2
 import json
-import csv
+import unicodecsv as csv
 import codecs
 import markdown
 
@@ -26,8 +26,9 @@ static_pages = ["about", "contact", "hunger", "methodology", "results"]
 template_dir = "../site/jinja_templates"
 env = jinja2.Environment(loader=jinja2.FileSystemLoader([template_dir]))
 
-csvdata = csv.reader(open("../data/messages.csv", 'r'))
+csvdata = list(csv.reader(open("../data/messages.csv", 'r')))
 messages = {label: text for label, text, text_de in csvdata}
+messages_de = {label: text_de for label, text, text_de in csvdata}
 
 
 def get_level_from_score(score):
@@ -82,13 +83,35 @@ def create_index_page():
     context = {"table_entries": table_entries,
                "m": messages,
                "relpath": "",
+               "linkrelpath": "",
                }
     contents = template.render(**context)
     f = codecs.open("../site/app/html/index.html", 'w', 'utf-8')
     f.write(contents)
     f.close()
+    # german language site
+    context["m"] = messages_de
+    context["relpath"] = '../'
+    context["linkrelpath"] = '../de/'
+    contents = template.render(**context)
+    dirname = "../site/app/html/de/"
+    if not os.path.exists(dirname):
+        os.makedirs(dirname)
+    f = codecs.open(os.path.join(dirname, "index.html"), 'w', 'utf-8')
+    f.write(contents)
+    f.close()
+
     # also generate the embed page
     template = env.get_template("embed.html")
+    context["m"] = messages
+    context["relpath"] = ''
+    contents = template.render(**context)
+    f = codecs.open("../site/app/html/embed.html", 'w', 'utf-8')
+    f.write(contents)
+    f.close()
+    # german
+    context["m"] = messages_de
+    context["relpath"] = '../'
     contents = template.render(**context)
     f = codecs.open("../site/app/html/embed.html", 'w', 'utf-8')
     f.write(contents)
@@ -106,6 +129,17 @@ def create_static_page(name):
                }
     contents = template.render(**context)
     dirname = "../site/app/html/%s/" % name
+    if not os.path.exists(dirname):
+        os.makedirs(dirname)
+    f = codecs.open(os.path.join(dirname, "index.html"), 'w', 'utf-8')
+    f.write(contents)
+    f.close()
+    # german language site
+    context["m"] = messages_de
+    context["relpath"] = '../../'
+    context["linkrelpath"] = '../../de/'
+    contents = template.render(**context)
+    dirname = "../site/app/html/de/%s/" % name
     if not os.path.exists(dirname):
         os.makedirs(dirname)
     f = codecs.open(os.path.join(dirname, "index.html"), 'w', 'utf-8')
@@ -152,6 +186,17 @@ def create_country_pages():
             context["level"] = get_verbose_level_from_score(scores['year2015'])
             context["level_class"] = get_level_from_score(scores['year2015'])
 
+        contents = template.render(**context)
+        dirname = "../site/app/html/countries/%s/" % country_code
+        if not os.path.exists(dirname):
+            os.makedirs(dirname)
+        f = codecs.open(os.path.join(dirname, "index.html"), 'w', 'utf-8')
+        f.write(contents)
+        f.close()
+        # german language site
+        context["m"] = messages_de
+        context["relpath"] = '../../'
+        context["linkrelpath"] = '../../de/'
         contents = template.render(**context)
         dirname = "../site/app/html/countries/%s/" % country_code
         if not os.path.exists(dirname):

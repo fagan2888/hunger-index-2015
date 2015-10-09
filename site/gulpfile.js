@@ -70,9 +70,9 @@ gulp.task('html', ['styles', 'scripts'], function () {
                ])
         // Make everything into one file! Add main.js
         //.pipe(concat('app.js'))
-        .pipe(jsFilter)
+        //.pipe(jsFilter)
         //.pipe($.uglify())
-        .pipe(jsFilter.restore())
+        //.pipe(jsFilter.restore())
         .pipe(gulp.dest('dist/scripts'));
 
     gulp.src(['app/lib/styles/*.css'])

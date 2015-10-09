@@ -11,7 +11,6 @@
 <meta property="og:title"        content="Global Hunger Index 2015" />
 <meta property="og:description"  content="Global Hunger Index 2015" />
 <!--<meta property="og:image"        content="http://www.your-domain.com/path/image.jpg" />-->
-
 {% endblock %}
 
 {% block content %}
@@ -29,7 +28,7 @@
       <div class="large-6 columns">      
         <h4> {{ m.embed_title }} </h4>
         <p> {{ m.embed_description }} </p>
-        <textarea><iframe src="/embed.html" width="100%" height="600" frameborder="0" allowfullscreen></iframe></textarea>
+        <textarea><iframe src="{{ linkrelpath }}/embed.html" width="100%" height="600" frameborder="0" allowfullscreen></iframe></textarea>
       </div>
     </div>
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
@@ -42,20 +41,20 @@
     </div>
     <div id="map-legend" class="row">
       <ul class="ghi-levels large-block-grid-7 medium-block-grid-4 small-block-grid-3">
-        <li class="extra-alarming"><i class="fi-stop small"></i> Extremely alarming <em>&ge; 50</em></li>
-        <li class="alarming"><i class="fi-stop small"></i> Alarming <em>35.0-49.9</em></li>
-        <li class="serious"><i class="fi-stop small"></i> Serious <em>20.0-34.9</em></li>
-        <li class="moderate"><i class="fi-stop small"></i> Moderate <em>10.0-19.9</em></li>
-        <li class="low"><i class="fi-stop small"></i> Low <em>&le; 9.9</em></li>
-        <li class="no-data"><i class="fi-stop small"></i> No data</li>
-        <li class="indust-country"><i class="fi-stop small"></i> Industrialized country</li>
+        <li class="extra-alarming"><i class="fi-stop small"></i> {{ m.map_very_alarming }} <em>&ge; 50</em></li>
+        <li class="alarming"><i class="fi-stop small"></i> {{ m.map_alarming }} <em>35.0-49.9</em></li>
+        <li class="serious"><i class="fi-stop small"></i> {{ m.map_serious }} <em>20.0-34.9</em></li>
+        <li class="moderate"><i class="fi-stop small"></i> {{ m.map_moderate }} <em>10.0-19.9</em></li>
+        <li class="low"><i class="fi-stop small"></i> {{ m.map_low }} <em>&le; 9.9</em></li>
+        <li class="no-data"><i class="fi-stop small"></i> {{ m.map_no_data }} </li>
+        <li class="indust-country"><i class="fi-stop small"></i> {{ m.map_not_calculated }} </li>
       </ul>
     </div>
   </div>
   <div class="large-4 columns">
       <div class="row">
         <div class="large-12 columns year-select">
-          <strong>Ranking</strong>
+          <strong>{{ m.map_ranking }}</strong>
           <button id="year-button" href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown">2015</button>
           <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
             <li><a class="2015" href="#">2015</a></li>
@@ -65,10 +64,10 @@
             <li><a class="1990" href="#">1990</a></li>
           </ul>
           <a class="button right tiny secondary radius" href="#" data-reveal-id="shareModal">
-            <i class="fi-share"></i> Share/Embed
+            <i class="fi-share"></i> {{ m.share_title }}/{{ m.embed_title }}
           </a>
         </div>
-        <p class="large-12 columns">Ranking of every country according to the IFPRI index.</p>
+        <p class="large-12 columns">{{ m.ranking_description }}</p>
       </div>
       <div class="row">
         <div id="table-container">
@@ -80,19 +79,19 @@
 </div>
 <section id="home-blocks" class="spaced-row">
   <div class="row">
-    <a class="medium-4 columns" href="{{ relpath }}trends/">
+    <a class="medium-4 columns" href="{{ linkrelpath }}trends/">
       <div>
         <h3>{{ m.block_index_title }}</h3>
         <p>{{ m.block_index_description }}</p>
       </div>
     </a><!-- /Block -->
-    <a class="medium-4 columns" href="{{ relpath }}results/">
+    <a class="medium-4 columns" href="{{ linkrelpath }}results/">
       <div>
         <h3>{{ m.block_results_title }}</h3>
         <p>{{ m.block_results_description }}</p>
       </div>
     </a><!-- /Block -->
-    <a class="medium-4 columns" href="{{ relpath }}hunger/">
+    <a class="medium-4 columns" href="{{ linkrelpath }}hunger/">
       <div>
         <h3>{{ m.block_hunger_title }}</h3>
         <p>{{ m.block_hunger_description }}</p>
@@ -100,19 +99,19 @@
     </a><!-- /Block -->
   </div>
   <div class="row">
-    <a class="medium-4 columns" href="{{ relpath }}methodology/">
+    <a class="medium-4 columns" href="{{ linkrelpath }}methodology/">
       <div>
         <h3>{{ m.block_methodology_title }}</h3>
         <p>{{ m.block_methodology_description }}</p>
       </div>
     </a><!-- /Block -->
-    <a class="medium-4 columns" href="{{ relpath }}about/">
+    <a class="medium-4 columns" href="{{ linkrelpath }}about/">
       <div>
         <h3>{{ m.block_about_title }}</h3>
         <p>{{ m.block_about_description }}</p>
       </div>
     </a><!-- /Block -->
-    <a class="medium-4 columns" href="{{ relpath }}contact/">
+    <a class="medium-4 columns" href="{{ linkrelpath }}contact/">
       <div>
         <h3>{{ m.block_contact_title }}</h3>
         <p>{{ m.block_contact_description }}</p>
