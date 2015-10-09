@@ -56,7 +56,7 @@ function getSeverityClass(d) {
       subdomains: '0123',
       }).addTo(map);
 
-  var info = L.control();
+  //var info = L.control();
   var geojsonLayer;
 
   function style(feature) {
@@ -84,14 +84,10 @@ function getSeverityClass(d) {
     if (!L.Browser.ie && !L.Browser.opera) {
       layer.bringToFront();
     }
-
-    // info.update(layer.feature.properties);
   }
-
 
   function resetHighlight(e) {
     geojsonLayer.resetStyle(e.target);
-    // info.update();
   }
 
   function zoomToFeature(e) {
@@ -99,23 +95,21 @@ function getSeverityClass(d) {
   }
 
   function onEachFeature(feature, layer) {
-
     // set up popups
     var popupContent;
-    if (feature.properties.score !== 'nc') {
-
+    if (feature.properties.score === "-") {
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p><strong>INSUFFICIENT DATA</strong></p>';
+    } else if (feature.properties.score !== 'nc') {
       // are we in the embed page? If so, links open in a new window
       var url = window.location.href;
       if (url.indexOf('embed') > -1) {
-        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" target="_blank" href="../' + feature.id + '">Find out more</a></p>';
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
       } else {
-        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="../' + feature.id + '">Find out more</a></p>';
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="countries/' + feature.id + '">Find out more</a></p>';
       }
     } else {
       popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong> Not calculated</p>';
     }
-
-
 
     layer.bindPopup(popupContent, {autopan: true});
     // set up mouseover highlights
@@ -134,6 +128,15 @@ function getSeverityClass(d) {
     onEachFeature: onEachFeature
   });       
   geojsonLayer.addTo(map);
+  // focus map on open country
+  var urlparts = window.location.href.split('/');
+  var country_id = urlparts[urlparts.length-2];
+  console.log(country_id);
+  console.log(geojsonLayer);
+  var f = geojsonLayer.getLayer("MAR");
+  console.log(f);
+  map.setView(f.getBounds().getCenter());
+  f.openPopup();
 
   // zoom on click
   // https://stackoverflow.com/a/24529886
@@ -143,14 +146,9 @@ function getSeverityClass(d) {
           map.setView(map.unproject(cM),2, {animate: true});
       });
 
-  // focus map on open country
-  var urlparts = window.location.href.split('/');
-  var country_id = urlparts[urlparts.length-2];
-  console.log(country_id);
-  //var f = geojsonLayer.getLayer(country_id);
-  //console.log(f);
-  //map.setView(f.getBounds().getCenter());
-  //f.openPopup();
+  $(document).ready(function() {
+
+  });
 
 }(window, document, L));
 

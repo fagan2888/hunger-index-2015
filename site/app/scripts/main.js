@@ -103,8 +103,9 @@ function getSeverityClass(d) {
 
     // set up popups
     var popupContent;
-    if (feature.properties.score !== 'nc') {
-
+    if (feature.properties.score === "-") {
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p><strong>INSUFFICIENT DATA</strong></p>';
+    } else if (feature.properties.score !== 'nc') {
       // are we in the embed page? If so, links open in a new window
       var url = window.location.href;
       if (url.indexOf('embed') > -1) {
