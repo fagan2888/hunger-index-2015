@@ -75,7 +75,7 @@ $notcalculated-grey: #eaeaea;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: initial;
+    max-width: 100% !important;
 }
 
 .spaced-row {
@@ -445,6 +445,7 @@ $notcalculated-grey: #eaeaea;
     #trends-table_wrapper {
         table#trends-table {
             max-width: 100%;
+            width: 100% !important;
             }
         thead th:nth-child(6),
         tbody td:nth-child(6) { display: none; }
