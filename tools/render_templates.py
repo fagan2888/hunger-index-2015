@@ -102,6 +102,7 @@ def create_index_page():
                "m": messages,
                "relpath": "",
                "linkrelpath": "",
+               "lang": "en",
                }
     contents = template.render(**context)
     f = codecs.open("../site/app/html/index.html", 'w', 'utf-8')
@@ -111,6 +112,7 @@ def create_index_page():
     context["m"] = messages_de
     context["relpath"] = '../'
     context["linkrelpath"] = '../de/'
+    context["lang"] = 'de'
     contents = template.render(**context)
     dirname = "../site/app/html/de/"
     if not os.path.exists(dirname):
@@ -123,6 +125,7 @@ def create_index_page():
     template = env.get_template("embed.html")
     context["m"] = messages
     context["relpath"] = ''
+    context["lang"] = 'en'
     contents = template.render(**context)
     f = codecs.open("../site/app/html/embed.html", 'w', 'utf-8')
     f.write(contents)
@@ -130,6 +133,7 @@ def create_index_page():
     # german
     context["m"] = messages_de
     context["relpath"] = '../'
+    context["lang"] = 'de'
     contents = template.render(**context)
     f = codecs.open("../site/app/html/embed.html", 'w', 'utf-8')
     f.write(contents)
