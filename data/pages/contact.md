@@ -2,9 +2,13 @@
 For more information about the 2015 Global Hunger Index, please contact:
 
 **International Food Policy Research Institute**  
+For media contact:  
 Daniel Burnett  
 Tel: +1 202 627 4311  
 Email: d.burnett@cgiar.org  
+
+For other questions:  
+Email: IFPRI-Data@cgiar.org
 
 **Concern Worldwide**  
 Paul O'Mahony  
