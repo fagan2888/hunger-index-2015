@@ -118,8 +118,9 @@ $notcalculated-grey: #eaeaea;
     .large-4 {
         height: 100%;
         #table-container {
-            height: 449px;
+            height: 463px;
             overflow-y: scroll;
+            border: 0;
             border-top: 1px solid #ccc;
             #country-table { margin-bottom: 0; border: 0; }
             table tr td { padding: 0.5625rem 0.9375rem; }
@@ -128,7 +129,7 @@ $notcalculated-grey: #eaeaea;
             padding: 0.5rem 0 0;
             .large-12 > strong {
                 font-size: 1.6875rem;
-                font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif;
+                font-family: $font-family-sans-serif-narrow;
                 }
             p {
                 font-size: 0.875rem;
@@ -140,7 +141,7 @@ $notcalculated-grey: #eaeaea;
 }
 
 .leaflet-container {
-    font-family: 'PT Sans', 'DejaVu Sans', Roboto, Arial, sans-serif;
+    font-family: $font-family-sans-serif;
     font-weight: bold;
 }
 
@@ -205,7 +206,7 @@ $notcalculated-grey: #eaeaea;
         background-color: transparent;
         border-bottom: 1px solid $primary-color;
         color: $primary-color;
-        font-family: 'PT Sans Narrow','DejaVu Sans', Roboto, Arial, sans-serif;
+        font-family: $font-family-sans-serif-narrow;
         font-size: 1.6875rem;
         padding: 0 1.1rem 0 0;
         margin: 0;
@@ -255,7 +256,7 @@ $notcalculated-grey: #eaeaea;
     li {
         list-style-type: none;
         display: inline-block;
-        font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif;
+        font-family: $font-family-sans-serif-narrow;
         font-weight: bold;
         font-size: 80%;
         line-height: 1;
@@ -263,7 +264,7 @@ $notcalculated-grey: #eaeaea;
         span { 
             white-space: nowrap;}
         em {
-            font-family: 'PT Sans', 'DejaVu Sans', Roboto, Arial, sans-serif;
+            font-family: $font-family-sans-serif;
             font-style: normal;
             font-weight: normal;
             white-space: nowrap;
@@ -352,7 +353,7 @@ $notcalculated-grey: #eaeaea;
         p#hunger-level em,
         p#score-value em {
             font-size: 0.925rem;
-            font-family: 'PT Sans Narrow', 'DejaVu Sans', Roboto, Arial, sans-serif;
+            font-family: $font-family-sans-serif-narrow;
             font-style: normal;
             text-transform: uppercase;
             background: #ddd;
