@@ -120,10 +120,31 @@ $notcalculated-grey: #eaeaea;
         #table-container {
             height: 463px;
             overflow-y: scroll;
-            border: 0;
             border-top: 1px solid #ccc;
-            #country-table { margin-bottom: 0; border: 0; }
-            table tr td { padding: 0.5625rem 0.9375rem; }
+            #country-table {
+            	margin-bottom: 0; border: 0;
+		        
+		        tr:hover { cursor: pointer; background: #eee; }
+		        tr.highlight { background: #ccc; }
+		        tr td { padding: 0.5625rem 0.9375rem; }
+        		td span { padding: 0.25rem 0.5rem; }
+        		td.score span {
+				    font-size: 0.75rem;
+				    font-weight: bold;
+				    @include border-radius(4px);
+				    background-color: #f9f9f9;
+				    display: inline-block;
+					text-align: center;
+					width: 2.5rem;
+				    }
+				.extra-alarming td.score span { background-color: $alarming-red; }
+				.alarming td.score span       { background-color: $alarming-orange; }
+				.serious td.score span        { background-color: $serious-light-orange; }
+				.moderate td.score span       { background-color: $moderate-light-green; }
+				.low td.score span            { background-color: $low-green; }
+				.no-data td.score span        { background-color: $nodata-grey; }
+				.indust-country td.score span { background-color: $notcalculated-grey; }
+				}    
             }
         .row {
             padding: 0.5rem 0 0;
@@ -223,27 +244,6 @@ $notcalculated-grey: #eaeaea;
         
     button.dropdown:focus {
         outline: none;
-        }
-}
-
-#table-container {
-    border-bottom: 1px solid #ddd;
-    #country-table {
-        tbody tr td { cursor: pointer; }
-        tbody tr td span { padding: 0.25rem 0.5rem; }
-        tbody tr td.score span {
-            font-size: 0.75rem;
-            font-weight: bold;
-            @include border-radius(4px);
-            background-color: #f9f9f9;
-            }
-        .extra-alarming td.score span { background-color: $alarming-red; }
-        .alarming td.score span       { background-color: $alarming-orange; }
-        .serious td.score span        { background-color: $serious-light-orange; }
-        .moderate td.score span       { background-color: $moderate-light-green; }
-        .low td.score span            { background-color: $low-green; }
-        .no-data td.score span        { background-color: $nodata-grey; }
-        .indust-country td.score span { background-color: $notcalculated-grey; }
         }
 }
 
@@ -568,7 +568,7 @@ $notcalculated-grey: #eaeaea;
 @media #{$medium-up} {
     #main-map #map-application,
     #main-map #map-application .map { height: 500px; }
-    #main-map .large-4 #table-container { height: 449px; }
+    #main-map .large-4 #table-container { height: 463px;; }
     #main-map .large-4 { @include box-shadow(-10px, 0, 15px, -15px, rgba(0, 0, 0, 0.7)); }
     #home-blocks a.columns div { min-height: 9rem; }
 }
@@ -584,6 +584,3 @@ $notcalculated-grey: #eaeaea;
 }
 
 
-tr.highlight td {
-  background: red !important;
-}
