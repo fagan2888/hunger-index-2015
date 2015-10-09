@@ -52,5 +52,8 @@ name,2015 Global Hunger Index,2015 Welthunger-Index
 points,points,punkte
 evolution,Evolution,Entwicklung
 ifpri_estimate,IFPRI estimate,IFPRI-Schätzungen
-zone,Zone,Region
-country,Country,Land
+trends_zone,Zone,Region
+trends_country,Country,Land
+trends_year,Year,Jahr
+trends_all_countries,All Countries,Alle Länder
+trends_search,Search,Suchen

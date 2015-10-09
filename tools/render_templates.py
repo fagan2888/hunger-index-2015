@@ -252,8 +252,8 @@ def create_trends_page():
     f.close()
     # german
     context["m"] = messages_de
-    context["relpath"] = '../'
-    context["linkrelpath"] = '../de/'
+    context["relpath"] = '../../'
+    context["linkrelpath"] = '../../de/'
     context["lang"] = 'de'
     contents = template.render(**context)
     dirname = "../site/app/html/de/trends/"
