@@ -241,13 +241,8 @@ var messages_de = {
 
   $(document).ready(function() {    
     populateTable('2015');
-    geojsonLayer.on('data:loaded', function() {
-      // FADE OUT SPINNER
-      console.log('fadeout');
-    });
     $('#year-drop li a').click( function() {
       // year dropdown refreshes map
-      // FADE IN SPINNER
       var year = this.className;
       geojsonLayer.clearLayers();geojsonLayer = new L.GeoJSON.AJAX('data/countrydata-' + year + '.geo.json', {
         style: style,
