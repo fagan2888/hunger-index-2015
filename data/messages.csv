@@ -54,6 +54,6 @@ evolution,Evolution,Entwicklung
 ifpri_estimate,IFPRI estimate,IFPRI-Schätzungen
 trends_zone,Zone,Region
 trends_country,Country,Land
-trends_year,Year,
-trends_all_countries,All Countries,
-trends_search,Search,
+trends_year,Year,Jahr
+trends_all_countries,All Countries,Alle Länder
+trends_search,Search,Suchen
