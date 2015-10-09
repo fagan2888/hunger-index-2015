@@ -4,8 +4,10 @@
 <!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>Global Hunger Index</title>
   <meta name="description" content="Global Hunger Index 2015">
 
@@ -15,21 +17,23 @@
 
 
   <script src="{{ relpath }}scripts/modernizr.js"></script>
+  
+  <!-- embed scripts -->
+  <link rel="stylesheet" href="{{ relpath }}styles/leaflet.zoomin.css" media="screen">
 
-    <link rel="stylesheet" href="{{ relpath }}styles/leaflet.zoomin.css" media="screen">
+  <script src="{{ relpath }}scripts/leaflet.js"></script>
+  <script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
+  <script src="{{ relpath }}scripts/leaflet.zoomin.js"></script>
+  <script src="{{ relpath }}scripts/main.js"></script>
 
-    <script src="{{ relpath }}scripts/leaflet.js"></script>
-    <script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
-    <script src="{{ relpath }}scripts/leaflet.zoomin.js"></script>
-    <script src="{{ relpath }}scripts/main.js"></script>
-
-    <meta property="og:title"        content="Global Hunger Index 2015" />
-    <meta property="og:description"  content="Global Hunger Index 2015" />
-    <!--<meta property="og:image"        content="http://www.your-domain.com/path/image.jpg" />-->
+  <meta property="og:title"        content="Global Hunger Index 2015" />
+  <meta property="og:description"  content="Global Hunger Index 2015" />
+  <!--<meta property="og:image"        content="http://www.your-domain.com/path/image.jpg" />-->
+  <!-- end embed scripts -->
 
   <link rel="shortcut icon" href="{{ relpath }}images/favicon.ico">
 </head>
-<body>
+<body class="embed">
 
   <div id="main-map" class="row collapse full-width">
     <div class="large-8 columns">
