@@ -101,14 +101,14 @@ function getSeverityClass(d) {
     // set up popups
     var popupContent;
     if (feature.properties.score === '-') {
-        popupContent = '<h4>' + feature.properties.name + '</h4> <p><strong>INSUFFICIENT DATA</strong></p><p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p><strong>INSUFFICIENT DATA</strong></p><p><a class="button small radius" target="_blank" href="../' + feature.id + '">Find out more</a></p>';
     } else if (feature.properties.score !== 'nc') {
       // are we in the embed page? If so, links open in a new window
       var url = window.location.href;
       if (url.indexOf('embed') > -1) {
-        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">Find out more</a></p>';
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" target="_blank" href="../' + feature.id + '">Find out more</a></p>';
       } else {
-        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="countries/' + feature.id + '">Find out more</a></p>';
+        popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong>' + feature.properties.score + '</strong></p> <p>Level: <strong>' + getSeverity(feature.properties.score) + '</strong></p> <p><a class="button small radius" href="../' + feature.id + '">Find out more</a></p>';
       }
     } else {
       popupContent = '<h4>' + feature.properties.name + '</h4> <p>Score: <strong> Not calculated</p>';
@@ -131,26 +131,22 @@ function getSeverityClass(d) {
     onEachFeature: onEachFeature
   });       
   geojsonLayer.addTo(map);
-  // focus map on open country
-  var urlparts = window.location.href.split('/');
-  var country_id = urlparts[urlparts.length-2];
-  console.log(country_id);
-  console.log(geojsonLayer);
-  var f = geojsonLayer.getLayer('MAR');
-  console.log(f);
-  map.setView(f.getBounds().getCenter());
-  f.openPopup();
 
   // zoom on click
   // https://stackoverflow.com/a/24529886
   map.on('popupopen', function(centerMarker) {
           var cM = map.project(centerMarker.popup._latlng);
           cM.y -= centerMarker.popup._container.clientHeight/8;
-          map.setView(map.unproject(cM),2, {animate: true});
+          map.setView(map.unproject(cM),map.getZoom(), {animate: true});
       });
 
-  $(document).ready(function() {
-
+  // focus map on open country
+  geojsonLayer.on('data:loaded', function() {
+    var urlparts = window.location.href.split('/');
+    var country_id = urlparts[urlparts.length-2];
+    var f = geojsonLayer.getLayer(country_id);
+    map.setView(f.getBounds().getCenter(), map.getZoom(), { animate: false });
+    f.openPopup();
   });
 
 }(window, document, L));

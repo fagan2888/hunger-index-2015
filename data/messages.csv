@@ -46,4 +46,5 @@ country_ghi_description,The 2015 GHI Score for <country> is <score>,Der <Jahr> W
 country_score_evolution,<score> points (<prev_score> in <year>),<Punkte> Punktwerte (<vorige_Punkte> in <Jahr>)
 country_ghi_chart,Global hunger index evolution,Entwicklung des Welthunger-Index
 country_detailed_score,Detailed score for 2015,Detaillierte Werte für 2015
-country_evolution_details,Evolution from 1990 to 2015,Entwicklung von 1990 bis 2015 
+country_evolution_details,Evolution from 1990 to 2015,Entwicklung von 1990 bis 2015
+name_app,2015 Global Hunger Index App,2015 Welthunger-Index App
