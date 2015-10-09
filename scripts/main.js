@@ -143,7 +143,7 @@ function getSeverityClass(d) {
   map.on('popupopen', function(centerMarker) {
           var cM = map.project(centerMarker.popup._latlng);
           cM.y -= centerMarker.popup._container.clientHeight/8;
-          map.setView(map.unproject(cM),2, {animate: true});
+          map.setView(map.unproject(cM),map.getZoom(), {animate: true});
       });
 
   function populateTable(year) {
@@ -174,13 +174,15 @@ function getSeverityClass(d) {
       $('#table-container tr').removeClass('highlight');
       // https://stackoverflow.com/questions/12701240/how-to-identify-leaflets-marker-during-a-popupopen-event#comment50813535_12712987
       var country_id = e.popup._contentNode.childNodes[0].id;
-      var container = $('#table-container');
-      // https://stackoverflow.com/a/2906009
-      var scroll_offset = $('#table-' + country_id).offset().top - container.offset().top + container.scrollTop();
-      $('#table-container').animate({
-        scrollTop: scroll_offset,
-      }, 300);
-      $('#table-' + country_id).addClass('highlight');
+      if ($('#table-' + country_id).length) {
+        var container = $('#table-container');
+        // https://stackoverflow.com/a/2906009
+        var scroll_offset = $('#table-' + country_id).offset().top - container.offset().top + container.scrollTop();
+        $('#table-container').animate({
+          scrollTop: scroll_offset,
+        }, 300);
+        $('#table-' + country_id).addClass('highlight');
+      }
     });
 
   }

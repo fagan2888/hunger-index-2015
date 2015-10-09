@@ -1212,7 +1212,7 @@
     {
       "undernourished": "0.6*", 
       "stunting": "9.3*", 
-      "zone": "", 
+      "zone": "EEFSU", 
       "wasting": "3*", 
       "country": {
         "name": "Romania", 
