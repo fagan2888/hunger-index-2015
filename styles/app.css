@@ -4854,7 +4854,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       background: #54544b; }
     .top-bar-section ul li.active > a {
-      background: #768e22;
+      background: #54544b;
       color: #FFFFFF; }
       .top-bar-section ul li.active > a:hover {
         background: #768e22;
@@ -4994,7 +4994,7 @@ meta.foundation-mq-topbar {
         background-color: #555555;
         background: #54544b; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
-      background: #768e22;
+      background: #54544b;
       color: #FFFFFF;
       line-height: 2.8125rem;
       padding: 0 0.9375rem; }
@@ -5094,7 +5094,7 @@ meta.foundation-mq-topbar {
     background: #54544b;
     color: #FFFFFF; }
   .no-js .top-bar-section ul li:active > a {
-    background: #768e22;
+    background: #54544b;
     color: #FFFFFF; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     position: static !important;
@@ -6316,7 +6316,7 @@ th.hide-for-touch {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100% !important; }
+  max-width: 100%; }
 
 .spaced-row {
   padding: 2rem 0; }
@@ -6473,6 +6473,8 @@ th.hide-for-touch {
     font-size: 80%;
     line-height: 1;
     padding-bottom: 0.425rem; }
+    .ghi-levels li span {
+      white-space: nowrap; }
     .ghi-levels li em {
       font-family: 'PT Sans', 'DejaVu Sans', Roboto, Arial, sans-serif;
       font-style: normal;
@@ -6533,6 +6535,11 @@ th.hide-for-touch {
     border-radius: 4px; }
   #home-blocks a.columns.columns:focus div {
     color: #89a527; }
+
+/* Share Modal dialog
+*/
+#shareModal p i {
+  font-size: 2.25rem; }
 
 /* Country page
 */
