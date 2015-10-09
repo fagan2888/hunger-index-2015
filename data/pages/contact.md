@@ -12,6 +12,6 @@ Tel: +353 1 449 1309
 Email: paul.omahony@concern.net  
 
 **Welthungerhilfe**  
-Simone Pott  
-Tel: +49 228 22 88 132  
-Email: simone.pott@welthungerhilfe.de
+Andrea Sonntag 
+Tel: +49 228 22 88 431  
+Email: andrea.sonntag@welthungerhilfe.de
