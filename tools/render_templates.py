@@ -148,6 +148,7 @@ def create_static_page(name):
                "md_content": content,
                "m": messages,
                "relpath": "../",
+               "linkrelpath": "../",
                }
     contents = template.render(**context)
     dirname = "../site/app/html/%s/" % name
