@@ -6536,7 +6536,6 @@ th.hide-for-touch {
 /* Country page
 */
 #country-info {
-  padding-top: 1.25rem;
   padding-bottom: 4rem; }
   #country-info .breadcrumbs {
     margin-bottom: 0; }
@@ -6547,7 +6546,8 @@ th.hide-for-touch {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    min-height: 4.5rem; }
   #country-info em {
     font-style: normal; }
   #country-info #hunger-level strong {
@@ -6568,9 +6568,9 @@ th.hide-for-touch {
     -ms-border-radius: 2px;
     border-radius: 2px; }
   #country-info #summary p#score-value .up, #country-info #summary p#score-value .fi-arrow-up {
-    color: #267640; }
-  #country-info #summary p#score-value .down, #country-info #summary p#score-value .fi-arrow-down {
     color: #8f3422; }
+  #country-info #summary p#score-value .down, #country-info #summary p#score-value .fi-arrow-down {
+    color: #267640; }
   #country-info canvas {
     max-width: 100%;
     margin-bottom: 1rem; }
@@ -6721,27 +6721,28 @@ th.hide-for-touch {
     height: 40px;
     margin-right: 0.5rem; } }
 
-@media only screen and (orientation: landscape) {
+/*
+@media only screen and (orientation: landscape) {    
+    #main-map #map-application,
+    #main-map #map-application .map { height: 280px; }
+    #main-map .large-4 #table-container { height: 200px; }
+}
+*/
+@media only screen and (orientation: landscape) and (min-width: 40.063em) and (max-width: 64em) {
   #main-map #map-application,
   #main-map #map-application .map {
     height: 280px; }
   #main-map .large-4 #table-container {
     height: 200px; } }
 
-@media only screen and (orientation: landscape) and (min-width: 40.063em) and (max-width: 64em) {
-  #main-map #map-application,
-  #main-map #map-application .map {
-    height: 340px; }
-  #main-map .large-4 #table-container {
-    height: 240px; } }
-
+/*
 @media only screen and (orientation: portrait) {
-  #main-map #map-application,
-  #main-map #map-application .map {
-    height: 320px; }
-  #main-map .large-4 #table-container {
-    height: 200px; } }
-
+    #main-map #map-application,
+    #main-map #map-application .map { height: 320px; }
+    #main-map .large-4 #table-container { height: 200px; }
+}*/
+/*and (max-width: 64em)
+*/
 @media only screen and (orientation: portrait) and (min-width: 40.063em) and (max-width: 64em) {
   #main-map #map-application,
   #main-map #map-application .map {
@@ -6759,6 +6760,11 @@ th.hide-for-touch {
     box-shadow: 0 0 0 0 transparent; } }
 
 @media only screen and (min-width: 40.0625em) {
+  #main-map #map-application,
+  #main-map #map-application .map {
+    height: 500px; }
+  #main-map .large-4 #table-container {
+    height: 449px; }
   #main-map .large-4 {
     -webkit-box-shadow: -10px 0 15px -15px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: -10px 0 15px -15px rgba(0, 0, 0, 0.7);
