@@ -1,7 +1,6 @@
 /*jslint browser: true*/
 /*jshint camelcase: false */
 /*global L */
-/*global $ */
 
 function getColor(d) {
   if (d === '-') { return '#808080'; }

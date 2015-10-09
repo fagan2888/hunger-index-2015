@@ -289,7 +289,7 @@
     {
       "undernourished": "-", 
       "stunting": "45.6*", 
-      "zone": "", 
+      "zone": "CSAF", 
       "wasting": "10.8*", 
       "country": {
         "name": "Congo, Dem. Rep.", 
@@ -1095,7 +1095,7 @@
     {
       "undernourished": "15.1", 
       "stunting": "24.2", 
-      "zone": "", 
+      "zone": "MENA", 
       "wasting": "7.8", 
       "country": {
         "name": "Oman", 
@@ -1472,7 +1472,7 @@
     {
       "undernourished": "-", 
       "stunting": "-", 
-      "zone": "", 
+      "zone": "SEA", 
       "wasting": "-", 
       "country": {
         "name": "Timor-Leste", 

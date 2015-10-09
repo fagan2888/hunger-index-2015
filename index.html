@@ -4,9 +4,9 @@
 <!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <title>Global Hunger Index</title>
   <meta name="description" content="Global Hunger Index 2015">
@@ -37,15 +37,14 @@
       <ul class="right">
         <li class="has-dropdown"> <a href="#">Language</a>
           <ul class="dropdown">
-            <li class="active"><a href="trends/">English</a></li>
-            <li><a href="methodology/">German</a></li>
+            <li class="active"><a href="/">English</a></li>
+            <li><a href="de/">German</a></li>
           </ul>
         </li>
       </ul>
       <!-- Left Nav Section -->
       <ul class="left">
-        <script>console.log('');</script>
-        <li><a href="trends/">Trends of Hunger</a></li>
+        <li><a href="trends/">Hunger Trends</a></li>
         <li><a href="methodology/">Methodology</a></li>
         <li><a href="results/">Results</a></li>
         <li><a href="about/">About</a></li>
@@ -87,15 +86,15 @@
         <li class="serious"><i class="fi-stop small"></i> Serious <em>20.0-34.9</em></li>
         <li class="moderate"><i class="fi-stop small"></i> Moderate <em>10.0-19.9</em></li>
         <li class="low"><i class="fi-stop small"></i> Low <em>&le; 9.9</em></li>
-        <li class="no-data"><i class="fi-stop small"></i> No data</li>
-        <li class="indust-country"><i class="fi-stop small"></i> Industrialized country</li>
+        <li class="no-data"><i class="fi-stop small"></i> No data </li>
+        <li class="indust-country"><i class="fi-stop small"></i> Not calculated </li>
       </ul>
     </div>
   </div>
   <div class="large-4 columns">
       <div class="row">
         <div class="large-12 columns year-select">
-          <strong>Ranking</strong>
+          <strong>GHI Scores</strong>
           <button id="year-button" href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown">2015</button>
           <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
             <li><a class="2015" href="#">2015</a></li>
@@ -108,7 +107,7 @@
             <i class="fi-share"></i> Share/Embed
           </a>
         </div>
-        <p class="large-12 columns">Ranking of every country according to the IFPRI index.</p>
+        <p class="large-12 columns">GHI scores by country, from highest to lowest hunger levels.</p>
       </div>
       <div class="row">
         <div id="table-container">
@@ -174,7 +173,7 @@
       </div>
       <div class="medium-4 medium-4 columns">
         <ul class="credits">
-          <li><i class="fi-eye small"></i> <a target="_blank" href="">Source code</a></li>
+          <li><i class="fi-eye small"></i> <a target="_blank" href="https://github.com/IFPRI/Global-Hunger-Index">Source code</a></li>
           <li><i class="fi-heart small"></i> Made by <a target="_blank" href="http://jplusplus.org">Journalism++</a></li>
         </ul>
       </div>
@@ -201,7 +200,6 @@
 <meta property="og:title"        content="Global Hunger Index 2015" />
 <meta property="og:description"  content="Global Hunger Index 2015" />
 <!--<meta property="og:image"        content="http://www.your-domain.com/path/image.jpg" />-->
-
 
   <!-- endbuild -->
 </body>

@@ -6692,6 +6692,9 @@ th.hide-for-touch {
   font-size: 1rem;
   margin-bottom: 0.5rem; }
 
+#static-content .row table tr.even, #static-content .row table tr.alt, #static-content .row table tr:nth-of-type(2n) {
+  background: transparent; }
+
 /* Trends page
 */
 /* Footer
@@ -6740,7 +6743,7 @@ th.hide-for-touch {
     #main-map .large-4 #table-container { height: 200px; }
 }
 */
-@media only screen and (orientation: landscape) and (min-width: 40.063em) and (max-width: 64em) {
+@media only screen and (orientation: landscape) and (max-width: 40em) {
   #main-map #map-application,
   #main-map #map-application .map {
     height: 280px; }
@@ -6755,7 +6758,7 @@ th.hide-for-touch {
 }*/
 /*and (max-width: 64em)
 */
-@media only screen and (orientation: portrait) and (min-width: 40.063em) and (max-width: 64em) {
+@media only screen and (orientation: portrait) and (max-width: 40em) {
   #main-map #map-application,
   #main-map #map-application .map {
     height: 500px; }
