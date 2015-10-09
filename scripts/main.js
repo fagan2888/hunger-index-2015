@@ -1,5 +1,6 @@
 /*jslint browser: true*/
 /*global L */
+/*global $ */
 
 function getColor(d) {
   if (d === '-') { return '#808080'; }
@@ -51,13 +52,12 @@ function getSeverityClass(d) {
     maxZoom: 18,
     zoomControl: false
   });
-  map.addControl(new L.Control.ZoomMin())
+  map.addControl(new L.Control.ZoomMin());
 
   new L.tileLayer('http://a{s}.acetate.geoiq.com/tiles/acetate-base/{z}/{x}/{y}.png', {
       subdomains: '0123',
       }).addTo(map);
 
-  var info = L.control();
   var geojsonLayer;
 
   function style(feature) {
@@ -95,15 +95,15 @@ function getSeverityClass(d) {
     // info.update();
   }
 
-  function zoomToFeature(e) {
-    map.fitBounds(e.target.getBounds());
-  }
+  //function zoomToFeature(e) {
+  //  map.fitBounds(e.target.getBounds());
+  //}
 
   function onEachFeature(feature, layer) {
 
     // set up popups
     var popupContent;
-    if (feature.properties.score === "-") {
+    if (feature.properties.score === '-') {
         popupContent = '<h4>' + feature.properties.name + '</h4> <p><strong>INSUFFICIENT DATA</strong></p>';
     } else if (feature.properties.score !== 'nc') {
       // are we in the embed page? If so, links open in a new window
@@ -141,20 +141,19 @@ function getSeverityClass(d) {
   // https://stackoverflow.com/a/24529886
   map.on('popupopen', function(centerMarker) {
           var cM = map.project(centerMarker.popup._latlng);
-          cM.y -= centerMarker.popup._container.clientHeight/8
+          cM.y -= centerMarker.popup._container.clientHeight/8;
           map.setView(map.unproject(cM),2, {animate: true});
       });
 
   function populateTable(year) {
     // reload table
-    $.getJSON( "data/countrydata-" + year + ".geo.json", function( data ) {
-      var items = [];
+    $.getJSON( 'data/countrydata-' + year + '.geo.json', function( data ) {
       $('#country-table tbody').empty();
       $.each( data.features, function( key, c ) {
         if (c.properties.score !== 'nc' && c.properties.score !== '-') {
-          $('<tr>').attr("id", c.id)
-            .attr("class", getSeverityClass(c.properties.score))
-            .attr("role", "row")
+          $('<tr>').attr('id', c.id)
+            .attr('class', getSeverityClass(c.properties.score))
+            .attr('role', 'row')
             .append(
                 $('<td class="name">').text(c.properties.name).wrapInner('<span />'),
                 $('<td class="score">').text(c.properties.score).wrapInner('<span />')
@@ -163,7 +162,7 @@ function getSeverityClass(d) {
       });
     });
 
-    $('#country-table').on( 'click', 'tr', function (ev) {
+    $('#country-table').on( 'click', 'tr', function () {
       // clicking on a country in the table focuses the map on it
       var f = geojsonLayer.getLayer(this.id);
       map.setView(f.getBounds().getCenter());
@@ -173,7 +172,7 @@ function getSeverityClass(d) {
 
   $(document).ready(function() {    
     populateTable('2015');
-    $('#year-drop li a').click( function(ev) {
+    $('#year-drop li a').click( function() {
       // year dropdown refreshes map
       var year = this.className;
       geojsonLayer.clearLayers();geojsonLayer = new L.GeoJSON.AJAX('data/countrydata-' + year + '.geo.json', {
