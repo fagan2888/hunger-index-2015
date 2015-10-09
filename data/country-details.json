@@ -51,9 +51,6 @@
           "estimate": true, 
           "score": "11"
         }, 
-        "mortality_2013": {
-          "score": "9.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "53.2"
@@ -72,6 +69,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "45.2"
+        }, 
+        "mortality_2013": {
+          "score": "9.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -139,9 +139,6 @@
           "estimate": true, 
           "score": "8.5"
         }, 
-        "mortality_2013": {
-          "score": "16.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "61.7"
@@ -160,6 +157,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "51.1"
+        }, 
+        "mortality_2013": {
+          "score": "16.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -227,9 +227,6 @@
           "estimate": true, 
           "score": "8.8"
         }, 
-        "mortality_2013": {
-          "score": "1.5"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "38.3"
@@ -248,6 +245,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "6.1"
+        }, 
+        "mortality_2013": {
+          "score": "1.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -315,9 +315,6 @@
           "estimate": true, 
           "score": "2.1"
         }, 
-        "mortality_2013": {
-          "score": "1.3"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "12"
@@ -336,6 +333,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "0.9"
+        }, 
+        "mortality_2013": {
+          "score": "1.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -403,9 +403,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "1.6"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "25.6"
@@ -424,6 +421,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "21.4"
+        }, 
+        "mortality_2013": {
+          "score": "1.6"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -491,9 +491,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "3.4"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "28"
@@ -512,6 +509,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "22.5"
+        }, 
+        "mortality_2013": {
+          "score": "3.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -579,9 +579,6 @@
           "estimate": true, 
           "score": "7.2"
         }, 
-        "mortality_2013": {
-          "score": "8.3"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "59.6"
@@ -600,6 +597,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "8.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -667,9 +667,6 @@
           "estimate": true, 
           "score": "11.9"
         }, 
-        "mortality_2013": {
-          "score": "8.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "39.1"
@@ -688,6 +685,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "23.9"
+        }, 
+        "mortality_2013": {
+          "score": "8.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -755,9 +755,6 @@
           "estimate": true, 
           "score": "20.5"
         }, 
-        "mortality_2013": {
-          "score": "9.8"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "40.7"
@@ -776,6 +773,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "26.6"
+        }, 
+        "mortality_2013": {
+          "score": "9.8"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -843,9 +843,6 @@
           "estimate": false, 
           "score": "17.5"
         }, 
-        "mortality_2013": {
-          "score": "4.1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "65.8"
@@ -864,6 +861,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "23.1"
+        }, 
+        "mortality_2013": {
+          "score": "4.1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -931,9 +931,6 @@
           "estimate": true, 
           "score": "3.8"
         }, 
-        "mortality_2013": {
-          "score": "1.2"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "10.2"
@@ -952,6 +949,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "7.7"
+        }, 
+        "mortality_2013": {
+          "score": "1.2"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -1019,9 +1019,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.7"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "15.3"
@@ -1040,6 +1037,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4.1"
+        }, 
+        "mortality_2013": {
+          "score": "0.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -1107,9 +1107,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.5"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "5.5"
@@ -1128,6 +1125,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "2.1"
+        }, 
+        "mortality_2013": {
+          "score": "0.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -1195,9 +1195,6 @@
           "estimate": false, 
           "score": "1.5"
         }, 
-        "mortality_2013": {
-          "score": "3.9"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "37.1"
@@ -1216,6 +1213,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "34.6"
+        }, 
+        "mortality_2013": {
+          "score": "3.9"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -1283,9 +1283,6 @@
           "estimate": true, 
           "score": "2.8"
         }, 
-        "mortality_2013": {
-          "score": "1.4"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "13.5"
@@ -1304,6 +1301,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "12.3"
+        }, 
+        "mortality_2013": {
+          "score": "1.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -1371,9 +1371,6 @@
           "estimate": false, 
           "score": "5.2"
         }, 
-        "mortality_2013": {
-          "score": "3.6"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "59.2"
@@ -1392,6 +1389,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "3.6"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -1459,9 +1459,6 @@
           "estimate": true, 
           "score": "11"
         }, 
-        "mortality_2013": {
-          "score": "4.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "35.1"
@@ -1480,6 +1477,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "35.6"
+        }, 
+        "mortality_2013": {
+          "score": "4.7"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -1547,9 +1547,6 @@
           "estimate": true, 
           "score": "9.6"
         }, 
-        "mortality_2013": {
-          "score": "13.9"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "38"
@@ -1568,6 +1565,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "44.1"
+        }, 
+        "mortality_2013": {
+          "score": "13.9"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -1635,9 +1635,6 @@
           "estimate": true, 
           "score": "0.5"
         }, 
-        "mortality_2013": {
-          "score": "0.8"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "3.9"
@@ -1656,6 +1653,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4.7"
+        }, 
+        "mortality_2013": {
+          "score": "0.8"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -1723,9 +1723,6 @@
           "estimate": false, 
           "score": "4.2"
         }, 
-        "mortality_2013": {
-          "score": "1.3"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "31.2"
@@ -1744,6 +1741,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "16.2"
+        }, 
+        "mortality_2013": {
+          "score": "1.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -1811,9 +1811,6 @@
           "estimate": true, 
           "score": "10.3"
         }, 
-        "mortality_2013": {
-          "score": "10"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "34.2"
@@ -1832,6 +1829,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "14.9"
+        }, 
+        "mortality_2013": {
+          "score": "10"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -1899,9 +1899,6 @@
           "estimate": false, 
           "score": "4.5"
         }, 
-        "mortality_2013": {
-          "score": "9.5"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "40.1"
@@ -1920,6 +1917,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "32.3"
+        }, 
+        "mortality_2013": {
+          "score": "9.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -1987,9 +1987,6 @@
           "estimate": true, 
           "score": "10.8"
         }, 
-        "mortality_2013": {
-          "score": "11.9"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "51"
@@ -2008,6 +2005,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "11.9"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -2075,9 +2075,6 @@
           "estimate": true, 
           "score": "7.9"
         }, 
-        "mortality_2013": {
-          "score": "4.9"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "32.9"
@@ -2096,6 +2093,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "35.9"
+        }, 
+        "mortality_2013": {
+          "score": "4.9"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -2163,9 +2163,6 @@
           "estimate": false, 
           "score": "3.8"
         }, 
-        "mortality_2013": {
-          "score": "1.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "19.7"
@@ -2184,6 +2181,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "9.9"
+        }, 
+        "mortality_2013": {
+          "score": "1.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -2251,9 +2251,6 @@
           "estimate": true, 
           "score": "2.1"
         }, 
-        "mortality_2013": {
-          "score": "1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "8.2"
@@ -2272,6 +2269,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "5.2"
+        }, 
+        "mortality_2013": {
+          "score": "1"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -2339,9 +2339,6 @@
           "estimate": true, 
           "score": "4"
         }, 
-        "mortality_2013": {
-          "score": "0.6"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "8.7"
@@ -2360,6 +2357,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "5.6"
+        }, 
+        "mortality_2013": {
+          "score": "0.6"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -2427,9 +2427,6 @@
           "estimate": false, 
           "score": "12.5"
         }, 
-        "mortality_2013": {
-          "score": "7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "31.7"
@@ -2448,6 +2445,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "52.4"
+        }, 
+        "mortality_2013": {
+          "score": "7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -2515,9 +2515,6 @@
           "estimate": false, 
           "score": "2.2"
         }, 
-        "mortality_2013": {
-          "score": "2.8"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "13.9"
@@ -2536,6 +2533,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "30.7"
+        }, 
+        "mortality_2013": {
+          "score": "2.8"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -2603,9 +2603,6 @@
           "estimate": false, 
           "score": "7.1"
         }, 
-        "mortality_2013": {
-          "score": "2.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "22.5"
@@ -2624,6 +2621,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "8.7"
+        }, 
+        "mortality_2013": {
+          "score": "2.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -2691,9 +2691,6 @@
           "estimate": true, 
           "score": "3.3"
         }, 
-        "mortality_2013": {
-          "score": "2.3"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "32.6"
@@ -2712,6 +2709,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "17.8"
+        }, 
+        "mortality_2013": {
+          "score": "2.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -2779,9 +2779,6 @@
           "estimate": false, 
           "score": "4.5"
         }, 
-        "mortality_2013": {
-          "score": "2.2"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "34.9"
@@ -2800,6 +2797,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "2.7"
+        }, 
+        "mortality_2013": {
+          "score": "2.2"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -2867,9 +2867,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "47.8"
@@ -2888,6 +2885,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "5"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -2955,9 +2955,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.3"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "9.9"
@@ -2976,6 +2973,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4.2"
+        }, 
+        "mortality_2013": {
+          "score": "0.3"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -3043,9 +3043,6 @@
           "estimate": false, 
           "score": "9.2"
         }, 
-        "mortality_2013": {
-          "score": "6.4"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "58.2"
@@ -3064,6 +3061,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "57.9"
+        }, 
+        "mortality_2013": {
+          "score": "6.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -3131,9 +3131,6 @@
           "estimate": true, 
           "score": "9.7"
         }, 
-        "mortality_2013": {
-          "score": "2.4"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "4.3"
@@ -3152,6 +3149,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4.7"
+        }, 
+        "mortality_2013": {
+          "score": "2.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -3219,9 +3219,6 @@
           "estimate": true, 
           "score": "4.1"
         }, 
-        "mortality_2013": {
-          "score": "5.6"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "26.3"
@@ -3240,6 +3237,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4.3"
+        }, 
+        "mortality_2013": {
+          "score": "5.6"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -3307,9 +3307,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "1.3"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "25.2"
@@ -3328,6 +3325,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "14.8"
+        }, 
+        "mortality_2013": {
+          "score": "1.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -3395,9 +3395,6 @@
           "estimate": false, 
           "score": "7.9"
         }, 
-        "mortality_2013": {
-          "score": "7.8"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "41.2"
@@ -3416,6 +3413,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "17.5"
+        }, 
+        "mortality_2013": {
+          "score": "7.8"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -3483,9 +3483,6 @@
           "estimate": true, 
           "score": "10.2"
         }, 
-        "mortality_2013": {
-          "score": "10.1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "35.3"
@@ -3504,6 +3501,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "27.2"
+        }, 
+        "mortality_2013": {
+          "score": "10.1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -3571,9 +3571,6 @@
           "estimate": true, 
           "score": "11.3"
         }, 
-        "mortality_2013": {
-          "score": "7.4"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "36.1"
@@ -3592,6 +3589,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "14.1"
+        }, 
+        "mortality_2013": {
+          "score": "7.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -3659,9 +3659,6 @@
           "estimate": true, 
           "score": "8.5"
         }, 
-        "mortality_2013": {
-          "score": "12.4"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "39.7"
@@ -3680,6 +3677,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "28.4"
+        }, 
+        "mortality_2013": {
+          "score": "12.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -3747,9 +3747,6 @@
           "estimate": true, 
           "score": "3.6"
         }, 
-        "mortality_2013": {
-          "score": "3.1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "55.4"
@@ -3768,6 +3765,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "22.1"
+        }, 
+        "mortality_2013": {
+          "score": "3.1"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -3835,9 +3835,6 @@
           "estimate": true, 
           "score": "11.4"
         }, 
-        "mortality_2013": {
-          "score": "3.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "14"
@@ -3856,6 +3853,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "10.4"
+        }, 
+        "mortality_2013": {
+          "score": "3.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -3923,9 +3923,6 @@
           "estimate": false, 
           "score": "2.1"
         }, 
-        "mortality_2013": {
-          "score": "2.2"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "44.5"
@@ -3944,6 +3941,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "19"
+        }, 
+        "mortality_2013": {
+          "score": "2.2"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -4011,9 +4011,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "1.6"
@@ -4032,6 +4029,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "10.5"
+        }, 
+        "mortality_2013": {
+          "score": "0.5"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -4099,9 +4099,6 @@
           "estimate": false, 
           "score": "5.9"
         }, 
-        "mortality_2013": {
-          "score": "7.3"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "37.2"
@@ -4120,6 +4117,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "55.2"
+        }, 
+        "mortality_2013": {
+          "score": "7.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -4187,9 +4187,6 @@
           "estimate": true, 
           "score": "11.9"
         }, 
-        "mortality_2013": {
-          "score": "2.9"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "48.1"
@@ -4208,6 +4205,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "17.2"
+        }, 
+        "mortality_2013": {
+          "score": "2.9"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -4275,9 +4275,6 @@
           "estimate": false, 
           "score": "20.3"
         }, 
-        "mortality_2013": {
-          "score": "5.3"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "51.8"
@@ -4296,6 +4293,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "17"
+        }, 
+        "mortality_2013": {
+          "score": "5.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -4363,9 +4363,6 @@
           "estimate": true, 
           "score": "8.3"
         }, 
-        "mortality_2013": {
-          "score": "1.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "24.4"
@@ -4384,6 +4381,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "5.2"
+        }, 
+        "mortality_2013": {
+          "score": "1.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -4451,9 +4451,6 @@
           "estimate": false, 
           "score": "4.4"
         }, 
-        "mortality_2013": {
-          "score": "3.4"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "29.9"
@@ -4472,6 +4469,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "24.6"
+        }, 
+        "mortality_2013": {
+          "score": "3.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -4539,9 +4539,6 @@
           "estimate": false, 
           "score": "4.9"
         }, 
-        "mortality_2013": {
-          "score": "1.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "9.5"
@@ -4560,6 +4557,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "7.8"
+        }, 
+        "mortality_2013": {
+          "score": "1.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -4627,9 +4627,6 @@
           "estimate": false, 
           "score": "3.8"
         }, 
-        "mortality_2013": {
-          "score": "1.9"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "11.1"
@@ -4648,6 +4645,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "7"
+        }, 
+        "mortality_2013": {
+          "score": "1.9"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -4715,9 +4715,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "1.6"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "23.3"
@@ -4736,6 +4733,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4.4"
+        }, 
+        "mortality_2013": {
+          "score": "1.6"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -4803,9 +4803,6 @@
           "estimate": false, 
           "score": "5.5"
         }, 
-        "mortality_2013": {
-          "score": "7.1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "39.8"
@@ -4824,6 +4821,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "32.3"
+        }, 
+        "mortality_2013": {
+          "score": "7.1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -4891,9 +4891,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "2.4"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "36.2"
@@ -4912,6 +4909,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "15.2"
+        }, 
+        "mortality_2013": {
+          "score": "2.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -4979,9 +4979,6 @@
           "estimate": true, 
           "score": "14.4"
         }, 
-        "mortality_2013": {
-          "score": "3.8"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "58.6"
@@ -5000,6 +4997,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "32"
+        }, 
+        "mortality_2013": {
+          "score": "3.8"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -5067,9 +5067,6 @@
           "estimate": true, 
           "score": "5"
         }, 
-        "mortality_2013": {
-          "score": "1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "14.9"
@@ -5088,6 +5085,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "1.9"
+        }, 
+        "mortality_2013": {
+          "score": "1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -5155,9 +5155,6 @@
           "estimate": true, 
           "score": "11.3"
         }, 
-        "mortality_2013": {
-          "score": "7.1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "52.9"
@@ -5176,6 +5173,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "39.2"
+        }, 
+        "mortality_2013": {
+          "score": "7.1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -5243,9 +5243,6 @@
           "estimate": true, 
           "score": "5.5"
         }, 
-        "mortality_2013": {
-          "score": "0.9"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "17.2"
@@ -5264,6 +5261,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "1.8"
+        }, 
+        "mortality_2013": {
+          "score": "0.9"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -5331,9 +5331,6 @@
           "estimate": true, 
           "score": "8.4"
         }, 
-        "mortality_2013": {
-          "score": "7.1"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "52.4"
@@ -5352,6 +5349,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "36.5"
+        }, 
+        "mortality_2013": {
+          "score": "7.1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -5419,9 +5419,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "1.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "20.9"
@@ -5440,6 +5437,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "1.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -5507,9 +5507,6 @@
           "estimate": true, 
           "score": "18.5"
         }, 
-        "mortality_2013": {
-          "score": "1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "26.1"
@@ -5528,6 +5525,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "29.9"
+        }, 
+        "mortality_2013": {
+          "score": "1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -5595,9 +5595,6 @@
           "estimate": false, 
           "score": "3.2"
         }, 
-        "mortality_2013": {
-          "score": "9.8"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "37.5"
@@ -5616,6 +5613,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "13"
+        }, 
+        "mortality_2013": {
+          "score": "9.8"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -5683,9 +5683,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.5"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "10.1"
@@ -5704,6 +5701,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "3.2"
+        }, 
+        "mortality_2013": {
+          "score": "0.5"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -5771,9 +5771,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.8"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "7.6"
@@ -5792,6 +5789,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "5.4"
+        }, 
+        "mortality_2013": {
+          "score": "0.8"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -5859,9 +5859,6 @@
           "estimate": false, 
           "score": "2.6"
         }, 
-        "mortality_2013": {
-          "score": "3"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "29"
@@ -5880,6 +5877,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "6.5"
+        }, 
+        "mortality_2013": {
+          "score": "3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -5947,9 +5947,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "1.5"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "12.5"
@@ -5968,6 +5965,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "17"
+        }, 
+        "mortality_2013": {
+          "score": "1.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6035,9 +6035,6 @@
           "estimate": false, 
           "score": "6.4"
         }, 
-        "mortality_2013": {
-          "score": "5.6"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "55.2"
@@ -6056,6 +6053,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "34.8"
+        }, 
+        "mortality_2013": {
+          "score": "5.6"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6123,9 +6123,6 @@
           "estimate": false, 
           "score": "6.1"
         }, 
-        "mortality_2013": {
-          "score": "1.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "25.8"
@@ -6144,6 +6141,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4.4"
+        }, 
+        "mortality_2013": {
+          "score": "1.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6211,9 +6211,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.7"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "8.4"
@@ -6232,6 +6229,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "8.4"
+        }, 
+        "mortality_2013": {
+          "score": "0.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6299,9 +6299,6 @@
           "estimate": true, 
           "score": "15.8"
         }, 
-        "mortality_2013": {
-          "score": "12.3"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "47"
@@ -6320,6 +6317,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "13.9"
+        }, 
+        "mortality_2013": {
+          "score": "12.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6387,9 +6387,6 @@
           "estimate": false, 
           "score": "12.7"
         }, 
-        "mortality_2013": {
-          "score": "5.1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "58.7"
@@ -6408,6 +6405,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "52.4"
+        }, 
+        "mortality_2013": {
+          "score": "5.1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6475,9 +6475,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "-"
@@ -6496,6 +6493,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "0.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6563,9 +6563,6 @@
           "estimate": false, 
           "score": "2.4"
         }, 
-        "mortality_2013": {
-          "score": "3.2"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "31.5"
@@ -6584,6 +6581,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "38.2"
+        }, 
+        "mortality_2013": {
+          "score": "3.2"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6651,9 +6651,6 @@
           "estimate": true, 
           "score": "9.4"
         }, 
-        "mortality_2013": {
-          "score": "8.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "59.9"
@@ -6672,6 +6669,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "42"
+        }, 
+        "mortality_2013": {
+          "score": "8.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6739,9 +6739,6 @@
           "estimate": false, 
           "score": "17.4"
         }, 
-        "mortality_2013": {
-          "score": "9"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "46.3"
@@ -6760,6 +6757,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "11.5"
+        }, 
+        "mortality_2013": {
+          "score": "9"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6827,9 +6827,6 @@
           "estimate": false, 
           "score": "6.6"
         }, 
-        "mortality_2013": {
-          "score": "6.8"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "53.8"
@@ -6848,6 +6845,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "28.6"
+        }, 
+        "mortality_2013": {
+          "score": "6.8"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -6915,9 +6915,6 @@
           "estimate": true, 
           "score": "17.8"
         }, 
-        "mortality_2013": {
-          "score": "0.9"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "23.9"
@@ -6936,6 +6933,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "2.6"
+        }, 
+        "mortality_2013": {
+          "score": "0.9"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -7003,9 +7003,6 @@
           "estimate": false, 
           "score": "9.6"
         }, 
-        "mortality_2013": {
-          "score": "5"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "34"
@@ -7024,6 +7021,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "30.4"
+        }, 
+        "mortality_2013": {
+          "score": "5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -7091,9 +7091,6 @@
           "estimate": false, 
           "score": "18.9"
         }, 
-        "mortality_2013": {
-          "score": "10.4"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "52"
@@ -7112,6 +7109,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "22.8"
+        }, 
+        "mortality_2013": {
+          "score": "10.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -7179,9 +7179,6 @@
           "estimate": false, 
           "score": "11.8"
         }, 
-        "mortality_2013": {
-          "score": "11.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "43.8"
@@ -7200,6 +7197,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "9.2"
+        }, 
+        "mortality_2013": {
+          "score": "11.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -7267,9 +7267,6 @@
           "estimate": true, 
           "score": "2"
         }, 
-        "mortality_2013": {
-          "score": "2.4"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "29.6"
@@ -7288,6 +7285,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "34.8"
+        }, 
+        "mortality_2013": {
+          "score": "2.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -7355,9 +7355,6 @@
           "estimate": true, 
           "score": "11.6"
         }, 
-        "mortality_2013": {
-          "score": "4"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "68.2"
@@ -7376,6 +7373,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "22.2"
+        }, 
+        "mortality_2013": {
+          "score": "4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -7443,9 +7443,6 @@
           "estimate": false, 
           "score": "7.8"
         }, 
-        "mortality_2013": {
-          "score": "1.1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "21.1"
@@ -7464,6 +7461,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "10.4"
+        }, 
+        "mortality_2013": {
+          "score": "1.1"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -7531,9 +7531,6 @@
           "estimate": false, 
           "score": "12.5"
         }, 
-        "mortality_2013": {
-          "score": "8.6"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "42.7"
@@ -7552,6 +7549,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "22.4"
+        }, 
+        "mortality_2013": {
+          "score": "8.6"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -7619,9 +7619,6 @@
           "estimate": true, 
           "score": "1.5"
         }, 
-        "mortality_2013": {
-          "score": "1.8"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "21.5"
@@ -7640,6 +7637,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "27.4"
+        }, 
+        "mortality_2013": {
+          "score": "1.8"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -7707,9 +7707,6 @@
           "estimate": false, 
           "score": "1.9"
         }, 
-        "mortality_2013": {
-          "score": "1.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "31.6"
@@ -7728,6 +7725,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "21.6"
+        }, 
+        "mortality_2013": {
+          "score": "1.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -7795,9 +7795,6 @@
           "estimate": false, 
           "score": "6.9"
         }, 
-        "mortality_2013": {
-          "score": "3"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "38.9"
@@ -7816,6 +7813,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "21.3"
+        }, 
+        "mortality_2013": {
+          "score": "3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -7883,9 +7883,6 @@
           "estimate": true, 
           "score": "8.8"
         }, 
-        "mortality_2013": {
-          "score": "6.1"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "47.8"
@@ -7904,6 +7901,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "6.1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -7971,9 +7971,6 @@
           "estimate": true, 
           "score": "9.9"
         }, 
-        "mortality_2013": {
-          "score": "2.7"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "45.8"
@@ -7992,6 +7989,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "37.9"
+        }, 
+        "mortality_2013": {
+          "score": "2.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -8059,9 +8059,6 @@
           "estimate": false, 
           "score": "0.6"
         }, 
-        "mortality_2013": {
-          "score": "2.2"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "18.2"
@@ -8080,6 +8077,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "13.3"
+        }, 
+        "mortality_2013": {
+          "score": "2.2"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -8147,9 +8147,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.8"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "11.6"
@@ -8168,6 +8165,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "0.8"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -8235,9 +8235,6 @@
           "estimate": false, 
           "score": "3.3"
         }, 
-        "mortality_2013": {
-          "score": "1.2"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "13.5"
@@ -8256,6 +8253,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "1.4"
+        }, 
+        "mortality_2013": {
+          "score": "1.2"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -8323,9 +8323,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "17.6"
@@ -8344,6 +8341,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4.9"
+        }, 
+        "mortality_2013": {
+          "score": "1"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -8411,9 +8411,6 @@
           "estimate": false, 
           "score": "5"
         }, 
-        "mortality_2013": {
-          "score": "5.2"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "45.4"
@@ -8432,6 +8429,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "60.6"
+        }, 
+        "mortality_2013": {
+          "score": "5.2"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -8499,9 +8499,6 @@
           "estimate": true, 
           "score": "9.2"
         }, 
-        "mortality_2013": {
-          "score": "1.6"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "23.5"
@@ -8520,6 +8517,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "1.2"
+        }, 
+        "mortality_2013": {
+          "score": "1.6"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -8587,9 +8587,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "7.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "-"
@@ -8608,6 +8605,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "7.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -8675,9 +8675,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "9.9"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "-"
@@ -8696,6 +8693,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "9.9"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -8763,9 +8763,6 @@
           "estimate": false, 
           "score": "9"
         }, 
-        "mortality_2013": {
-          "score": "5.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "28.8"
@@ -8784,6 +8781,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "29.4"
+        }, 
+        "mortality_2013": {
+          "score": "5.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -8851,9 +8851,6 @@
           "estimate": false, 
           "score": "10.2"
         }, 
-        "mortality_2013": {
-          "score": "16.1"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "42.7"
@@ -8872,6 +8869,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "38"
+        }, 
+        "mortality_2013": {
+          "score": "16.1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -8939,9 +8939,6 @@
           "estimate": false, 
           "score": "2.2"
         }, 
-        "mortality_2013": {
-          "score": "1.6"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "29.5"
@@ -8960,6 +8957,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "12.5"
+        }, 
+        "mortality_2013": {
+          "score": "1.6"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9027,9 +9027,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "14.6"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "-"
@@ -9048,6 +9045,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "14.6"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9115,9 +9115,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "-"
@@ -9136,6 +9133,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "0.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9203,9 +9203,6 @@
           "estimate": true, 
           "score": "7.1"
         }, 
-        "mortality_2013": {
-          "score": "2.3"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "13.3"
@@ -9224,6 +9221,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "14.1"
+        }, 
+        "mortality_2013": {
+          "score": "2.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9291,9 +9291,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "0.7"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "11.1"
@@ -9312,6 +9309,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "5.4"
+        }, 
+        "mortality_2013": {
+          "score": "0.7"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -9379,9 +9379,6 @@
           "estimate": true, 
           "score": "1.6"
         }, 
-        "mortality_2013": {
-          "score": "8"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "34.8"
@@ -9400,6 +9397,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "21.7"
+        }, 
+        "mortality_2013": {
+          "score": "8"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9467,9 +9467,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "1.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "26.5"
@@ -9488,6 +9485,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "1.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9555,9 +9555,6 @@
           "estimate": true, 
           "score": "16.2"
         }, 
-        "mortality_2013": {
-          "score": "14.8"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "45"
@@ -9576,6 +9573,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "40.1"
+        }, 
+        "mortality_2013": {
+          "score": "14.8"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9643,9 +9643,6 @@
           "estimate": false, 
           "score": "5.7"
         }, 
-        "mortality_2013": {
-          "score": "8.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "40.2"
@@ -9664,6 +9661,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "29.2"
+        }, 
+        "mortality_2013": {
+          "score": "8.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9731,9 +9731,6 @@
           "estimate": true, 
           "score": "8.5"
         }, 
-        "mortality_2013": {
-          "score": "1.3"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "18.1"
@@ -9752,6 +9749,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "19"
+        }, 
+        "mortality_2013": {
+          "score": "1.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9819,9 +9819,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "4.8"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "43.5"
@@ -9840,6 +9837,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "38.8"
+        }, 
+        "mortality_2013": {
+          "score": "4.8"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9907,9 +9907,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "5.5"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "30.8"
@@ -9928,6 +9925,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "9"
+        }, 
+        "mortality_2013": {
+          "score": "5.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -9995,9 +9995,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "5.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "-"
@@ -10016,6 +10013,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "-"
+        }, 
+        "mortality_2013": {
+          "score": "5.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -10083,9 +10083,6 @@
           "estimate": true, 
           "score": "6.4"
         }, 
-        "mortality_2013": {
-          "score": "2.1"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "7.6"
@@ -10104,6 +10101,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "13"
+        }, 
+        "mortality_2013": {
+          "score": "2.1"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -10171,9 +10171,6 @@
           "estimate": false, 
           "score": "3.1"
         }, 
-        "mortality_2013": {
-          "score": "1.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "30.9"
@@ -10192,6 +10189,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "0.8"
+        }, 
+        "mortality_2013": {
+          "score": "1.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -10259,9 +10259,6 @@
           "estimate": true, 
           "score": "2.3"
         }, 
-        "mortality_2013": {
-          "score": "1.9"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "24.1"
@@ -10280,6 +10277,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "0.8"
+        }, 
+        "mortality_2013": {
+          "score": "1.9"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -10347,9 +10347,6 @@
           "estimate": false, 
           "score": "7.9"
         }, 
-        "mortality_2013": {
-          "score": "5.2"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "49.7"
@@ -10368,6 +10365,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "36.8"
+        }, 
+        "mortality_2013": {
+          "score": "5.2"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -10435,9 +10435,6 @@
           "estimate": false, 
           "score": "3.1"
         }, 
-        "mortality_2013": {
-          "score": "6.6"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "45.7"
@@ -10456,6 +10453,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "28.4"
+        }, 
+        "mortality_2013": {
+          "score": "6.6"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -10523,9 +10523,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "1"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "10.8"
@@ -10544,6 +10541,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4.1"
+        }, 
+        "mortality_2013": {
+          "score": "1"
         }, 
         "wasting_2005": {
           "estimate": true, 
@@ -10611,9 +10611,6 @@
           "estimate": true, 
           "score": "3.6"
         }, 
-        "mortality_2013": {
-          "score": "1.1"
-        }, 
         "stunting_1995": {
           "estimate": true, 
           "score": "15.2"
@@ -10632,6 +10629,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4"
+        }, 
+        "mortality_2013": {
+          "score": "1.1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -10699,9 +10699,6 @@
           "estimate": false, 
           "score": "-"
         }, 
-        "mortality_2013": {
-          "score": "4.3"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "39.5"
@@ -10720,6 +10717,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "11.5"
+        }, 
+        "mortality_2013": {
+          "score": "4.3"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -10787,9 +10787,6 @@
           "estimate": false, 
           "score": "5.7"
         }, 
-        "mortality_2013": {
-          "score": "1.5"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "18.9"
@@ -10808,6 +10805,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "16.6"
+        }, 
+        "mortality_2013": {
+          "score": "1.5"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -10875,9 +10875,6 @@
           "estimate": false, 
           "score": "11.1"
         }, 
-        "mortality_2013": {
-          "score": "2.4"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "52.5"
@@ -10896,6 +10893,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "28.1"
+        }, 
+        "mortality_2013": {
+          "score": "2.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -10963,9 +10963,6 @@
           "estimate": false, 
           "score": "14.3"
         }, 
-        "mortality_2013": {
-          "score": "5.1"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "50.4"
@@ -10984,6 +10981,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "29.6"
+        }, 
+        "mortality_2013": {
+          "score": "5.1"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -11051,9 +11051,6 @@
           "estimate": true, 
           "score": "5.6"
         }, 
-        "mortality_2013": {
-          "score": "4.4"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "28.7"
@@ -11072,6 +11069,9 @@
         "undernourished_2000": {
           "estimate": true, 
           "score": "4.6"
+        }, 
+        "mortality_2013": {
+          "score": "4.4"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -11139,9 +11139,6 @@
           "estimate": false, 
           "score": "6.3"
         }, 
-        "mortality_2013": {
-          "score": "8.7"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "58.1"
@@ -11160,6 +11157,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "42.9"
+        }, 
+        "mortality_2013": {
+          "score": "8.7"
         }, 
         "wasting_2005": {
           "estimate": false, 
@@ -11227,9 +11227,6 @@
           "estimate": false, 
           "score": "1.7"
         }, 
-        "mortality_2013": {
-          "score": "8.9"
-        }, 
         "stunting_1995": {
           "estimate": false, 
           "score": "28.5"
@@ -11248,6 +11245,9 @@
         "undernourished_2000": {
           "estimate": false, 
           "score": "43.7"
+        }, 
+        "mortality_2013": {
+          "score": "8.9"
         }, 
         "wasting_2005": {
           "estimate": false, 
