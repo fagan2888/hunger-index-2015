@@ -244,7 +244,13 @@ var messages_de = {
     $('#year-drop li a').click( function() {
       // year dropdown refreshes map
       var year = this.className;
-      geojsonLayer.clearLayers();geojsonLayer = new L.GeoJSON.AJAX('data/countrydata-' + year + '.geo.json', {
+      var jsonroot;
+      if (window.location.href.indexOf('/de') > -1) {
+        jsonroot = '../data/countrydata-';
+      } else {
+        jsonroot = 'data/countrydata-';
+      }
+      geojsonLayer.clearLayers();geojsonLayer = new L.GeoJSON.AJAX(jsonroot + year + '.geo.json', {
         style: style,
         onEachFeature: onEachFeature
       });       
