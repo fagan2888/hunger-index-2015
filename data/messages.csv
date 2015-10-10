@@ -57,3 +57,4 @@ trends_country,Country,Land
 trends_year,Year,Jahr
 trends_all_countries,All Countries,Alle Länder
 trends_search,Search,Suchen
+country_no_data_available,A 2015 GHI score could not be calculated for <country> because data for all underlying indicators were not available.,
