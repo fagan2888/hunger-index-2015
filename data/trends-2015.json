@@ -6,6 +6,7 @@
       "zone": "SEA", 
       "wasting": "9.5", 
       "country": {
+        "name_de": "Afghanistan", 
         "name": "Afghanistan", 
         "id": "AFG"
       }, 
@@ -19,6 +20,7 @@
       "zone": "CSAF", 
       "wasting": "5.9*", 
       "country": {
+        "name_de": "Angola", 
         "name": "Angola", 
         "id": "AGO"
       }, 
@@ -32,6 +34,7 @@
       "zone": "EEFSU", 
       "wasting": "7.2*", 
       "country": {
+        "name_de": "Albanien", 
         "name": "Albania", 
         "id": "ALB"
       }, 
@@ -45,6 +48,7 @@
       "zone": "SA", 
       "wasting": "1.6*", 
       "country": {
+        "name_de": "Argentinien", 
         "name": "Argentina", 
         "id": "ARG"
       }, 
@@ -58,6 +62,7 @@
       "zone": "EEFSU", 
       "wasting": "4.2", 
       "country": {
+        "name_de": "Armenien", 
         "name": "Armenia", 
         "id": "ARM"
       }, 
@@ -71,6 +76,7 @@
       "zone": "EEFSU", 
       "wasting": "3.1", 
       "country": {
+        "name_de": "Aserbaidschan", 
         "name": "Azerbaijan", 
         "id": "AZE"
       }, 
@@ -84,6 +90,7 @@
       "zone": "EAF", 
       "wasting": "6.1", 
       "country": {
+        "name_de": "Burundi", 
         "name": "Burundi", 
         "id": "BDI"
       }, 
@@ -97,6 +104,7 @@
       "zone": "WAF", 
       "wasting": "4.5", 
       "country": {
+        "name_de": "Benin", 
         "name": "Benin", 
         "id": "BEN"
       }, 
@@ -110,6 +118,7 @@
       "zone": "WAF", 
       "wasting": "10.9", 
       "country": {
+        "name_de": "Burkina Faso", 
         "name": "Burkina Faso", 
         "id": "BFA"
       }, 
@@ -123,6 +132,7 @@
       "zone": "SEA", 
       "wasting": "14.3", 
       "country": {
+        "name_de": "Bangladesch", 
         "name": "Bangladesh", 
         "id": "BGD"
       }, 
@@ -136,6 +146,7 @@
       "zone": "EEFSU", 
       "wasting": "3.2*", 
       "country": {
+        "name_de": "Bulgarien", 
         "name": "Bulgaria", 
         "id": "BGR"
       }, 
@@ -149,6 +160,7 @@
       "zone": "EEFSU", 
       "wasting": "2.3", 
       "country": {
+        "name_de": "Bosnien und Herzegowina", 
         "name": "Bosnia & Herzegovina", 
         "id": "BIH"
       }, 
@@ -162,6 +174,7 @@
       "zone": "EEFSU", 
       "wasting": "2.2*", 
       "country": {
+        "name_de": "Belarus\u00a0(Weissrussland)", 
         "name": "Belarus", 
         "id": "BLR"
       }, 
@@ -175,6 +188,7 @@
       "zone": "SA", 
       "wasting": "1.6*", 
       "country": {
+        "name_de": "Bolivien", 
         "name": "Bolivia", 
         "id": "BOL"
       }, 
@@ -188,6 +202,7 @@
       "zone": "SA", 
       "wasting": "1.8*", 
       "country": {
+        "name_de": "Brasilien", 
         "name": "Brazil", 
         "id": "BRA"
       }, 
@@ -201,6 +216,7 @@
       "zone": "SEA", 
       "wasting": "5.9", 
       "country": {
+        "name_de": "Bhutan", 
         "name": "Bhutan", 
         "id": "BTN"
       }, 
@@ -214,6 +230,7 @@
       "zone": "CSAF", 
       "wasting": "5.5*", 
       "country": {
+        "name_de": "Botswana", 
         "name": "Botswana", 
         "id": "BWA"
       }, 
@@ -227,6 +244,7 @@
       "zone": "CSAF", 
       "wasting": "7.4", 
       "country": {
+        "name_de": "Zentralafrikanische Republik", 
         "name": "Central African Republic", 
         "id": "CAF"
       }, 
@@ -240,6 +258,7 @@
       "zone": "SA", 
       "wasting": "0.3", 
       "country": {
+        "name_de": "Chile", 
         "name": "Chile", 
         "id": "CHL"
       }, 
@@ -253,6 +272,7 @@
       "zone": "SEA", 
       "wasting": "2.3", 
       "country": {
+        "name_de": "China, Volksrepublik", 
         "name": "China", 
         "id": "CHN"
       }, 
@@ -266,6 +286,7 @@
       "zone": "WAF", 
       "wasting": "7.6", 
       "country": {
+        "name_de": "C\u00f4te D'ivoire\u00a0(Elfenbeink\u00fcste)", 
         "name": "C\u00f4te d'Ivoire", 
         "id": "CIV"
       }, 
@@ -279,6 +300,7 @@
       "zone": "CSAF", 
       "wasting": "5.8", 
       "country": {
+        "name_de": "Kamerun", 
         "name": "Cameroon", 
         "id": "CMR"
       }, 
@@ -292,6 +314,7 @@
       "zone": "CSAF", 
       "wasting": "8.1", 
       "country": {
+        "name_de": "Kongo, Demokratische Republik\u00a0(Ehem. Zaire)", 
         "name": "Congo, Dem. Rep.", 
         "id": "COD"
       }, 
@@ -305,6 +328,7 @@
       "zone": "CSAF", 
       "wasting": "5.9", 
       "country": {
+        "name_de": "Republik Kongo", 
         "name": "Congo, Rep.", 
         "id": "COG"
       }, 
@@ -318,6 +342,7 @@
       "zone": "SA", 
       "wasting": "0.9", 
       "country": {
+        "name_de": "Kolumbien", 
         "name": "Colombia", 
         "id": "COL"
       }, 
@@ -331,6 +356,7 @@
       "zone": "CAR", 
       "wasting": "1.1*", 
       "country": {
+        "name_de": "Costa Rica", 
         "name": "Costa Rica", 
         "id": "CRI"
       }, 
@@ -344,6 +370,7 @@
       "zone": "CAR", 
       "wasting": "2.1*", 
       "country": {
+        "name_de": "Kuba", 
         "name": "Cuba", 
         "id": "CUB"
       }, 
@@ -357,6 +384,7 @@
       "zone": "EAF", 
       "wasting": "21.5", 
       "country": {
+        "name_de": "Dschibuti", 
         "name": "Djibouti", 
         "id": "DJI"
       }, 
@@ -370,6 +398,7 @@
       "zone": "CAR", 
       "wasting": "2.4", 
       "country": {
+        "name_de": "Dominikanische Republik", 
         "name": "Dominican Republic", 
         "id": "DOM"
       }, 
@@ -383,6 +412,7 @@
       "zone": "MENA", 
       "wasting": "4.1", 
       "country": {
+        "name_de": "Algerien", 
         "name": "Algeria", 
         "id": "DZA"
       }, 
@@ -396,6 +426,7 @@
       "zone": "SA", 
       "wasting": "2.3", 
       "country": {
+        "name_de": "Ecuador", 
         "name": "Ecuador", 
         "id": "ECU"
       }, 
@@ -409,6 +440,7 @@
       "zone": "MENA", 
       "wasting": "9.5", 
       "country": {
+        "name_de": "\u00c4gypten", 
         "name": "Egypt, Arab Rep.", 
         "id": "EGY"
       }, 
@@ -422,6 +454,7 @@
       "zone": "EAF", 
       "wasting": "15.3", 
       "country": {
+        "name_de": "Eritrea", 
         "name": "Eritrea", 
         "id": "ERI"
       }, 
@@ -435,6 +468,7 @@
       "zone": "EEFSU", 
       "wasting": "2.4*", 
       "country": {
+        "name_de": "Estland", 
         "name": "Estonia", 
         "id": "EST"
       }, 
@@ -448,6 +482,7 @@
       "zone": "EAF", 
       "wasting": "8.7", 
       "country": {
+        "name_de": "\u00c4thiopien", 
         "name": "Ethiopia", 
         "id": "ETH"
       }, 
@@ -461,6 +496,7 @@
       "zone": "SEA", 
       "wasting": "6.6*", 
       "country": {
+        "name_de": "Fidschi", 
         "name": "Fiji", 
         "id": "FJI"
       }, 
@@ -474,6 +510,7 @@
       "zone": "CSAF", 
       "wasting": "3.4", 
       "country": {
+        "name_de": "Gabun", 
         "name": "Gabon", 
         "id": "GAB"
       }, 
@@ -487,6 +524,7 @@
       "zone": "EEFSU", 
       "wasting": "2.4*", 
       "country": {
+        "name_de": "Georgien", 
         "name": "Georgia", 
         "id": "GEO"
       }, 
@@ -500,6 +538,7 @@
       "zone": "WAF", 
       "wasting": "4.7", 
       "country": {
+        "name_de": "Ghana", 
         "name": "Ghana", 
         "id": "GHA"
       }, 
@@ -513,6 +552,7 @@
       "zone": "WAF", 
       "wasting": "7.8", 
       "country": {
+        "name_de": "Guinea", 
         "name": "Guinea", 
         "id": "GIN"
       }, 
@@ -526,6 +566,7 @@
       "zone": "WAF", 
       "wasting": "11.5", 
       "country": {
+        "name_de": "Gambia", 
         "name": "Gambia, The", 
         "id": "GMB"
       }, 
@@ -539,6 +580,7 @@
       "zone": "WAF", 
       "wasting": "6", 
       "country": {
+        "name_de": "Guinea-Bissau", 
         "name": "Guinea-Bissau", 
         "id": "GNB"
       }, 
@@ -552,6 +594,7 @@
       "zone": "CAR", 
       "wasting": "2.1*", 
       "country": {
+        "name_de": "Guatemala", 
         "name": "Guatemala", 
         "id": "GTM"
       }, 
@@ -565,6 +608,7 @@
       "zone": "SA", 
       "wasting": "6.4", 
       "country": {
+        "name_de": "Guyana", 
         "name": "Guyana", 
         "id": "GUY"
       }, 
@@ -578,6 +622,7 @@
       "zone": "CAR", 
       "wasting": "1.4", 
       "country": {
+        "name_de": "Honduras", 
         "name": "Honduras", 
         "id": "HND"
       }, 
@@ -591,6 +636,7 @@
       "zone": "EEFSU", 
       "wasting": "1.2*", 
       "country": {
+        "name_de": "Kroatien", 
         "name": "Croatia", 
         "id": "HRV"
       }, 
@@ -604,6 +650,7 @@
       "zone": "CAR", 
       "wasting": "5.2", 
       "country": {
+        "name_de": "Haiti", 
         "name": "Haiti", 
         "id": "HTI"
       }, 
@@ -617,6 +664,7 @@
       "zone": "SEA", 
       "wasting": "13.5", 
       "country": {
+        "name_de": "Indonesien", 
         "name": "Indonesia", 
         "id": "IDN"
       }, 
@@ -630,6 +678,7 @@
       "zone": "SEA", 
       "wasting": "15", 
       "country": {
+        "name_de": "Indien", 
         "name": "India", 
         "id": "IND"
       }, 
@@ -643,6 +692,7 @@
       "zone": "MENA", 
       "wasting": "4", 
       "country": {
+        "name_de": "Iran, Islamische Republik", 
         "name": "Iran, Islamic Rep.", 
         "id": "IRN"
       }, 
@@ -656,6 +706,7 @@
       "zone": "MENA", 
       "wasting": "7.4", 
       "country": {
+        "name_de": "Irak", 
         "name": "Iraq", 
         "id": "IRQ"
       }, 
@@ -669,6 +720,7 @@
       "zone": "CAR", 
       "wasting": "3.5", 
       "country": {
+        "name_de": "Jamaika", 
         "name": "Jamaica", 
         "id": "JAM"
       }, 
@@ -682,6 +734,7 @@
       "zone": "MENA", 
       "wasting": "2.4", 
       "country": {
+        "name_de": "Jordanien", 
         "name": "Jordan", 
         "id": "JOR"
       }, 
@@ -695,6 +748,7 @@
       "zone": "EEFSU", 
       "wasting": "4.1", 
       "country": {
+        "name_de": "Kasachstan", 
         "name": "Kazakhstan", 
         "id": "KAZ"
       }, 
@@ -708,6 +762,7 @@
       "zone": "EAF", 
       "wasting": "4", 
       "country": {
+        "name_de": "Kenia", 
         "name": "Kenya", 
         "id": "KEN"
       }, 
@@ -721,6 +776,7 @@
       "zone": "EEFSU", 
       "wasting": "2.8", 
       "country": {
+        "name_de": "Kirgisistan", 
         "name": "Kyrgyz Republic", 
         "id": "KGZ"
       }, 
@@ -734,6 +790,7 @@
       "zone": "SEA", 
       "wasting": "9.6", 
       "country": {
+        "name_de": "Kambodscha", 
         "name": "Cambodia", 
         "id": "KHM"
       }, 
@@ -747,6 +804,7 @@
       "zone": "MENA", 
       "wasting": "2.4", 
       "country": {
+        "name_de": "Kuwait", 
         "name": "Kuwait", 
         "id": "KWT"
       }, 
@@ -760,6 +818,7 @@
       "zone": "SEA", 
       "wasting": "6.4", 
       "country": {
+        "name_de": "Laos, Demokratische Volksrepublik", 
         "name": "Lao PDR", 
         "id": "LAO"
       }, 
@@ -773,6 +832,7 @@
       "zone": "MENA", 
       "wasting": "3.5*", 
       "country": {
+        "name_de": "Libanon", 
         "name": "Lebanon", 
         "id": "LBN"
       }, 
@@ -786,6 +846,7 @@
       "zone": "WAF", 
       "wasting": "5.6", 
       "country": {
+        "name_de": "Liberia", 
         "name": "Liberia", 
         "id": "LBR"
       }, 
@@ -799,6 +860,7 @@
       "zone": "MENA", 
       "wasting": "6.7*", 
       "country": {
+        "name_de": "Libysch-Arabische Dschamahirija\u00a0(Libyen)", 
         "name": "Libya", 
         "id": "LBY"
       }, 
@@ -812,6 +874,7 @@
       "zone": "SEA", 
       "wasting": "21.4", 
       "country": {
+        "name_de": "Sri Lanka", 
         "name": "Sri Lanka", 
         "id": "LKA"
       }, 
@@ -825,6 +888,7 @@
       "zone": "CSAF", 
       "wasting": "2.8", 
       "country": {
+        "name_de": "Lesotho", 
         "name": "Lesotho", 
         "id": "LSO"
       }, 
@@ -838,6 +902,7 @@
       "zone": "EEFSU", 
       "wasting": "2.6*", 
       "country": {
+        "name_de": "Litauen", 
         "name": "Lithuania", 
         "id": "LTU"
       }, 
@@ -851,6 +916,7 @@
       "zone": "EEFSU", 
       "wasting": "2.5*", 
       "country": {
+        "name_de": "Lettland", 
         "name": "Latvia", 
         "id": "LVA"
       }, 
@@ -864,6 +930,7 @@
       "zone": "MENA", 
       "wasting": "2.3", 
       "country": {
+        "name_de": "Marokko", 
         "name": "Morocco", 
         "id": "MAR"
       }, 
@@ -877,6 +944,7 @@
       "zone": "EEFSU", 
       "wasting": "1.9", 
       "country": {
+        "name_de": "Moldawien\u00a0(Republik Moldau)", 
         "name": "Moldova", 
         "id": "MDA"
       }, 
@@ -890,6 +958,7 @@
       "zone": "EAF", 
       "wasting": "9.8*", 
       "country": {
+        "name_de": "Madagaskar", 
         "name": "Madagascar", 
         "id": "MDG"
       }, 
@@ -903,6 +972,7 @@
       "zone": "CAR", 
       "wasting": "1.6", 
       "country": {
+        "name_de": "Mexiko", 
         "name": "Mexico", 
         "id": "MEX"
       }, 
@@ -916,6 +986,7 @@
       "zone": "EEFSU", 
       "wasting": "4.3", 
       "country": {
+        "name_de": "Mazedonien, Ehem. Jugoslawische Republik\u00a0[2b]", 
         "name": "Macedonia, FYR", 
         "id": "MKD"
       }, 
@@ -929,6 +1000,7 @@
       "zone": "WAF", 
       "wasting": "12.7", 
       "country": {
+        "name_de": "Mali", 
         "name": "Mali", 
         "id": "MLI"
       }, 
@@ -942,6 +1014,7 @@
       "zone": "SEA", 
       "wasting": "7.9", 
       "country": {
+        "name_de": "Myanmar\u00a0(Burma)", 
         "name": "Myanmar", 
         "id": "MMR"
       }, 
@@ -955,6 +1028,7 @@
       "zone": "EEFSU", 
       "wasting": "2.8", 
       "country": {
+        "name_de": "Montenegro", 
         "name": "Montenegro", 
         "id": "MNE"
       }, 
@@ -968,6 +1042,7 @@
       "zone": "SEA", 
       "wasting": "1", 
       "country": {
+        "name_de": "Mongolei", 
         "name": "Mongolia", 
         "id": "MNG"
       }, 
@@ -981,6 +1056,7 @@
       "zone": "EAF", 
       "wasting": "6.1", 
       "country": {
+        "name_de": "Mosambik", 
         "name": "Mozambique", 
         "id": "MOZ"
       }, 
@@ -994,6 +1070,7 @@
       "zone": "WAF", 
       "wasting": "11.6", 
       "country": {
+        "name_de": "Mauretanien", 
         "name": "Mauritania", 
         "id": "MRT"
       }, 
@@ -1007,6 +1084,7 @@
       "zone": "EAF", 
       "wasting": "3.8", 
       "country": {
+        "name_de": "Malawi", 
         "name": "Malawi", 
         "id": "MWI"
       }, 
@@ -1020,6 +1098,7 @@
       "zone": "SEA", 
       "wasting": "10.7*", 
       "country": {
+        "name_de": "Malaysia", 
         "name": "Malaysia", 
         "id": "MYS"
       }, 
@@ -1033,6 +1112,7 @@
       "zone": "CSAF", 
       "wasting": "7.1", 
       "country": {
+        "name_de": "Namibia", 
         "name": "Namibia", 
         "id": "NAM"
       }, 
@@ -1046,6 +1126,7 @@
       "zone": "WAF", 
       "wasting": "18.7", 
       "country": {
+        "name_de": "Niger", 
         "name": "Niger", 
         "id": "NER"
       }, 
@@ -1059,6 +1140,7 @@
       "zone": "WAF", 
       "wasting": "18.1", 
       "country": {
+        "name_de": "Nigeria", 
         "name": "Nigeria", 
         "id": "NGA"
       }, 
@@ -1072,6 +1154,7 @@
       "zone": "CAR", 
       "wasting": "1.1*", 
       "country": {
+        "name_de": "Nicaragua", 
         "name": "Nicaragua", 
         "id": "NIC"
       }, 
@@ -1085,6 +1168,7 @@
       "zone": "SEA", 
       "wasting": "11.3", 
       "country": {
+        "name_de": "Nepal", 
         "name": "Nepal", 
         "id": "NPL"
       }, 
@@ -1098,6 +1182,7 @@
       "zone": "MENA", 
       "wasting": "3.7*", 
       "country": {
+        "name_de": "Oman", 
         "name": "Oman", 
         "id": "OMN"
       }, 
@@ -1111,6 +1196,7 @@
       "zone": "SEA", 
       "wasting": "10.5", 
       "country": {
+        "name_de": "Pakistan", 
         "name": "Pakistan", 
         "id": "PAK"
       }, 
@@ -1124,6 +1210,7 @@
       "zone": "CAR", 
       "wasting": "1*", 
       "country": {
+        "name_de": "Panama", 
         "name": "Panama", 
         "id": "PAN"
       }, 
@@ -1137,6 +1224,7 @@
       "zone": "SA", 
       "wasting": "0.4", 
       "country": {
+        "name_de": "Peru", 
         "name": "Peru", 
         "id": "PER"
       }, 
@@ -1150,6 +1238,7 @@
       "zone": "SEA", 
       "wasting": "7.9", 
       "country": {
+        "name_de": "Philippinen", 
         "name": "Philippines", 
         "id": "PHL"
       }, 
@@ -1163,6 +1252,7 @@
       "zone": "SEA", 
       "wasting": "14.3", 
       "country": {
+        "name_de": "Papua-Neuguinea", 
         "name": "Papua New Guinea", 
         "id": "PNG"
       }, 
@@ -1176,6 +1266,7 @@
       "zone": "SEA", 
       "wasting": "4", 
       "country": {
+        "name_de": "Korea, Demokratische Volksrepublik\u00a0(Nordkorea)", 
         "name": "North Korea", 
         "id": "PRK"
       }, 
@@ -1189,6 +1280,7 @@
       "zone": "SA", 
       "wasting": "2.7", 
       "country": {
+        "name_de": "Paraguay", 
         "name": "Paraguay", 
         "id": "PRY"
       }, 
@@ -1202,6 +1294,7 @@
       "zone": "MENA", 
       "wasting": "1.9*", 
       "country": {
+        "name_de": "Katar", 
         "name": "Qatar", 
         "id": "QAT"
       }, 
@@ -1215,6 +1308,7 @@
       "zone": "EEFSU", 
       "wasting": "2.9*", 
       "country": {
+        "name_de": "Rum\u00e4nien", 
         "name": "Romania", 
         "id": "ROU"
       }, 
@@ -1228,6 +1322,7 @@
       "zone": "EEFSU", 
       "wasting": "4.4*", 
       "country": {
+        "name_de": "Russische F\u00f6deration", 
         "name": "Russian Federation", 
         "id": "RUS"
       }, 
@@ -1241,6 +1336,7 @@
       "zone": "EAF", 
       "wasting": "3", 
       "country": {
+        "name_de": "Ruanda", 
         "name": "Rwanda", 
         "id": "RWA"
       }, 
@@ -1254,6 +1350,7 @@
       "zone": "MENA", 
       "wasting": "4*", 
       "country": {
+        "name_de": "Saudi-Arabien", 
         "name": "Saudi Arabia", 
         "id": "SAU"
       }, 
@@ -1267,6 +1364,7 @@
       "zone": "EAF", 
       "wasting": "16.3", 
       "country": {
+        "name_de": "Sudan", 
         "name": "Sudan", 
         "id": "SDN"
       }, 
@@ -1280,6 +1378,7 @@
       "zone": "EAF", 
       "wasting": "22.7", 
       "country": {
+        "name_de": "S\u00fcdsudan", 
         "name": "South Sudan", 
         "id": "SSD"
       }, 
@@ -1293,6 +1392,7 @@
       "zone": "WAF", 
       "wasting": "5.9", 
       "country": {
+        "name_de": "Senegal", 
         "name": "Senegal", 
         "id": "SEN"
       }, 
@@ -1306,6 +1406,7 @@
       "zone": "WAF", 
       "wasting": "9.4", 
       "country": {
+        "name_de": "Sierra Leone", 
         "name": "Sierra Leone", 
         "id": "SLE"
       }, 
@@ -1319,6 +1420,7 @@
       "zone": "CAR", 
       "wasting": "2", 
       "country": {
+        "name_de": "El Salvador", 
         "name": "El Salvador", 
         "id": "SLV"
       }, 
@@ -1332,6 +1434,7 @@
       "zone": "EAF", 
       "wasting": "-", 
       "country": {
+        "name_de": "Somalia", 
         "name": "Somalia", 
         "id": "SOM"
       }, 
@@ -1345,6 +1448,7 @@
       "zone": "EEFSU", 
       "wasting": "3.9", 
       "country": {
+        "name_de": "Serbien", 
         "name": "Serbia", 
         "id": "SRB"
       }, 
@@ -1358,6 +1462,7 @@
       "zone": "SA", 
       "wasting": "5", 
       "country": {
+        "name_de": "Suriname", 
         "name": "Suriname", 
         "id": "SUR"
       }, 
@@ -1371,6 +1476,7 @@
       "zone": "EEFSU", 
       "wasting": "2.9*", 
       "country": {
+        "name_de": "Slowakei", 
         "name": "Slovak Republic", 
         "id": "SVK"
       }, 
@@ -1384,6 +1490,7 @@
       "zone": "CSAF", 
       "wasting": "2", 
       "country": {
+        "name_de": "Swasiland", 
         "name": "Swaziland", 
         "id": "SWZ"
       }, 
@@ -1397,6 +1504,7 @@
       "zone": "MENA", 
       "wasting": "-", 
       "country": {
+        "name_de": "Syrien, Arabische Republik", 
         "name": "Syrian Arab Republic", 
         "id": "SYR"
       }, 
@@ -1410,6 +1518,7 @@
       "zone": "CSAF", 
       "wasting": "15.7", 
       "country": {
+        "name_de": "Tschad", 
         "name": "Chad", 
         "id": "TCD"
       }, 
@@ -1423,6 +1532,7 @@
       "zone": "WAF", 
       "wasting": "6.5", 
       "country": {
+        "name_de": "Togo", 
         "name": "Togo", 
         "id": "TGO"
       }, 
@@ -1436,6 +1546,7 @@
       "zone": "SEA", 
       "wasting": "6.7", 
       "country": {
+        "name_de": "Thailand", 
         "name": "Thailand", 
         "id": "THA"
       }, 
@@ -1449,6 +1560,7 @@
       "zone": "EEFSU", 
       "wasting": "9.9", 
       "country": {
+        "name_de": "Tadschikistan", 
         "name": "Tajikistan", 
         "id": "TJK"
       }, 
@@ -1462,6 +1574,7 @@
       "zone": "EEFSU", 
       "wasting": "5.5*", 
       "country": {
+        "name_de": "Turkmenistan", 
         "name": "Turkmenistan", 
         "id": "TKM"
       }, 
@@ -1475,6 +1588,7 @@
       "zone": "SEA", 
       "wasting": "18.9", 
       "country": {
+        "name_de": "Osttimor", 
         "name": "Timor-Leste", 
         "id": "TLS"
       }, 
@@ -1488,6 +1602,7 @@
       "zone": "SA", 
       "wasting": "4.3*", 
       "country": {
+        "name_de": "Trinidad und Tobago", 
         "name": "Trinidad & Tobago", 
         "id": "TTO"
       }, 
@@ -1501,6 +1616,7 @@
       "zone": "MENA", 
       "wasting": "2.8", 
       "country": {
+        "name_de": "Tunesien", 
         "name": "Tunisia", 
         "id": "TUN"
       }, 
@@ -1514,6 +1630,7 @@
       "zone": "MENA", 
       "wasting": "1.7", 
       "country": {
+        "name_de": "T\u00fcrkei", 
         "name": "Turkey", 
         "id": "TUR"
       }, 
@@ -1527,6 +1644,7 @@
       "zone": "EAF", 
       "wasting": "3.8", 
       "country": {
+        "name_de": "Tansania, Vereinigte Republik", 
         "name": "Tanzania", 
         "id": "TZA"
       }, 
@@ -1540,6 +1658,7 @@
       "zone": "EAF", 
       "wasting": "4.8", 
       "country": {
+        "name_de": "Uganda", 
         "name": "Uganda", 
         "id": "UGA"
       }, 
@@ -1553,6 +1672,7 @@
       "zone": "EEFSU", 
       "wasting": "1.3*", 
       "country": {
+        "name_de": "Ukraine", 
         "name": "Ukraine", 
         "id": "UKR"
       }, 
@@ -1566,6 +1686,7 @@
       "zone": "SA", 
       "wasting": "1.3", 
       "country": {
+        "name_de": "Uruguay", 
         "name": "Uruguay", 
         "id": "URY"
       }, 
@@ -1579,6 +1700,7 @@
       "zone": "EEFSU", 
       "wasting": "5.8*", 
       "country": {
+        "name_de": "Usbekistan", 
         "name": "Uzbekistan", 
         "id": "UZB"
       }, 
@@ -1592,6 +1714,7 @@
       "zone": "SA", 
       "wasting": "3.5*", 
       "country": {
+        "name_de": "Venezuela", 
         "name": "Venezuela, RB", 
         "id": "VEN"
       }, 
@@ -1605,6 +1728,7 @@
       "zone": "SEA", 
       "wasting": "5.7", 
       "country": {
+        "name_de": "Vietnam", 
         "name": "Vietnam", 
         "id": "VNM"
       }, 
@@ -1618,6 +1742,7 @@
       "zone": "MENA", 
       "wasting": "13.3", 
       "country": {
+        "name_de": "Jemen", 
         "name": "Yemen, Rep.", 
         "id": "YEM"
       }, 
@@ -1631,6 +1756,7 @@
       "zone": "CSAF", 
       "wasting": "3.6*", 
       "country": {
+        "name_de": "S\u00fcdafrika", 
         "name": "South Africa", 
         "id": "ZAF"
       }, 
@@ -1644,6 +1770,7 @@
       "zone": "EAF", 
       "wasting": "6", 
       "country": {
+        "name_de": "Sambia", 
         "name": "Zambia", 
         "id": "ZMB"
       }, 
@@ -1657,6 +1784,7 @@
       "zone": "EAF", 
       "wasting": "3.3", 
       "country": {
+        "name_de": "Simbabwe", 
         "name": "Zimbabwe", 
         "id": "ZWE"
       }, 
