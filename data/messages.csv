@@ -31,10 +31,10 @@ map_low,Low,Wenig
 map_no_data,No data,Keine Angaben
 map_not_calculated,Not calculated,Nicht berechnet
 country_score_data,Country data (in %),Länderdaten (in %)
-country_score_undernourished,Proportion of undernourished in population (%),Anteil der Unterernährten an der Bevölkerung (%)
-country_score_stunting,Prevalence of stunting in children under five years (%),Anteil der wachstumsverzögerten Kinder unter fünf Jahren (%)
-country_score_mortality,Under five mortality rate (%), Kindersterblichkeit unter fünf (%)
-country_score_wasting,Prevalence of wasting in children under five years (%), Anteil der ausgezehrten Kinder unter fünf Jahren (%)
+country_score_undernourished,Proportion of undernourished in population (%),Anteil unterernährter Menschen an der Bevölkerung (%)
+country_score_stunting,Prevalence of stunting in children under five years (%),Verbreitung von Wachstumsverzögerung bei Kindern unter fünf Jahren (%)
+country_score_mortality,Under five mortality rate (%),Sterblichkeitsrate bei Kindern unter fünf Jahren (%)
+country_score_wasting,Prevalence of wasting in children under five years (%),Verbreitung von Auszehrung bei Kindern unter fünf Jahren (%)
 share_title,Share,Teilen
 share_description,Share this visualization with others on your preferred social network.,Teile diese Grafik mit anderen in deinen sozialen Netzwerken
 embed_title,Embed,Einbetten
