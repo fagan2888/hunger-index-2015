@@ -54,7 +54,6 @@ def get_level_from_score(score):
 
 def get_verbose_level_from_score(score, lang="en"):
     level = ""
-    print score
     if lang == "de":
         if score in ("-", 'null'):
             level = "Keine Angaben"
@@ -161,6 +160,8 @@ def create_static_page(name):
     f.write(contents)
     f.close()
     # german language site
+    content = markdown.markdown(codecs.open("../data/pages/%s_de.md" % name, "r", 'utf-8').read(), extensions=['markdown.extensions.footnotes'])
+    context["md_content"] = content
     context["m"] = messages_de
     context["relpath"] = '../../'
     context["linkrelpath"] = '../../de/'
