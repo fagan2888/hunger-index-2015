@@ -67,7 +67,8 @@ var messages_de = {
   });
   // map.addControl(new L.Control.ZoomMin())
 
-  new L.tileLayer('http://a{s}.acetate.geoiq.com/tiles/acetate-base/{z}/{x}/{y}.png', {
+  //new L.tileLayer('http://a{s}.acetate.geoiq.com/tiles/acetate-base/{z}/{x}/{y}.png', {
+  new L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png', {
       subdomains: '0123',
       }).addTo(map);
 
