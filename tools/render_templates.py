@@ -33,7 +33,7 @@ messages_de = {label: text_de for label, text, text_de in csvdata}
 
 def get_level_from_score(score):
     level = ""
-    if score == "-":
+    if score in ("-", "null"):
         level = "no-data"
     elif score == "<5":
         level = "low"
@@ -54,8 +54,9 @@ def get_level_from_score(score):
 
 def get_verbose_level_from_score(score, lang="en"):
     level = ""
+    print score
     if lang == "de":
-        if score == "-":
+        if score in ("-", 'null'):
             level = "Keine Angaben"
         elif score == "<5":
             level = "Wenig"
@@ -71,8 +72,9 @@ def get_verbose_level_from_score(score, lang="en"):
             level = "Wenig"
         else:
             print "Unexpected score: ", score
+            level = "???"
     else:
-        if score == "-":
+        if score in ("-", 'null'):
             level = "No data"
         elif score == "<5":
             level = "Low"
@@ -88,6 +90,7 @@ def get_verbose_level_from_score(score, lang="en"):
             level = "Low"
         else:
             print "Unexpected score: ", score
+            level = "???"
     return level
 
 
@@ -203,13 +206,12 @@ def create_country_pages():
                    "d": country['details'],
                    "name": country['name'],
                    "m": messages,
+                   "level": get_verbose_level_from_score(scores['year2015']),
+                   "level_class": get_level_from_score(scores['year2015']),
                    "relpath": "../../",
                    "linkrelpath": "../../",
                    "lang": "en",
                    }
-        if scorediff:
-            context["level"] = get_verbose_level_from_score(scores['year2015'])
-            context["level_class"] = get_level_from_score(scores['year2015'])
 
         contents = template.render(**context)
         dirname = "../site/app/html/countries/%s/" % country_code
@@ -223,8 +225,7 @@ def create_country_pages():
         context["relpath"] = '../../../'
         context["linkrelpath"] = '../../../de/'
         context["lang"] = 'de'
-        if scorediff:
-            context["level"] = get_verbose_level_from_score(scores['year2015'], lang="de")
+        context["level"] = get_verbose_level_from_score(scores['year2015'], lang="de")
         contents = template.render(**context)
         dirname = "../site/app/html/de/countries/%s/" % country_code
         if not os.path.exists(dirname):
