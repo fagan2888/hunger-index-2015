@@ -131,16 +131,19 @@ var messages_de = {
     // set up popups
     var url = window.location.href;
     var m;
+    var name;
     var level;
     if (url.indexOf('/de') > -1) {
       m = messages_de;
+      name = feature.properties.name_de;
       level = getSeverity(feature.properties.score, 'de');
     } else {
       m = messages_en;
+      name = feature.properties.name;
       level = getSeverity(feature.properties.score, 'en');
     }
 
-    var popupContent = '<h4 id=' + feature.id + '>' + feature.properties.name + '</h4>';
+    var popupContent = '<h4 id=' + feature.id + '>' + name + '</h4>';
 
     if (feature.properties.score === '-') {
       popupContent += '<p><strong>' + m.insuf_data + '</strong></p>';
@@ -203,12 +206,18 @@ var messages_de = {
     $.getJSON( jsonroot + year + '.geo.json', function( data ) {
       $('#country-table tbody').empty();
       $.each( data.features, function( key, c ) {
+        var name;
+        if (window.location.href.indexOf('/de') > -1) {
+          name = c.properties.name_de;
+        } else {
+          name = c.properties.name;
+        }
         if (c.properties.score !== 'nc' && c.properties.score !== '-') {
           $('<tr>').attr('id', 'table-' + c.id)
             .attr('class', getSeverityClass(c.properties.score))
             .attr('role', 'row')
             .append(
-                $('<td class="name">').text(c.properties.name).wrapInner('<span />'),
+                $('<td class="name">').text(name).wrapInner('<span />'),
                 $('<td class="score">').text(c.properties.score).wrapInner('<span />')
                 ).appendTo('#country-table');
         }

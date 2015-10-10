@@ -2,7 +2,10 @@
 /*global $ */
 
 var urlbase;
-if (window.location.href.indexOf('de') > 1) {
+var lang;
+if (window.location.href.indexOf('de') > 1) { lang = "de"; } else { lang = "en"; }
+
+if (lang === "de") {
   urlbase = '../../';
 } else {
   urlbase = '../';
@@ -14,7 +17,9 @@ $(document).ready(function() {
     'columns': [
       { data: 'country',
         render: function (data, type) {
-          return type === 'display' ? '<a href="../countries/' + data.id + '">' + data.name + '</a>' : data.name;
+          var name; 
+          if (lang === "de") { name = data.name_de; } else { name = data.name; }
+          return type === 'display' ? '<a href="../countries/' + data.id + '">' + name + '</a>' : name;
         }
       },
       { data: 'undernourished', 

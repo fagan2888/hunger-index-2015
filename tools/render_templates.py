@@ -222,6 +222,7 @@ def create_country_pages():
         f.close()
         # german language site
         context["m"] = messages_de
+        context["name"] = country['name_de']
         context["relpath"] = '../../../'
         context["linkrelpath"] = '../../../de/'
         context["lang"] = 'de'
