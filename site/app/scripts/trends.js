@@ -5,7 +5,7 @@
 $(document).ready(function() {
   var urlbase;
   var lang;
-  if (window.location.href.indexOf('de') > 1) { lang = 'de'; } else { lang = 'en'; }
+  if (window.location.href.indexOf('de/') > 1) { lang = 'de'; } else { lang = 'en'; }
   if (lang === 'de') {
     urlbase = '../../';
   } else {
