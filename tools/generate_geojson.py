@@ -52,6 +52,8 @@ for entry in geodata['features']:
             'year1995': 'nc',
             'year1990': 'nc',
         }
+    if not entry['properties'].get('name_de') and german_names.get(entry['id']):
+        entry['properties']['name_de'] = german_names[entry['id']]
 
 # divide into yearly files
 for year in years:
