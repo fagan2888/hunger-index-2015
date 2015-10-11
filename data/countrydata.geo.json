@@ -836,6 +836,7 @@
       "type": "Feature", 
       "id": "ARE", 
       "properties": {
+        "name_de": "Vereinigte Arabische Emirate", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -4133,6 +4134,7 @@
       "type": "Feature", 
       "id": "ATA", 
       "properties": {
+        "name_de": "Antarktika", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -4190,6 +4192,7 @@
       "type": "Feature", 
       "id": "ATF", 
       "properties": {
+        "name_de": "Franz\u00f6sische S\u00fcd- und Antarktisgebiete", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -5181,6 +5184,7 @@
       "type": "Feature", 
       "id": "AUS", 
       "properties": {
+        "name_de": "Australien", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -5350,6 +5354,7 @@
       "type": "Feature", 
       "id": "AUT", 
       "properties": {
+        "name_de": "\u00d6sterreich", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -5709,6 +5714,7 @@
       "type": "Feature", 
       "id": "BEL", 
       "properties": {
+        "name_de": "Belgien", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -6424,6 +6430,7 @@
       "type": "Feature", 
       "id": "BHS", 
       "properties": {
+        "name_de": "Bahamas", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -6833,6 +6840,7 @@
       "type": "Feature", 
       "id": "BLZ", 
       "properties": {
+        "name_de": "Belize", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -7198,6 +7206,7 @@
       "type": "Feature", 
       "id": "BMU", 
       "properties": {
+        "name_de": "Bermuda", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -8347,6 +8356,7 @@
       "type": "Feature", 
       "id": "BRN", 
       "properties": {
+        "name_de": "Brunei Darussalam", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -12192,6 +12202,7 @@
       "type": "Feature", 
       "id": "CAN", 
       "properties": {
+        "name_de": "Kanada", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -12309,6 +12320,7 @@
       "type": "Feature", 
       "id": "CHE", 
       "properties": {
+        "name_de": "Schweiz\u00a0(Confoederatio Helvetica)", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -15925,6 +15937,7 @@
       "type": "Feature", 
       "id": "CYP", 
       "properties": {
+        "name_de": "Zypern", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -16086,6 +16099,7 @@
       "type": "Feature", 
       "id": "CZE", 
       "properties": {
+        "name_de": "Tschechische Republik", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -16339,6 +16353,7 @@
       "type": "Feature", 
       "id": "DEU", 
       "properties": {
+        "name_de": "Deutschland", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -16544,6 +16559,7 @@
       "type": "Feature", 
       "id": "DNK", 
       "properties": {
+        "name_de": "D\u00e4nemark", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -17643,6 +17659,7 @@
       "type": "Feature", 
       "id": "ESP", 
       "properties": {
+        "name_de": "Spanien", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -18164,6 +18181,7 @@
       "type": "Feature", 
       "id": "FIN", 
       "properties": {
+        "name_de": "Finnland", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -18345,6 +18363,7 @@
       "type": "Feature", 
       "id": "FLK", 
       "properties": {
+        "name_de": "Falklandinseln", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -18592,6 +18611,7 @@
       "type": "Feature", 
       "id": "FRA", 
       "properties": {
+        "name_de": "Frankreich", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -18989,6 +19009,7 @@
       "type": "Feature", 
       "id": "GBR", 
       "properties": {
+        "name_de": "Grossbritannien und Nordirland", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -19764,6 +19785,7 @@
       "type": "Feature", 
       "id": "GNQ", 
       "properties": {
+        "name_de": "\u00c4quatorialguinea", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -20007,6 +20029,7 @@
       "type": "Feature", 
       "id": "GRC", 
       "properties": {
+        "name_de": "Griechenland", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -20556,6 +20579,7 @@
       "type": "Feature", 
       "id": "GRL", 
       "properties": {
+        "name_de": "Gr\u00f6nland", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -20815,6 +20839,7 @@
       "type": "Feature", 
       "id": "GUF", 
       "properties": {
+        "name_de": "Franz\u00f6sisch-Guayana", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -21688,6 +21713,7 @@
       "type": "Feature", 
       "id": "HUN", 
       "properties": {
+        "name_de": "Ungarn", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -23399,6 +23425,7 @@
       "type": "Feature", 
       "id": "IRL", 
       "properties": {
+        "name_de": "Irland", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -23964,6 +23991,7 @@
       "type": "Feature", 
       "id": "ISL", 
       "properties": {
+        "name_de": "Island", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -24077,6 +24105,7 @@
       "type": "Feature", 
       "id": "ISR", 
       "properties": {
+        "name_de": "Israel", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -24456,6 +24485,7 @@
       "type": "Feature", 
       "id": "ITA", 
       "properties": {
+        "name_de": "Italien", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -24911,6 +24941,7 @@
       "type": "Feature", 
       "id": "JPN", 
       "properties": {
+        "name_de": "Japan", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -25900,6 +25931,7 @@
       "type": "Feature", 
       "id": "KOR", 
       "properties": {
+        "name_de": "Korea, Republik\u00a0(S\u00fcdkorea)", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -26954,6 +26986,7 @@
       "type": "Feature", 
       "id": "LUX", 
       "properties": {
+        "name_de": "Luxemburg", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -28899,6 +28932,7 @@
       "type": "Feature", 
       "id": "MLT", 
       "properties": {
+        "name_de": "Malta", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -30806,6 +30840,7 @@
       "type": "Feature", 
       "id": "NCL", 
       "properties": {
+        "name_de": "Neukaledonien", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -31621,6 +31656,7 @@
       "type": "Feature", 
       "id": "NLD", 
       "properties": {
+        "name_de": "Niederlande", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -32008,6 +32044,7 @@
       "type": "Feature", 
       "id": "NOR", 
       "properties": {
+        "name_de": "Norwegen", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -32413,6 +32450,7 @@
       "type": "Feature", 
       "id": "NZL", 
       "properties": {
+        "name_de": "Neuseeland", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -34520,6 +34558,7 @@
       "type": "Feature", 
       "id": "POL", 
       "properties": {
+        "name_de": "Polen", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -34577,6 +34616,7 @@
       "type": "Feature", 
       "id": "PRI", 
       "properties": {
+        "name_de": "Puerto Rico", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -34924,6 +34964,7 @@
       "type": "Feature", 
       "id": "PRT", 
       "properties": {
+        "name_de": "Portugal", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -38005,6 +38046,7 @@
       "type": "Feature", 
       "id": "ESH", 
       "properties": {
+        "name_de": "Westsahara", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -39328,6 +39370,7 @@
       "type": "Feature", 
       "id": "SLB", 
       "properties": {
+        "name_de": "Salomonen", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -40285,6 +40328,7 @@
       "type": "Feature", 
       "id": "SVN", 
       "properties": {
+        "name_de": "Slowenien", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -40466,6 +40510,7 @@
       "type": "Feature", 
       "id": "SWE", 
       "properties": {
+        "name_de": "Schweden", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -42335,6 +42380,7 @@
       "type": "Feature", 
       "id": "TWN", 
       "properties": {
+        "name_de": "Republik China\u00a0(Taiwan)", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -45038,6 +45084,7 @@
       "type": "Feature", 
       "id": "USA", 
       "properties": {
+        "name_de": "Vereinigte Staaten von Amerika", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -45939,6 +45986,7 @@
       "type": "Feature", 
       "id": "VUT", 
       "properties": {
+        "name_de": "Vanuatu", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
@@ -45996,6 +46044,7 @@
       "type": "Feature", 
       "id": "PSE", 
       "properties": {
+        "name_de": "Pal\u00e4stinensische Autonomiegebiete", 
         "score": {
           "year2000": "nc", 
           "year2015": "nc", 
