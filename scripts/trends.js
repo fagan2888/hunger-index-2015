@@ -69,7 +69,7 @@ $(document).ready(function() {
       }
     ],
     // hide zone column
-    'columnDefs': [ {'targets': [5], 'visible': false} ],
+    // 'columnDefs': [ {'targets': [5], 'visible': false} ],
     'dom': '<"trends-toolbar">frtip',
     'paging': false,
     'responsive': true,
