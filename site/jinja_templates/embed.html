@@ -8,8 +8,45 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Global Hunger Index</title>
-  <meta name="description" content="The Global Hunger Index (GHI) is a tool designed to comprehensively measure and track hunger globally, regionally, and by country. Each year, the International Food Policy Research Institute (IFPRI) calculates GHI scores in order to assess progress, or the lack thereof, in decreasing hunger. The GHI is designed to raise awareness and understanding of regional and country differences in the struggle against hunger. By calling attention to the issue, we hope that the GHI will trigger action to reduce hunger around the world.">
+  <title>{{ m.name }}</title>
+  <meta name="description" content="{{ m.share_description_head_text }}">
+
+  <link rel="stylesheet" href="{{ relpath }}styles/leaflet.css">    
+  <link rel="stylesheet" href="{{ relpath }}fonts/foundation-icons/foundation-icons.css" />    
+  <link rel="stylesheet" href="{{ relpath }}styles/app.css">
+
+
+  <script src="{{ relpath }}scripts/modernizr.js"></script>
+  
+  <meta property="og:title" content="{{ m.name }}" />
+  <meta property="og:description" content="{{ m.share_description_head_text }}" />
+  <meta property="og:url" content="{{ m.localized_share_url }}" />
+  <meta property="og:image" content="http://ghi.ifpri.org/images/share.png" />
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ m.name }}" />
+  <meta name="twitter:description" content="{{ m.share_description_head_text }}" />
+  <meta name="twitter:image" content="http://ghi.ifpri.org/images/share.png" />
+  <meta name="twitter:url" content="{{ m.localized_share_url }}" />
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ relpath }}images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ relpath }}images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ relpath }}images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ relpath }}images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ relpath }}images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ relpath }}images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ relpath }}images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ relpath }}images/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ relpath }}images/apple-touch-icon-180x180.png">
+  
+  <meta name="application-name" content="{{ m.name }}">
+  <meta name="msapplication-TileColor" content="#333333">
+  <meta name="msapplication-TileImage" content="{{ relpath }}images/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="icon" sizes="192x192" href="{{ relpath }}images/android-chrome-192x192.png">
+  <link rel="icon" sizes="16x16" href="{{ relpath }}images/favicon.ico">
 
   <link rel="stylesheet" href="{{ relpath }}styles/leaflet.css">    
   <link rel="stylesheet" href="{{ relpath }}fonts/foundation-icons/foundation-icons.css" />    
@@ -27,12 +64,6 @@
   <script src="{{ relpath }}scripts/main.js"></script>
   <!-- end embed scripts -->
 
-  <meta property="og:title" content="Global Hunger Index 2015" />
-  <meta property="og:description" content="The Global Hunger Index (GHI) is a tool designed to comprehensively measure and track hunger globally, regionally, and by country. Each year, the International Food Policy Research Institute (IFPRI) calculates GHI scores in order to assess progress, or the lack thereof, in decreasing hunger. The GHI is designed to raise awareness and understanding of regional and country differences in the struggle against hunger. By calling attention to the issue, we hope that the GHI will trigger action to reduce hunger around the world." />
-  <meta property="og:url" content="http://ghi.ifpri.org" />
-  <meta property="og:image" content="http://ghi.ifpri.org/images/share.png" />
-
-  <link rel="shortcut icon" href="{{ relpath }}images/favicon.ico">
 </head>
 <body>
 
