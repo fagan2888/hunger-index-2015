@@ -2,17 +2,15 @@
 /*jshint camelcase: false */
 /*global $ */
 
-var urlbase;
-var lang;
-if (window.location.href.indexOf('de') > 1) { lang = 'de'; } else { lang = 'en'; }
-
-if (lang === 'de') {
-  urlbase = '../../';
-} else {
-  urlbase = '../';
-}
-
 $(document).ready(function() {
+  var urlbase;
+  var lang;
+  if (window.location.href.indexOf('de') > 1) { lang = 'de'; } else { lang = 'en'; }
+  if (lang === 'de') {
+    urlbase = '../../';
+  } else {
+    urlbase = '../';
+  }
   var table = $('#trends-table').DataTable( {
     'ajax': urlbase + 'data/trends-2015.json',
     'columns': [
