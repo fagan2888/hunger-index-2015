@@ -129,7 +129,8 @@ def create_index_page():
     context["relpath"] = ''
     context["lang"] = 'en'
     contents = template.render(**context)
-    f = codecs.open("../site/app/html/embed.html", 'w', 'utf-8')
+    os.makedirs('../site/app/html/embed/')
+    f = codecs.open("../site/app/html/embed/index.html", 'w', 'utf-8')
     f.write(contents)
     f.close()
     # german
@@ -137,7 +138,8 @@ def create_index_page():
     context["relpath"] = '../'
     context["lang"] = 'de'
     contents = template.render(**context)
-    f = codecs.open("../site/app/html/embed.html", 'w', 'utf-8')
+    os.makedirs('../site/app/html/de/embed/')
+    f = codecs.open("../site/app/html/de/embed/index.html", 'w', 'utf-8')
     f.write(contents)
     f.close()
 
