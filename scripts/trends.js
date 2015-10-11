@@ -11,8 +11,10 @@ $(document).ready(function() {
   } else {
     urlbase = '../';
   }
+  var ajaxurl = urlbase + 'data/trends-2015.json';
+  console.log(ajaxurl);
   var table = $('#trends-table').DataTable( {
-    'ajax': urlbase + 'data/trends-2015.json',
+    'ajax': ajaxurl,
     'columns': [
       { data: 'country',
         render: function (data, type) {
@@ -89,7 +91,9 @@ $(document).ready(function() {
 
   $('select#year').change(function () { 
     var year = this.value; 
-    table.ajax.url(urlbase + 'data/trends-' + year + '.json').load();
+    var ajaxurl = urlbase + 'data/trends-' + year + '.json';
+    console.log(ajaxurl);
+    table.ajax.url(ajaxurl).load();
   });
 
   $('select#zone').change(function () { 
