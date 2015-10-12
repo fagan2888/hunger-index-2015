@@ -384,11 +384,7 @@ body {
         margin-bottom: 1rem;
         }
      
-    #chart-score {
-        width: auto !important;
-        height: 100% !important;
-        max-height: 250px;
-        }
+    #chart-score { height: 250px; }
        
     .chart-wrapper {
         margin-bottom: 1rem;
@@ -399,9 +395,6 @@ body {
         #chart-mortality {
             box-sizing: border-box;
             padding-right: 1rem;
-            width: auto !important;
-            height: 100% !important;
-            max-height: 320px;
             }
     }
 }
