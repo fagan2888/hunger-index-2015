@@ -6680,14 +6680,9 @@ body {
 
 /* Trends page
 */
-#trends-content #trends-table_wrapper {
-  /* This was a workaround, now it's just breaking things
-        thead th:nth-child(6),
-        tbody td:nth-child(6) { display: none; }
-*/ }
-  #trends-content #trends-table_wrapper table#trends-table {
-    max-width: 100%;
-    width: 100% !important; }
+#trends-content #trends-table_wrapper table#trends-table {
+  max-width: 100%;
+  width: 100% !important; }
 
 /* Static pages
 */
