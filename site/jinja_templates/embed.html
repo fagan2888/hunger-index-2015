@@ -22,16 +22,20 @@
   <meta property="og:description" content="{{ m.share_description_head_text }}" />
   <meta property="og:url" content="{{ m.localized_share_url }}" />
   {% if lang == 'de' %}
-  <meta property="og:image" content="http://ghi.ifpri.org/images/share.png" />
-  [% else %}
-  <meta property="og:image" content="http://ghi.ifpri.org/images/share-de.png" />
+    <meta property="og:image" content="http://ghi.ifpri.org/images/share-de.png" />
+  {% else %}
+    <meta property="og:image" content="http://ghi.ifpri.org/images/share.png" />
   {% endif %}
   
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{{ m.name }}" />
   <meta name="twitter:description" content="{{ m.share_description_head_text }}" />
-  <meta name="twitter:image" content="http://ghi.ifpri.org/images/share.png" />
   <meta name="twitter:url" content="{{ m.localized_share_url }}" />
+  {% if lang == 'de' %}
+    <meta property="twitter:image" content="http://ghi.ifpri.org/images/share-de.png" />
+  {% else %}
+    <meta property="twitter:image" content="http://ghi.ifpri.org/images/share.png" />
+  {% endif %}
 
 
   <link rel="apple-touch-icon" sizes="57x57" href="{{ relpath }}images/apple-touch-icon-57x57.png">
@@ -70,6 +74,12 @@
 
 </head>
 <body>
+  <!-- For nomad URL preview -->
+  {% if lang == 'de' %}
+    <img src="{{ relpath }}images/ghi-share-de.png" class="hide">
+  {% else %}
+    <img src="{{ relpath }}images/ghi-share.png" class="hide">
+  {% endif %}
 
   <div id="embed-map" class="row collapse full-width">
     
