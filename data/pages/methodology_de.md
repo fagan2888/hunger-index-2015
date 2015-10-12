@@ -11,10 +11,10 @@ Standardisierte KAU = <sup>KAU</sup>⁄<sub>30</sub> x 100
 Standardisierte KWV = <sup>KWV</sup>⁄<sub>70</sub> x 100 
 Standardisierte KST = <sup>KST</sup>⁄<sub>35</sub> x 100 
 ####**SCHRITT 3 - Aggregierung der Indikatoren:** 
-<sup>1</sup>⁄<sub>3</sub> standardisierter AUN
-+ <sup>1</sup>⁄<sub>6</sub> standardisierte KAU
-+ <sup>1</sup>⁄<sub>6</sub> standardisierte KWV
-+ <sup>1</sup>⁄<sub>3</sub> standardisierte KST
+<sup>1</sup>⁄<sub>3</sub> standardisierter AUN  
++ <sup>1</sup>⁄<sub>6</sub> standardisierte KAU  
++ <sup>1</sup>⁄<sub>6</sub> standardisierte KWV  
++ <sup>1</sup>⁄<sub>3</sub> standardisierte KST  
  ----------
  
 = WHI-Wert 
@@ -33,8 +33,6 @@ Im zweiten Schritt wird jedem Indikator ein standardisierter Wert auf der Basis 
 Zuletzt werden die standardisierten Werte aggregiert, um den WHI-Wert für jedes Land zu errechnen. Die Werte zu Unterernährung und Kindersterblichkeit machen jeweils ein Drittel des WHI-Werts aus, während die Werte zur Unterernährung bei Kindern – Auszehrung und Wachstumsverzögerung – jeweils ein Sechstel beitragen.
 
  Diese Berechnung ergibt WHI-Werte, die sich auf einer 100-Punkte-Skala einordnen lassen, auf der 0 (kein Hunger) der beste und 100 der schlechteste Wert ist, wobei keiner der Extremwerte je in der Praxis erreicht wird. Ein Wert von 100 würde bedeuten, dass in einem Land die Werte zu Unterernährung, Auszehrung und Wachstumsverzögerung bei Kindern sowie Kindersterblichkeit genau den Schwellenwerten entsprächen, die leicht über den in vergangenen Jahrzehnten beobachteten Maximalwerten angesetzt sind. Ein Wert von 0 würde bedeuten, dass in einem Land keine unterernährten Menschen lebten, kein Kind unter fünf Jahren unter Auszehrung oder Wachstumsverzögerung leiden und kein Kind vor seinem fünften Geburtstag sterben würde. 
-
-----
 
 [^1]: Die Schwellenwerte für die Standardisierung werden leicht über den höchsten gemessenen Werten angesetzt, um einen möglichen zukünftigen Anstieg dieser Werte zu berücksichtigen. 
 
