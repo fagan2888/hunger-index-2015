@@ -157,7 +157,7 @@ var messages_de = {
 
     if (feature.properties.score !== 'nc') {
       if (url.indexOf('embed') > -1) {
-        popupContent += '<p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">' + m.findout + '</a></p>';
+        popupContent += '<p><a class="button small radius" target="_blank" href="../countries/' + feature.id + '">' + m.findout + '</a></p>';
       } else {
         popupContent += '<p><a class="button small radius" href="countries/' + feature.id + '">' + m.findout + '</a></p>';
       }
