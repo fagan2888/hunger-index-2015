@@ -541,56 +541,60 @@ body {
     height: 100%;
     position: relative;
     
-    .map-wrapper { height: 100%; }
+    .map-wrapper {
+        height: 100%; 
+        position: relative;
     
-    #map-application,
-    #map-application .map { height: 100%; padding: 0; }
-    
-    #map-legend {
-        display: block;
-        background: #fff;
-        width: auto;
-        bottom: 10px;
-        left: 15px;
-        padding: 0;
-        position: absolute;
-        @include box-shadow( 5px, 5px, 5px, 0, rgba(0, 0, 0, 0.5));
-    
-        #ghi-brand {
-            font-size: 1rem;
-            line-height: 1rem;
-            background-color: $oil;
-            padding: 0.5rem 0.75rem;
-            margin: 0;
-            a {
-                outline: none;
-                color: #fff;
-                display: inline-block;
-                img {
-                    width: 36px;
-                    height: auto;
+        #map-application,
+        #map-application .map { height: 100%; padding: 0; }
+        
+        #map-legend {
+            display: block;
+            background: #fff;
+            width: auto;
+            bottom: 10px;
+            left: 15px;
+            padding: 0;
+            position: absolute;
+            @include box-shadow( 5px, 5px, 5px, 0, rgba(0, 0, 0, 0.5));
+        
+            #ghi-brand {
+                font-size: 1rem;
+                line-height: 1rem;
+                background-color: $oil;
+                padding: 0.5rem 0.75rem;
+                margin: 0;
+                a {
+                    outline: none;
+                    color: #fff;
                     display: inline-block;
-                    padding-right: 5px;
+                    img {
+                        width: 36px;
+                        height: auto;
+                        display: inline-block;
+                        padding-right: 5px;
+                        }
+                    span { display: inline-block; }
                     }
-                span { display: inline-block; }
                 }
-            }
-            
-        .ghi-levels {
-            padding: 0.5rem 0.75rem;
-            li {
-                display: block;
-                padding: 0.25rem 0;
-                border-bottom: 1px solid #ccc;
-                &:last-child { border-bottom: 0; }
-                &.extra-alarming,
-                &.no-data,
-                &.indust-countries { width: auto; }
-                em { display:  inline-block; float: right; }
-                i { padding-right: 5px; }
+                
+            .ghi-levels {
+                padding: 0.5rem 0.75rem;
+                li {
+                    display: block;
+                    padding: 0.25rem 0;
+                    border-bottom: 1px solid #ccc;
+                    &:last-child { border-bottom: 0; }
+                    &.extra-alarming,
+                    &.no-data,
+                    &.indust-countries { width: auto; }
+                    em { display:  inline-block; float: right; }
+                    i { padding-right: 5px; }
+                    }
                 }
             }
         }
+        
     .table-wrapper {
         height: 100%;
         overflow-y: scroll;

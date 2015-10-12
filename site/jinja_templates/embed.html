@@ -65,12 +65,30 @@
   {% endif %}
 
   <div id="embed-map" class="row collapse full-width">   
-    <div class="medium-8 large-12 columns map-wrapper">
+    <div class="medium-8 small-12 columns map-wrapper">
       <div id="map-application">
         <div id="map" class="map"></div>
-      </div>
-    </div><!-- map -->
-    <div class="medium-4 large-12 columns table-wrapper">
+      </div>      
+      
+      <div id="map-legend">
+        <h1 id="ghi-brand"><a href="{{ relpath }}">
+              <img src="{{ relpath }}images/ghi.svg" onerror="this.src='{{ relpath }}images/ghi.png'" alt="{{ m.name }}">
+              <span>{{ m.name }}</span>
+        </a></h1><!-- brand -->
+        <ul class="ghi-levels">
+          <li class="extra-alarming"><i class="fi-stop small"></i> {{ m.map_very_alarming }} <em>&ge; 50</em></li>
+          <li class="alarming"><i class="fi-stop small"></i> {{ m.map_alarming }} <em>35.0-49.9</em></li>
+          <li class="serious"><i class="fi-stop small"></i> {{ m.map_serious }} <em>20.0-34.9</em></li>
+          <li class="moderate"><i class="fi-stop small"></i> {{ m.map_moderate }} <em>10.0-19.9</em></li>
+          <li class="low"><i class="fi-stop small"></i> {{ m.map_low }} <em>&le; 9.9</em></li>
+          <li class="no-data"><i class="fi-stop small"></i> {{ m.map_no_data }} </li>
+          <li class="indust-country"><i class="fi-stop small"></i> {{ m.map_not_calculated }} </li>
+        </ul>
+      </div><!-- legend -->
+    
+    </div><!-- /map -->
+    
+    <div class="medium-4 small-12 columns table-wrapper">
       <div class="row">
         <div class="large-12 columns year-select">
           <strong>{{ m.map_ranking }}</strong>
@@ -94,23 +112,8 @@
           </table>
         </div>
       </div>
-    </div>
-
-    <div id="map-legend" class="large-12 columns">
-      <h1 id="ghi-brand"><a href="{{ relpath }}">
-            <img src="{{ relpath }}images/ghi.svg" onerror="this.src='{{ relpath }}images/ghi.png'" alt="{{ m.name }}">
-            <span>{{ m.name }}</span>
-      </a></h1><!-- brand -->
-      <ul class="ghi-levels">
-        <li class="extra-alarming"><i class="fi-stop small"></i> {{ m.map_very_alarming }} <em>&ge; 50</em></li>
-        <li class="alarming"><i class="fi-stop small"></i> {{ m.map_alarming }} <em>35.0-49.9</em></li>
-        <li class="serious"><i class="fi-stop small"></i> {{ m.map_serious }} <em>20.0-34.9</em></li>
-        <li class="moderate"><i class="fi-stop small"></i> {{ m.map_moderate }} <em>10.0-19.9</em></li>
-        <li class="low"><i class="fi-stop small"></i> {{ m.map_low }} <em>&le; 9.9</em></li>
-        <li class="no-data"><i class="fi-stop small"></i> {{ m.map_no_data }} </li>
-        <li class="indust-country"><i class="fi-stop small"></i> {{ m.map_not_calculated }} </li>
-      </ul>
-    </div><!-- legend -->
+    </div><!-- /table-->
+    
   </div>
 
 
