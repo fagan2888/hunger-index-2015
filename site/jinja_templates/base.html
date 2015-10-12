@@ -75,8 +75,9 @@
       <!-- Left Nav Section -->
       <ul class="left">
         <li{% if page_name == "trends" %} class="active"{% endif %}><a href="{{ linkrelpath }}trends/">{{ m.menu_trends }}</a></li>
-        <li{% if page_name == "methodology" %} class="active"{% endif %}><a href="{{ linkrelpath }}methodology/">{{ m.block_methodology_title }}</a></li>
         <li{% if page_name == "results" %} class="active"{% endif %}><a href="{{ linkrelpath }}results/">{{ m.block_results_title }}</a></li>
+        <li{% if page_name == "methodology" %} class="active"{% endif %}><a href="{{ linkrelpath }}methodology/">{{ m.block_methodology_title }}</a></li>
+        <li{% if page_name == "hunger" %} class="active"{% endif %}><a href="{{ linkrelpath }}hunger/">{{ m.block_hunger_title }}</a></li>
         <li{% if page_name == "about" %} class="active"{% endif %}><a href="{{ linkrelpath }}about/">{{ m.block_about_title }}</a></li>
         <li{% if page_name == "contact" %} class="active"{% endif %}><a href="{{ linkrelpath }}contact/">{{ m.block_contact_title }}</a></li>
       </ul>
