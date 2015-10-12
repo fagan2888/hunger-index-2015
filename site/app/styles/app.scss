@@ -132,6 +132,7 @@ body {
 
 .table-wrapper {
     #table-container {
+        height: 100%;
         overflow-y: scroll;
         border-top: 1px solid #ccc;
         #country-table {
@@ -383,7 +384,11 @@ body {
         margin-bottom: 1rem;
         }
      
-    #chart-score { height: 250px; }
+    #chart-score {
+        width: auto !important;
+        height: 100% !important;
+        max-height: 250px;
+        }
        
     .chart-wrapper {
         margin-bottom: 1rem;
@@ -392,8 +397,11 @@ body {
         #chart-wasting,
         #chart-stunting,
         #chart-mortality {
-            padding: 0 4rem 0 0;
-            height: 250px !important;
+            box-sizing: border-box;
+            padding-right: 1rem;
+            width: auto !important;
+            height: 100% !important;
+            max-height: 320px;
             }
     }
 }
@@ -549,6 +557,13 @@ body {
 #embed-map {
     height: 100%;
     position: relative;
+    
+    .table-wrapper {
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        #table-container { height: 100%; }
+        }
     
     .map-wrapper {
         height: 100%; 
