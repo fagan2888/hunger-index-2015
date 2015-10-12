@@ -11,13 +11,6 @@
   <title>2015 Welthunger-Index</title>
   <meta name="description" content="Der Welthunger-Index (WHI) ist ein Instrument, mit dem die Hungersituation sowohl weltweit als auch in ausgewählten Regionen und Ländern umfassend dargestellt wird.1 Er wird jedes Jahr vom Internationalen Forschungsinstitut für Ernährungs- und Entwicklungspolitik (IFPRI) berechnet, um damit die Fortschritte – oder deren Ausbleiben – bei der Reduzierung des Hungers zu bewerten. Der WHI soll zu gesteigertem Bewusstsein und Verständnis für Unterschiede zwischen Regionen und Ländern im Kampf gegen den Hunger beitragen. Wir hoffen, dass dieser Bericht und die Sensibilisierung für dieses Thema helfen, weltweite Initiativen zur Hungerbekämpfung anzustoßen.">
 
-  <link rel="stylesheet" href="../../styles/leaflet.css">    
-  <link rel="stylesheet" href="../../fonts/foundation-icons/foundation-icons.css" />    
-  <link rel="stylesheet" href="../../styles/app.css">
-
-
-  <script src="../../scripts/modernizr.js"></script>
-  
   <meta property="og:title" content="2015 Welthunger-Index" />
   <meta property="og:description" content="Der Welthunger-Index (WHI) ist ein Instrument, mit dem die Hungersituation sowohl weltweit als auch in ausgewählten Regionen und Ländern umfassend dargestellt wird.1 Er wird jedes Jahr vom Internationalen Forschungsinstitut für Ernährungs- und Entwicklungspolitik (IFPRI) berechnet, um damit die Fortschritte – oder deren Ausbleiben – bei der Reduzierung des Hungers zu bewerten. Der WHI soll zu gesteigertem Bewusstsein und Verständnis für Unterschiede zwischen Regionen und Ländern im Kampf gegen den Hunger beitragen. Wir hoffen, dass dieser Bericht und die Sensibilisierung für dieses Thema helfen, weltweite Initiativen zur Hungerbekämpfung anzustoßen." />
   <meta property="og:url" content="http://www.welthungerhilfe.de/welthungerindex-karte.html" />
@@ -32,7 +25,6 @@
   
     <meta property="twitter:image" content="http://ghi.ifpri.org/images/share-de.png" />
   
-
 
   <link rel="apple-touch-icon" sizes="57x57" href="../../images/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="../../images/apple-touch-icon-60x60.png">
@@ -55,18 +47,9 @@
   <link rel="stylesheet" href="../../styles/leaflet.css">    
   <link rel="stylesheet" href="../../fonts/foundation-icons/foundation-icons.css" />    
   <link rel="stylesheet" href="../../styles/app.css">
-
+  <!-- embed style --><link rel="stylesheet" href="../../styles/leaflet.zoomin.css" media="screen">
 
   <script src="../../scripts/modernizr.js"></script>
-  
-  <!-- embed scripts -->
-  <link rel="stylesheet" href="../../styles/leaflet.zoomin.css" media="screen">
-
-  <script src="../../scripts/leaflet.js"></script>
-  <script src="../../scripts/leaflet.ajax.min.js"></script>
-  <script src="../../scripts/leaflet.zoomin.js"></script>
-  <script src="../../scripts/main.js"></script>
-  <!-- end embed scripts -->
 
 </head>
 <body>
@@ -74,15 +57,33 @@
   
     <img src="../../images/ghi-share-de.png" class="hide">
   
+  
+  <div id="shareModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <div class="row">
+      <div class="large-6 columns">
+        <h4> Teilen </h4>
+        <p> Teile diese Grafik mit anderen in deinen sozialen Netzwerken </p>
+        <p>
+          <a target="_blank" class="twitter-share-button" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.welthungerhilfe.de%2Fwelthungerindex-karte.html&amp;text=Weltweit%20hat%20sich%20der%20WHI-Wert%202015%20um%2027%25%20verbessert.%20Mehr%20auf%20der%20interaktiven%20App%20%23GHI2015%20"><i class="fi-social-twitter large"></i></a>
+          <a target="_blank" class="fb-share-button" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.welthungerhilfe.de%2Fwelthungerindex-karte.html"><i class="fi-social-facebook large"></i></a>
+        </p>
+      </div>
+      <div class="large-6 columns">      
+        <h4> Einbetten </h4>
+        <p> Nutze den folgenden Code, um die Grafik einzubetten  </p>
+        <textarea><iframe src="http://ghi.ifpri.org/de/embed" width="100%" height="600" frameborder="0" allowfullscreen></iframe></textarea>
+      </div>
+    </div>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
 
-  <div id="embed-map" class="row collapse full-width">
-    
-    <div class="map-wrapper">
-      <div id="map-application" class="large-12 columns">
+  <div id="embed-map" class="row collapse full-width">   
+    <div class="medium-8 small-12 columns map-wrapper">
+      <div id="map-application">
         <div id="map" class="map"></div>
-      </div><!-- map -->
-
-      <div id="map-legend" class="large-12 columns">
+      </div>      
+      
+      <div id="map-legend">
         <h1 id="ghi-brand"><a href="../../">
               <img src="../../images/ghi.svg" onerror="this.src='../../images/ghi.png'" alt="2015 Welthunger-Index">
               <span>2015 Welthunger-Index</span>
@@ -97,24 +98,51 @@
           <li class="indust-country"><i class="fi-stop small"></i> Nicht berechnet </li>
         </ul>
       </div><!-- legend -->
-    </div>
+    
+    </div><!-- /map -->
+    
+    <div class="medium-4 small-12 columns table-wrapper">
+      <div class="row">
+        <div class="large-12 columns year-select">
+          <strong>Ranking </strong>
+          <button id="year-button" href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown">2015</button>
+          <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
+            <li><a class="2015" href="#">2015</a></li>
+            <li><a class="2005" href="#">2005</a></li>
+            <li><a class="2000" href="#">2000</a></li>
+            <li><a class="1995" href="#">1995</a></li>
+            <li><a class="1990" href="#">1990</a></li>
+          </ul>
+          <a class="button right tiny secondary radius" href="#" data-reveal-id="shareModal">
+            <i class="fi-share"></i> Teilen/Einbetten
+          </a>
+        </div>
+        <p class="large-12 columns">WHI-Werte nach Ländern, von den höchsten zu den niedrigsten</p>
+      </div>
+      <div class="row">
+        <div id="table-container">
+          <table id="country-table" class="display" width="100%" cellspacing="0">
+          </table>
+        </div>
+      </div>
+    </div><!-- /table-->
+    
   </div>
+
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
+  <!-- endbuild -->
+      
+  <!-- embed scripts -->  
   <script src="../../scripts/jquery.js"></script>
   <script src="../../scripts/foundation.min.js"></script>
-  <script src="../../scripts/foundation.magellan.js"></script>
   <script src="../../scripts/foundation-scripts.js"></script>
   <script src="../../scripts/leaflet.js"></script>
   <script src="../../scripts/leaflet.ajax.min.js"></script>
   <script src="../../scripts/leaflet.zoomin.js"></script>
   <script src="../../scripts/main.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+  <!-- end embed scripts -->
 
-  <!-- build:js scripts/main.js -->
-  
-  <!-- endbuild -->
 </body>
 </html>

@@ -157,7 +157,7 @@ var messages_de = {
 
     if (feature.properties.score !== 'nc') {
       if (url.indexOf('embed') > -1) {
-        popupContent += '<p><a class="button small radius" target="_blank" href="countries/' + feature.id + '">' + m.findout + '</a></p>';
+        popupContent += '<p><a class="button small radius" target="_blank" href="../countries/' + feature.id + '">' + m.findout + '</a></p>';
       } else {
         popupContent += '<p><a class="button small radius" href="countries/' + feature.id + '">' + m.findout + '</a></p>';
       }
@@ -177,10 +177,10 @@ var messages_de = {
 
   // https://gis.stackexchange.com/a/102125
   var urlbase = '';
-  if (window.location.href.indexOf('/de') > -1) {
+  if (window.location.href.indexOf('de/') > -1) {
     urlbase += '../';
   }
-  if (window.location.href.indexOf('embed/') > -1) {
+  if (window.location.href.indexOf('embed') > -1) {
     urlbase += '../';
   }
   var jsonfile = urlbase + 'data/countrydata-2015.geo.json';
@@ -204,7 +204,7 @@ var messages_de = {
     if (window.location.href.indexOf('/de') > -1) {
       urlbase += '../';
     }
-    if (window.location.href.indexOf('embed/') > -1) {
+    if (window.location.href.indexOf('embed') > -1) {
       urlbase += '../';
     }
     var jsonroot = urlbase + 'data/countrydata-';
@@ -254,16 +254,17 @@ var messages_de = {
   }
 
   $(document).ready(function() {    
+    if (window.location.href.indexOf('/de') > -1) {
+      urlbase += '../';
+    }
+    if (window.location.href.indexOf('embed') > -1) {
+      urlbase += '../';
+    }
     populateTable('2015');
     $('#year-drop li a').click( function() {
       // year dropdown refreshes map
       var year = this.className;
-      var jsonroot;
-      if (window.location.href.indexOf('/de') > -1) {
-        jsonroot = '../data/countrydata-';
-      } else {
-        jsonroot = 'data/countrydata-';
-      }
+      var jsonroot = urlbase + 'data/countrydata-';
       geojsonLayer.clearLayers();geojsonLayer = new L.GeoJSON.AJAX(jsonroot + year + '.geo.json', {
         style: style,
         onEachFeature: onEachFeature
