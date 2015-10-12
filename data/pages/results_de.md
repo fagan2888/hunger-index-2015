@@ -8,7 +8,7 @@ Gesamtwert des Welthunger-Index (WHI) für die Entwicklungsländer
 Obwohl also die Gesamtwerte des WHI für die Entwicklungsländer – auch weltweite WHI-Werte genannt – sowohl für 2000 als auch für 2015 als „ernst“ eingestuft werden müssen, lag der frühere Wert näher an einer Einstufung als „sehr ernst“, während sich der aktuelle Wert der Kategorie „mäßig“ annähert. Wie bereits in Kapitel 1 erläutert, wurden sämtliche Berechnungen von WHI-Werten in diesem Bericht – auch für die Referenzjahre 1990, 1995, 2000 und 2005 – unter Anwendung einer überarbeiteten
 Formel durchgeführt. Die Schwereskala wurde an diese Veränderungen angepasst.
 
- ![GHI Chapter two figure one]([link to WHI_2015_Abb2-1.jpg) 
+ ![GHI Chapter two figure one](http://library.ifpri.info/files/2015/10/WHI_2015_Abb2-1.jpg) 
 
 ##Bedeutende regionale Unterschiede
 Diese globalen Durchschnittswerte verschleiern dramatische Unterschiede zwischen einzelnen Regionen und Ländern. In Afrika südlich der Sahara und in Südasien werden 2015 mit 32,2 und 29,4 die höchsten WHI-Werte verzeichnet. Beide Hungerwerte sind als „ernst“ einzustufen. Dagegen liegen die WHI-Werte in Ost- und Südostasien,
@@ -28,7 +28,7 @@ Von den zehn Ländern, die ihre Werte im WHI 2015 im Vergleich zum WHI 2000 proz
 - Auch in der Mongolei fiel der WHI-Wert zwischen 2000 und 2015 um 56 Prozent. 
 
 Ruanda, Angola und Äthiopien konnten im Vergleich zum WHI 2000 den größten absoluten Rückgang des Hungers verzeichnen. Die WHI-Werte sanken in diesen Ländern um 25 bis 28 Punkte. Trotz dieser Fortschritte sind die Hungerwerte dort indes immer noch „ernst“. 
-![GHI Chapter two figure three](link to WHI_2015_Abb2-3.jpg) 
+![GHI Chapter two figure three](http://library.ifpri.info/files/2015/10/WHI_2015_Abb2-3.jpg) 
 
 Acht Länder haben noch immer „sehr ernste“ Hungerwerte zu beklagen; die Mehrzahl davon liegt in Afrika südlich der Sahara. Ausnahmen sind Afghanistan, Haiti und Timor-Leste.
 
