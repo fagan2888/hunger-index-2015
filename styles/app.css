@@ -6598,9 +6598,7 @@ body {
     max-width: 100%;
     margin-bottom: 1rem; }
   #country-info #chart-score {
-    width: auto !important;
-    height: 100% !important;
-    max-height: 250px; }
+    height: 250px; }
   #country-info .chart-wrapper {
     margin-bottom: 1rem; }
     #country-info .chart-wrapper #chart-undernourished,
@@ -6608,10 +6606,7 @@ body {
     #country-info .chart-wrapper #chart-stunting,
     #country-info .chart-wrapper #chart-mortality {
       box-sizing: border-box;
-      padding-right: 1rem;
-      width: auto !important;
-      height: 100% !important;
-      max-height: 320px; }
+      padding-right: 1rem; }
 
 #country-info.extra-alarming em.severity,
 #country-info.extra-alarming #detailed-score tbody td {
