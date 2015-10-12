@@ -1,5 +1,5 @@
 #GLOBALE, REGIONALE UND NATIONALE TRENDS
-------
+
 Seit dem Jahr 2000 wurden bei der Bekämpfung von Hunger signifikante
 Fortschritte erzielt.[^hunger] Damals betrug der durchschnittliche
 Gesamtwert des Welthunger-Index (WHI) für die Entwicklungsländer
