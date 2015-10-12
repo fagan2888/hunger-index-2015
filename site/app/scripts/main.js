@@ -180,7 +180,7 @@ var messages_de = {
   if (window.location.href.indexOf('de/') > -1) {
     urlbase += '../';
   }
-  if (window.location.href.indexOf('embed/') > -1) {
+  if (window.location.href.indexOf('embed') > -1) {
     urlbase += '../';
   }
   var jsonfile = urlbase + 'data/countrydata-2015.geo.json';
@@ -204,7 +204,7 @@ var messages_de = {
     if (window.location.href.indexOf('/de') > -1) {
       urlbase += '../';
     }
-    if (window.location.href.indexOf('embed/') > -1) {
+    if (window.location.href.indexOf('embed') > -1) {
       urlbase += '../';
     }
     var jsonroot = urlbase + 'data/countrydata-';
@@ -257,7 +257,7 @@ var messages_de = {
     if (window.location.href.indexOf('/de') > -1) {
       urlbase += '../';
     }
-    if (window.location.href.indexOf('embed/') > -1) {
+    if (window.location.href.indexOf('embed') > -1) {
       urlbase += '../';
     }
     populateTable('2015');
