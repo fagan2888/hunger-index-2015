@@ -14,11 +14,7 @@
   <meta property="og:title" content="{{ m.name }}" />
   <meta property="og:description" content="{{ m.share_description_head_text }}" />
   <meta property="og:url" content="{{ m.localized_share_url }}" />
-  {% if lang == 'de' %}
-    <meta property="og:image" content="http://ghi.ifpri.org/images/share-de.png" />
-  {% else %}
-    <meta property="og:image" content="http://ghi.ifpri.org/images/share.png" />
-  {% endif %}
+  <meta property="og:image" content="http://ghi.ifpri.org/images/share{% if lang == 'de' %}-de{% endif %}.png" />
   
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{{ m.name }}" />
