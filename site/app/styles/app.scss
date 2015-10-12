@@ -256,9 +256,6 @@ body {
         }
 }
 
-#map-legend {
-}
-
 .ghi-levels {
     padding: 0.5rem 0;
     margin: 0;
@@ -338,7 +335,6 @@ body {
     margin-right: 0.5rem;
     }
 }
-
 
 /* Country page
 */
@@ -542,11 +538,12 @@ body {
 
 #embed-map {
     height: 100%;
+    position: relative;
     
     .map-wrapper {
+        height: 100%; 
         position: relative;
-        height: 100%;
-        
+    
         #map-application,
         #map-application .map { height: 100%; padding: 0; }
         
@@ -596,6 +593,25 @@ body {
                 }
             }
         }
+        
+    .table-wrapper {
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x:  hidden;
+        
+        .row {
+            padding: 0.5rem 0 0;
+            .large-12 > strong {
+                font-size: 1.6875rem;
+                font-family: $font-family-sans-serif-narrow;
+                }
+            p {
+                font-size: 0.875rem;
+                margin-bottom: 0;
+                padding-right: 0;
+                }
+            }
+        }
 }
 
 /* Media Queries
@@ -637,8 +653,8 @@ body {
         }
     #main-map .large-4 #table-container { height: 260px; }
     #main-map { -webkit-overflow-scrolling: touch; }
-    
-    #main-map .large-4 { @include box-shadow(0, 0, 0, 0, transparent); }
+   
+    #main-map .large-4 { @include box-shadow(0, 0, 0, 0, transparent); } 
 }
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
@@ -654,7 +670,6 @@ body {
     .ghi-levels li.extra-alarming { width: 16.2857%; }
     .ghi-levels li.indust-countries { width: 15.2857%; }
     .ghi-levels li.no-data { width: 11.2857%; }
-    
     
     #home-blocks a.columns div { min-height: 8rem; }
 }
