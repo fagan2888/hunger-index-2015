@@ -32,15 +32,6 @@ $(document).ready(function() {
             return parseFloat(data);
         }
       },
-      { data: 'stunting', 
-        render: function (data, type) {
-            if ( type === 'display' || type === 'filter' ) { return data; }
-            if (data === '-') { return 0; }
-            if (data.indexOf('*') > -1) { data = data.replace('*', ''); }
-            return parseFloat(data);
-        }
-      },
-
       { data: 'wasting', 
         render: function (data, type) {
             if ( type === 'display' || type === 'filter' ) { return data; }
@@ -49,7 +40,14 @@ $(document).ready(function() {
             return parseFloat(data);
         }
       },
-
+      { data: 'stunting', 
+        render: function (data, type) {
+            if ( type === 'display' || type === 'filter' ) { return data; }
+            if (data === '-') { return 0; }
+            if (data.indexOf('*') > -1) { data = data.replace('*', ''); }
+            return parseFloat(data);
+        }
+      },
       { data: 'mortality', 
         render: function (data, type) {
             if ( type === 'display' || type === 'filter' ) { return data; }
@@ -69,8 +67,6 @@ $(document).ready(function() {
         }
       }
     ],
-    // hide zone column
-    // 'columnDefs': [ {'targets': [5], 'visible': false} ],
     'dom': '<"trends-toolbar">frtip',
     'paging': false,
     'responsive': true,
