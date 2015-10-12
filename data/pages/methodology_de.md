@@ -11,10 +11,10 @@ Standardisierte KAU = <sup>KAU</sup>⁄<sub>30</sub> x 100
 Standardisierte KWV = <sup>KWV</sup>⁄<sub>70</sub> x 100 
 Standardisierte KST = <sup>KST</sup>⁄<sub>35</sub> x 100 
 ####**SCHRITT 3 - Aggregierung der Indikatoren:** 
-<sup>1</sup>⁄<sub>3</sub> standardisierter AUN
-+ <sup>1</sup>⁄<sub>6</sub> standardisierte KAU
-+ <sup>1</sup>⁄<sub>6</sub> standardisierte KWV
-+ <sup>1</sup>⁄<sub>3</sub> standardisierte KST
+<sup>1</sup>⁄<sub>3</sub> standardisierter AUN  
++ <sup>1</sup>⁄<sub>6</sub> standardisierte KAU  
++ <sup>1</sup>⁄<sub>6</sub> standardisierte KWV  
++ <sup>1</sup>⁄<sub>3</sub> standardisierte KST  
  ----------
  
 = WHI-Wert 
