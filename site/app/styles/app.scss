@@ -256,9 +256,6 @@ body {
         }
 }
 
-#map-legend {
-}
-
 .ghi-levels {
     padding: 0.5rem 0;
     margin: 0;
@@ -542,57 +539,73 @@ body {
 
 #embed-map {
     height: 100%;
+    position: relative;
     
-    .map-wrapper {
-        position: relative;
-        height: 100%;
-        
-        #map-application,
-        #map-application .map { height: 100%; padding: 0; }
-        
-        #map-legend {
-            display: block;
-            background: #fff;
-            width: auto;
-            bottom: 10px;
-            left: 15px;
-            padding: 0;
-            position: absolute;
-            @include box-shadow( 5px, 5px, 5px, 0, rgba(0, 0, 0, 0.5));
-        
-            #ghi-brand {
-                font-size: 1rem;
-                line-height: 1rem;
-                background-color: $oil;
-                padding: 0.5rem 0.75rem;
-                margin: 0;
-                a {
-                    outline: none;
-                    color: #fff;
+    .map-wrapper { height: 100%; }
+    
+    #map-application,
+    #map-application .map { height: 100%; padding: 0; }
+    
+    #map-legend {
+        display: block;
+        background: #fff;
+        width: auto;
+        bottom: 10px;
+        left: 15px;
+        padding: 0;
+        position: absolute;
+        @include box-shadow( 5px, 5px, 5px, 0, rgba(0, 0, 0, 0.5));
+    
+        #ghi-brand {
+            font-size: 1rem;
+            line-height: 1rem;
+            background-color: $oil;
+            padding: 0.5rem 0.75rem;
+            margin: 0;
+            a {
+                outline: none;
+                color: #fff;
+                display: inline-block;
+                img {
+                    width: 36px;
+                    height: auto;
                     display: inline-block;
-                    img {
-                        width: 36px;
-                        height: auto;
-                        display: inline-block;
-                        padding-right: 5px;
-                        }
-                    span { display: inline-block; }
+                    padding-right: 5px;
                     }
+                span { display: inline-block; }
                 }
-                
-            .ghi-levels {
-                padding: 0.5rem 0.75rem;
-                li {
-                    display: block;
-                    padding: 0.25rem 0;
-                    border-bottom: 1px solid #ccc;
-                    &:last-child { border-bottom: 0; }
-                    &.extra-alarming,
-                    &.no-data,
-                    &.indust-countries { width: auto; }
-                    em { display:  inline-block; float: right; }
-                    i { padding-right: 5px; }
-                    }
+            }
+            
+        .ghi-levels {
+            padding: 0.5rem 0.75rem;
+            li {
+                display: block;
+                padding: 0.25rem 0;
+                border-bottom: 1px solid #ccc;
+                &:last-child { border-bottom: 0; }
+                &.extra-alarming,
+                &.no-data,
+                &.indust-countries { width: auto; }
+                em { display:  inline-block; float: right; }
+                i { padding-right: 5px; }
+                }
+            }
+        }
+    .table-wrapper {
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x:  hidden;
+        
+        .row {
+            padding: 0.5rem 0 0;
+            .large-12 > strong {
+                font-size: 1.6875rem;
+                font-family: $font-family-sans-serif-narrow;
+                }
+            p {
+                font-size: 0.875rem;
+                margin-bottom: 0;
+                padding-right: 0;
                 }
             }
         }
@@ -637,8 +650,8 @@ body {
         }
     #main-map .large-4 #table-container { height: 260px; }
     #main-map { -webkit-overflow-scrolling: touch; }
-    
-    #main-map .large-4 { @include box-shadow(0, 0, 0, 0, transparent); }
+   
+    #main-map .large-4 { @include box-shadow(0, 0, 0, 0, transparent); } 
 }
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
@@ -654,7 +667,6 @@ body {
     .ghi-levels li.extra-alarming { width: 16.2857%; }
     .ghi-levels li.indust-countries { width: 15.2857%; }
     .ghi-levels li.no-data { width: 11.2857%; }
-    
     
     #home-blocks a.columns div { min-height: 8rem; }
 }
