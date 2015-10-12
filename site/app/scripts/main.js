@@ -176,12 +176,14 @@ var messages_de = {
   }
 
   // https://gis.stackexchange.com/a/102125
-  var jsonfile;
+  var urlbase = '';
   if (window.location.href.indexOf('/de') > -1) {
-    jsonfile = '../data/countrydata-2015.geo.json';
-  } else {
-    jsonfile = 'data/countrydata-2015.geo.json';
+    urlbase += '../';
   }
+  if (window.location.href.indexOf('embed/') > -1) {
+    urlbase += '../';
+  }
+  var jsonfile = urlbase + 'data/countrydata-2015.geo.json';
   geojsonLayer = new L.GeoJSON.AJAX(jsonfile, {
     style: style,
     onEachFeature: onEachFeature
@@ -198,12 +200,14 @@ var messages_de = {
 
   function populateTable(year) {
     // reload table
-    var jsonroot;
+    var urlbase = '';
     if (window.location.href.indexOf('/de') > -1) {
-      jsonroot = '../data/countrydata-';
-    } else {
-      jsonroot = 'data/countrydata-';
+      urlbase += '../';
     }
+    if (window.location.href.indexOf('embed/') > -1) {
+      urlbase += '../';
+    }
+    var jsonroot = urlbase + 'data/countrydata-';
     $.getJSON( jsonroot + year + '.geo.json', function( data ) {
       $('#country-table tbody').empty();
       $.each( data.features, function( key, c ) {

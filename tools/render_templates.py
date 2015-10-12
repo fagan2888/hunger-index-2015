@@ -126,7 +126,7 @@ def create_index_page():
     # also generate the embed page
     template = env.get_template("embed.html")
     context["m"] = messages
-    context["relpath"] = ''
+    context["relpath"] = '../'
     context["lang"] = 'en'
     contents = template.render(**context)
     dirname = '../site/app/html/embed/'
@@ -137,7 +137,7 @@ def create_index_page():
     f.close()
     # german
     context["m"] = messages_de
-    context["relpath"] = '../'
+    context["relpath"] = '../../'
     context["lang"] = 'de'
     contents = template.render(**context)
     dirname = '../site/app/html/de/embed/'
