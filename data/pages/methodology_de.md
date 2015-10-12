@@ -34,8 +34,6 @@ Zuletzt werden die standardisierten Werte aggregiert, um den WHI-Wert für jedes
 
  Diese Berechnung ergibt WHI-Werte, die sich auf einer 100-Punkte-Skala einordnen lassen, auf der 0 (kein Hunger) der beste und 100 der schlechteste Wert ist, wobei keiner der Extremwerte je in der Praxis erreicht wird. Ein Wert von 100 würde bedeuten, dass in einem Land die Werte zu Unterernährung, Auszehrung und Wachstumsverzögerung bei Kindern sowie Kindersterblichkeit genau den Schwellenwerten entsprächen, die leicht über den in vergangenen Jahrzehnten beobachteten Maximalwerten angesetzt sind. Ein Wert von 0 würde bedeuten, dass in einem Land keine unterernährten Menschen lebten, kein Kind unter fünf Jahren unter Auszehrung oder Wachstumsverzögerung leiden und kein Kind vor seinem fünften Geburtstag sterben würde. 
 
-----
-
 [^1]: Die Schwellenwerte für die Standardisierung werden leicht über den höchsten gemessenen Werten angesetzt, um einen möglichen zukünftigen Anstieg dieser Werte zu berücksichtigen. 
 
 [^2]: Der Schwellenwert für Unterernährung beträgt 80 und beruht auf dem bisherigen Maximalwert von 76,5 Prozent. Der Schwellenwert für Auszehrung bei Kindern liegt bei 30, auf Basis des bisherigen Maximalwerts von 26,0, der Schwellenwert für Wachstumsverzögerung bei Kindern beträgt bei einem bisherigen Maximalwert von 68,2 Prozent 70 und der Schwellenwert für Kindersterblichkeit wurde auf der Grundlage des bisher gemessenen Maximalwerts von 32,6 Prozent auf 35 festgesetzt.  
