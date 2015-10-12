@@ -6356,55 +6356,58 @@ body {
   #main-map .large-4 {
     height: 100%; }
     #main-map .large-4 #table-container {
-      height: 463px;
-      overflow-y: scroll;
-      border-top: 1px solid #ccc; }
-      #main-map .large-4 #table-container #country-table {
-        margin-bottom: 0;
-        border: 0; }
-        #main-map .large-4 #table-container #country-table tr:hover {
-          cursor: pointer;
-          background: #eee; }
-        #main-map .large-4 #table-container #country-table tr.highlight {
-          background: #ccc; }
-        #main-map .large-4 #table-container #country-table tr td {
-          padding: 0.5625rem 0.9375rem; }
-        #main-map .large-4 #table-container #country-table td span {
-          padding: 0.25rem 0.5rem; }
-        #main-map .large-4 #table-container #country-table td.score span {
-          font-size: 0.75rem;
-          font-weight: bold;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          -ms-border-radius: 4px;
-          border-radius: 4px;
-          background-color: #f9f9f9;
-          display: inline-block;
-          text-align: center;
-          width: 2.5rem; }
-        #main-map .large-4 #table-container #country-table .extra-alarming td.score span {
-          background-color: #AB0635; }
-        #main-map .large-4 #table-container #country-table .alarming td.score span {
-          background-color: #e9841d; }
-        #main-map .large-4 #table-container #country-table .serious td.score span {
-          background-color: #fbe0c7; }
-        #main-map .large-4 #table-container #country-table .moderate td.score span {
-          background-color: #bedcb3; }
-        #main-map .large-4 #table-container #country-table .low td.score span {
-          background-color: #4caf45; }
-        #main-map .large-4 #table-container #country-table .no-data td.score span {
-          background-color: #808080; }
-        #main-map .large-4 #table-container #country-table .indust-country td.score span {
-          background-color: #eaeaea; }
-    #main-map .large-4 .row {
-      padding: 0.5rem 0 0; }
-      #main-map .large-4 .row .large-12 > strong {
-        font-size: 1.6875rem;
-        font-family: "PT Sans Narrow", "DejaVu Sans", Roboto, Arial, sans-serif; }
-      #main-map .large-4 .row p {
-        font-size: 0.875rem;
-        margin-bottom: 0;
-        padding-right: 0; }
+      height: 463px; }
+
+.table-wrapper #table-container {
+  overflow-y: scroll;
+  border-top: 1px solid #ccc; }
+  .table-wrapper #table-container #country-table {
+    margin-bottom: 0;
+    border: 0; }
+    .table-wrapper #table-container #country-table tr:hover {
+      cursor: pointer;
+      background: #eee; }
+    .table-wrapper #table-container #country-table tr.highlight {
+      background: #ccc; }
+    .table-wrapper #table-container #country-table tr td {
+      padding: 0.5625rem 0.9375rem; }
+    .table-wrapper #table-container #country-table td span {
+      padding: 0.25rem 0.5rem; }
+    .table-wrapper #table-container #country-table td.score span {
+      font-size: 0.75rem;
+      font-weight: bold;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+      display: inline-block;
+      text-align: center;
+      width: 2.5rem; }
+    .table-wrapper #table-container #country-table .extra-alarming td.score span {
+      background-color: #AB0635; }
+    .table-wrapper #table-container #country-table .alarming td.score span {
+      background-color: #e9841d; }
+    .table-wrapper #table-container #country-table .serious td.score span {
+      background-color: #fbe0c7; }
+    .table-wrapper #table-container #country-table .moderate td.score span {
+      background-color: #bedcb3; }
+    .table-wrapper #table-container #country-table .low td.score span {
+      background-color: #4caf45; }
+    .table-wrapper #table-container #country-table .no-data td.score span {
+      background-color: #808080; }
+    .table-wrapper #table-container #country-table .indust-country td.score span {
+      background-color: #eaeaea; }
+
+.table-wrapper .row {
+  padding: 0.5rem 0 0; }
+  .table-wrapper .row .large-12 > strong {
+    font-size: 1.6875rem;
+    font-family: "PT Sans Narrow", "DejaVu Sans", Roboto, Arial, sans-serif; }
+  .table-wrapper .row p {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+    padding-right: 0; }
 
 .leaflet-container {
   font-family: "PT Sans", "DejaVu Sans", Roboto, Arial, sans-serif;
@@ -6593,6 +6596,16 @@ body {
   #country-info canvas {
     max-width: 100%;
     margin-bottom: 1rem; }
+  #country-info #chart-score {
+    height: 250px; }
+  #country-info .chart-wrapper {
+    margin-bottom: 1rem; }
+    #country-info .chart-wrapper #chart-undernourished,
+    #country-info .chart-wrapper #chart-wasting,
+    #country-info .chart-wrapper #chart-stunting,
+    #country-info .chart-wrapper #chart-mortality {
+      padding: 0 4rem 0 0;
+      height: 250px !important; }
 
 #country-info.extra-alarming em.severity,
 #country-info.extra-alarming #detailed-score tbody td {
@@ -6699,8 +6712,6 @@ body {
 #static-content .row table tr.even, #static-content .row table tr.alt, #static-content .row table tr:nth-of-type(2n) {
   background: transparent; }
 
-/* Trends page
-*/
 /* Footer
 */
 #footer {
@@ -6782,19 +6793,6 @@ body {
             float: right; }
           #embed-map .map-wrapper #map-legend .ghi-levels li i {
             padding-right: 5px; }
-  #embed-map .table-wrapper {
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden; }
-    #embed-map .table-wrapper .row {
-      padding: 0.5rem 0 0; }
-      #embed-map .table-wrapper .row .large-12 > strong {
-        font-size: 1.6875rem;
-        font-family: "PT Sans Narrow", "DejaVu Sans", Roboto, Arial, sans-serif; }
-      #embed-map .table-wrapper .row p {
-        font-size: 0.875rem;
-        margin-bottom: 0;
-        padding-right: 0; }
 
 /* Media Queries
 */
@@ -6871,6 +6869,3 @@ body {
     width: 11.2857%; }
   #home-blocks a.columns div {
     min-height: 8rem; } }
-
-#chart-score {
-  height: 250px; }
