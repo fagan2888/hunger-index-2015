@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="{{ relpath }}fonts/foundation-icons/foundation-icons.css" />    
   <link rel="stylesheet" href="{{ relpath }}styles/app.css">
 
-
   <script src="{{ relpath }}scripts/modernizr.js"></script>
   
   <meta property="og:title" content="{{ m.name }}" />
@@ -66,10 +65,15 @@
   <!-- embed scripts -->
   <link rel="stylesheet" href="{{ relpath }}styles/leaflet.zoomin.css" media="screen">
 
+  
+  <script src="{{ relpath }}scripts/jquery.js"></script>
+  <script src="{{ relpath }}scripts/foundation.min.js"></script>
+  <script src="{{ relpath }}scripts/foundation-scripts.js"></script>
   <script src="{{ relpath }}scripts/leaflet.js"></script>
   <script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
   <script src="{{ relpath }}scripts/leaflet.zoomin.js"></script>
   <script src="{{ relpath }}scripts/main.js"></script>
+
   <!-- end embed scripts -->
 
 </head>
@@ -84,9 +88,34 @@
   <div id="embed-map" class="row collapse full-width">
     
     <div class="map-wrapper">
-      <div id="map-application" class="large-12 columns">
+      <div id="map-application" class="large-8 columns">
         <div id="map" class="map"></div>
       </div><!-- map -->
+      <div class="large-4 columns">
+        <div class="row">
+          <div class="large-12 columns year-select">
+            <strong>{{ m.map_ranking }}</strong>
+            <button id="year-button" href="#" data-dropdown="year-drop" aria-controls="year-drop" aria-expanded="false" class="dropdown">2015</button>
+            <ul id="year-drop" data-dropdown-content class="f-dropdown" aria-hidden="true">
+              <li><a class="2015" href="#">2015</a></li>
+              <li><a class="2005" href="#">2005</a></li>
+              <li><a class="2000" href="#">2000</a></li>
+              <li><a class="1995" href="#">1995</a></li>
+              <li><a class="1990" href="#">1990</a></li>
+            </ul>
+            <a class="button right tiny secondary radius" href="#" data-reveal-id="shareModal">
+              <i class="fi-share"></i> {{ m.share_title }}/{{ m.embed_title }}
+            </a>
+          </div>
+          <p class="large-12 columns">{{ m.ranking_description }}</p>
+        </div>
+        <div class="row">
+          <div id="table-container">
+            <table id="country-table" class="display" width="100%" cellspacing="0">
+            </table>
+          </div>
+        </div>
+      </div>
 
       <div id="map-legend" class="large-12 columns">
         <h1 id="ghi-brand"><a href="{{ relpath }}">
@@ -108,19 +137,8 @@
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
-  <script src="{{ relpath }}scripts/jquery.js"></script>
-  <script src="{{ relpath }}scripts/foundation.min.js"></script>
-  <script src="{{ relpath }}scripts/foundation.magellan.js"></script>
-  <script src="{{ relpath }}scripts/foundation-scripts.js"></script>
-  <script src="{{ relpath }}scripts/leaflet.js"></script>
-  <script src="{{ relpath }}scripts/leaflet.ajax.min.js"></script>
-  <script src="{{ relpath }}scripts/leaflet.zoomin.js"></script>
-  <script src="{{ relpath }}scripts/main.js"></script>
-  <!-- endbower -->
   <!-- endbuild -->
 
-  <!-- build:js scripts/main.js -->
-  {% block scripts %}{% endblock %}
-  <!-- endbuild -->
+
 </body>
 </html>
