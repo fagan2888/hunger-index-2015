@@ -157,6 +157,7 @@ def create_static_page(name):
                "m": messages,
                "relpath": "../",
                "linkrelpath": "../",
+               "lang": "en",
                }
     contents = template.render(**context)
     dirname = "../site/app/html/%s/" % name
@@ -171,6 +172,7 @@ def create_static_page(name):
     context["m"] = messages_de
     context["relpath"] = '../../'
     context["linkrelpath"] = '../../de/'
+    context["lang"] = 'de'
     contents = template.render(**context)
     dirname = "../site/app/html/de/%s/" % name
     if not os.path.exists(dirname):
@@ -252,6 +254,7 @@ def create_trends_page():
                "m": messages,
                "relpath": "../",
                "linkrelpath": "../",
+               "lang": "en",
                }
     contents = template.render(**context)
     dirname = "../site/app/html/trends/"
