@@ -471,8 +471,10 @@ body {
             max-width: 100%;
             width: 100% !important;
             }
+/* This was a workaround, now it's just breaking things
         thead th:nth-child(6),
         tbody td:nth-child(6) { display: none; }
+*/
         
         }
 }

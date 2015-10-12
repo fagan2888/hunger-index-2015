@@ -130,7 +130,7 @@ def create_index_page():
     context["lang"] = 'en'
     contents = template.render(**context)
     dirname = '../site/app/html/embed/'
-    if not os.path.exists(dirname)
+    if not os.path.exists(dirname):
         os.makedirs(dirname)
     f = codecs.open(dirname + "index.html", 'w', 'utf-8')
     f.write(contents)
@@ -141,7 +141,7 @@ def create_index_page():
     context["lang"] = 'de'
     contents = template.render(**context)
     dirname = '../site/app/html/de/embed/'
-    if not os.path.exists(dirname)
+    if not os.path.exists(dirname):
         os.makedirs(dirname)
     f = codecs.open(dirname + "index.html", 'w', 'utf-8')
     f.write(contents)
